@@ -2,7 +2,8 @@ name: Daily update
 
 on:
   schedule:
-    - cron: "30 11 * * *"   # 7:30 AM ET during DST — before any games start
+    - cron: "30 7 * * *"    # 3:30 AM ET — right after the last West Coast game ends
+    - cron: "30 11 * * *"   # 7:30 AM ET backup — catches late finishes / skipped runs
   workflow_dispatch:
 
 permissions:
