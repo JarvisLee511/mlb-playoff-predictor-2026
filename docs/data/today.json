@@ -1,0 +1,261 @@
+{
+ "date": "2026-06-10",
+ "games": [
+  {
+   "game_time_et": "13:10",
+   "home_name": "Tampa Bay Rays",
+   "away_name": "Boston Red Sox",
+   "home_pitcher": "Drew Rasmussen",
+   "away_pitcher": "Jake Bennett",
+   "p_home_elo": 0.539,
+   "p_home_lr": 0.535,
+   "p_home_xgb": 0.5313,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "13:10",
+   "home_name": "Cleveland Guardians",
+   "away_name": "New York Yankees",
+   "home_pitcher": "Parker Messick",
+   "away_pitcher": "Carlos Rod\u00f3n",
+   "p_home_elo": 0.456,
+   "p_home_lr": 0.4552,
+   "p_home_xgb": 0.4529,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "15:45",
+   "home_name": "San Francisco Giants",
+   "away_name": "Washington Nationals",
+   "home_pitcher": "Robbie Ray",
+   "away_pitcher": "Foster Griffin",
+   "p_home_elo": 0.5324,
+   "p_home_lr": 0.552,
+   "p_home_xgb": 0.5108,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "16:10",
+   "home_name": "San Diego Padres",
+   "away_name": "Cincinnati Reds",
+   "home_pitcher": "Michael King",
+   "away_pitcher": "Brady Singer",
+   "p_home_elo": 0.5733,
+   "p_home_lr": 0.6127,
+   "p_home_xgb": 0.6266,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "18:35",
+   "home_name": "Baltimore Orioles",
+   "away_name": "Seattle Mariners",
+   "home_pitcher": "Brandon Young",
+   "away_pitcher": "George Kirby",
+   "p_home_elo": 0.4627,
+   "p_home_lr": 0.4442,
+   "p_home_xgb": 0.4465,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "18:40",
+   "home_name": "Pittsburgh Pirates",
+   "away_name": "Los Angeles Dodgers",
+   "home_pitcher": "Jared Jones",
+   "away_pitcher": "Shohei Ohtani",
+   "p_home_elo": 0.4067,
+   "p_home_lr": 0.407,
+   "p_home_xgb": 0.4571,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "18:40",
+   "home_name": "Detroit Tigers",
+   "away_name": "Minnesota Twins",
+   "home_pitcher": "Framber Valdez",
+   "away_pitcher": "TBD",
+   "p_home_elo": 0.5672,
+   "p_home_lr": 0.5874,
+   "p_home_xgb": 0.5868,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "18:40",
+   "home_name": "Miami Marlins",
+   "away_name": "Arizona Diamondbacks",
+   "home_pitcher": "Ryan Gusto",
+   "away_pitcher": "Ryne Nelson",
+   "p_home_elo": 0.5061,
+   "p_home_lr": 0.5283,
+   "p_home_xgb": 0.5075,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "19:07",
+   "home_name": "Toronto Blue Jays",
+   "away_name": "Philadelphia Phillies",
+   "home_pitcher": "Max Scherzer",
+   "away_pitcher": "Jes\u00fas Luzardo",
+   "p_home_elo": 0.5062,
+   "p_home_lr": 0.5158,
+   "p_home_xgb": 0.5122,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "19:10",
+   "home_name": "New York Mets",
+   "away_name": "St. Louis Cardinals",
+   "home_pitcher": "Austin Warren",
+   "away_pitcher": "Andre Pallante",
+   "p_home_elo": 0.5226,
+   "p_home_lr": 0.5465,
+   "p_home_xgb": 0.5177,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "19:40",
+   "home_name": "Kansas City Royals",
+   "away_name": "Texas Rangers",
+   "home_pitcher": "Seth Lugo",
+   "away_pitcher": "MacKenzie Gore",
+   "p_home_elo": 0.4959,
+   "p_home_lr": 0.4945,
+   "p_home_xgb": 0.5019,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "19:40",
+   "home_name": "Chicago White Sox",
+   "away_name": "Atlanta Braves",
+   "home_pitcher": "TBD",
+   "away_pitcher": "Chris Sale",
+   "p_home_elo": 0.4194,
+   "p_home_lr": 0.434,
+   "p_home_xgb": 0.4464,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "20:40",
+   "home_name": "Colorado Rockies",
+   "away_name": "Chicago Cubs",
+   "home_pitcher": "Michael Lorenzen",
+   "away_pitcher": "Shota Imanaga",
+   "p_home_elo": 0.3675,
+   "p_home_lr": 0.4016,
+   "p_home_xgb": 0.4762,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "21:05",
+   "home_name": "Athletics",
+   "away_name": "Milwaukee Brewers",
+   "home_pitcher": "Jack Perkins",
+   "away_pitcher": "Brandon Sproat",
+   "p_home_elo": 0.3949,
+   "p_home_lr": 0.3942,
+   "p_home_xgb": 0.4008,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "21:38",
+   "home_name": "Los Angeles Angels",
+   "away_name": "Houston Astros",
+   "home_pitcher": "Reid Detmers",
+   "away_pitcher": "Peter Lambert",
+   "p_home_elo": 0.4818,
+   "p_home_lr": 0.5068,
+   "p_home_xgb": 0.5028,
+   "status": "pending"
+  }
+ ],
+ "tomorrow_date": "2026-06-11",
+ "tomorrow": [
+  {
+   "game_time_et": "13:10",
+   "home_name": "New York Mets",
+   "away_name": "St. Louis Cardinals",
+   "home_pitcher": "Christian Scott",
+   "away_pitcher": "Hunter Dobbins",
+   "p_home_elo": 0.5226,
+   "p_home_lr": 0.5465,
+   "p_home_xgb": 0.5177,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "13:10",
+   "home_name": "Detroit Tigers",
+   "away_name": "Minnesota Twins",
+   "home_pitcher": "Keider Montero",
+   "away_pitcher": "Zebby Matthews",
+   "p_home_elo": 0.5672,
+   "p_home_lr": 0.5874,
+   "p_home_xgb": 0.5868,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "13:10",
+   "home_name": "Miami Marlins",
+   "away_name": "Arizona Diamondbacks",
+   "home_pitcher": "Tyler Phillips",
+   "away_pitcher": "Merrill Kelly",
+   "p_home_elo": 0.5061,
+   "p_home_lr": 0.5283,
+   "p_home_xgb": 0.5075,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "14:10",
+   "home_name": "Kansas City Royals",
+   "away_name": "Texas Rangers",
+   "home_pitcher": "Michael Wacha",
+   "away_pitcher": "Kumar Rocker",
+   "p_home_elo": 0.4959,
+   "p_home_lr": 0.4945,
+   "p_home_xgb": 0.5019,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "15:10",
+   "home_name": "Colorado Rockies",
+   "away_name": "Chicago Cubs",
+   "home_pitcher": "Ryan Feltner",
+   "away_pitcher": "Edward Cabrera",
+   "p_home_elo": 0.3675,
+   "p_home_lr": 0.4016,
+   "p_home_xgb": 0.4762,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "18:40",
+   "home_name": "Pittsburgh Pirates",
+   "away_name": "Los Angeles Dodgers",
+   "home_pitcher": "Mitch Keller",
+   "away_pitcher": "Justin Wrobleski",
+   "p_home_elo": 0.4067,
+   "p_home_lr": 0.407,
+   "p_home_xgb": 0.4571,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "19:05",
+   "home_name": "Baltimore Orioles",
+   "away_name": "Seattle Mariners",
+   "home_pitcher": "Kyle Bradish",
+   "away_pitcher": "Bryan Woo",
+   "p_home_elo": 0.4627,
+   "p_home_lr": 0.4442,
+   "p_home_xgb": 0.4465,
+   "status": "pending"
+  },
+  {
+   "game_time_et": "19:40",
+   "home_name": "Chicago White Sox",
+   "away_name": "Atlanta Braves",
+   "home_pitcher": "TBD",
+   "away_pitcher": "Mart\u00edn P\u00e9rez",
+   "p_home_elo": 0.4194,
+   "p_home_lr": 0.434,
+   "p_home_xgb": 0.4464,
+   "status": "pending"
+  }
+ ]
+}

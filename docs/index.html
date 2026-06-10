@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLB 2026 Playoff Predictor</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+</head>
+<body>
+<header>
+  <h1>⚾ MLB 2026 Playoff Predictor</h1>
+  <p class="sub">Elo + machine learning game predictions, 10,000-sim Monte Carlo playoff odds —
+     retrained and updated automatically every morning.</p>
+  <p class="meta" id="meta-line">Loading…</p>
+</header>
+
+<nav id="tabs">
+  <button class="tab active" data-tab="today">Today's Games</button>
+  <button class="tab" data-tab="odds">Playoff Odds</button>
+  <button class="tab" data-tab="tracker">Model Tracker</button>
+  <button class="tab" data-tab="moves">Roster Moves</button>
+  <button class="tab" data-tab="about">About</button>
+</nav>
+
+<main>
+  <section id="today" class="panel active">
+    <h2 id="today-title">Today's predictions</h2>
+    <div id="today-games" class="cards"></div>
+    <h2 id="tomorrow-title" style="margin-top:26px"></h2>
+    <div id="tomorrow-games" class="cards"></div>
+  </section>
+
+  <section id="odds" class="panel">
+    <h2>2026 playoff odds <span class="hint">(10,000 season simulations, updated daily)</span></h2>
+    <div id="odds-chart" class="chart"></div>
+    <div class="table-wrap"><table id="odds-table"></table></div>
+  </section>
+
+  <section id="tracker" class="panel">
+    <h2>Live model tracker <span class="hint">(every prediction logged before first pitch, scored the next morning)</span></h2>
+    <div id="tracker-cards" class="cards small"></div>
+    <div id="tracker-chart" class="chart"></div>
+    <h3>Recent scored predictions</h3>
+    <div class="table-wrap"><table id="recent-table"></table></div>
+  </section>
+
+  <section id="moves" class="panel">
+    <h2>Injuries &amp; roster moves <span class="hint">(last 10 days)</span></h2>
+    <div id="moves-filters" class="filters"></div>
+    <div class="table-wrap"><table id="moves-table"></table></div>
+  </section>
+
+  <section id="about" class="panel">
+    <h2>How it works</h2>
+    <div class="prose">
+      <p>Every morning a GitHub Actions job:</p>
+      <ol>
+        <li>Pulls the latest results from the official MLB Stats API (2015–2026, ~26,000+ games).</li>
+        <li>Scores yesterday's predictions and appends them to a permanent log — predictions are
+            always made <em>before</em> games are played, so the Model Tracker is a true
+            out-of-sample track record.</li>
+        <li>Rebuilds each team's season-to-date profile from per-game logs — win/loss form,
+            run differential, and advanced stats (OPS, ERA, FIP, WHIP, Pythagorean expected
+            win%) — then retrains three win-probability models on the expanded data:
+            a FiveThirtyEight-style <strong>Elo</strong> baseline,
+            <strong>logistic regression</strong>, and <strong>XGBoost</strong>.
+            All features are computed strictly as-of first pitch (no leakage).</li>
+        <li>Runs 10,000 Monte Carlo simulations of the remaining schedule and the full 12-team
+            postseason bracket to produce playoff, pennant, and World Series odds.</li>
+        <li>Fetches injury-list moves and call-ups, and publishes everything to this page.</li>
+      </ol>
+      <p>Single MLB games are close to coin flips — the best teams still lose 60+ times a year —
+         so the honest benchmark is <strong>log loss and calibration against the Elo baseline</strong>,
+         not raw accuracy. Starting pitchers and injuries are not yet model features; they are the
+         next planned iteration.</p>
+      <p><a id="repo-link" href="#">Source code on GitHub →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>Data: official MLB Stats API · Educational/portfolio project, not affiliated with MLB · Built by Jarvis Lee</footer>
+<script src="app.js"></script>
+</body>
+</html>

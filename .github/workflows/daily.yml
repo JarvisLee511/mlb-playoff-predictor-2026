@@ -1,0 +1,40 @@
+name: Daily update
+
+on:
+  schedule:
+    - cron: "30 11 * * *"   # 7:30 AM ET during DST — before any games start
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements-ci.txt
+
+      - name: Run daily pipeline
+        run: python daily_update.py
+
+      - name: Commit and push updates
+        run: |
+          git config user.name "JarvisLee511"
+          git config user.email "jarvis20020511@gmail.com"
+          git add data/predictions_log.csv data/gamelogs.csv docs/data outputs/*.csv outputs/metrics.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Daily update $(date -u +%F)"
+            git pull --rebase --autostash
+            git push
+          fi
