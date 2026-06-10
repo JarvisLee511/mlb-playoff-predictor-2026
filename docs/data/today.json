@@ -206,10 +206,10 @@
    "home_pitcher": "Christian Scott",
    "away_pitcher": "Hunter Dobbins",
    "p_home_elo": 0.5226,
-   "p_home_lr": 0.5445,
-   "p_home_xgb": 0.531,
-   "p_home_ens": 0.5272,
-   "p_home_skl": 0.5378,
+   "p_home_lr": 0.5443,
+   "p_home_xgb": 0.5285,
+   "p_home_ens": 0.5271,
+   "p_home_skl": 0.5376,
    "status": "pending"
   },
   {
@@ -220,7 +220,7 @@
    "away_pitcher": "Zebby Matthews",
    "p_home_elo": 0.5672,
    "p_home_lr": 0.5747,
-   "p_home_xgb": 0.5774,
+   "p_home_xgb": 0.5768,
    "p_home_ens": 0.5587,
    "p_home_skl": 0.5271,
    "status": "pending"
@@ -233,7 +233,7 @@
    "away_pitcher": "Merrill Kelly",
    "p_home_elo": 0.5061,
    "p_home_lr": 0.5591,
-   "p_home_xgb": 0.5445,
+   "p_home_xgb": 0.5446,
    "p_home_ens": 0.5356,
    "p_home_skl": 0.5387,
    "status": "pending"
@@ -246,8 +246,8 @@
    "away_pitcher": "Kumar Rocker",
    "p_home_elo": 0.4959,
    "p_home_lr": 0.5132,
-   "p_home_xgb": 0.5274,
-   "p_home_ens": 0.4981,
+   "p_home_xgb": 0.5319,
+   "p_home_ens": 0.4982,
    "p_home_skl": 0.4738,
    "status": "pending"
   },
@@ -258,8 +258,8 @@
    "home_pitcher": "Ryan Feltner",
    "away_pitcher": "Edward Cabrera",
    "p_home_elo": 0.3675,
-   "p_home_lr": 0.4098,
-   "p_home_xgb": 0.4774,
+   "p_home_lr": 0.4097,
+   "p_home_xgb": 0.4784,
    "p_home_ens": 0.3955,
    "p_home_skl": 0.3867,
    "status": "pending"
@@ -271,8 +271,8 @@
    "home_pitcher": "Mitch Keller",
    "away_pitcher": "Justin Wrobleski",
    "p_home_elo": 0.4067,
-   "p_home_lr": 0.4122,
-   "p_home_xgb": 0.4551,
+   "p_home_lr": 0.4123,
+   "p_home_xgb": 0.4594,
    "p_home_ens": 0.4045,
    "p_home_skl": 0.3323,
    "status": "pending"
@@ -285,7 +285,7 @@
    "away_pitcher": "Bryan Woo",
    "p_home_elo": 0.4627,
    "p_home_lr": 0.4254,
-   "p_home_xgb": 0.4206,
+   "p_home_xgb": 0.4193,
    "p_home_ens": 0.4245,
    "p_home_skl": 0.3436,
    "status": "pending"
@@ -298,9 +298,9 @@
    "away_pitcher": "Mart\u00edn P\u00e9rez",
    "p_home_elo": 0.4194,
    "p_home_lr": 0.45,
-   "p_home_xgb": 0.4644,
-   "p_home_ens": 0.4357,
-   "p_home_skl": 0.3884,
+   "p_home_xgb": 0.4632,
+   "p_home_ens": 0.4358,
+   "p_home_skl": 0.3885,
    "status": "pending"
   }
  ]
