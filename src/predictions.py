@@ -22,7 +22,7 @@ ET = ZoneInfo("America/New_York")
 LOG_COLS = [
     "date", "game_id", "home_id", "home_name", "away_id", "away_name",
     "game_time_et", "home_pitcher", "away_pitcher",
-    "p_home_elo", "p_home_lr", "p_home_xgb",
+    "p_home_elo", "p_home_lr", "p_home_xgb", "p_home_ens", "p_home_skl",
     "status", "home_score", "away_score", "home_win",
 ]
 
@@ -54,7 +54,9 @@ def _fetch_day_schedule(date: dt.date) -> list[dict]:
 
 
 def _matchup_features(home_id: int, away_id: int, snap: pd.DataFrame,
-                      last_played: dict, date: dt.date) -> pd.DataFrame:
+                      last_played: dict, date: dt.date,
+                      home_sp_id=None, away_sp_id=None,
+                      sp_stats: pd.DataFrame | None = None) -> pd.DataFrame:
     h, a = snap.loc[home_id], snap.loc[away_id]
 
     def rest(team_id: int) -> int:
@@ -75,14 +77,32 @@ def _matchup_features(home_id: int, away_id: int, snap: pd.DataFrame,
     }
     for stat in ("ops", "era", "fip", "whip", "pyth", "off_bbk"):
         row[f"{stat}_diff"] = h[stat] - a[stat]
+
+    def sp(pid, col, default):
+        if pid is not None and sp_stats is not None and pid in sp_stats.index:
+            return float(sp_stats.loc[pid, col])
+        return default
+
+    row["sp_fip_diff"] = sp(home_sp_id, "sp_fip", 4.20) - sp(away_sp_id, "sp_fip", 4.20)
+    row["sp_kbb_diff"] = sp(home_sp_id, "sp_kbb", 0.14) - sp(away_sp_id, "sp_kbb", 0.14)
+    row["sp_fip5_diff"] = sp(home_sp_id, "sp_fip5", 4.20) - sp(away_sp_id, "sp_fip5", 4.20)
+    row["bp_fip_diff"] = h["bp_fip"] - a["bp_fip"]
+    row["bp_fatigue_diff"] = h["bp_ip3"] - a["bp_ip3"]
+    row["park_hfa"] = h["park_hfa"]
     return pd.DataFrame([row])[FEATURE_COLS]
 
 
 def _predictions_for_date(date: dt.date, skip_ids: set | None = None) -> list[dict]:
     """Compute prediction rows for every scheduled game on `date`."""
+    from src.models.train import skellam_win_prob, stack_features
+
     snap = pd.read_csv(DATA_PROCESSED / "current_team_stats.csv").set_index("team_id")
+    sp_stats = pd.read_csv(DATA_PROCESSED / "current_pitcher_stats.csv").set_index("pitcher_id")
     logreg = joblib.load(OUTPUTS / "model_logreg.joblib")
     xgb = joblib.load(OUTPUTS / "model_xgb.joblib")
+    stack = joblib.load(OUTPUTS / "model_stack.joblib")
+    pois_h = joblib.load(OUTPUTS / "model_poisson_home.joblib")
+    pois_a = joblib.load(OUTPUTS / "model_poisson_away.joblib")
 
     games_hist = pd.read_csv(DATA_RAW / "games.csv", parse_dates=["date"])
     last_played: dict[int, dt.date] = {}
@@ -102,12 +122,22 @@ def _predictions_for_date(date: dt.date, skip_ids: set | None = None) -> list[di
         if hid not in snap.index or aid not in snap.index:
             continue
 
-        X = _matchup_features(hid, aid, snap, last_played, date)
+        home_pp = home.get("probablePitcher", {})
+        away_pp = away.get("probablePitcher", {})
+        X = _matchup_features(
+            hid, aid, snap, last_played, date,
+            home_sp_id=home_pp.get("id"), away_sp_id=away_pp.get("id"),
+            sp_stats=sp_stats,
+        )
         time_et = (
             dt.datetime.fromisoformat(g["gameDate"].replace("Z", "+00:00"))
             .astimezone(ET)
             .strftime("%H:%M")
         )
+        p_elo = elo_win_prob(snap.loc[hid, "elo"], snap.loc[aid, "elo"])
+        p_lr = float(logreg.predict_proba(X)[0, 1])
+        p_ens = float(stack.predict_proba(stack_features([p_elo], [p_lr]))[0, 1])
+        p_skl = float(skellam_win_prob(pois_h.predict(X), pois_a.predict(X))[0])
         rows.append(
             {
                 "date": date.isoformat(),
@@ -117,11 +147,13 @@ def _predictions_for_date(date: dt.date, skip_ids: set | None = None) -> list[di
                 "away_id": aid,
                 "away_name": away["team"]["name"],
                 "game_time_et": time_et,
-                "home_pitcher": home.get("probablePitcher", {}).get("fullName", "TBD"),
-                "away_pitcher": away.get("probablePitcher", {}).get("fullName", "TBD"),
-                "p_home_elo": round(elo_win_prob(snap.loc[hid, "elo"], snap.loc[aid, "elo"]), 4),
-                "p_home_lr": round(float(logreg.predict_proba(X)[0, 1]), 4),
+                "home_pitcher": home_pp.get("fullName", "TBD"),
+                "away_pitcher": away_pp.get("fullName", "TBD"),
+                "p_home_elo": round(p_elo, 4),
+                "p_home_lr": round(p_lr, 4),
                 "p_home_xgb": round(float(xgb.predict_proba(X)[0, 1]), 4),
+                "p_home_ens": round(p_ens, 4),
+                "p_home_skl": round(p_skl, 4),
                 "status": "pending",
                 "home_score": None,
                 "away_score": None,

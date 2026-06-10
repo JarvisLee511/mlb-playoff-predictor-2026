@@ -81,7 +81,125 @@ def current_advanced(gamelogs: pd.DataFrame, season: int) -> pd.DataFrame:
     )
 
 
-def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None) -> pd.DataFrame:
+LEAGUE_FIP = 4.20          # league-average FIP used as shrinkage prior
+FIP_NUM_PRIOR = (LEAGUE_FIP - 3.10) * 30  # prior numerator at 30 IP
+KBB_PRIOR_RATE = 0.14      # league-average (K-BB)/BF
+PARK_HFA_PRIOR = 0.54      # league-average home win rate
+
+SP_STATS = ["sp_fip", "sp_kbb", "sp_fip5"]
+BP_STATS = ["bp_fip"]
+
+
+def _shrunk_fip(num, ip, prior_ip=30.0):
+    return (num + (LEAGUE_FIP - 3.10) * prior_ip) / (ip + prior_ip) + 3.10
+
+
+def build_pitcher_snapshots(pitcher_logs: pd.DataFrame) -> pd.DataFrame:
+    """Post-appearance cumulative stats per pitcher: season-to-date shrunk FIP,
+    (K-BB)/BF, and last-5-starts FIP. As-of joins use date < game date, so all
+    values are pre-game knowable."""
+    p = pitcher_logs.sort_values(["pitcher_id", "season", "date", "game_id"]).reset_index(drop=True)
+    p["fip_num"] = 13 * p["hr"] + 3 * (p["bb"] + p["hbp"]) - 2 * p["so"]
+
+    grp = p.groupby(["pitcher_id", "season"], sort=False)
+    cum_num = grp["fip_num"].cumsum()
+    cum_ip = grp["ip"].cumsum()
+    cum_so, cum_bb, cum_bf = grp["so"].cumsum(), grp["bb"].cumsum(), grp["bf"].cumsum()
+
+    snaps = pd.DataFrame(
+        {
+            "pitcher_id": p["pitcher_id"],
+            "season": p["season"],
+            "date": pd.to_datetime(p["date"]),
+            "sp_fip": _shrunk_fip(cum_num, cum_ip),
+            "sp_kbb": (cum_so - cum_bb + KBB_PRIOR_RATE * 120) / (cum_bf + 120),
+        }
+    )
+
+    starts = p[p["gs"] >= 1]
+    sgrp = starts.groupby(["pitcher_id", "season"], sort=False)
+    num5 = sgrp["fip_num"].transform(lambda s: s.rolling(5, min_periods=1).sum())
+    ip5 = sgrp["ip"].transform(lambda s: s.rolling(5, min_periods=1).sum())
+    snaps.loc[starts.index, "sp_fip5"] = _shrunk_fip(num5, ip5, prior_ip=15.0)
+    snaps["sp_fip5"] = snaps.groupby(["pitcher_id", "season"], sort=False)["sp_fip5"].ffill()
+    snaps["sp_fip5"] = snaps["sp_fip5"].fillna(snaps["sp_fip"])
+    return snaps
+
+
+def build_bullpen_snapshots(gamelogs: pd.DataFrame, pitcher_logs: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
+    """Bullpen = team pitching minus the starter's line, per game. Returns
+    post-game cumulative bullpen-FIP snapshots and a (team_id, date) -> bullpen
+    IP dict for fatigue lookups."""
+    starters = (
+        pitcher_logs[pitcher_logs["gs"] >= 1]
+        .groupby(["team_id", "game_id"])[["ip", "er", "bb", "so", "hr", "hbp"]]
+        .sum()
+        .add_prefix("sp_")
+        .reset_index()
+    )
+    g = gamelogs.merge(starters, on=["team_id", "game_id"], how="inner")
+    for team_col, sp_col in (
+        ("p_ip", "sp_ip"), ("p_baseOnBalls", "sp_bb"), ("p_strikeOuts", "sp_so"),
+        ("p_homeRuns", "sp_hr"), ("p_hitByPitch", "sp_hbp"),
+    ):
+        g[f"bp_{team_col}"] = (g[team_col] - g[sp_col]).clip(lower=0)
+    g["bp_fip_num"] = (
+        13 * g["bp_p_homeRuns"] + 3 * (g["bp_p_baseOnBalls"] + g["bp_p_hitByPitch"])
+        - 2 * g["bp_p_strikeOuts"]
+    )
+
+    g = g.sort_values(["team_id", "season", "date", "game_id"]).reset_index(drop=True)
+    grp = g.groupby(["team_id", "season"], sort=False)
+    snaps = pd.DataFrame(
+        {
+            "team_id": g["team_id"],
+            "season": g["season"],
+            "date": pd.to_datetime(g["date"]),
+            "bp_fip": _shrunk_fip(grp["bp_fip_num"].cumsum(), grp["bp_p_ip"].cumsum()),
+        }
+    )
+    daily_ip = g.groupby(["team_id", "date"])["bp_p_ip"].sum()
+    return snaps, daily_ip.to_dict()
+
+
+def bullpen_fatigue(team_id: int, date, daily_ip: dict, days: int = 3) -> float:
+    """Bullpen innings thrown in the `days` days before `date`."""
+    total = 0.0
+    for k in range(1, days + 1):
+        d = (date - pd.Timedelta(days=k)).strftime("%Y-%m-%d")
+        total += daily_ip.get((team_id, d), 0.0)
+    return total
+
+
+def _asof_starter(games: pd.DataFrame, snaps: pd.DataFrame, id_col: str, prefix: str) -> pd.DataFrame:
+    """As-of join: starter's latest snapshot strictly BEFORE the game date."""
+    left = games[["game_id", "date", "season", id_col]].dropna(subset=[id_col]).copy()
+    left[id_col] = left[id_col].astype(int)
+    left = left.sort_values("date")
+    right = snaps.sort_values("date")
+    merged = pd.merge_asof(
+        left, right, on="date",
+        left_by=[id_col, "season"], right_by=["pitcher_id", "season"],
+        allow_exact_matches=False,
+    )
+    out = merged[["game_id"] + SP_STATS].rename(columns={c: f"{prefix}_{c}" for c in SP_STATS})
+    return out
+
+
+def _asof_bullpen(games: pd.DataFrame, snaps: pd.DataFrame, id_col: str, prefix: str) -> pd.DataFrame:
+    left = games[["game_id", "date", "season", id_col]].copy().sort_values("date")
+    right = snaps.sort_values("date")
+    merged = pd.merge_asof(
+        left, right, on="date",
+        left_by=[id_col, "season"], right_by=["team_id", "season"],
+        allow_exact_matches=False,
+    )
+    return merged[["game_id"] + BP_STATS].rename(columns={c: f"{prefix}_{c}" for c in BP_STATS})
+
+
+def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
+                   probables: pd.DataFrame | None = None,
+                   pitcher_logs: pd.DataFrame | None = None) -> pd.DataFrame:
     """games must already carry home_elo_pre / away_elo_pre / elo_prob_home."""
     games = games.sort_values(["date", "game_id"]).reset_index(drop=True)
     games["date"] = pd.to_datetime(games["date"])
@@ -89,10 +207,15 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None) ->
     history: dict[int, deque] = {}      # team_id -> deque of (win, run_diff)
     season_record: dict[tuple, list] = {}  # (team_id, season) -> [wins, games]
     last_played: dict[int, pd.Timestamp] = {}
+    park_w: dict[int, float] = {}       # home wins at this team's park (all seasons)
+    park_n: dict[int, int] = {}
 
     feat_rows = []
     for g in games.itertuples():
         row = {}
+        row["park_hfa"] = (park_w.get(g.home_id, 0) + PARK_HFA_PRIOR * 200) / (
+            park_n.get(g.home_id, 0) + 200
+        )
         for side, team in (("home", g.home_id), ("away", g.away_id)):
             hist = history.setdefault(team, deque(maxlen=ROLL_WINDOW))
             if len(hist) >= MIN_GAMES:
@@ -120,6 +243,8 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None) ->
             rec[0] += won
             rec[1] += 1
             last_played[team] = g.date
+        park_w[g.home_id] = park_w.get(g.home_id, 0) + g.home_win
+        park_n[g.home_id] = park_n.get(g.home_id, 0) + 1
 
     feats = pd.DataFrame(feat_rows)
     out = pd.concat([games.reset_index(drop=True), feats], axis=1)
@@ -143,6 +268,29 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None) ->
     else:
         for stat in ADV_STATS:
             out[f"{stat}_diff"] = 0.0
+
+    if probables is not None and pitcher_logs is not None:
+        out = out.merge(
+            probables[["game_id", "home_sp_id", "away_sp_id"]], on="game_id", how="left"
+        )
+        sp_snaps = build_pitcher_snapshots(pitcher_logs)
+        out = out.merge(_asof_starter(out, sp_snaps, "home_sp_id", "home"), on="game_id", how="left")
+        out = out.merge(_asof_starter(out, sp_snaps, "away_sp_id", "away"), on="game_id", how="left")
+        out["sp_fip_diff"] = (out["home_sp_fip"] - out["away_sp_fip"]).fillna(0)
+        out["sp_kbb_diff"] = (out["home_sp_kbb"] - out["away_sp_kbb"]).fillna(0)
+        out["sp_fip5_diff"] = (out["home_sp_fip5"] - out["away_sp_fip5"]).fillna(0)
+
+        bp_snaps, bp_daily_ip = build_bullpen_snapshots(gamelogs, pitcher_logs)
+        out = out.merge(_asof_bullpen(out, bp_snaps, "home_id", "home"), on="game_id", how="left")
+        out = out.merge(_asof_bullpen(out, bp_snaps, "away_id", "away"), on="game_id", how="left")
+        out["bp_fip_diff"] = (out["home_bp_fip"] - out["away_bp_fip"]).fillna(0)
+        out["bp_fatigue_diff"] = [
+            bullpen_fatigue(h, d, bp_daily_ip) - bullpen_fatigue(a, d, bp_daily_ip)
+            for h, a, d in zip(out["home_id"], out["away_id"], out["date"])
+        ]
+    else:
+        for col in ("sp_fip_diff", "sp_kbb_diff", "sp_fip5_diff", "bp_fip_diff", "bp_fatigue_diff"):
+            out[col] = 0.0
     return out
 
 
@@ -163,6 +311,15 @@ FEATURE_COLS = [
     "whip_diff",
     "pyth_diff",
     "off_bbk_diff",
+    # starting pitchers (shrunk season-to-date + last-5-starts form)
+    "sp_fip_diff",
+    "sp_kbb_diff",
+    "sp_fip5_diff",
+    # bullpen quality + 3-day workload fatigue
+    "bp_fip_diff",
+    "bp_fatigue_diff",
+    # per-park home advantage (expanding, shrunk to league 0.54)
+    "park_hfa",
 ]
 
 

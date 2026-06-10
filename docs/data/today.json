@@ -10,6 +10,8 @@
    "p_home_elo": 0.539,
    "p_home_lr": 0.535,
    "p_home_xgb": 0.5313,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -21,6 +23,8 @@
    "p_home_elo": 0.456,
    "p_home_lr": 0.4552,
    "p_home_xgb": 0.4529,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -32,6 +36,8 @@
    "p_home_elo": 0.5324,
    "p_home_lr": 0.552,
    "p_home_xgb": 0.5108,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -43,6 +49,8 @@
    "p_home_elo": 0.5733,
    "p_home_lr": 0.6127,
    "p_home_xgb": 0.6266,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -54,6 +62,8 @@
    "p_home_elo": 0.4627,
    "p_home_lr": 0.4442,
    "p_home_xgb": 0.4465,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -65,6 +75,8 @@
    "p_home_elo": 0.4067,
    "p_home_lr": 0.407,
    "p_home_xgb": 0.4571,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -76,6 +88,8 @@
    "p_home_elo": 0.5672,
    "p_home_lr": 0.5874,
    "p_home_xgb": 0.5868,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -87,6 +101,8 @@
    "p_home_elo": 0.5061,
    "p_home_lr": 0.5283,
    "p_home_xgb": 0.5075,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -98,6 +114,8 @@
    "p_home_elo": 0.5062,
    "p_home_lr": 0.5158,
    "p_home_xgb": 0.5122,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -109,6 +127,8 @@
    "p_home_elo": 0.5226,
    "p_home_lr": 0.5465,
    "p_home_xgb": 0.5177,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -120,6 +140,8 @@
    "p_home_elo": 0.4959,
    "p_home_lr": 0.4945,
    "p_home_xgb": 0.5019,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -131,6 +153,8 @@
    "p_home_elo": 0.4194,
    "p_home_lr": 0.434,
    "p_home_xgb": 0.4464,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -142,6 +166,8 @@
    "p_home_elo": 0.3675,
    "p_home_lr": 0.4016,
    "p_home_xgb": 0.4762,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -153,6 +179,8 @@
    "p_home_elo": 0.3949,
    "p_home_lr": 0.3942,
    "p_home_xgb": 0.4008,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   },
   {
@@ -164,6 +192,8 @@
    "p_home_elo": 0.4818,
    "p_home_lr": 0.5068,
    "p_home_xgb": 0.5028,
+   "p_home_ens": null,
+   "p_home_skl": null,
    "status": "pending"
   }
  ],
@@ -176,8 +206,10 @@
    "home_pitcher": "Christian Scott",
    "away_pitcher": "Hunter Dobbins",
    "p_home_elo": 0.5226,
-   "p_home_lr": 0.5465,
-   "p_home_xgb": 0.5136,
+   "p_home_lr": 0.5445,
+   "p_home_xgb": 0.531,
+   "p_home_ens": 0.5272,
+   "p_home_skl": 0.5378,
    "status": "pending"
   },
   {
@@ -187,8 +219,10 @@
    "home_pitcher": "Keider Montero",
    "away_pitcher": "Zebby Matthews",
    "p_home_elo": 0.5672,
-   "p_home_lr": 0.5874,
-   "p_home_xgb": 0.587,
+   "p_home_lr": 0.5747,
+   "p_home_xgb": 0.5774,
+   "p_home_ens": 0.5587,
+   "p_home_skl": 0.5271,
    "status": "pending"
   },
   {
@@ -198,8 +232,10 @@
    "home_pitcher": "Tyler Phillips",
    "away_pitcher": "Merrill Kelly",
    "p_home_elo": 0.5061,
-   "p_home_lr": 0.5283,
-   "p_home_xgb": 0.5059,
+   "p_home_lr": 0.5591,
+   "p_home_xgb": 0.5445,
+   "p_home_ens": 0.5356,
+   "p_home_skl": 0.5387,
    "status": "pending"
   },
   {
@@ -209,8 +245,10 @@
    "home_pitcher": "Michael Wacha",
    "away_pitcher": "Kumar Rocker",
    "p_home_elo": 0.4959,
-   "p_home_lr": 0.4945,
-   "p_home_xgb": 0.5013,
+   "p_home_lr": 0.5132,
+   "p_home_xgb": 0.5274,
+   "p_home_ens": 0.4981,
+   "p_home_skl": 0.4738,
    "status": "pending"
   },
   {
@@ -220,8 +258,10 @@
    "home_pitcher": "Ryan Feltner",
    "away_pitcher": "Edward Cabrera",
    "p_home_elo": 0.3675,
-   "p_home_lr": 0.4016,
-   "p_home_xgb": 0.4603,
+   "p_home_lr": 0.4098,
+   "p_home_xgb": 0.4774,
+   "p_home_ens": 0.3955,
+   "p_home_skl": 0.3867,
    "status": "pending"
   },
   {
@@ -231,8 +271,10 @@
    "home_pitcher": "Mitch Keller",
    "away_pitcher": "Justin Wrobleski",
    "p_home_elo": 0.4067,
-   "p_home_lr": 0.407,
-   "p_home_xgb": 0.4648,
+   "p_home_lr": 0.4122,
+   "p_home_xgb": 0.4551,
+   "p_home_ens": 0.4045,
+   "p_home_skl": 0.3323,
    "status": "pending"
   },
   {
@@ -242,8 +284,10 @@
    "home_pitcher": "Kyle Bradish",
    "away_pitcher": "Bryan Woo",
    "p_home_elo": 0.4627,
-   "p_home_lr": 0.4442,
-   "p_home_xgb": 0.4463,
+   "p_home_lr": 0.4254,
+   "p_home_xgb": 0.4206,
+   "p_home_ens": 0.4245,
+   "p_home_skl": 0.3436,
    "status": "pending"
   },
   {
@@ -253,8 +297,10 @@
    "home_pitcher": "TBD",
    "away_pitcher": "Mart\u00edn P\u00e9rez",
    "p_home_elo": 0.4194,
-   "p_home_lr": 0.434,
-   "p_home_xgb": 0.4492,
+   "p_home_lr": 0.45,
+   "p_home_xgb": 0.4644,
+   "p_home_ens": 0.4357,
+   "p_home_skl": 0.3884,
    "status": "pending"
   }
  ]

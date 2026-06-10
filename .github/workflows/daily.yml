@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name "JarvisLee511"
           git config user.email "lee.chew@northeastern.edu"
-          git add data/predictions_log.csv data/gamelogs.csv docs/data outputs/*.csv outputs/metrics.json
+          git add data docs/data outputs/*.csv outputs/metrics.json
           if ! git diff --cached --quiet; then
             git commit -m "Daily update $(date -u +%F)"
             git pull --rebase --autostash

@@ -28,12 +28,15 @@ Every day at 7:30 AM ET, `.github/workflows/daily.yml` runs `daily_update.py`:
    forecast updates as the real season unfolds.
 2. **Elo baseline** — a FiveThirtyEight-style Elo system (K=4, margin-of-victory
    multiplier, 24-point home advantage, 1/3 regression to the mean each offseason).
-3. **ML models** — logistic regression and XGBoost trained on pre-game features only:
-   Elo difference, last-30-game form (win% and run differential), season-to-date win%,
-   rest days, and **season-to-date advanced stat differentials** (OPS, ERA, FIP, WHIP,
-   Pythagorean expected win%, BB−K rate) accumulated game-by-game from per-team game
-   logs so every value is knowable at first pitch. Time-based split: train 2015–2023,
-   validate 2024, test 2025–2026.
+3. **ML models** — five models compared on pre-game features only:
+   Elo difference, last-30-game form, season-to-date win%, rest days,
+   **advanced stat differentials** (OPS, ERA, FIP, WHIP, Pythagorean win%, BB−K rate),
+   **probable starting pitchers** (shrunk season-to-date FIP / K−BB% / last-5-starts
+   form, from 12 seasons of per-pitcher game logs), **bullpen quality + 3-day workload
+   fatigue**, and per-park home advantage. Models: Elo baseline, logistic regression,
+   XGBoost, an **isotonic-calibrated Elo+LR ensemble**, and a **Poisson–Skellam**
+   run-distribution model. Every feature is knowable at first pitch (as-of joins,
+   no leakage). Time-based split: train 2015–2023, validate 2024, test 2025–2026.
 4. **Season simulation** — 10,000 Monte Carlo simulations of the remaining 2026 schedule
    and the full 12-team postseason bracket (Wild Card Bo3 → Division Series Bo5 →
    LCS Bo7 → World Series Bo7) produce each team's probability of making the playoffs,

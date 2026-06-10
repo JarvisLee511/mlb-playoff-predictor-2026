@@ -1,6 +1,12 @@
 const REPO_URL = "https://github.com/JarvisLee511/mlb-playoff-predictor-2026";
 const AL = "#2a9d8f", NL = "#e76f51";
-const MODEL_LABELS = { elo: "Elo baseline", lr: "Logistic regression", xgb: "XGBoost" };
+const MODEL_LABELS = {
+  elo: "Elo baseline",
+  lr: "Logistic regression",
+  xgb: "XGBoost",
+  ens: "Ensemble (calibrated)",
+  skl: "Poisson-Skellam",
+};
 const PLOT_LAYOUT = {
   paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)",
   font: { color: "#8b98a5", size: 12 },
@@ -24,7 +30,11 @@ const json = (f) => fetch("data/" + f).then((r) => r.json());
 
 // ---- today + tomorrow ----
 const gameCard = (g) => {
-  const p = g.p_home_lr;
+  const p = g.p_home_ens != null ? g.p_home_ens : g.p_home_lr;
+  const probs = [
+    ["Ens", g.p_home_ens], ["Elo", g.p_home_elo], ["LogReg", g.p_home_lr],
+    ["XGB", g.p_home_xgb], ["Skellam", g.p_home_skl],
+  ].filter(([, v]) => v != null).map(([n, v]) => `${n} ${pct(v, 0)}`).join(" · ");
   return `<div class="game-card">
     <div class="time">${g.game_time_et} ET</div>
     <div class="matchup">${g.away_name} @ ${g.home_name}</div>
@@ -33,7 +43,7 @@ const gameCard = (g) => {
       <div class="home" style="width:${(p * 100).toFixed(1)}%">${pct(p, 0)}</div>
       <div class="away" style="width:${((1 - p) * 100).toFixed(1)}%">${pct(1 - p, 0)}</div>
     </div>
-    <div class="model-probs">home win — Elo ${pct(g.p_home_elo, 0)} · LogReg ${pct(g.p_home_lr, 0)} · XGB ${pct(g.p_home_xgb, 0)}</div>
+    <div class="model-probs">home win — ${probs}</div>
   </div>`;
 };
 
@@ -97,12 +107,13 @@ json("accuracy.json").then((d) => {
     return;
   }
   cards.innerHTML = Object.entries(MODEL_LABELS)
+    .filter(([k]) => d.summary[k])
     .map(([k, label]) => {
       const s = d.summary[k];
       return `<div class="stat-card">
         <div class="name">${label}</div>
         <div class="big">${s.log_loss}</div>
-        <div class="row">log loss · ${d.n_scored} games</div>
+        <div class="row">log loss · ${s.n} games</div>
         <div class="row">accuracy ${pct(s.accuracy)} · Brier ${s.brier}</div>
       </div>`;
     })
@@ -110,7 +121,7 @@ json("accuracy.json").then((d) => {
 
   Plotly.newPlot(
     "tracker-chart",
-    Object.keys(MODEL_LABELS).map((k) => ({
+    Object.keys(MODEL_LABELS).filter((k) => d.daily[k]).map((k) => ({
       type: "scatter", mode: "lines+markers",
       x: d.daily.dates, y: d.daily[k], name: MODEL_LABELS[k],
     })),
@@ -120,17 +131,20 @@ json("accuracy.json").then((d) => {
     { displayModeBar: false, responsive: true }
   );
 
+  const modelKeys = Object.keys(MODEL_LABELS).filter((k) => d.summary[k]);
   const rows = [...d.recent].reverse().map((g) => {
-    const cells = ["elo", "lr", "xgb"].map((k) => {
+    const cells = modelKeys.map((k) => {
       const p = g["p_home_" + k];
+      if (p == null) return '<td class="num">–</td>';
       const hit = (p > 0.5 ? 1 : 0) === g.home_win;
       return `<td class="num ${hit ? "hit" : "miss"}">${pct(p, 0)} ${hit ? "✓" : "✗"}</td>`;
     }).join("");
     return `<tr><td>${g.date}</td><td>${g.away_name} ${g.away_score} @ ${g.home_name} ${g.home_score}</td>${cells}</tr>`;
   }).join("");
   document.getElementById("recent-table").innerHTML =
-    "<thead><tr><th>Date</th><th>Result</th><th class='num'>Elo (home%)</th><th class='num'>LogReg</th><th class='num'>XGB</th></tr></thead><tbody>" +
-    rows + "</tbody>";
+    "<thead><tr><th>Date</th><th>Result</th>" +
+    modelKeys.map((k) => `<th class='num'>${MODEL_LABELS[k]} (home%)</th>`).join("") +
+    "</tr></thead><tbody>" + rows + "</tbody>";
 });
 
 // ---- roster moves ----

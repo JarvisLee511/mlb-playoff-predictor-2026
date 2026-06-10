@@ -61,11 +61,16 @@
             always made <em>before</em> games are played, so the Model Tracker is a true
             out-of-sample track record.</li>
         <li>Rebuilds each team's season-to-date profile from per-game logs — win/loss form,
-            run differential, and advanced stats (OPS, ERA, FIP, WHIP, Pythagorean expected
-            win%) — then retrains three win-probability models on the expanded data:
-            a FiveThirtyEight-style <strong>Elo</strong> baseline,
-            <strong>logistic regression</strong>, and <strong>XGBoost</strong>.
-            All features are computed strictly as-of first pitch (no leakage).</li>
+            run differential, advanced stats (OPS, ERA, FIP, WHIP, Pythagorean expected win%),
+            <strong>probable starting pitchers</strong> (shrunk season-to-date FIP, K−BB%,
+            last-5-starts form), <strong>bullpen quality and 3-day workload fatigue</strong>,
+            and per-park home advantage. All features are computed strictly as-of first pitch
+            (no leakage).</li>
+        <li>Retrains five win-probability models daily: a FiveThirtyEight-style
+            <strong>Elo</strong> baseline, <strong>logistic regression</strong>,
+            <strong>XGBoost</strong>, an isotonic-<strong>calibrated ensemble</strong>
+            (headline model), and a <strong>Poisson–Skellam</strong> run-distribution model
+            that predicts expected runs per side.</li>
         <li>Runs 10,000 Monte Carlo simulations of the remaining schedule and the full 12-team
             postseason bracket to produce playoff, pennant, and World Series odds.</li>
         <li>Fetches injury-list moves and call-ups, and publishes everything to this page.</li>

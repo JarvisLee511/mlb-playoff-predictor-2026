@@ -11,7 +11,13 @@ from src.transactions import fetch_recent_transactions
 
 SITE_DATA = ROOT / "docs" / "data"
 
-MODELS = {"elo": "p_home_elo", "lr": "p_home_lr", "xgb": "p_home_xgb"}
+MODELS = {
+    "elo": "p_home_elo",
+    "lr": "p_home_lr",
+    "xgb": "p_home_xgb",
+    "ens": "p_home_ens",
+    "skl": "p_home_skl",
+}
 
 
 def _write(name: str, obj) -> None:
@@ -20,7 +26,14 @@ def _write(name: str, obj) -> None:
 
 
 GAME_COLS = ["game_time_et", "home_name", "away_name", "home_pitcher",
-             "away_pitcher", "p_home_elo", "p_home_lr", "p_home_xgb", "status"]
+             "away_pitcher", "p_home_elo", "p_home_lr", "p_home_xgb",
+             "p_home_ens", "p_home_skl", "status"]
+
+
+def _records(df: pd.DataFrame) -> list[dict]:
+    cols = [c for c in GAME_COLS if c in df.columns]
+    view = df[cols].astype(object).where(pd.notna(df[cols]), None)
+    return view.to_dict(orient="records")
 
 
 def export_today(log: pd.DataFrame) -> None:
@@ -36,9 +49,9 @@ def export_today(log: pd.DataFrame) -> None:
         "today.json",
         {
             "date": today,
-            "games": games[GAME_COLS].to_dict(orient="records"),
+            "games": _records(games),
             "tomorrow_date": tomorrow_rows[0]["date"] if tomorrow_rows else None,
-            "tomorrow": tomorrow[GAME_COLS].to_dict(orient="records") if len(tomorrow) else [],
+            "tomorrow": _records(tomorrow) if len(tomorrow) else [],
         },
     )
 
@@ -67,30 +80,40 @@ def export_accuracy(log: pd.DataFrame) -> None:
 
     if len(finals):
         finals["home_win"] = finals["home_win"].astype(int)
-        y = finals["home_win"].to_numpy()
+
+        # per-model: older log rows may predate a model's introduction (NaN)
+        daily_dates: list[str] = sorted(finals["date"].unique())
+        out["daily"]["dates"] = daily_dates
         for key, col in MODELS.items():
-            p = finals[col].to_numpy(dtype=float)
+            if col not in finals.columns:
+                continue
+            sub = finals[finals[col].notna()]
+            if not len(sub):
+                continue
+            y = sub["home_win"].to_numpy()
+            p = sub[col].to_numpy(dtype=float)
             ll = _log_loss_series(p, y)
             out["summary"][key] = {
                 "log_loss": round(float(ll.mean()), 4),
                 "brier": round(float(((p - y) ** 2).mean()), 4),
                 "accuracy": round(float(((p > 0.5).astype(int) == y).mean()), 4),
+                "n": int(len(sub)),
             }
-            finals[f"ll_{key}"] = ll
-
-        daily = finals.sort_values("date").groupby("date")
-        dates = list(daily.groups)
-        out["daily"]["dates"] = dates
-        for key in MODELS:
-            per_day = daily[f"ll_{key}"].agg(["sum", "count"])
+            per_day = (
+                pd.DataFrame({"date": sub["date"], "ll": ll})
+                .groupby("date")["ll"].agg(["sum", "count"])
+                .reindex(daily_dates)
+            )
             cum = per_day["sum"].cumsum() / per_day["count"].cumsum()
-            out["daily"][key] = [round(v, 4) for v in cum]
+            out["daily"][key] = [None if pd.isna(v) else round(v, 4) for v in cum]
 
         recent = finals.sort_values(["date", "game_time_et"]).tail(30)
-        out["recent"] = recent[
+        recent = recent[
             ["date", "home_name", "away_name", "home_score", "away_score",
-             "home_win", "p_home_elo", "p_home_lr", "p_home_xgb"]
-        ].to_dict(orient="records")
+             "home_win"] + [c for c in MODELS.values() if c in recent.columns]
+        ]
+        recent = recent.astype(object).where(pd.notna(recent), None)
+        out["recent"] = recent.to_dict(orient="records")
 
     _write("accuracy.json", out)
 
