@@ -86,9 +86,19 @@ def _matchup_features(home_id: int, away_id: int, snap: pd.DataFrame,
     row["sp_fip_diff"] = sp(home_sp_id, "sp_fip", 4.20) - sp(away_sp_id, "sp_fip", 4.20)
     row["sp_kbb_diff"] = sp(home_sp_id, "sp_kbb", 0.14) - sp(away_sp_id, "sp_kbb", 0.14)
     row["sp_fip5_diff"] = sp(home_sp_id, "sp_fip5", 4.20) - sp(away_sp_id, "sp_fip5", 4.20)
+
+    def sp_rest(pid):
+        if pid is not None and sp_stats is not None and pid in sp_stats.index:
+            last = pd.Timestamp(sp_stats.loc[pid, "last_app"])
+            return min(max((pd.Timestamp(date) - last).days, 2), 15)
+        return 5
+
+    row["sp_rest_diff"] = sp_rest(home_sp_id) - sp_rest(away_sp_id)
     row["bp_fip_diff"] = h["bp_fip"] - a["bp_fip"]
     row["bp_fatigue_diff"] = h["bp_ip3"] - a["bp_ip3"]
     row["park_hfa"] = h["park_hfa"]
+    row["winpct10_diff"] = h["winpct_10"] - a["winpct_10"]
+    row["split_winpct_diff"] = h["home_winpct_s"] - a["road_winpct_s"]
     return pd.DataFrame([row])[FEATURE_COLS]
 
 

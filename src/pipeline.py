@@ -65,6 +65,32 @@ def build_ratings_and_features() -> None:
     )
     snapshot = snapshot.merge(cur_park, on="team_id", how="left")
     snapshot["park_hfa"] = snapshot["park_hfa"].fillna(PARK_HFA_PRIOR)
+
+    # current-season home/road splits and last-10 form
+    cur = games[games["season"] == CURRENT_SEASON].sort_values(["date", "game_id"])
+    splits: dict[int, list] = {}   # team -> [home_w, home_n, road_w, road_n]
+    recent: dict[int, list] = {}
+    for r in cur.itertuples():
+        sh = splits.setdefault(r.home_id, [0, 0, 0, 0])
+        sh[0] += r.home_win
+        sh[1] += 1
+        sa = splits.setdefault(r.away_id, [0, 0, 0, 0])
+        sa[2] += 1 - r.home_win
+        sa[3] += 1
+        recent.setdefault(r.home_id, []).append(r.home_win)
+        recent.setdefault(r.away_id, []).append(1 - r.home_win)
+    z = [0, 0, 0, 0]
+    snapshot["home_winpct_s"] = [
+        (splits.get(t, z)[0] + 5.4) / (splits.get(t, z)[1] + 10) for t in snapshot["team_id"]
+    ]
+    snapshot["road_winpct_s"] = [
+        (splits.get(t, z)[2] + 4.6) / (splits.get(t, z)[3] + 10) for t in snapshot["team_id"]
+    ]
+    snapshot["winpct_10"] = [
+        sum(recent.get(t, [])[-10:]) / len(recent.get(t, [])[-10:])
+        if len(recent.get(t, [])) >= 5 else 0.5
+        for t in snapshot["team_id"]
+    ]
     snapshot.to_csv(DATA_PROCESSED / "current_team_stats.csv", index=False)
 
     sp_snaps = build_pitcher_snapshots(pitcher_logs)
@@ -72,7 +98,7 @@ def build_ratings_and_features() -> None:
         sp_snaps[sp_snaps["season"] == CURRENT_SEASON]
         .sort_values("date").groupby("pitcher_id").tail(1)
     )
-    cur_sp[["pitcher_id", "sp_fip", "sp_kbb", "sp_fip5"]].to_csv(
+    cur_sp[["pitcher_id", "sp_fip", "sp_kbb", "sp_fip5", "last_app"]].to_csv(
         DATA_PROCESSED / "current_pitcher_stats.csv", index=False
     )
 

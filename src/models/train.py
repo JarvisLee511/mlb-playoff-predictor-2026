@@ -83,23 +83,26 @@ def main() -> None:
     logreg = make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000))
     logreg.fit(X_tr, y_tr)
 
-    # light tuning on the validation season
+    # tuned on the validation season with early stopping
     best_xgb, best_ll = None, np.inf
     for depth in (2, 3, 4):
-        for lr in (0.02, 0.05):
-            m = XGBClassifier(
-                n_estimators=400,
-                max_depth=depth,
-                learning_rate=lr,
-                subsample=0.8,
-                colsample_bytree=0.8,
-                eval_metric="logloss",
-                random_state=42,
-            )
-            m.fit(X_tr, y_tr)
-            ll = log_loss(y_va, m.predict_proba(X_va)[:, 1])
-            if ll < best_ll:
-                best_ll, best_xgb = ll, m
+        for lr in (0.01, 0.03, 0.05):
+            for mcw in (1, 10, 50):
+                m = XGBClassifier(
+                    n_estimators=3000,
+                    max_depth=depth,
+                    learning_rate=lr,
+                    min_child_weight=mcw,
+                    subsample=0.8,
+                    colsample_bytree=0.8,
+                    eval_metric="logloss",
+                    early_stopping_rounds=100,
+                    random_state=42,
+                )
+                m.fit(X_tr, y_tr, eval_set=[(X_va, y_va)], verbose=False)
+                ll = log_loss(y_va, m.predict_proba(X_va)[:, 1])
+                if ll < best_ll:
+                    best_ll, best_xgb = ll, m
 
     # ensemble: logistic stack of Elo + LR probabilities, fit on the validation season
     stack = LogisticRegression(max_iter=1000)

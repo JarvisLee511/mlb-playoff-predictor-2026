@@ -15,11 +15,13 @@ for _d in (DATA_RAW, DATA_PROCESSED, OUTPUTS):
 FIRST_SEASON = 2015
 CURRENT_SEASON = 2026
 
-# Elo parameters (FiveThirtyEight-style, tuned for MLB's low K)
+# Elo parameters — grid-searched on 2023-24 validation log loss (0.68032 vs
+# 0.68084 with the FiveThirtyEight-style defaults K=4 / 24 / 2/3). The lower
+# home advantage reflects MLB's shrinking home edge in recent seasons.
 ELO_START = 1500.0
-ELO_K = 4.0
-ELO_HOME_ADV = 24.0          # home advantage in Elo points
-ELO_SEASON_CARRYOVER = 2 / 3  # regress 1/3 of the way back to 1500 each offseason
+ELO_K = 3.0
+ELO_HOME_ADV = 16.0          # home advantage in Elo points
+ELO_SEASON_CARRYOVER = 0.55  # share of rating kept across the offseason
 
 # Simulation
 N_SIMS = 10_000

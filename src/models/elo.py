@@ -21,7 +21,13 @@ def elo_win_prob(home_elo: float, away_elo: float, home_adv: float = ELO_HOME_AD
     return 1.0 / (1.0 + 10.0 ** (-diff / 400.0))
 
 
-def run_elo(games: pd.DataFrame) -> tuple[pd.DataFrame, dict[int, float]]:
+def run_elo(
+    games: pd.DataFrame,
+    k: float = ELO_K,
+    home_adv: float = ELO_HOME_ADV,
+    carryover: float = ELO_SEASON_CARRYOVER,
+    use_mov: bool = True,
+) -> tuple[pd.DataFrame, dict[int, float]]:
     """Replay games chronologically, attaching pre-game Elo columns.
 
     Returns the augmented games frame and the final rating per team_id.
@@ -37,21 +43,18 @@ def run_elo(games: pd.DataFrame) -> tuple[pd.DataFrame, dict[int, float]]:
                 ratings[team] = ELO_START
             elif last_season.get(team) != g.season:
                 # offseason regression toward the mean
-                ratings[team] = (
-                    ELO_START * (1 - ELO_SEASON_CARRYOVER)
-                    + ratings[team] * ELO_SEASON_CARRYOVER
-                )
+                ratings[team] = ELO_START * (1 - carryover) + ratings[team] * carryover
             last_season[team] = g.season
 
         h, a = ratings[g.home_id], ratings[g.away_id]
-        p_home = elo_win_prob(h, a)
+        p_home = elo_win_prob(h, a, home_adv)
         home_elos.append(h)
         away_elos.append(a)
         probs.append(p_home)
 
         margin = abs(g.home_score - g.away_score)
-        mov_mult = math.log(margin + 1)
-        shift = ELO_K * mov_mult * (g.home_win - p_home)
+        mov_mult = math.log(margin + 1) if use_mov else 1.0
+        shift = k * mov_mult * (g.home_win - p_home)
         ratings[g.home_id] = h + shift
         ratings[g.away_id] = a - shift
 

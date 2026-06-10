@@ -111,6 +111,7 @@ def build_pitcher_snapshots(pitcher_logs: pd.DataFrame) -> pd.DataFrame:
             "pitcher_id": p["pitcher_id"],
             "season": p["season"],
             "date": pd.to_datetime(p["date"]),
+            "last_app": pd.to_datetime(p["date"]),
             "sp_fip": _shrunk_fip(cum_num, cum_ip),
             "sp_kbb": (cum_so - cum_bb + KBB_PRIOR_RATE * 120) / (cum_bf + 120),
         }
@@ -182,7 +183,8 @@ def _asof_starter(games: pd.DataFrame, snaps: pd.DataFrame, id_col: str, prefix:
         left_by=[id_col, "season"], right_by=["pitcher_id", "season"],
         allow_exact_matches=False,
     )
-    out = merged[["game_id"] + SP_STATS].rename(columns={c: f"{prefix}_{c}" for c in SP_STATS})
+    cols = SP_STATS + ["last_app"]
+    out = merged[["game_id"] + cols].rename(columns={c: f"{prefix}_{c}" for c in cols})
     return out
 
 
@@ -209,6 +211,8 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
     last_played: dict[int, pd.Timestamp] = {}
     park_w: dict[int, float] = {}       # home wins at this team's park (all seasons)
     park_n: dict[int, int] = {}
+    home_rec: dict[tuple, tuple] = {}   # (team, season) -> (wins at home, home games)
+    road_rec: dict[tuple, tuple] = {}   # (team, season) -> (wins on road, road games)
 
     feat_rows = []
     for g in games.itertuples():
@@ -224,6 +228,10 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
             else:
                 row[f"{side}_winpct_30"] = 0.5
                 row[f"{side}_rundiff_30"] = 0.0
+            last10 = list(hist)[-10:]
+            row[f"{side}_winpct_10"] = (
+                sum(w for w, _ in last10) / len(last10) if len(last10) >= 5 else 0.5
+            )
 
             wins, played = season_record.get((team, g.season), [0, 0])
             row[f"{side}_season_winpct"] = wins / played if played else 0.5
@@ -231,6 +239,11 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
             rest = (g.date - last_played[team]).days if team in last_played else 3
             row[f"{side}_rest_days"] = min(max(rest, 0), 10)
             row[f"{side}_enough_history"] = int(len(hist) >= MIN_GAMES)
+
+        # home team's record at home vs away team's record on the road (shrunk)
+        hw, hn = home_rec.get((g.home_id, g.season), (0, 0))
+        aw, an = road_rec.get((g.away_id, g.season), (0, 0))
+        row["split_winpct_diff"] = (hw + 0.54 * 10) / (hn + 10) - (aw + 0.46 * 10) / (an + 10)
 
         feat_rows.append(row)
 
@@ -245,6 +258,10 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
             last_played[team] = g.date
         park_w[g.home_id] = park_w.get(g.home_id, 0) + g.home_win
         park_n[g.home_id] = park_n.get(g.home_id, 0) + 1
+        hw, hn = home_rec.get((g.home_id, g.season), (0, 0))
+        home_rec[(g.home_id, g.season)] = (hw + g.home_win, hn + 1)
+        aw, an = road_rec.get((g.away_id, g.season), (0, 0))
+        road_rec[(g.away_id, g.season)] = (aw + 1 - g.home_win, an + 1)
 
     feats = pd.DataFrame(feat_rows)
     out = pd.concat([games.reset_index(drop=True), feats], axis=1)
@@ -253,6 +270,7 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
     out["rundiff30_diff"] = out["home_rundiff_30"] - out["away_rundiff_30"]
     out["season_winpct_diff"] = out["home_season_winpct"] - out["away_season_winpct"]
     out["rest_diff"] = out["home_rest_days"] - out["away_rest_days"]
+    out["winpct10_diff"] = out["home_winpct_10"] - out["away_winpct_10"]
 
     if gamelogs is not None:
         adv = build_advanced_pregame(gamelogs)
@@ -279,6 +297,10 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
         out["sp_fip_diff"] = (out["home_sp_fip"] - out["away_sp_fip"]).fillna(0)
         out["sp_kbb_diff"] = (out["home_sp_kbb"] - out["away_sp_kbb"]).fillna(0)
         out["sp_fip5_diff"] = (out["home_sp_fip5"] - out["away_sp_fip5"]).fillna(0)
+        for side in ("home", "away"):
+            rest = (out["date"] - out[f"{side}_last_app"]).dt.days
+            out[f"{side}_sp_rest"] = rest.clip(2, 15).fillna(5)
+        out["sp_rest_diff"] = out["home_sp_rest"] - out["away_sp_rest"]
 
         bp_snaps, bp_daily_ip = build_bullpen_snapshots(gamelogs, pitcher_logs)
         out = out.merge(_asof_bullpen(out, bp_snaps, "home_id", "home"), on="game_id", how="left")
@@ -289,7 +311,8 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
             for h, a, d in zip(out["home_id"], out["away_id"], out["date"])
         ]
     else:
-        for col in ("sp_fip_diff", "sp_kbb_diff", "sp_fip5_diff", "bp_fip_diff", "bp_fatigue_diff"):
+        for col in ("sp_fip_diff", "sp_kbb_diff", "sp_fip5_diff", "sp_rest_diff",
+                    "bp_fip_diff", "bp_fatigue_diff"):
             out[col] = 0.0
     return out
 
@@ -321,6 +344,10 @@ FEATURE_COLS = [
     # per-park home advantage (expanding, shrunk to league 0.54)
     "park_hfa",
 ]
+
+# Computed and logged but excluded from the models: ablation on the 2024
+# validation season showed zero gain (their signal is already captured by Elo
+# and the rolling-form features) — sp_rest_diff, winpct10_diff, split_winpct_diff.
 
 
 def current_team_snapshot(
