@@ -95,6 +95,8 @@ def _predictions_for_date(date: dt.date, skip_ids: set | None = None) -> list[di
     for g in _fetch_day_schedule(date):
         if skip_ids and g["gamePk"] in skip_ids:
             continue
+        if g["status"]["abstractGameState"] != "Preview":
+            continue  # never log a prediction after first pitch
         home, away = g["teams"]["home"], g["teams"]["away"]
         hid, aid = home["team"]["id"], away["team"]["id"]
         if hid not in snap.index or aid not in snap.index:
