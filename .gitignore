@@ -5,3 +5,7 @@ data/raw/
 data/processed/
 outputs/*.joblib
 .ipynb_checkpoints/
+# Ablated-out lineup experiment data (~43MB, regenerate with `python -m src.data.lineups`)
+data/lineups.csv
+data/batter_logs.csv
+.playwright-mcp/

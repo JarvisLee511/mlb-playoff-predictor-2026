@@ -127,6 +127,67 @@ def build_pitcher_snapshots(pitcher_logs: pd.DataFrame) -> pd.DataFrame:
     return snaps
 
 
+# wOBA linear weights (FanGraphs, ~2023 scale — stable enough across seasons;
+# the home-minus-away diff cancels any league-level drift anyway).
+WOBA_W = {"bb": 0.69, "hbp": 0.72, "1b": 0.88, "2b": 1.24, "3b": 1.56, "hr": 2.00}
+LEAGUE_WOBA = 0.317        # shrinkage prior for thin/early-season samples
+WOBA_PRIOR_PA = 150.0
+
+
+def build_batter_snapshots(batter_logs: pd.DataFrame) -> pd.DataFrame:
+    """Post-game cumulative season-to-date shrunk wOBA per batter. As-of joins
+    use date strictly before the game, so values are pre-game knowable."""
+    b = batter_logs.copy()
+    for c in ["atBats", "hits", "doubles", "triples", "homeRuns", "baseOnBalls",
+              "hitByPitch", "sacFlies", "intentionalWalks"]:
+        b[c] = pd.to_numeric(b.get(c, 0), errors="coerce").fillna(0)
+    singles = b["hits"] - b["doubles"] - b["triples"] - b["homeRuns"]
+    ubb = (b["baseOnBalls"] - b["intentionalWalks"]).clip(lower=0)
+    b["woba_num"] = (WOBA_W["bb"] * ubb + WOBA_W["hbp"] * b["hitByPitch"]
+                     + WOBA_W["1b"] * singles + WOBA_W["2b"] * b["doubles"]
+                     + WOBA_W["3b"] * b["triples"] + WOBA_W["hr"] * b["homeRuns"])
+    b["woba_den"] = b["atBats"] + ubb + b["sacFlies"] + b["hitByPitch"]
+
+    b = b.sort_values(["player_id", "season", "date", "game_id"]).reset_index(drop=True)
+    grp = b.groupby(["player_id", "season"], sort=False)
+    cum_num = grp["woba_num"].cumsum()
+    cum_den = grp["woba_den"].cumsum()
+    woba = (cum_num + LEAGUE_WOBA * WOBA_PRIOR_PA) / (cum_den + WOBA_PRIOR_PA)
+    return pd.DataFrame({
+        "player_id": b["player_id"].astype(int),
+        "season": b["season"],
+        "date": pd.to_datetime(b["date"]),
+        "bwoba": woba,
+    })
+
+
+def build_lineup_features(games: pd.DataFrame, lineups: pd.DataFrame,
+                          batter_logs: pd.DataFrame) -> pd.DataFrame:
+    """Per-game home/away starting-lineup average wOBA (pre-game) and the
+    home-minus-away differential, keyed by game_id."""
+    snaps = build_batter_snapshots(batter_logs).sort_values("date")
+    lu = lineups.merge(games[["game_id", "date"]], on="game_id", how="inner").copy()
+    lu["date"] = pd.to_datetime(lu["date"])
+    lu["player_id"] = lu["player_id"].astype(int)
+    lu = lu.sort_values("date")
+
+    merged = pd.merge_asof(
+        lu, snaps, on="date",
+        left_by=["player_id", "season"], right_by=["player_id", "season"],
+        allow_exact_matches=False,
+    )
+    # rookies / first game of season have no prior snapshot -> league average
+    merged["bwoba"] = merged["bwoba"].fillna(LEAGUE_WOBA)
+    side_woba = merged.groupby(["game_id", "side"])["bwoba"].mean().unstack("side")
+    for col in ("home", "away"):
+        if col not in side_woba.columns:
+            side_woba[col] = np.nan
+    out = side_woba.reset_index()[["game_id", "home", "away"]]
+    out.columns = ["game_id", "home_lineup_woba", "away_lineup_woba"]
+    out["lineup_woba_diff"] = out["home_lineup_woba"] - out["away_lineup_woba"]
+    return out
+
+
 def build_bullpen_snapshots(gamelogs: pd.DataFrame, pitcher_logs: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     """Bullpen = team pitching minus the starter's line, per game. Returns
     post-game cumulative bullpen-FIP snapshots and a (team_id, date) -> bullpen
@@ -201,7 +262,9 @@ def _asof_bullpen(games: pd.DataFrame, snaps: pd.DataFrame, id_col: str, prefix:
 
 def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
                    probables: pd.DataFrame | None = None,
-                   pitcher_logs: pd.DataFrame | None = None) -> pd.DataFrame:
+                   pitcher_logs: pd.DataFrame | None = None,
+                   lineups: pd.DataFrame | None = None,
+                   batter_logs: pd.DataFrame | None = None) -> pd.DataFrame:
     """games must already carry home_elo_pre / away_elo_pre / elo_prob_home."""
     games = games.sort_values(["date", "game_id"]).reset_index(drop=True)
     games["date"] = pd.to_datetime(games["date"])
@@ -314,6 +377,14 @@ def build_features(games: pd.DataFrame, gamelogs: pd.DataFrame | None = None,
         for col in ("sp_fip_diff", "sp_kbb_diff", "sp_fip5_diff", "sp_rest_diff",
                     "bp_fip_diff", "bp_fatigue_diff"):
             out[col] = 0.0
+
+    if lineups is not None and batter_logs is not None and len(lineups):
+        lf = build_lineup_features(out[["game_id", "date"]], lineups, batter_logs)
+        out = out.merge(lf, on="game_id", how="left")
+        # games with no posted lineup (older seasons, missing data) -> neutral
+        out["lineup_woba_diff"] = out["lineup_woba_diff"].fillna(0.0)
+    else:
+        out["lineup_woba_diff"] = 0.0
     return out
 
 
@@ -348,6 +419,15 @@ FEATURE_COLS = [
 # Computed and logged but excluded from the models: ablation on the 2024
 # validation season showed zero gain (their signal is already captured by Elo
 # and the rolling-form features) — sp_rest_diff, winpct10_diff, split_winpct_diff.
+#
+# lineup_woba_diff (build_lineup_features, from data/lineups.csv +
+# data/batter_logs.csv) is also excluded. A controlled ablation on the 2025+2026
+# test set (see ablation_lineup.py) moved test log loss by +0.00004 (LR) — i.e.
+# nothing: starting-lineup average wOBA is collinear with team season OPS, which
+# the model already has. A deviation-from-normal variant (today's lineup vs the
+# team's season norm, to isolate a star resting) was likewise flat (-0.00002)
+# with a wrong-signed coefficient. Lineups are not refetched daily; regenerate
+# with `python -m src.data.lineups` to reproduce.
 
 
 def current_team_snapshot(

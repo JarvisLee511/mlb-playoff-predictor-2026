@@ -12,6 +12,9 @@ def refresh_data() -> None:
     fetch.main()
     gamelogs.update_current()
     pitchers.update_current()
+    # lineups are NOT refetched daily: the lineup feature was ablated out (no
+    # out-of-sample gain — see features.py). Regenerate with
+    # `python -m src.data.lineups` only to reproduce that experiment.
 
 
 def build_ratings_and_features() -> None:
@@ -40,9 +43,17 @@ def build_ratings_and_features() -> None:
     )
     from src.predictions import today_et
 
+    from src.data import lineups as ln
+
     logs = gl.load()
     probables, pitcher_logs = pt.load()
-    feats = build_features(games, gamelogs=logs, probables=probables, pitcher_logs=pitcher_logs)
+    try:
+        lineup_df, batter_logs = ln.load()
+    except FileNotFoundError:
+        lineup_df, batter_logs = None, None
+    feats = build_features(games, gamelogs=logs, probables=probables,
+                           pitcher_logs=pitcher_logs, lineups=lineup_df,
+                           batter_logs=batter_logs)
     feats.to_csv(DATA_PROCESSED / "features.csv", index=False)
 
     snapshot = current_team_snapshot(
