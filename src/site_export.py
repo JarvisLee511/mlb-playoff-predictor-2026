@@ -74,9 +74,55 @@ def _log_loss_series(p: np.ndarray, y: np.ndarray) -> np.ndarray:
     return -(y * np.log(p) + (1 - y) * np.log(1 - p))
 
 
+# Below this many scored games the realized accuracy is dominated by noise
+# (95% CI on a coin-flip at n=37 is ~±16 points), so the site flags it as
+# not-yet-meaningful rather than letting a small sample read as signal.
+MIN_RELIABLE_N = 200
+
+
+def _wilson_ci(hits: int, n: int, z: float = 1.96) -> list[float]:
+    """95% Wilson score interval for accuracy — honest about small samples."""
+    if n == 0:
+        return [0.0, 1.0]
+    phat = hits / n
+    denom = 1 + z * z / n
+    center = (phat + z * z / (2 * n)) / denom
+    half = z * np.sqrt(phat * (1 - phat) / n + z * z / (4 * n * n)) / denom
+    return [round(float(max(0.0, center - half)), 4),
+            round(float(min(1.0, center + half)), 4)]
+
+
+def _calibration_bins(p: np.ndarray, y: np.ndarray) -> list[dict]:
+    """Reliability curve: for each 0.1-wide predicted-prob bin, mean predicted
+    vs observed win rate. Empty bins are dropped so the front end just plots
+    whatever populated points exist."""
+    edges = np.arange(0.0, 1.0001, 0.1)
+    idx = np.clip(np.digitize(p, edges) - 1, 0, len(edges) - 2)
+    bins = []
+    for b in range(len(edges) - 1):
+        mask = idx == b
+        n = int(mask.sum())
+        if not n:
+            continue
+        bins.append({
+            "p_mean": round(float(p[mask].mean()), 4),
+            "win_rate": round(float(y[mask].mean()), 4),
+            "n": n,
+        })
+    return bins
+
+
 def export_accuracy(log: pd.DataFrame) -> None:
     finals = log[log["status"] == "final"].copy()
-    out = {"n_scored": int(len(finals)), "summary": {}, "daily": {}, "recent": []}
+    out = {
+        "n_scored": int(len(finals)),
+        "min_reliable_n": MIN_RELIABLE_N,
+        "reliable": bool(len(finals) >= MIN_RELIABLE_N),
+        "summary": {},
+        "calibration": {},
+        "daily": {},
+        "recent": [],
+    }
 
     if len(finals):
         finals["home_win"] = finals["home_win"].astype(int)
@@ -93,12 +139,20 @@ def export_accuracy(log: pd.DataFrame) -> None:
             y = sub["home_win"].to_numpy()
             p = sub[col].to_numpy(dtype=float)
             ll = _log_loss_series(p, y)
+            pred = (p > 0.5).astype(int)
+            hits = int((pred == y).sum())
             out["summary"][key] = {
                 "log_loss": round(float(ll.mean()), 4),
                 "brier": round(float(((p - y) ** 2).mean()), 4),
-                "accuracy": round(float(((p > 0.5).astype(int) == y).mean()), 4),
+                "accuracy": round(float(hits / len(sub)), 4),
+                "acc_ci": _wilson_ci(hits, len(sub)),
+                # what the model itself implies it should hit, given its own
+                # probabilities; realized ~= expected means well-calibrated,
+                # so a "low" 55% is the honest ceiling, not underperformance.
+                "expected_accuracy": round(float(np.maximum(p, 1 - p).mean()), 4),
                 "n": int(len(sub)),
             }
+            out["calibration"][key] = _calibration_bins(p, y)
             per_day = (
                 pd.DataFrame({"date": sub["date"], "ll": ll})
                 .groupby("date")["ll"].agg(["sum", "count"])

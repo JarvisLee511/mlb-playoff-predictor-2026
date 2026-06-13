@@ -101,20 +101,41 @@ json("odds.json").then((rows) => {
 // ---- tracker ----
 json("accuracy.json").then((d) => {
   const cards = document.getElementById("tracker-cards");
+  const banner = document.getElementById("tracker-banner");
   if (!d.n_scored) {
     cards.innerHTML = '<p class="empty">No scored predictions yet — check back after the first daily run.</p>';
     document.getElementById("tracker-chart").style.display = "none";
+    document.getElementById("calibration-chart").style.display = "none";
     return;
   }
+
+  // Sample-size honesty: below the reliability threshold, realized accuracy is
+  // mostly noise, so say so instead of letting a small number read as signal.
+  if (!d.reliable) {
+    const best = d.summary.lr || d.summary.ens || Object.values(d.summary)[0];
+    const halfWidth = best ? Math.round(((best.acc_ci[1] - best.acc_ci[0]) / 2) * 100) : null;
+    banner.style.display = "";
+    banner.innerHTML =
+      `⚠️ Only <strong>${d.n_scored}</strong> games scored so far — accuracy needs ~${d.min_reliable_n} ` +
+      `to be meaningful. The 95% margin on accuracy is still about ` +
+      `<strong>±${halfWidth} points</strong>, so treat the numbers below as provisional and watch ` +
+      `<strong>log loss vs the Elo baseline</strong> instead.`;
+  } else {
+    banner.style.display = "none";
+  }
+
   cards.innerHTML = Object.entries(MODEL_LABELS)
     .filter(([k]) => d.summary[k])
     .map(([k, label]) => {
       const s = d.summary[k];
+      const ci = s.acc_ci ? `${pct(s.acc_ci[0], 0)}–${pct(s.acc_ci[1], 0)}` : "–";
+      const exp = s.expected_accuracy != null ? pct(s.expected_accuracy) : "–";
       return `<div class="stat-card">
         <div class="name">${label}</div>
         <div class="big">${s.log_loss}</div>
         <div class="row">log loss · ${s.n} games</div>
-        <div class="row">accuracy ${pct(s.accuracy)} · Brier ${s.brier}</div>
+        <div class="row">accuracy ${pct(s.accuracy)} <span class="muted">(95% CI ${ci})</span></div>
+        <div class="row">model expects ${exp} · Brier ${s.brier}</div>
       </div>`;
     })
     .join("");
@@ -130,6 +151,36 @@ json("accuracy.json").then((d) => {
       legend: { orientation: "h", y: 1.12 } },
     { displayModeBar: false, responsive: true }
   );
+
+  // ---- calibration / reliability curve ----
+  const calChart = document.getElementById("calibration-chart");
+  const calKeys = Object.keys(MODEL_LABELS).filter((k) => (d.calibration?.[k] || []).length);
+  if (calKeys.length) {
+    calChart.style.display = "";
+    const traces = calKeys.map((k) => {
+      const bins = d.calibration[k];
+      return {
+        type: "scatter", mode: "lines+markers",
+        x: bins.map((b) => b.p_mean), y: bins.map((b) => b.win_rate),
+        name: MODEL_LABELS[k],
+        text: bins.map((b) => `n=${b.n}`), hovertemplate: "pred %{x:.0%} → won %{y:.0%} (%{text})<extra></extra>",
+      };
+    });
+    traces.push({
+      type: "scatter", mode: "lines", x: [0.2, 0.8], y: [0.2, 0.8],
+      name: "perfect", line: { dash: "dot", color: "#888" }, hoverinfo: "skip",
+    });
+    Plotly.newPlot(
+      "calibration-chart", traces,
+      { ...PLOT_LAYOUT, height: 360, margin: { l: 60, r: 20, t: 10, b: 50 },
+        xaxis: { title: "Predicted home-win probability", range: [0.15, 0.85], tickformat: ".0%" },
+        yaxis: { title: "Actual home-win rate", range: [0, 1], tickformat: ".0%" },
+        legend: { orientation: "h", y: 1.12 } },
+      { displayModeBar: false, responsive: true }
+    );
+  } else {
+    calChart.style.display = "none";
+  }
 
   const modelKeys = Object.keys(MODEL_LABELS).filter((k) => d.summary[k]);
   const rows = [...d.recent].reverse().map((g) => {

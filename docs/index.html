@@ -39,8 +39,11 @@
 
   <section id="tracker" class="panel">
     <h2>Live model tracker <span class="hint">(every prediction logged before first pitch, scored the next morning)</span></h2>
+    <div id="tracker-banner" class="banner" style="display:none"></div>
     <div id="tracker-cards" class="cards small"></div>
     <div id="tracker-chart" class="chart"></div>
+    <h3>Calibration <span class="hint">(do the probabilities mean what they say? points on the diagonal = perfectly calibrated)</span></h3>
+    <div id="calibration-chart" class="chart"></div>
     <h3>Recent scored predictions</h3>
     <div class="table-wrap"><table id="recent-table"></table></div>
   </section>
