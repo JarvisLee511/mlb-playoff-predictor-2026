@@ -1,62 +1,62 @@
 {
- "n_scored": 127,
+ "n_scored": 141,
  "min_reliable_n": 200,
  "reliable": false,
  "summary": {
   "elo": {
-   "log_loss": 0.6928,
-   "brier": 0.2498,
-   "accuracy": 0.5354,
+   "log_loss": 0.7012,
+   "brier": 0.2539,
+   "accuracy": 0.5106,
    "acc_ci": [
-    0.4489,
-    0.6199
+    0.4289,
+    0.5918
    ],
-   "expected_accuracy": 0.5525,
-   "n": 127
+   "expected_accuracy": 0.5527,
+   "n": 141
   },
   "lr": {
-   "log_loss": 0.6888,
-   "brier": 0.2479,
-   "accuracy": 0.5512,
+   "log_loss": 0.7011,
+   "brier": 0.2538,
+   "accuracy": 0.5177,
    "acc_ci": [
-    0.4644,
-    0.6349
+    0.4359,
+    0.5986
    ],
-   "expected_accuracy": 0.5671,
-   "n": 127
+   "expected_accuracy": 0.5684,
+   "n": 141
   },
   "xgb": {
-   "log_loss": 0.6882,
-   "brier": 0.2477,
-   "accuracy": 0.5433,
+   "log_loss": 0.6996,
+   "brier": 0.2532,
+   "accuracy": 0.5177,
    "acc_ci": [
-    0.4567,
-    0.6274
+    0.4359,
+    0.5986
    ],
-   "expected_accuracy": 0.5632,
-   "n": 127
+   "expected_accuracy": 0.5646,
+   "n": 141
   },
   "ens": {
-   "log_loss": 0.6847,
-   "brier": 0.2458,
-   "accuracy": 0.5625,
+   "log_loss": 0.697,
+   "brier": 0.2518,
+   "accuracy": 0.5317,
    "acc_ci": [
-    0.4701,
-    0.6508
+    0.445,
+    0.6166
    ],
-   "expected_accuracy": 0.5597,
-   "n": 112
+   "expected_accuracy": 0.5606,
+   "n": 126
   },
   "skl": {
-   "log_loss": 0.6944,
-   "brier": 0.2505,
-   "accuracy": 0.5625,
+   "log_loss": 0.7133,
+   "brier": 0.2591,
+   "accuracy": 0.5159,
    "acc_ci": [
-    0.4701,
-    0.6508
+    0.4294,
+    0.6014
    ],
-   "expected_accuracy": 0.5866,
-   "n": 112
+   "expected_accuracy": 0.5872,
+   "n": 126
   }
  },
  "calibration": {
@@ -67,46 +67,46 @@
     "n": 3
    },
    {
-    "p_mean": 0.4591,
-    "win_rate": 0.6053,
-    "n": 38
+    "p_mean": 0.4598,
+    "win_rate": 0.6098,
+    "n": 41
    },
    {
-    "p_mean": 0.5377,
-    "win_rate": 0.5942,
-    "n": 69
+    "p_mean": 0.5385,
+    "win_rate": 0.5641,
+    "n": 78
    },
    {
-    "p_mean": 0.6267,
-    "win_rate": 0.6471,
-    "n": 17
+    "p_mean": 0.628,
+    "win_rate": 0.5789,
+    "n": 19
    }
   ],
   "lr": [
    {
-    "p_mean": 0.3758,
+    "p_mean": 0.3726,
+    "win_rate": 0.7143,
+    "n": 7
+   },
+   {
+    "p_mean": 0.4559,
+    "win_rate": 0.5882,
+    "n": 34
+   },
+   {
+    "p_mean": 0.5477,
+    "win_rate": 0.5467,
+    "n": 75
+   },
+   {
+    "p_mean": 0.6383,
+    "win_rate": 0.6364,
+    "n": 22
+   },
+   {
+    "p_mean": 0.714,
     "win_rate": 0.6667,
-    "n": 6
-   },
-   {
-    "p_mean": 0.4549,
-    "win_rate": 0.5758,
-    "n": 33
-   },
-   {
-    "p_mean": 0.5472,
-    "win_rate": 0.5909,
-    "n": 66
-   },
-   {
-    "p_mean": 0.6369,
-    "win_rate": 0.65,
-    "n": 20
-   },
-   {
-    "p_mean": 0.7165,
-    "win_rate": 1.0,
-    "n": 2
+    "n": 3
    }
   ],
   "xgb": [
@@ -116,19 +116,19 @@
     "n": 3
    },
    {
-    "p_mean": 0.4594,
-    "win_rate": 0.6061,
-    "n": 33
+    "p_mean": 0.4581,
+    "win_rate": 0.6176,
+    "n": 34
    },
    {
-    "p_mean": 0.5455,
-    "win_rate": 0.5942,
-    "n": 69
+    "p_mean": 0.5454,
+    "win_rate": 0.5641,
+    "n": 78
    },
    {
-    "p_mean": 0.6343,
-    "win_rate": 0.5789,
-    "n": 19
+    "p_mean": 0.6372,
+    "win_rate": 0.5217,
+    "n": 23
    },
    {
     "p_mean": 0.702,
@@ -138,31 +138,31 @@
   ],
   "ens": [
    {
-    "p_mean": 0.3712,
-    "win_rate": 0.5,
-    "n": 4
+    "p_mean": 0.3689,
+    "win_rate": 0.6,
+    "n": 5
    },
    {
-    "p_mean": 0.4536,
-    "win_rate": 0.5484,
-    "n": 31
+    "p_mean": 0.4556,
+    "win_rate": 0.5455,
+    "n": 33
    },
    {
-    "p_mean": 0.5431,
-    "win_rate": 0.6032,
-    "n": 63
+    "p_mean": 0.5438,
+    "win_rate": 0.5694,
+    "n": 72
    },
    {
-    "p_mean": 0.6442,
-    "win_rate": 0.7143,
-    "n": 14
+    "p_mean": 0.648,
+    "win_rate": 0.625,
+    "n": 16
    }
   ],
   "skl": [
    {
-    "p_mean": 0.2592,
+    "p_mean": 0.2642,
     "win_rate": 1.0,
-    "n": 2
+    "n": 3
    },
    {
     "p_mean": 0.3614,
@@ -170,24 +170,24 @@
     "n": 15
    },
    {
-    "p_mean": 0.4559,
-    "win_rate": 0.5556,
-    "n": 27
+    "p_mean": 0.4568,
+    "win_rate": 0.5862,
+    "n": 29
    },
    {
-    "p_mean": 0.5469,
-    "win_rate": 0.6279,
-    "n": 43
+    "p_mean": 0.5449,
+    "win_rate": 0.56,
+    "n": 50
    },
    {
-    "p_mean": 0.6401,
-    "win_rate": 0.5714,
-    "n": 21
+    "p_mean": 0.6382,
+    "win_rate": 0.5652,
+    "n": 23
    },
    {
-    "p_mean": 0.7483,
-    "win_rate": 1.0,
-    "n": 4
+    "p_mean": 0.7532,
+    "win_rate": 0.6667,
+    "n": 6
    }
   ]
  },
@@ -202,7 +202,8 @@
    "2026-06-16",
    "2026-06-17",
    "2026-06-18",
-   "2026-06-19"
+   "2026-06-19",
+   "2026-06-20"
   ],
   "elo": [
    0.7508,
@@ -214,7 +215,8 @@
    0.6954,
    0.6928,
    0.6985,
-   0.6928
+   0.6928,
+   0.7012
   ],
   "lr": [
    0.7404,
@@ -226,7 +228,8 @@
    0.697,
    0.6933,
    0.6971,
-   0.6888
+   0.6888,
+   0.7011
   ],
   "xgb": [
    0.7214,
@@ -238,7 +241,8 @@
    0.6961,
    0.6931,
    0.697,
-   0.6882
+   0.6882,
+   0.6996
   ],
   "ens": [
    null,
@@ -250,7 +254,8 @@
    0.69,
    0.6861,
    0.6908,
-   0.6847
+   0.6847,
+   0.697
   ],
   "skl": [
    null,
@@ -262,192 +267,11 @@
    0.7034,
    0.6972,
    0.7017,
-   0.6944
+   0.6944,
+   0.7133
   ]
  },
  "recent": [
-  {
-   "date": "2026-06-17",
-   "home_name": "Arizona Diamondbacks",
-   "away_name": "Los Angeles Angels",
-   "home_score": 8.0,
-   "away_score": 1.0,
-   "home_win": 1,
-   "p_home_elo": 0.5705,
-   "p_home_lr": 0.5888,
-   "p_home_xgb": 0.5643,
-   "p_home_ens": 0.574,
-   "p_home_skl": 0.5686
-  },
-  {
-   "date": "2026-06-17",
-   "home_name": "Boston Red Sox",
-   "away_name": "Toronto Blue Jays",
-   "home_score": 0.0,
-   "away_score": 3.0,
-   "home_win": 0,
-   "p_home_elo": 0.519,
-   "p_home_lr": 0.5614,
-   "p_home_xgb": 0.5747,
-   "p_home_ens": 0.5419,
-   "p_home_skl": 0.5725
-  },
-  {
-   "date": "2026-06-17",
-   "home_name": "New York Yankees",
-   "away_name": "Chicago White Sox",
-   "home_score": 10.0,
-   "away_score": 5.0,
-   "home_win": 1,
-   "p_home_elo": 0.6335,
-   "p_home_lr": 0.6558,
-   "p_home_xgb": 0.6662,
-   "p_home_ens": 0.6398,
-   "p_home_skl": 0.6731
-  },
-  {
-   "date": "2026-06-17",
-   "home_name": "Atlanta Braves",
-   "away_name": "San Francisco Giants",
-   "home_score": 5.0,
-   "away_score": 7.0,
-   "home_win": 0,
-   "p_home_elo": 0.6176,
-   "p_home_lr": 0.5942,
-   "p_home_xgb": 0.5824,
-   "p_home_ens": 0.5879,
-   "p_home_skl": 0.6068
-  },
-  {
-   "date": "2026-06-17",
-   "home_name": "Milwaukee Brewers",
-   "away_name": "Cleveland Guardians",
-   "home_score": 9.0,
-   "away_score": 4.0,
-   "home_win": 1,
-   "p_home_elo": 0.5966,
-   "p_home_lr": 0.5397,
-   "p_home_xgb": 0.544,
-   "p_home_ens": 0.5409,
-   "p_home_skl": 0.5275
-  },
-  {
-   "date": "2026-06-17",
-   "home_name": "Chicago Cubs",
-   "away_name": "Colorado Rockies",
-   "home_score": 8.0,
-   "away_score": 6.0,
-   "home_win": 1,
-   "p_home_elo": 0.6541,
-   "p_home_lr": 0.6599,
-   "p_home_xgb": 0.6521,
-   "p_home_ens": 0.6473,
-   "p_home_skl": 0.6674
-  },
-  {
-   "date": "2026-06-17",
-   "home_name": "Athletics",
-   "away_name": "Pittsburgh Pirates",
-   "home_score": 4.0,
-   "away_score": 12.0,
-   "home_win": 0,
-   "p_home_elo": 0.5127,
-   "p_home_lr": 0.4706,
-   "p_home_xgb": 0.4731,
-   "p_home_ens": 0.4697,
-   "p_home_skl": 0.387
-  },
-  {
-   "date": "2026-06-17",
-   "home_name": "Seattle Mariners",
-   "away_name": "Baltimore Orioles",
-   "home_score": 3.0,
-   "away_score": 5.0,
-   "home_win": 0,
-   "p_home_elo": 0.5695,
-   "p_home_lr": 0.6123,
-   "p_home_xgb": 0.6134,
-   "p_home_ens": 0.5923,
-   "p_home_skl": 0.6226
-  },
-  {
-   "date": "2026-06-18",
-   "home_name": "Boston Red Sox",
-   "away_name": "Toronto Blue Jays",
-   "home_score": 3.0,
-   "away_score": 4.0,
-   "home_win": 0,
-   "p_home_elo": 0.5128,
-   "p_home_lr": 0.5305,
-   "p_home_xgb": 0.5136,
-   "p_home_ens": 0.5165,
-   "p_home_skl": 0.5243
-  },
-  {
-   "date": "2026-06-18",
-   "home_name": "Milwaukee Brewers",
-   "away_name": "Cleveland Guardians",
-   "home_score": 2.0,
-   "away_score": 4.0,
-   "home_win": 0,
-   "p_home_elo": 0.6026,
-   "p_home_lr": 0.603,
-   "p_home_xgb": 0.6225,
-   "p_home_ens": 0.5917,
-   "p_home_skl": 0.6216
-  },
-  {
-   "date": "2026-06-18",
-   "home_name": "Texas Rangers",
-   "away_name": "Minnesota Twins",
-   "home_score": 3.0,
-   "away_score": 9.0,
-   "home_win": 0,
-   "p_home_elo": 0.5593,
-   "p_home_lr": 0.5354,
-   "p_home_xgb": 0.541,
-   "p_home_ens": 0.5298,
-   "p_home_skl": 0.499
-  },
-  {
-   "date": "2026-06-18",
-   "home_name": "Seattle Mariners",
-   "away_name": "Baltimore Orioles",
-   "home_score": 3.0,
-   "away_score": 0.0,
-   "home_win": 1,
-   "p_home_elo": 0.5642,
-   "p_home_lr": 0.6247,
-   "p_home_xgb": 0.6219,
-   "p_home_ens": 0.6011,
-   "p_home_skl": 0.6389
-  },
-  {
-   "date": "2026-06-18",
-   "home_name": "Philadelphia Phillies",
-   "away_name": "New York Mets",
-   "home_score": 4.0,
-   "away_score": 6.0,
-   "home_win": 0,
-   "p_home_elo": 0.5649,
-   "p_home_lr": 0.5569,
-   "p_home_xgb": 0.5445,
-   "p_home_ens": 0.5478,
-   "p_home_skl": 0.5481
-  },
-  {
-   "date": "2026-06-18",
-   "home_name": "New York Yankees",
-   "away_name": "Chicago White Sox",
-   "home_score": 1.0,
-   "away_score": 5.0,
-   "home_win": 0,
-   "p_home_elo": 0.6387,
-   "p_home_lr": 0.6574,
-   "p_home_xgb": 0.652,
-   "p_home_ens": 0.6421,
-   "p_home_skl": 0.6649
-  },
   {
    "date": "2026-06-18",
    "home_name": "Kansas City Royals",
@@ -655,6 +479,188 @@
    "p_home_xgb": 0.5896,
    "p_home_ens": 0.5561,
    "p_home_skl": 0.5824
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Detroit Tigers",
+   "away_name": "Chicago White Sox",
+   "home_score": 4.0,
+   "away_score": 1.0,
+   "home_win": 1,
+   "p_home_elo": 0.5282,
+   "p_home_lr": 0.5342,
+   "p_home_xgb": 0.5154,
+   "p_home_ens": 0.5225,
+   "p_home_skl": 0.4801
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "New York Yankees",
+   "away_name": "Cincinnati Reds",
+   "home_score": 2.0,
+   "away_score": 10.0,
+   "home_win": 0,
+   "p_home_elo": 0.6399,
+   "p_home_lr": 0.7091,
+   "p_home_xgb": 0.6998,
+   "p_home_ens": 0.684,
+   "p_home_skl": 0.7681
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Chicago Cubs",
+   "away_name": "Toronto Blue Jays",
+   "home_score": 6.0,
+   "away_score": 8.0,
+   "home_win": 0,
+   "p_home_elo": 0.5416,
+   "p_home_lr": 0.537,
+   "p_home_xgb": 0.5599,
+   "p_home_ens": 0.5274,
+   "p_home_skl": 0.5277
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Texas Rangers",
+   "away_name": "San Diego Padres",
+   "home_score": 4.0,
+   "away_score": 6.0,
+   "home_win": 0,
+   "p_home_elo": 0.5094,
+   "p_home_lr": 0.5404,
+   "p_home_xgb": 0.524,
+   "p_home_ens": 0.5235,
+   "p_home_skl": 0.5336
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Tampa Bay Rays",
+   "away_name": "Washington Nationals",
+   "home_score": 3.0,
+   "away_score": 4.0,
+   "home_win": 0,
+   "p_home_elo": 0.5621,
+   "p_home_lr": 0.5469,
+   "p_home_xgb": 0.5434,
+   "p_home_ens": 0.5394,
+   "p_home_skl": 0.5116
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Miami Marlins",
+   "away_name": "San Francisco Giants",
+   "home_score": 6.0,
+   "away_score": 3.0,
+   "home_win": 1,
+   "p_home_elo": 0.5387,
+   "p_home_lr": 0.5834,
+   "p_home_xgb": 0.6086,
+   "p_home_ens": 0.5632,
+   "p_home_skl": 0.5801
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Atlanta Braves",
+   "away_name": "Milwaukee Brewers",
+   "home_score": 4.0,
+   "away_score": 3.0,
+   "home_win": 1,
+   "p_home_elo": 0.4903,
+   "p_home_lr": 0.4873,
+   "p_home_xgb": 0.5291,
+   "p_home_ens": 0.4781,
+   "p_home_skl": 0.4585
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Houston Astros",
+   "away_name": "Cleveland Guardians",
+   "home_score": 1.0,
+   "away_score": 8.0,
+   "home_win": 0,
+   "p_home_elo": 0.4967,
+   "p_home_lr": 0.5078,
+   "p_home_xgb": 0.531,
+   "p_home_ens": 0.4954,
+   "p_home_skl": 0.5163
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Philadelphia Phillies",
+   "away_name": "New York Mets",
+   "home_score": 15.0,
+   "away_score": 3.0,
+   "home_win": 1,
+   "p_home_elo": 0.5596,
+   "p_home_lr": 0.62,
+   "p_home_xgb": 0.5889,
+   "p_home_ens": 0.5965,
+   "p_home_skl": 0.6302
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Colorado Rockies",
+   "away_name": "Pittsburgh Pirates",
+   "home_score": 2.0,
+   "away_score": 1.0,
+   "home_win": 1,
+   "p_home_elo": 0.4209,
+   "p_home_lr": 0.3532,
+   "p_home_xgb": 0.4128,
+   "p_home_ens": 0.3597,
+   "p_home_skl": 0.2742
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Athletics",
+   "away_name": "Los Angeles Angels",
+   "home_score": 0.0,
+   "away_score": 7.0,
+   "home_win": 0,
+   "p_home_elo": 0.5563,
+   "p_home_lr": 0.5831,
+   "p_home_xgb": 0.5861,
+   "p_home_ens": 0.5666,
+   "p_home_skl": 0.5595
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Los Angeles Dodgers",
+   "away_name": "Baltimore Orioles",
+   "home_score": 2.0,
+   "away_score": 3.0,
+   "home_win": 0,
+   "p_home_elo": 0.638,
+   "p_home_lr": 0.6856,
+   "p_home_xgb": 0.6915,
+   "p_home_ens": 0.6646,
+   "p_home_skl": 0.7579
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Seattle Mariners",
+   "away_name": "Boston Red Sox",
+   "home_score": 1.0,
+   "away_score": 5.0,
+   "home_win": 0,
+   "p_home_elo": 0.5421,
+   "p_home_lr": 0.586,
+   "p_home_xgb": 0.6031,
+   "p_home_ens": 0.566,
+   "p_home_skl": 0.6068
+  },
+  {
+   "date": "2026-06-20",
+   "home_name": "Arizona Diamondbacks",
+   "away_name": "Minnesota Twins",
+   "home_score": 8.0,
+   "away_score": 16.0,
+   "home_win": 0,
+   "p_home_elo": 0.5606,
+   "p_home_lr": 0.5407,
+   "p_home_xgb": 0.5244,
+   "p_home_ens": 0.5342,
+   "p_home_skl": 0.5019
   }
  ]
 }
