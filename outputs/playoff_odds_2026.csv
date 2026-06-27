@@ -1,31 +1,31 @@
 team_id,current_wins,proj_wins,make_playoffs,win_division,first_round_bye,win_pennant,win_world_series,team_name,abbrev,league,division
-119,52,100.2398,0.9994,0.9889,0.8687,0.3276,0.2076,Los Angeles Dodgers,LAD,National League,National League West
-147,48,95.7311,0.9993,0.876,0.8733,0.4026,0.2047,New York Yankees,NYY,American League,American League East
-158,49,99.1409,0.9988,0.964,0.8085,0.3182,0.203,Milwaukee Brewers,MIL,National League,National League Central
-144,48,93.5819,0.9736,0.7528,0.2548,0.1308,0.0702,Atlanta Braves,ATL,National League,National League East
-114,42,85.4252,0.8666,0.7054,0.472,0.1554,0.0535,Cleveland Guardians,CLE,American League,American League Central
-139,45,87.8801,0.9381,0.1185,0.1175,0.1181,0.0463,Tampa Bay Rays,TB,American League,American League East
-143,45,88.6804,0.8169,0.2248,0.0443,0.0853,0.0432,Philadelphia Phillies,PHI,National League,National League East
-136,41,82.4615,0.6705,0.4766,0.2057,0.1019,0.0387,Seattle Mariners,SEA,American League,American League West
-112,44,86.4115,0.6544,0.0283,0.0146,0.0578,0.0295,Chicago Cubs,CHC,National League,National League Central
-141,39,79.8462,0.4215,0.0042,0.0041,0.0398,0.0144,Toronto Blue Jays,TOR,American League,American League East
-140,39,79.9708,0.4503,0.2375,0.0861,0.0434,0.014,Texas Rangers,TEX,American League,American League West
-145,41,81.0071,0.5355,0.2333,0.1294,0.0496,0.0136,Chicago White Sox,CWS,American League,American League Central
-135,42,84.5344,0.4957,0.0093,0.0042,0.0316,0.0135,San Diego Padres,SD,National League,National League West
-117,40,79.1086,0.3646,0.1817,0.0597,0.0336,0.0106,Houston Astros,HOU,American League,American League West
-146,42,81.7681,0.2578,0.0187,0.0015,0.0115,0.0057,Miami Marlins,MIA,National League,National League East
-133,39,77.2019,0.2249,0.0994,0.0283,0.0167,0.0054,Athletics,ATH,American League,American League West
-138,42,82.5679,0.317,0.0063,0.0018,0.0144,0.0053,St. Louis Cardinals,STL,National League,National League Central
-110,38,76.7766,0.1847,0.0007,0.0007,0.0135,0.0045,Baltimore Orioles,BAL,American League,American League East
-109,41,81.476,0.2407,0.0018,0.0005,0.0111,0.0041,Arizona Diamondbacks,AZ,National League,National League West
-111,33,75.1826,0.1128,0.0006,0.0005,0.0094,0.0026,Boston Red Sox,BOS,American League,American League East
-116,34,73.8805,0.0673,0.0177,0.0064,0.0061,0.0025,Detroit Tigers,DET,American League,American League Central
-142,38,75.3844,0.1154,0.0347,0.0131,0.0069,0.0024,Minnesota Twins,MIN,American League,American League Central
-134,41,79.7577,0.1296,0.0013,0.0008,0.0065,0.0019,Pittsburgh Pirates,PIT,National League,National League Central
-120,41,78.6315,0.0909,0.0036,0.0002,0.0042,0.0016,Washington Nationals,WSH,National League,National League East
-118,34,72.6132,0.0374,0.0089,0.0026,0.0021,0.0006,Kansas City Royals,KC,American League,American League Central
-108,34,69.9487,0.0111,0.0048,0.0006,0.0009,0.0004,Los Angeles Angels,LAA,American League,American League West
-113,37,75.0293,0.0209,0.0001,0.0001,0.0008,0.0002,Cincinnati Reds,CIN,National League,National League Central
-115,32,63.0392,0.0,0.0,0.0,0.0,0.0,Colorado Rockies,COL,National League,National League West
-121,34,70.6269,0.0012,0.0001,0.0,0.0001,0.0,New York Mets,NYM,National League,National League East
-137,33,72.096,0.0031,0.0,0.0,0.0001,0.0,San Francisco Giants,SF,National League,National League West
+158,50,99.7996,0.9992,0.9791,0.8298,0.332,0.2136,Milwaukee Brewers,MIL,National League,National League Central
+147,48,94.8006,0.9992,0.821,0.8171,0.3874,0.1936,New York Yankees,NYY,American League,American League East
+119,52,99.3729,0.999,0.9815,0.8086,0.3056,0.1918,Los Angeles Dodgers,LAD,National League,National League West
+144,49,94.1144,0.9798,0.7545,0.2907,0.1377,0.0782,Atlanta Braves,ATL,National League,National League East
+139,46,88.5577,0.9492,0.1728,0.1707,0.1331,0.0493,Tampa Bay Rays,TB,American League,American League East
+114,42,84.5769,0.8051,0.6034,0.3778,0.1323,0.0475,Cleveland Guardians,CLE,American League,American League Central
+143,46,89.2272,0.856,0.2208,0.0521,0.0863,0.0464,Philadelphia Phillies,PHI,National League,National League East
+136,42,83.0938,0.7039,0.5038,0.2388,0.1132,0.0415,Seattle Mariners,SEA,American League,American League West
+112,44,85.8065,0.6134,0.0166,0.007,0.0517,0.0252,Chicago Cubs,CHC,National League,National League Central
+135,43,85.4726,0.5783,0.0168,0.0067,0.044,0.0208,San Diego Padres,SD,National League,National League West
+140,40,80.6582,0.4857,0.2643,0.1097,0.0548,0.0192,Texas Rangers,TEX,American League,American League West
+145,42,82.0209,0.6053,0.3257,0.1798,0.0583,0.0181,Chicago White Sox,CWS,American League,American League Central
+141,39,79.1107,0.3315,0.0043,0.004,0.0305,0.0104,Toronto Blue Jays,TOR,American League,American League East
+117,40,78.2254,0.2671,0.118,0.039,0.0246,0.0077,Houston Astros,HOU,American League,American League West
+146,43,82.5893,0.3196,0.0221,0.0029,0.0166,0.0074,Miami Marlins,MIA,National League,National League East
+133,40,77.9331,0.2576,0.1121,0.0372,0.0201,0.0056,Athletics,ATH,American League,American League West
+111,34,76.0666,0.1402,0.0009,0.0007,0.0135,0.0049,Boston Red Sox,BOS,American League,American League East
+138,42,81.9057,0.269,0.0038,0.0016,0.0109,0.0041,St. Louis Cardinals,STL,National League,National League Central
+110,39,77.3982,0.2019,0.001,0.001,0.0152,0.0039,Baltimore Orioles,BAL,American League,American League East
+109,41,80.6716,0.1824,0.0017,0.0005,0.0085,0.0031,Arizona Diamondbacks,AZ,National League,National League West
+116,35,74.8168,0.0889,0.0253,0.0083,0.0071,0.0031,Detroit Tigers,DET,American League,American League Central
+142,39,75.9738,0.1363,0.0397,0.0141,0.0081,0.0021,Minnesota Twins,MIN,American League,American League Central
+134,41,78.8989,0.1003,0.0005,0.0001,0.0039,0.0015,Pittsburgh Pirates,PIT,National League,National League Central
+120,41,78.0359,0.0709,0.0026,0.0,0.0018,0.0003,Washington Nationals,WSH,National League,National League East
+108,34,69.1402,0.0065,0.0018,0.0004,0.0005,0.0003,Los Angeles Angels,LAA,American League,American League West
+118,34,71.6107,0.0216,0.0059,0.0014,0.0013,0.0003,Kansas City Royals,KC,American League,American League Central
+113,38,75.8162,0.0283,0.0,0.0,0.0009,0.0001,Cincinnati Reds,CIN,National League,National League Central
+115,32,62.6144,0.0001,0.0,0.0,0.0,0.0,Colorado Rockies,COL,National League,National League West
+121,34,70.0871,0.0009,0.0,0.0,0.0,0.0,New York Mets,NYM,National League,National League East
+137,33,71.6041,0.0028,0.0,0.0,0.0001,0.0,San Francisco Giants,SF,National League,National League West
