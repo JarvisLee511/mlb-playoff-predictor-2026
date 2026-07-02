@@ -256,12 +256,12 @@
    "home_name": "Arizona Diamondbacks",
    "away_name": "Milwaukee Brewers",
    "home_pitcher": "Jose Cabrera",
-   "away_pitcher": "TBD",
+   "away_pitcher": "Kyle Harrison",
    "p_home_elo": 0.4172,
-   "p_home_lr": 0.4262,
-   "p_home_xgb": 0.4333,
-   "p_home_ens": 0.4158,
-   "p_home_skl": 0.3573,
+   "p_home_lr": 0.3745,
+   "p_home_xgb": 0.403,
+   "p_home_ens": 0.3757,
+   "p_home_skl": 0.292,
    "status": "pending"
   },
   {
