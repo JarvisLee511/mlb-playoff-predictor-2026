@@ -1,24 +1,45 @@
 [
  {
   "date": "2026-07-07",
-  "team": "St. Louis Cardinals",
-  "player": "Bruce Zimmermann",
+  "team": "Minnesota Twins",
+  "player": "Woo-Suk Go",
   "category": "Call-up",
-  "description": "St. Louis Cardinals selected the contract of LHP Bruce Zimmermann from Memphis Redbirds."
+  "description": "Minnesota Twins selected the contract of RHP Woo-Suk Go from St. Paul Saints."
  },
  {
   "date": "2026-07-07",
-  "team": "Rochester Red Wings",
-  "player": "Zak Kent",
+  "team": "Diablos Rojos del Mexico",
+  "player": "Juan Pablo Lopez",
   "category": "Activated",
-  "description": "Rochester Red Wings activated RHP Zak Kent."
+  "description": "Diablos Rojos del Mexico activated LHP Juan Pablo Lopez from the reserve list."
  },
  {
   "date": "2026-07-07",
-  "team": "Washington Nationals",
-  "player": "Matt Krook",
+  "team": "Worcester Red Sox",
+  "player": "Matt Lloyd",
+  "category": "IL (injury)",
+  "description": "Worcester Red Sox activated 3B Matt Lloyd from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Minnesota Twins",
+  "player": "Byron Buxton",
+  "category": "IL (injury)",
+  "description": "Minnesota Twins placed CF Byron Buxton on the 10-day injured list retroactive to July 6, 2026. Right hip strain."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "ACL Reds",
+  "player": "Bryan Salgado",
+  "category": "IL (injury)",
+  "description": "ACL Reds activated RHP Bryan Salgado from the 60-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Sacramento River Cats",
+  "player": "Eric Cerantola",
   "category": "Activated",
-  "description": "Washington Nationals activated LHP Matt Krook."
+  "description": "Sacramento River Cats activated RHP Eric Cerantola."
  },
  {
   "date": "2026-07-07",
@@ -43,24 +64,17 @@
  },
  {
   "date": "2026-07-07",
-  "team": "Tampa Tarpons",
-  "player": "Austin Green",
+  "team": "ACL Reds",
+  "player": "Luis Pimentel",
   "category": "IL (injury)",
-  "description": "Tampa Tarpons placed 2B Austin Green on the full-season injured list."
+  "description": "ACL Reds activated RHP Luis Pimentel from the 60-day injured list."
  },
  {
   "date": "2026-07-07",
-  "team": "Gwinnett Stripers",
-  "player": "Owen Murphy",
+  "team": "Birmingham Barons",
+  "player": "Jacob Heatherly",
   "category": "Activated",
-  "description": "Gwinnett Stripers activated RHP Owen Murphy."
- },
- {
-  "date": "2026-07-07",
-  "team": "Dunedin Blue Jays",
-  "player": "Aldo Gaxiola",
-  "category": "IL (injury)",
-  "description": "Dunedin Blue Jays activated 3B Aldo Gaxiola from the 7-day injured list."
+  "description": "Birmingham Barons activated LHP Jacob Heatherly from the Development List."
  },
  {
   "date": "2026-07-07",
@@ -71,80 +85,10 @@
  },
  {
   "date": "2026-07-07",
-  "team": "Diablos Rojos del Mexico",
-  "player": "Juan Pablo Lopez",
+  "team": "Chesapeake Baysox",
+  "player": "Dom Keegan",
   "category": "Activated",
-  "description": "Diablos Rojos del Mexico activated LHP Juan Pablo Lopez from the reserve list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Portland Sea Dogs",
-  "player": "Will Turner",
-  "category": "IL (injury)",
-  "description": "Portland Sea Dogs activated OF Will Turner from the 7-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "St. Paul Saints",
-  "player": "Aaron Rozek",
-  "category": "Activated",
-  "description": "St. Paul Saints activated LHP Aaron Rozek from the temporarily inactive list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Algodoneros Union Laguna",
-  "player": "Joel Rangel",
-  "category": "Activated",
-  "description": "Algodoneros Union Laguna activated RHP Joel Rangel from the reserve list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Charlotte Knights",
-  "player": "Chase Plymell",
-  "category": "IL (injury)",
-  "description": "Charlotte Knights placed RHP Chase Plymell on the 7-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Jacksonville Jumbo Shrimp",
-  "player": "Ryan Gusto",
-  "category": "Activated",
-  "description": "Jacksonville Jumbo Shrimp activated RHP Ryan Gusto."
- },
- {
-  "date": "2026-07-07",
-  "team": "Harrisburg Senators",
-  "player": "Branden Boissiere",
-  "category": "Activated",
-  "description": "Harrisburg Senators activated OF Branden Boissiere."
- },
- {
-  "date": "2026-07-07",
-  "team": "Charleston RiverDogs",
-  "player": "Trace Phillips",
-  "category": "IL (injury)",
-  "description": "Charleston RiverDogs activated 1B Trace Phillips from the 60-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Diablos Rojos del Mexico",
-  "player": "Jesus Villalobos",
-  "category": "Activated",
-  "description": "Diablos Rojos del Mexico activated IF Jesus Villalobos from the reserve list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Montgomery Biscuits",
-  "player": "Garrett Edwards",
-  "category": "Activated",
-  "description": "Montgomery Biscuits activated RHP Garrett Edwards from the Development List."
- },
- {
-  "date": "2026-07-07",
-  "team": "Great Lakes Loons",
-  "player": "Joseilyn Gonzalez",
-  "category": "IL (injury)",
-  "description": "Great Lakes Loons activated RHP Joseilyn Gonzalez from the 7-day injured list."
+  "description": "Chesapeake Baysox activated C Dom Keegan."
  },
  {
   "date": "2026-07-07",
@@ -155,17 +99,73 @@
  },
  {
   "date": "2026-07-07",
-  "team": "Sugar Land Space Cowboys",
-  "player": "Jake Meyers",
+  "team": "Rochester Red Wings",
+  "player": "Zak Kent",
   "category": "Activated",
-  "description": "Sugar Land Space Cowboys activated CF Jake Meyers."
+  "description": "Rochester Red Wings activated RHP Zak Kent."
  },
  {
   "date": "2026-07-07",
-  "team": "Worcester Red Sox",
-  "player": "Zack Kelly",
+  "team": "St. Paul Saints",
+  "player": "Aaron Rozek",
+  "category": "Activated",
+  "description": "St. Paul Saints activated LHP Aaron Rozek from the temporarily inactive list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Tecos de los Dos Laredos",
+  "player": "Ali Castillo",
+  "category": "Activated",
+  "description": "Tecos de los Dos Laredos activated SS Ali Castillo from the reserve list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Jacksonville Jumbo Shrimp",
+  "player": "Ryan Gusto",
+  "category": "Activated",
+  "description": "Jacksonville Jumbo Shrimp activated RHP Ryan Gusto."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Chesapeake Baysox",
+  "player": "Tyson Neighbors",
   "category": "IL (injury)",
-  "description": "Worcester Red Sox placed RHP Zack Kelly on the 7-day injured list."
+  "description": "Chesapeake Baysox activated RHP Tyson Neighbors from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Algodoneros Union Laguna",
+  "player": "Joel Rangel",
+  "category": "Activated",
+  "description": "Algodoneros Union Laguna activated RHP Joel Rangel from the reserve list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Peoria Chiefs",
+  "player": "Tai Peete",
+  "category": "IL (injury)",
+  "description": "Peoria Chiefs activated OF Tai Peete from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Salem RidgeYaks",
+  "player": "Ethan Walker",
+  "category": "IL (injury)",
+  "description": "Salem RidgeYaks activated LHP Ethan Walker from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "ACL Royals",
+  "player": "Raimel Medina",
+  "category": "IL (injury)",
+  "description": "ACL Royals activated OF Raimel Medina from the 60-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Indianapolis Indians",
+  "player": "Brandan Bidois",
+  "category": "Activated",
+  "description": "Indianapolis Indians activated RHP Brandan Bidois."
  },
  {
   "date": "2026-07-07",
@@ -183,24 +183,17 @@
  },
  {
   "date": "2026-07-07",
-  "team": "Everett AquaSox",
-  "player": "Curtis Washington Jr.",
-  "category": "IL (injury)",
-  "description": "Everett AquaSox placed CF Curtis Washington Jr. on the 7-day injured list."
+  "team": "South Bend Cubs",
+  "player": "Pierce Coppola",
+  "category": "Activated",
+  "description": "South Bend Cubs activated LHP Pierce Coppola."
  },
  {
   "date": "2026-07-07",
-  "team": "Tigres de Quintana Roo",
-  "player": "Henry Sosa",
+  "team": "Buffalo Bisons",
+  "player": "William Simoneit",
   "category": "Activated",
-  "description": "Tigres de Quintana Roo activated RHP Henry Sosa from the reserve list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Sugar Land Space Cowboys",
-  "player": "Joey Loperfido",
-  "category": "Activated",
-  "description": "Sugar Land Space Cowboys activated LF Joey Loperfido."
+  "description": "Buffalo Bisons activated C William Simoneit from the Development List."
  },
  {
   "date": "2026-07-07",
@@ -218,17 +211,17 @@
  },
  {
   "date": "2026-07-07",
-  "team": "Indianapolis Indians",
-  "player": "Brandan Bidois",
+  "team": "Gwinnett Stripers",
+  "player": "Owen Murphy",
   "category": "Activated",
-  "description": "Indianapolis Indians activated RHP Brandan Bidois."
+  "description": "Gwinnett Stripers activated RHP Owen Murphy."
  },
  {
   "date": "2026-07-07",
-  "team": "FCL Orioles",
-  "player": "Lisandro Sanchez",
+  "team": "Dunedin Blue Jays",
+  "player": "Aldo Gaxiola",
   "category": "IL (injury)",
-  "description": "FCL Orioles placed OF Lisandro Sanchez on the 7-day injured list."
+  "description": "Dunedin Blue Jays activated 3B Aldo Gaxiola from the 7-day injured list."
  },
  {
   "date": "2026-07-07",
@@ -246,31 +239,10 @@
  },
  {
   "date": "2026-07-07",
-  "team": "Athletics",
-  "player": "Jacob Wilson",
+  "team": "Portland Sea Dogs",
+  "player": "Will Turner",
   "category": "IL (injury)",
-  "description": "Athletics activated SS Jacob Wilson from the 10-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "ACL Reds",
-  "player": "Luis Pimentel",
-  "category": "IL (injury)",
-  "description": "ACL Reds activated RHP Luis Pimentel from the 60-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Birmingham Barons",
-  "player": "Jacob Heatherly",
-  "category": "Activated",
-  "description": "Birmingham Barons activated LHP Jacob Heatherly from the Development List."
- },
- {
-  "date": "2026-07-07",
-  "team": "Chesapeake Baysox",
-  "player": "Dom Keegan",
-  "category": "Activated",
-  "description": "Chesapeake Baysox activated C Dom Keegan."
+  "description": "Portland Sea Dogs activated OF Will Turner from the 7-day injured list."
  },
  {
   "date": "2026-07-07",
@@ -281,10 +253,24 @@
  },
  {
   "date": "2026-07-07",
-  "team": "Tecos de los Dos Laredos",
-  "player": "Ali Castillo",
+  "team": "Charlotte Knights",
+  "player": "Chase Plymell",
+  "category": "IL (injury)",
+  "description": "Charlotte Knights placed RHP Chase Plymell on the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Sugar Land Space Cowboys",
+  "player": "Jake Meyers",
   "category": "Activated",
-  "description": "Tecos de los Dos Laredos activated SS Ali Castillo from the reserve list."
+  "description": "Sugar Land Space Cowboys activated CF Jake Meyers."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Sugar Land Space Cowboys",
+  "player": "Joey Loperfido",
+  "category": "Activated",
+  "description": "Sugar Land Space Cowboys activated LF Joey Loperfido."
  },
  {
   "date": "2026-07-07",
@@ -309,6 +295,20 @@
  },
  {
   "date": "2026-07-07",
+  "team": "Rocket City Trash Pandas",
+  "player": "Anthony Scull",
+  "category": "IL (injury)",
+  "description": "Rocket City Trash Pandas placed OF Anthony Scull on the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Bluefield Ridge Runners",
+  "player": "Logan Prater",
+  "category": "Activated",
+  "description": "Bluefield Ridge Runners activated LHP Logan Prater."
+ },
+ {
+  "date": "2026-07-07",
   "team": "Charlotte Knights",
   "player": "Tanner McDougal",
   "category": "IL (injury)",
@@ -320,265 +320,6 @@
   "player": "Leo Heras",
   "category": "Activated",
   "description": "Acereros del Norte activated OF Leo Heras from the reserve list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Fort Wayne TinCaps",
-  "player": "Kannon Kemp",
-  "category": "IL (injury)",
-  "description": "Fort Wayne TinCaps activated RHP Kannon Kemp from the 60-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Milwaukee Brewers",
-  "player": "David Hamilton",
-  "category": "IL (injury)",
-  "description": "Milwaukee Brewers placed 3B David Hamilton on the 10-day injured list. Strained left hamstring."
- },
- {
-  "date": "2026-07-07",
-  "team": "Chesapeake Baysox",
-  "player": "Ethan Anderson",
-  "category": "IL (injury)",
-  "description": "Chesapeake Baysox placed C Ethan Anderson on the 7-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Chesapeake Baysox",
-  "player": "Tyson Neighbors",
-  "category": "IL (injury)",
-  "description": "Chesapeake Baysox activated RHP Tyson Neighbors from the 7-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Rocket City Trash Pandas",
-  "player": "Anthony Scull",
-  "category": "IL (injury)",
-  "description": "Rocket City Trash Pandas placed OF Anthony Scull on the 7-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Tampa Tarpons",
-  "player": "Logan Maxwell",
-  "category": "IL (injury)",
-  "description": "Tampa Tarpons placed OF Logan Maxwell on the 7-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Houston Astros",
-  "player": "Alimber Santa",
-  "category": "Call-up",
-  "description": "Houston Astros recalled RHP Alimber Santa from Sugar Land Space Cowboys."
- },
- {
-  "date": "2026-07-07",
-  "team": "Las Vegas Aviators",
-  "player": "Kade Morris",
-  "category": "Sent down",
-  "description": "Athletics optioned RHP Kade Morris to Las Vegas Aviators."
- },
- {
-  "date": "2026-07-07",
-  "team": "New York Mets",
-  "player": "Matt Seelinger",
-  "category": "Call-up",
-  "description": "New York Mets selected the contract of RHP Matt Seelinger from Syracuse Mets."
- },
- {
-  "date": "2026-07-07",
-  "team": "Piratas de Campeche",
-  "player": "Fernando Flores",
-  "category": "Trade",
-  "description": "Acereros del Norte traded C Fernando Flores to Piratas de Campeche."
- },
- {
-  "date": "2026-07-07",
-  "team": "Athletics",
-  "player": "Jacob Lopez",
-  "category": "Call-up",
-  "description": "Athletics recalled LHP Jacob Lopez from Las Vegas Aviators."
- },
- {
-  "date": "2026-07-07",
-  "team": "St. Louis Cardinals",
-  "player": "Hunter Dobbins",
-  "category": "Call-up",
-  "description": "St. Louis Cardinals recalled RHP Hunter Dobbins from Memphis Redbirds."
- },
- {
-  "date": "2026-07-07",
-  "team": "Las Vegas Aviators",
-  "player": "Brian Serven",
-  "category": "Sent down",
-  "description": "Athletics optioned C Brian Serven to Las Vegas Aviators."
- },
- {
-  "date": "2026-07-07",
-  "team": "Lehigh Valley IronPigs",
-  "player": "Kyle Backhus",
-  "category": "Sent down",
-  "description": "Philadelphia Phillies optioned LHP Kyle Backhus to Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-07-07",
-  "team": "Toronto Blue Jays",
-  "player": "Chad Dallas",
-  "category": "Call-up",
-  "description": "Toronto Blue Jays recalled RHP Chad Dallas from Buffalo Bisons."
- },
- {
-  "date": "2026-07-07",
-  "team": "Rochester Red Wings",
-  "player": "Cole Henry",
-  "category": "Sent down",
-  "description": "Washington Nationals optioned RHP Cole Henry to Rochester Red Wings."
- },
- {
-  "date": "2026-07-07",
-  "team": "Milwaukee Brewers",
-  "player": "Luis Lara",
-  "category": "Call-up",
-  "description": "Milwaukee Brewers recalled CF Luis Lara from Nashville Sounds."
- },
- {
-  "date": "2026-07-07",
-  "team": "Baltimore Orioles",
-  "player": "Nick Raquet",
-  "category": "Call-up",
-  "description": "Baltimore Orioles recalled LHP Nick Raquet from Norfolk Tides."
- },
- {
-  "date": "2026-07-07",
-  "team": "Nashville Sounds",
-  "player": "Blake Perkins",
-  "category": "Sent down",
-  "description": "Milwaukee Brewers optioned CF Blake Perkins to Nashville Sounds."
- },
- {
-  "date": "2026-07-07",
-  "team": "Buffalo Bisons",
-  "player": "Yohendrick Pi\u00f1ango",
-  "category": "Sent down",
-  "description": "Toronto Blue Jays optioned LF Yohendrick Pi\u00f1ango to Buffalo Bisons."
- },
- {
-  "date": "2026-07-07",
-  "team": "Sugar Land Space Cowboys",
-  "player": "Mike Burrows",
-  "category": "Sent down",
-  "description": "Houston Astros optioned RHP Mike Burrows to Sugar Land Space Cowboys."
- },
- {
-  "date": "2026-07-07",
-  "team": "San Diego Padres",
-  "player": "Jhony Brito",
-  "category": "Call-up",
-  "description": "San Diego Padres recalled RHP Jhony Brito from El Paso Chihuahuas."
- },
- {
-  "date": "2026-07-07",
-  "team": "St. Louis Cardinals",
-  "player": "Jared Shuster",
-  "category": "Call-up",
-  "description": "St. Louis Cardinals selected the contract of LHP Jared Shuster from Memphis Redbirds."
- },
- {
-  "date": "2026-07-07",
-  "team": "Minnesota Twins",
-  "player": "Alan Roden",
-  "category": "Call-up",
-  "description": "Minnesota Twins recalled LF Alan Roden from St. Paul Saints."
- },
- {
-  "date": "2026-07-07",
-  "team": "Atlanta Braves",
-  "player": "Connor Thomas",
-  "category": "Call-up",
-  "description": "Atlanta Braves selected the contract of LHP Connor Thomas from Gwinnett Stripers."
- },
- {
-  "date": "2026-07-07",
-  "team": "Syracuse Mets",
-  "player": "Ronny Mauricio",
-  "category": "Sent down",
-  "description": "New York Mets optioned SS Ronny Mauricio to Syracuse Mets."
- },
- {
-  "date": "2026-07-07",
-  "team": "Milwaukee Brewers",
-  "player": "Robert Gasser",
-  "category": "Call-up",
-  "description": "Milwaukee Brewers recalled LHP Robert Gasser from ACL Brewers."
- },
- {
-  "date": "2026-07-07",
-  "team": "El Paso Chihuahuas",
-  "player": "Logan Gillaspie",
-  "category": "IL (injury)",
-  "description": "El Paso Chihuahuas activated RHP Logan Gillaspie from the 7-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Gwinnett Stripers",
-  "player": "Owen Murphy",
-  "category": "Sent down",
-  "description": "Atlanta Braves optioned RHP Owen Murphy to Gwinnett Stripers."
- },
- {
-  "date": "2026-07-07",
-  "team": "Philadelphia Phillies",
-  "player": "Max Lazar",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled RHP Max Lazar from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-07-07",
-  "team": "Memphis Redbirds",
-  "player": "Ryan Fernandez",
-  "category": "Sent down",
-  "description": "St. Louis Cardinals optioned RHP Ryan Fernandez to Memphis Redbirds."
- },
- {
-  "date": "2026-07-07",
-  "team": "Salem RidgeYaks",
-  "player": "Ethan Walker",
-  "category": "IL (injury)",
-  "description": "Salem RidgeYaks activated LHP Ethan Walker from the 7-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Bluefield Ridge Runners",
-  "player": "Logan Prater",
-  "category": "Activated",
-  "description": "Bluefield Ridge Runners activated LHP Logan Prater."
- },
- {
-  "date": "2026-07-07",
-  "team": "Tacoma Rainiers",
-  "player": "Alejo Lopez",
-  "category": "IL (injury)",
-  "description": "Tacoma Rainiers activated 2B Alejo Lopez from the 7-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "El Paso Chihuahuas",
-  "player": "Alek Jacob",
-  "category": "Sent down",
-  "description": "San Diego Padres optioned RHP Alek Jacob to El Paso Chihuahuas."
- },
- {
-  "date": "2026-07-07",
-  "team": "Milwaukee Brewers",
-  "player": "Brandon Lockridge",
-  "category": "IL (injury)",
-  "description": "Milwaukee Brewers transferred LF Brandon Lockridge from the 10-day injured list to the 60-day injured list. Right knee laceration and contusion."
- },
- {
-  "date": "2026-07-07",
-  "team": "Chesapeake Baysox",
-  "player": "Brandon Butterworth",
-  "category": "IL (injury)",
-  "description": "Chesapeake Baysox activated SS Brandon Butterworth from the 7-day injured list."
  },
  {
   "date": "2026-07-07",
@@ -603,24 +344,283 @@
  },
  {
   "date": "2026-07-07",
-  "team": "Buffalo Bisons",
-  "player": "William Simoneit",
-  "category": "Activated",
-  "description": "Buffalo Bisons activated C William Simoneit from the Development List."
- },
- {
-  "date": "2026-07-07",
-  "team": "South Bend Cubs",
-  "player": "Pierce Coppola",
-  "category": "Activated",
-  "description": "South Bend Cubs activated LHP Pierce Coppola."
- },
- {
-  "date": "2026-07-07",
-  "team": "Peoria Chiefs",
-  "player": "Tai Peete",
+  "team": "Athletics",
+  "player": "Jacob Wilson",
   "category": "IL (injury)",
-  "description": "Peoria Chiefs activated OF Tai Peete from the 7-day injured list."
+  "description": "Athletics activated SS Jacob Wilson from the 10-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Tacoma Rainiers",
+  "player": "Alejo Lopez",
+  "category": "IL (injury)",
+  "description": "Tacoma Rainiers activated 2B Alejo Lopez from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Worcester Red Sox",
+  "player": "Zack Kelly",
+  "category": "IL (injury)",
+  "description": "Worcester Red Sox placed RHP Zack Kelly on the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Atlanta Braves",
+  "player": "Connor Thomas",
+  "category": "Call-up",
+  "description": "Atlanta Braves selected the contract of LHP Connor Thomas from Gwinnett Stripers."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Houston Astros",
+  "player": "Alimber Santa",
+  "category": "Call-up",
+  "description": "Houston Astros recalled RHP Alimber Santa from Sugar Land Space Cowboys."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Piratas de Campeche",
+  "player": "Fernando Flores",
+  "category": "Trade",
+  "description": "Acereros del Norte traded C Fernando Flores to Piratas de Campeche."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Gwinnett Stripers",
+  "player": "Owen Murphy",
+  "category": "Sent down",
+  "description": "Atlanta Braves optioned RHP Owen Murphy to Gwinnett Stripers."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Milwaukee Brewers",
+  "player": "Luis Lara",
+  "category": "Call-up",
+  "description": "Milwaukee Brewers recalled CF Luis Lara from Nashville Sounds."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Milwaukee Brewers",
+  "player": "Robert Gasser",
+  "category": "Call-up",
+  "description": "Milwaukee Brewers recalled LHP Robert Gasser from ACL Brewers."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "St. Louis Cardinals",
+  "player": "Bruce Zimmermann",
+  "category": "Call-up",
+  "description": "St. Louis Cardinals selected the contract of LHP Bruce Zimmermann from Memphis Redbirds."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Pittsburgh Pirates",
+  "player": "Jack Brannigan",
+  "category": "Call-up",
+  "description": "Pittsburgh Pirates recalled SS Jack Brannigan from Indianapolis Indians."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Baltimore Orioles",
+  "player": "Nick Raquet",
+  "category": "Call-up",
+  "description": "Baltimore Orioles recalled LHP Nick Raquet from Norfolk Tides."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "New York Mets",
+  "player": "Matt Seelinger",
+  "category": "Call-up",
+  "description": "New York Mets selected the contract of RHP Matt Seelinger from Syracuse Mets."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Sugar Land Space Cowboys",
+  "player": "Mike Burrows",
+  "category": "Sent down",
+  "description": "Houston Astros optioned RHP Mike Burrows to Sugar Land Space Cowboys."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "St. Louis Cardinals",
+  "player": "Hunter Dobbins",
+  "category": "Call-up",
+  "description": "St. Louis Cardinals recalled RHP Hunter Dobbins from Memphis Redbirds."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Minnesota Twins",
+  "player": "Alan Roden",
+  "category": "Call-up",
+  "description": "Minnesota Twins recalled LF Alan Roden from St. Paul Saints."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Athletics",
+  "player": "Jacob Lopez",
+  "category": "Call-up",
+  "description": "Athletics recalled LHP Jacob Lopez from Las Vegas Aviators."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Nashville Sounds",
+  "player": "Blake Perkins",
+  "category": "Sent down",
+  "description": "Milwaukee Brewers optioned CF Blake Perkins to Nashville Sounds."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Memphis Redbirds",
+  "player": "Ryan Fernandez",
+  "category": "Sent down",
+  "description": "St. Louis Cardinals optioned RHP Ryan Fernandez to Memphis Redbirds."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "San Diego Padres",
+  "player": "Jhony Brito",
+  "category": "Call-up",
+  "description": "San Diego Padres recalled RHP Jhony Brito from El Paso Chihuahuas."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Philadelphia Phillies",
+  "player": "Max Lazar",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled RHP Max Lazar from Lehigh Valley IronPigs."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Syracuse Mets",
+  "player": "Ronny Mauricio",
+  "category": "Sent down",
+  "description": "New York Mets optioned SS Ronny Mauricio to Syracuse Mets."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Buffalo Bisons",
+  "player": "Yohendrick Pi\u00f1ango",
+  "category": "Sent down",
+  "description": "Toronto Blue Jays optioned LF Yohendrick Pi\u00f1ango to Buffalo Bisons."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "St. Louis Cardinals",
+  "player": "Jared Shuster",
+  "category": "Call-up",
+  "description": "St. Louis Cardinals selected the contract of LHP Jared Shuster from Memphis Redbirds."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Harrisburg Senators",
+  "player": "Branden Boissiere",
+  "category": "Activated",
+  "description": "Harrisburg Senators activated OF Branden Boissiere."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Rochester Red Wings",
+  "player": "Cole Henry",
+  "category": "Sent down",
+  "description": "Washington Nationals optioned RHP Cole Henry to Rochester Red Wings."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "El Paso Chihuahuas",
+  "player": "Alek Jacob",
+  "category": "Sent down",
+  "description": "San Diego Padres optioned RHP Alek Jacob to El Paso Chihuahuas."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Lehigh Valley IronPigs",
+  "player": "Kyle Backhus",
+  "category": "Sent down",
+  "description": "Philadelphia Phillies optioned LHP Kyle Backhus to Lehigh Valley IronPigs."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Diablos Rojos del Mexico",
+  "player": "Jesus Villalobos",
+  "category": "Activated",
+  "description": "Diablos Rojos del Mexico activated IF Jesus Villalobos from the reserve list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Tampa Tarpons",
+  "player": "Logan Maxwell",
+  "category": "IL (injury)",
+  "description": "Tampa Tarpons placed OF Logan Maxwell on the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "El Paso Chihuahuas",
+  "player": "Logan Gillaspie",
+  "category": "IL (injury)",
+  "description": "El Paso Chihuahuas activated RHP Logan Gillaspie from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Las Vegas Aviators",
+  "player": "Brian Serven",
+  "category": "Sent down",
+  "description": "Athletics optioned C Brian Serven to Las Vegas Aviators."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Milwaukee Brewers",
+  "player": "Brandon Lockridge",
+  "category": "IL (injury)",
+  "description": "Milwaukee Brewers transferred LF Brandon Lockridge from the 10-day injured list to the 60-day injured list. Right knee laceration and contusion."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Chesapeake Baysox",
+  "player": "Brandon Butterworth",
+  "category": "IL (injury)",
+  "description": "Chesapeake Baysox activated SS Brandon Butterworth from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Fort Wayne TinCaps",
+  "player": "Kannon Kemp",
+  "category": "IL (injury)",
+  "description": "Fort Wayne TinCaps activated RHP Kannon Kemp from the 60-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Milwaukee Brewers",
+  "player": "David Hamilton",
+  "category": "IL (injury)",
+  "description": "Milwaukee Brewers placed 3B David Hamilton on the 10-day injured list. Strained left hamstring."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Chesapeake Baysox",
+  "player": "Ethan Anderson",
+  "category": "IL (injury)",
+  "description": "Chesapeake Baysox placed C Ethan Anderson on the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Tigres de Quintana Roo",
+  "player": "Henry Sosa",
+  "category": "Activated",
+  "description": "Tigres de Quintana Roo activated RHP Henry Sosa from the reserve list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Everett AquaSox",
+  "player": "Curtis Washington Jr.",
+  "category": "IL (injury)",
+  "description": "Everett AquaSox placed CF Curtis Washington Jr. on the 7-day injured list."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Charleston RiverDogs",
+  "player": "Trace Phillips",
+  "category": "IL (injury)",
+  "description": "Charleston RiverDogs activated 1B Trace Phillips from the 60-day injured list."
  },
  {
   "date": "2026-07-07",
@@ -631,31 +631,31 @@
  },
  {
   "date": "2026-07-07",
-  "team": "ACL Royals",
-  "player": "Raimel Medina",
-  "category": "IL (injury)",
-  "description": "ACL Royals activated OF Raimel Medina from the 60-day injured list."
- },
- {
-  "date": "2026-07-07",
-  "team": "Sacramento River Cats",
-  "player": "Eric Cerantola",
+  "team": "Washington Nationals",
+  "player": "Matt Krook",
   "category": "Activated",
-  "description": "Sacramento River Cats activated RHP Eric Cerantola."
+  "description": "Washington Nationals activated LHP Matt Krook."
  },
  {
   "date": "2026-07-07",
-  "team": "Worcester Red Sox",
-  "player": "Matt Lloyd",
+  "team": "Tampa Tarpons",
+  "player": "Austin Green",
   "category": "IL (injury)",
-  "description": "Worcester Red Sox activated 3B Matt Lloyd from the 7-day injured list."
+  "description": "Tampa Tarpons placed 2B Austin Green on the full-season injured list."
  },
  {
   "date": "2026-07-07",
-  "team": "Minnesota Twins",
-  "player": "Woo-Suk Go",
-  "category": "Call-up",
-  "description": "Minnesota Twins selected the contract of RHP Woo-Suk Go from St. Paul Saints."
+  "team": "Montgomery Biscuits",
+  "player": "Garrett Edwards",
+  "category": "Activated",
+  "description": "Montgomery Biscuits activated RHP Garrett Edwards from the Development List."
+ },
+ {
+  "date": "2026-07-07",
+  "team": "Las Vegas Aviators",
+  "player": "Kade Morris",
+  "category": "Sent down",
+  "description": "Athletics optioned RHP Kade Morris to Las Vegas Aviators."
  },
  {
   "date": "2026-07-07",
@@ -673,87 +673,31 @@
  },
  {
   "date": "2026-07-07",
-  "team": "ACL Reds",
-  "player": "Bryan Salgado",
+  "team": "FCL Orioles",
+  "player": "Lisandro Sanchez",
   "category": "IL (injury)",
-  "description": "ACL Reds activated RHP Bryan Salgado from the 60-day injured list."
+  "description": "FCL Orioles placed OF Lisandro Sanchez on the 7-day injured list."
  },
  {
   "date": "2026-07-07",
-  "team": "Minnesota Twins",
-  "player": "Byron Buxton",
+  "team": "Great Lakes Loons",
+  "player": "Joseilyn Gonzalez",
   "category": "IL (injury)",
-  "description": "Minnesota Twins placed CF Byron Buxton on the 10-day injured list retroactive to July 6, 2026. Right hip strain."
+  "description": "Great Lakes Loons activated RHP Joseilyn Gonzalez from the 7-day injured list."
  },
  {
   "date": "2026-07-07",
-  "team": "Pittsburgh Pirates",
-  "player": "Jack Brannigan",
-  "category": "Call-up",
-  "description": "Pittsburgh Pirates recalled SS Jack Brannigan from Indianapolis Indians."
- },
- {
-  "date": "2026-07-06",
-  "team": "Houston Astros",
-  "player": "Braden Shewmake",
-  "category": "IL (injury)",
-  "description": "Houston Astros activated SS Braden Shewmake from the 10-day injured list."
- },
- {
-  "date": "2026-07-06",
   "team": "Toronto Blue Jays",
-  "player": "George Springer",
-  "category": "Activated",
-  "description": "Toronto Blue Jays activated DH George Springer from the bereavement list."
+  "player": "Chad Dallas",
+  "category": "Call-up",
+  "description": "Toronto Blue Jays recalled RHP Chad Dallas from Buffalo Bisons."
  },
  {
   "date": "2026-07-06",
-  "team": "Tampa Tarpons",
-  "player": "Willy Montero",
+  "team": "St. Paul Saints",
+  "player": "Kaelen Culpepper",
   "category": "IL (injury)",
-  "description": "Tampa Tarpons activated CF Willy Montero from the 7-day injured list."
- },
- {
-  "date": "2026-07-06",
-  "team": "ACL Mariners",
-  "player": "Gregori Arrieche",
-  "category": "IL (injury)",
-  "description": "ACL Mariners placed RHP Gregori Arrieche on the 60-day injured list."
- },
- {
-  "date": "2026-07-06",
-  "team": "Sultanes de Monterrey",
-  "player": "Harold Ram\u00edrez",
-  "category": "Activated",
-  "description": "Sultanes de Monterrey activated RF Harold Ram\u00edrez."
- },
- {
-  "date": "2026-07-06",
-  "team": "Wichita Wind Surge",
-  "player": "Zach Vennaro",
-  "category": "IL (injury)",
-  "description": "Wichita Wind Surge placed RHP Zach Vennaro on the 7-day injured list."
- },
- {
-  "date": "2026-07-06",
-  "team": "St. Louis Cardinals",
-  "player": "Max Rajcic",
-  "category": "IL (injury)",
-  "description": "St. Louis Cardinals placed RHP Max Rajcic on the 15-day injured list retroactive to July 4, 2026. Right elbow soreness."
- },
- {
-  "date": "2026-07-06",
-  "team": "Olmecas de Tabasco",
-  "player": "Luis Gonz\u00e1lez",
-  "category": "Activated",
-  "description": "Olmecas de Tabasco activated RF Luis Gonz\u00e1lez from the reserve list."
- },
- {
-  "date": "2026-07-06",
-  "team": "Atlanta Braves",
-  "player": "Mart\u00edn P\u00e9rez",
-  "category": "IL (injury)",
-  "description": "Atlanta Braves placed LHP Mart\u00edn P\u00e9rez on the 15-day injured list. Left forearm contusion."
+  "description": "St. Paul Saints placed SS Kaelen Culpepper on the 7-day injured list."
  },
  {
   "date": "2026-07-06",
@@ -764,10 +708,59 @@
  },
  {
   "date": "2026-07-06",
-  "team": "Frederick Keys",
-  "player": "Tanner Smith",
+  "team": "Hudson Valley Renegades",
+  "player": "Kaeden Kent",
   "category": "IL (injury)",
-  "description": "Frederick Keys transferred RHP Tanner Smith from the 7-day injured list to the 60-day injured list."
+  "description": "Hudson Valley Renegades placed SS Kaeden Kent on the 7-day injured list."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Fort Myers Mighty Mussels",
+  "player": "Billy Oldham",
+  "category": "IL (injury)",
+  "description": "Fort Myers Mighty Mussels activated RHP Billy Oldham from the 60-day injured list."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Houston Astros",
+  "player": "Braden Shewmake",
+  "category": "IL (injury)",
+  "description": "Houston Astros activated SS Braden Shewmake from the 10-day injured list."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Cedar Rapids Kernels",
+  "player": "Rayne Doncon",
+  "category": "IL (injury)",
+  "description": "Cedar Rapids Kernels activated 3B Rayne Doncon from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Olmecas de Tabasco",
+  "player": "Luis Gonz\u00e1lez",
+  "category": "Activated",
+  "description": "Olmecas de Tabasco activated RF Luis Gonz\u00e1lez from the reserve list."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Palm Beach Cardinals",
+  "player": "Xavier Cruz",
+  "category": "IL (injury)",
+  "description": "Palm Beach Cardinals placed RHP Xavier Cruz on the full-season injured list."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Cedar Rapids Kernels",
+  "player": "Eston Stull",
+  "category": "IL (injury)",
+  "description": "Cedar Rapids Kernels transferred RHP Eston Stull from the 7-day injured list to the 60-day injured list."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Tampa Tarpons",
+  "player": "Willy Montero",
+  "category": "IL (injury)",
+  "description": "Tampa Tarpons activated CF Willy Montero from the 7-day injured list."
  },
  {
   "date": "2026-07-06",
@@ -778,17 +771,24 @@
  },
  {
   "date": "2026-07-06",
-  "team": "Brewster Whitecaps",
-  "player": "Luke Wiltrakis",
+  "team": "Sultanes de Monterrey",
+  "player": "Harold Ram\u00edrez",
   "category": "Activated",
-  "description": "Brewster Whitecaps activated RHP Luke Wiltrakis."
+  "description": "Sultanes de Monterrey activated RF Harold Ram\u00edrez."
  },
  {
   "date": "2026-07-06",
-  "team": "Cedar Rapids Kernels",
-  "player": "Eston Stull",
+  "team": "Frederick Keys",
+  "player": "Tanner Smith",
   "category": "IL (injury)",
-  "description": "Cedar Rapids Kernels transferred RHP Eston Stull from the 7-day injured list to the 60-day injured list."
+  "description": "Frederick Keys transferred RHP Tanner Smith from the 7-day injured list to the 60-day injured list."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Toronto Blue Jays",
+  "player": "George Springer",
+  "category": "Activated",
+  "description": "Toronto Blue Jays activated DH George Springer from the bereavement list."
  },
  {
   "date": "2026-07-06",
@@ -806,24 +806,17 @@
  },
  {
   "date": "2026-07-06",
-  "team": "Palm Beach Cardinals",
-  "player": "Xavier Cruz",
+  "team": "Wichita Wind Surge",
+  "player": "Zach Vennaro",
   "category": "IL (injury)",
-  "description": "Palm Beach Cardinals placed RHP Xavier Cruz on the full-season injured list."
+  "description": "Wichita Wind Surge placed RHP Zach Vennaro on the 7-day injured list."
  },
  {
   "date": "2026-07-06",
-  "team": "Falmouth Commodores",
-  "player": "AJ Putty",
-  "category": "Activated",
-  "description": "Falmouth Commodores activated 1B AJ Putty."
- },
- {
-  "date": "2026-07-06",
-  "team": "Boston Red Sox",
-  "player": "Patrick Sandoval",
+  "team": "ACL Mariners",
+  "player": "Gregori Arrieche",
   "category": "IL (injury)",
-  "description": "Boston Red Sox activated LHP Patrick Sandoval from the 60-day injured list."
+  "description": "ACL Mariners placed RHP Gregori Arrieche on the 60-day injured list."
  },
  {
   "date": "2026-07-06",
@@ -834,45 +827,52 @@
  },
  {
   "date": "2026-07-06",
-  "team": "Fort Myers Mighty Mussels",
-  "player": "Billy Oldham",
-  "category": "IL (injury)",
-  "description": "Fort Myers Mighty Mussels activated RHP Billy Oldham from the 60-day injured list."
- },
- {
-  "date": "2026-07-06",
-  "team": "Cedar Rapids Kernels",
-  "player": "Rayne Doncon",
-  "category": "IL (injury)",
-  "description": "Cedar Rapids Kernels activated 3B Rayne Doncon from the 7-day injured list."
- },
- {
-  "date": "2026-07-06",
   "team": "Atlanta Braves",
-  "player": "JR Ritchie",
-  "category": "Call-up",
-  "description": "Atlanta Braves recalled RHP JR Ritchie from Gwinnett Stripers."
- },
- {
-  "date": "2026-07-06",
-  "team": "Hudson Valley Renegades",
-  "player": "Kaeden Kent",
+  "player": "Mart\u00edn P\u00e9rez",
   "category": "IL (injury)",
-  "description": "Hudson Valley Renegades placed SS Kaeden Kent on the 7-day injured list."
+  "description": "Atlanta Braves placed LHP Mart\u00edn P\u00e9rez on the 15-day injured list. Left forearm contusion."
  },
  {
   "date": "2026-07-06",
-  "team": "Rochester Red Wings",
-  "player": "Eddy Yean",
+  "team": "Boston Red Sox",
+  "player": "Patrick Sandoval",
+  "category": "IL (injury)",
+  "description": "Boston Red Sox activated LHP Patrick Sandoval from the 60-day injured list."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "St. Louis Cardinals",
+  "player": "Max Rajcic",
+  "category": "IL (injury)",
+  "description": "St. Louis Cardinals placed RHP Max Rajcic on the 15-day injured list retroactive to July 4, 2026. Right elbow soreness."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Norfolk Tides",
+  "player": "Cameron Weston",
   "category": "Sent down",
-  "description": "Washington Nationals optioned RHP Eddy Yean to Rochester Red Wings."
+  "description": "Baltimore Orioles optioned RHP Cameron Weston to Norfolk Tides."
  },
  {
   "date": "2026-07-06",
-  "team": "St. Paul Saints",
-  "player": "Kaelen Culpepper",
-  "category": "IL (injury)",
-  "description": "St. Paul Saints placed SS Kaelen Culpepper on the 7-day injured list."
+  "team": "Falmouth Commodores",
+  "player": "AJ Putty",
+  "category": "Activated",
+  "description": "Falmouth Commodores activated 1B AJ Putty."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Sultanes de Monterrey",
+  "player": "Harold Ram\u00edrez",
+  "category": "Trade",
+  "description": "Tecos de los Dos Laredos traded RHP Daniel Mengden and RF Harold Ram\u00edrez to Sultanes de Monterrey."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Brewster Whitecaps",
+  "player": "Luke Wiltrakis",
+  "category": "Activated",
+  "description": "Brewster Whitecaps activated RHP Luke Wiltrakis."
  },
  {
   "date": "2026-07-06",
@@ -904,6 +904,55 @@
  },
  {
   "date": "2026-07-06",
+  "team": "Oklahoma City Comets",
+  "player": "Paul Gervase",
+  "category": "Sent down",
+  "description": "Los Angeles Dodgers optioned RHP Paul Gervase to Oklahoma City Comets."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Atlanta Braves",
+  "player": "JR Ritchie",
+  "category": "Call-up",
+  "description": "Atlanta Braves recalled RHP JR Ritchie from Gwinnett Stripers."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Rochester Red Wings",
+  "player": "Eddy Yean",
+  "category": "Sent down",
+  "description": "Washington Nationals optioned RHP Eddy Yean to Rochester Red Wings."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Atlanta Braves",
+  "player": "Owen Murphy",
+  "category": "Call-up",
+  "description": "Atlanta Braves selected the contract of RHP Owen Murphy from Gwinnett Stripers."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Sultanes de Monterrey",
+  "player": "Daniel Mengden",
+  "category": "Trade",
+  "description": "Tecos de los Dos Laredos traded RHP Daniel Mengden and RF Harold Ram\u00edrez to Sultanes de Monterrey."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Las Vegas Aviators",
+  "player": "Kade Morris",
+  "category": "Sent down",
+  "description": "Athletics optioned RHP Kade Morris to Las Vegas Aviators."
+ },
+ {
+  "date": "2026-07-06",
+  "team": "Reno Aces",
+  "player": "Adrian Del Castillo",
+  "category": "Sent down",
+  "description": "Arizona Diamondbacks optioned DH Adrian Del Castillo to Reno Aces."
+ },
+ {
+  "date": "2026-07-06",
   "team": "St. Paul Saints",
   "player": "Cody Laweryson",
   "category": "Sent down",
@@ -915,55 +964,6 @@
   "player": "Mason Englert",
   "category": "Sent down",
   "description": "Tampa Bay Rays optioned RHP Mason Englert to Durham Bulls."
- },
- {
-  "date": "2026-07-06",
-  "team": "Oklahoma City Comets",
-  "player": "Paul Gervase",
-  "category": "Sent down",
-  "description": "Los Angeles Dodgers optioned RHP Paul Gervase to Oklahoma City Comets."
- },
- {
-  "date": "2026-07-06",
-  "team": "Atlanta Braves",
-  "player": "Owen Murphy",
-  "category": "Call-up",
-  "description": "Atlanta Braves selected the contract of RHP Owen Murphy from Gwinnett Stripers."
- },
- {
-  "date": "2026-07-06",
-  "team": "St. Louis Cardinals",
-  "player": "Gordon Graceffo",
-  "category": "Call-up",
-  "description": "St. Louis Cardinals recalled RHP Gordon Graceffo from Memphis Redbirds."
- },
- {
-  "date": "2026-07-06",
-  "team": "Reno Aces",
-  "player": "Adrian Del Castillo",
-  "category": "Sent down",
-  "description": "Arizona Diamondbacks optioned DH Adrian Del Castillo to Reno Aces."
- },
- {
-  "date": "2026-07-06",
-  "team": "Norfolk Tides",
-  "player": "Cameron Weston",
-  "category": "Sent down",
-  "description": "Baltimore Orioles optioned RHP Cameron Weston to Norfolk Tides."
- },
- {
-  "date": "2026-07-06",
-  "team": "Sultanes de Monterrey",
-  "player": "Harold Ram\u00edrez",
-  "category": "Trade",
-  "description": "Tecos de los Dos Laredos traded RHP Daniel Mengden and RF Harold Ram\u00edrez to Sultanes de Monterrey."
- },
- {
-  "date": "2026-07-06",
-  "team": "Sultanes de Monterrey",
-  "player": "Daniel Mengden",
-  "category": "Trade",
-  "description": "Tecos de los Dos Laredos traded RHP Daniel Mengden and RF Harold Ram\u00edrez to Sultanes de Monterrey."
  },
  {
   "date": "2026-07-06",
@@ -981,10 +981,10 @@
  },
  {
   "date": "2026-07-06",
-  "team": "Las Vegas Aviators",
-  "player": "Kade Morris",
-  "category": "Sent down",
-  "description": "Athletics optioned RHP Kade Morris to Las Vegas Aviators."
+  "team": "St. Louis Cardinals",
+  "player": "Gordon Graceffo",
+  "category": "Call-up",
+  "description": "St. Louis Cardinals recalled RHP Gordon Graceffo from Memphis Redbirds."
  },
  {
   "date": "2026-07-06",
