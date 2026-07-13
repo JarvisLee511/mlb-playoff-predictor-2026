@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-07-13 10:40 UTC",
+ "generated_at_utc": "2026-07-13 13:35 UTC",
  "n_predictions_logged": 447,
  "n_scored": 442,
  "backtest_metrics": {
@@ -11,7 +11,7 @@
    "n_games": 3874
   },
   "logistic_regression": {
-   "log_loss": 0.6814163387539566,
+   "log_loss": 0.6814163387539564,
    "brier": 0.2442516611465903,
    "auc": 0.5727364306638886,
    "accuracy": 0.5570469798657718,
@@ -32,7 +32,7 @@
    "n_games": 3874
   },
   "skellam_poisson": {
-   "log_loss": 0.6869297178993773,
+   "log_loss": 0.6869297178993772,
    "brier": 0.2468396766254822,
    "auc": 0.5717419142980276,
    "accuracy": 0.5516262261228704,
