@@ -1,6 +1,20 @@
 {
- "date": "2026-07-14",
+ "date": "2026-07-15",
  "games": [],
- "tomorrow_date": null,
- "tomorrow": []
+ "tomorrow_date": "2026-07-16",
+ "tomorrow": [
+  {
+   "game_time_et": "19:10",
+   "home_name": "Philadelphia Phillies",
+   "away_name": "New York Mets",
+   "home_pitcher": "TBD",
+   "away_pitcher": "Christian Scott",
+   "p_home_elo": 0.5926,
+   "p_home_lr": 0.5833,
+   "p_home_xgb": 0.5609,
+   "p_home_ens": 0.5741,
+   "p_home_skl": 0.5941,
+   "status": "pending"
+  }
+ ]
 }
