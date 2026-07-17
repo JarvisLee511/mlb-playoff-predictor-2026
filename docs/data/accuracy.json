@@ -1,62 +1,62 @@
 {
- "n_scored": 442,
+ "n_scored": 443,
  "min_reliable_n": 200,
  "reliable": true,
  "summary": {
   "elo": {
-   "log_loss": 0.6932,
-   "brier": 0.2499,
-   "accuracy": 0.5339,
+   "log_loss": 0.6936,
+   "brier": 0.2502,
+   "accuracy": 0.5327,
    "acc_ci": [
-    0.4873,
-    0.58
+    0.4862,
+    0.5787
    ],
-   "expected_accuracy": 0.5518,
-   "n": 442
+   "expected_accuracy": 0.5519,
+   "n": 443
   },
   "lr": {
-   "log_loss": 0.6906,
-   "brier": 0.2486,
-   "accuracy": 0.5543,
+   "log_loss": 0.691,
+   "brier": 0.2489,
+   "accuracy": 0.553,
    "acc_ci": [
-    0.5077,
-    0.6
+    0.5065,
+    0.5987
    ],
-   "expected_accuracy": 0.5687,
-   "n": 442
+   "expected_accuracy": 0.5688,
+   "n": 443
   },
   "xgb": {
-   "log_loss": 0.6905,
-   "brier": 0.2486,
-   "accuracy": 0.543,
+   "log_loss": 0.6909,
+   "brier": 0.2488,
+   "accuracy": 0.5418,
    "acc_ci": [
-    0.4964,
-    0.5889
+    0.4952,
+    0.5876
    ],
-   "expected_accuracy": 0.5659,
-   "n": 442
+   "expected_accuracy": 0.566,
+   "n": 443
   },
   "ens": {
-   "log_loss": 0.6881,
-   "brier": 0.2474,
-   "accuracy": 0.555,
+   "log_loss": 0.6885,
+   "brier": 0.2476,
+   "accuracy": 0.5537,
    "acc_ci": [
-    0.5076,
-    0.6015
+    0.5064,
+    0.6001
    ],
-   "expected_accuracy": 0.5612,
-   "n": 427
+   "expected_accuracy": 0.5613,
+   "n": 428
   },
   "skl": {
-   "log_loss": 0.6934,
-   "brier": 0.2496,
-   "accuracy": 0.5691,
+   "log_loss": 0.6939,
+   "brier": 0.2498,
+   "accuracy": 0.5678,
    "acc_ci": [
-    0.5217,
-    0.6152
+    0.5204,
+    0.6139
    ],
    "expected_accuracy": 0.5894,
-   "n": 427
+   "n": 428
   }
  },
  "calibration": {
@@ -72,9 +72,9 @@
     "n": 152
    },
    {
-    "p_mean": 0.5417,
-    "win_rate": 0.5458,
-    "n": 240
+    "p_mean": 0.5419,
+    "win_rate": 0.5436,
+    "n": 241
    },
    {
     "p_mean": 0.6241,
@@ -99,9 +99,9 @@
     "n": 122
    },
    {
-    "p_mean": 0.5486,
-    "win_rate": 0.5253,
-    "n": 217
+    "p_mean": 0.5488,
+    "win_rate": 0.5229,
+    "n": 218
    },
    {
     "p_mean": 0.6412,
@@ -126,9 +126,9 @@
     "n": 125
    },
    {
-    "p_mean": 0.5476,
-    "win_rate": 0.5204,
-    "n": 221
+    "p_mean": 0.5478,
+    "win_rate": 0.518,
+    "n": 222
    },
    {
     "p_mean": 0.6387,
@@ -153,9 +153,9 @@
     "n": 131
    },
    {
-    "p_mean": 0.5443,
-    "win_rate": 0.5207,
-    "n": 217
+    "p_mean": 0.5445,
+    "win_rate": 0.5183,
+    "n": 218
    },
    {
     "p_mean": 0.6408,
@@ -190,9 +190,9 @@
     "n": 164
    },
    {
-    "p_mean": 0.6423,
-    "win_rate": 0.5763,
-    "n": 59
+    "p_mean": 0.6416,
+    "win_rate": 0.5667,
+    "n": 60
    },
    {
     "p_mean": 0.7466,
@@ -235,7 +235,8 @@
    "2026-07-09",
    "2026-07-10",
    "2026-07-11",
-   "2026-07-12"
+   "2026-07-12",
+   "2026-07-16"
   ],
   "elo": [
    0.7508,
@@ -270,7 +271,8 @@
    0.6932,
    0.6947,
    0.6941,
-   0.6932
+   0.6932,
+   0.6936
   ],
   "lr": [
    0.7404,
@@ -305,7 +307,8 @@
    0.6907,
    0.6921,
    0.6917,
-   0.6906
+   0.6906,
+   0.691
   ],
   "xgb": [
    0.7214,
@@ -340,7 +343,8 @@
    0.6899,
    0.6912,
    0.6912,
-   0.6905
+   0.6905,
+   0.6909
   ],
   "ens": [
    null,
@@ -375,7 +379,8 @@
    0.688,
    0.6895,
    0.6892,
-   0.6881
+   0.6881,
+   0.6885
   ],
   "skl": [
    null,
@@ -410,23 +415,11 @@
    0.6914,
    0.6941,
    0.6943,
-   0.6934
+   0.6934,
+   0.6939
   ]
  },
  "recent": [
-  {
-   "date": "2026-07-11",
-   "home_name": "Minnesota Twins",
-   "away_name": "Los Angeles Angels",
-   "home_score": 5.0,
-   "away_score": 3.0,
-   "home_win": 1,
-   "p_home_elo": 0.561,
-   "p_home_lr": 0.6391,
-   "p_home_xgb": 0.6155,
-   "p_home_ens": 0.612,
-   "p_home_skl": 0.6703
-  },
   {
    "date": "2026-07-11",
    "home_name": "Chicago White Sox",
@@ -803,6 +796,19 @@
    "p_home_xgb": 0.4491,
    "p_home_ens": 0.4698,
    "p_home_skl": 0.4162
+  },
+  {
+   "date": "2026-07-16",
+   "home_name": "Philadelphia Phillies",
+   "away_name": "New York Mets",
+   "home_score": 1.0,
+   "away_score": 4.0,
+   "home_win": 0,
+   "p_home_elo": 0.5926,
+   "p_home_lr": 0.5894,
+   "p_home_xgb": 0.5896,
+   "p_home_ens": 0.579,
+   "p_home_skl": 0.6014
   }
  ]
 }

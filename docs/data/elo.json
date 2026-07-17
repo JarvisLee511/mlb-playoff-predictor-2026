@@ -30,16 +30,16 @@
   "elo": 1528.8
  },
  {
-  "team_name": "Philadelphia Phillies",
-  "abbrev": "PHI",
-  "league": "National League",
-  "elo": 1523.9
- },
- {
   "team_name": "Boston Red Sox",
   "abbrev": "BOS",
   "league": "American League",
   "elo": 1523.6
+ },
+ {
+  "team_name": "Philadelphia Phillies",
+  "abbrev": "PHI",
+  "league": "National League",
+  "elo": 1521.4
  },
  {
   "team_name": "Tampa Bay Rays",
@@ -144,16 +144,16 @@
   "elo": 1478.5
  },
  {
+  "team_name": "New York Mets",
+  "abbrev": "NYM",
+  "league": "National League",
+  "elo": 1477.3
+ },
+ {
   "team_name": "San Francisco Giants",
   "abbrev": "SF",
   "league": "National League",
   "elo": 1476.5
- },
- {
-  "team_name": "New York Mets",
-  "abbrev": "NYM",
-  "league": "National League",
-  "elo": 1474.8
  },
  {
   "team_name": "Kansas City Royals",
