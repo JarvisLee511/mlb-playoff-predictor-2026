@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-07-25 07:32 UTC",
+ "generated_at_utc": "2026-07-25 09:18 UTC",
  "n_predictions_logged": 572,
  "n_scored": 553,
  "backtest_metrics": {
@@ -33,7 +33,7 @@
   },
   "skellam_poisson": {
    "log_loss": 0.6873702871247601,
-   "brier": 0.2470532612978319,
+   "brier": 0.24705326129783187,
    "auc": 0.5702567606899258,
    "accuracy": 0.5508155583437893,
    "n_games": 3985
