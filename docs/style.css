@@ -122,3 +122,17 @@ footer {
   max-width: 1100px; margin: 0 auto; padding: 18px 24px 36px;
   color: var(--muted); font-size: 0.75rem; border-top: 1px solid var(--border);
 }
+
+/* ---------------------------------------------------------------------------
+   Accessibility + layout safety — slop-test gates 26, 34, 51
+   The page is tab-driven (nav#tabs > button.tab), so a visible focus ring is
+   the difference between usable and unusable for keyboard navigation.
+   No prefers-reduced-motion block: this stylesheet declares no animation
+   or transition at all, so gate 27 passes trivially.
+   --------------------------------------------------------------------------- */
+html, body { overflow-x: clip; }
+h1, h2, h3 { overflow-wrap: anywhere; min-width: 0; }
+a:focus-visible, button:focus-visible, .tab:focus-visible,
+select:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px;
+}
