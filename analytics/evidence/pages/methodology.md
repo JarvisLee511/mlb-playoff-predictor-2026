@@ -35,8 +35,8 @@ differential (~99.9%), from a handful of window-edge games around doubleheaders.
 <DataTable data={validation}>
     <Column id=feature/>
     <Column id=n_compared title="Rows compared"/>
-    <Column id=max_abs_diff title="Max abs diff" fmt="0.00e+0"/>
-    <Column id=mean_abs_diff title="Mean abs diff" fmt="0.00e+0"/>
+    <Column id=max_abs_diff title="Max abs diff" fmt=sci/>
+    <Column id=mean_abs_diff title="Mean abs diff" fmt=sci/>
     <Column id=pct_within_tol title="% within 1e-6" fmt="0.00%"/>
 </DataTable>
 
