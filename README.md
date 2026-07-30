@@ -160,6 +160,13 @@ pitcher snapshots, park HFA, season win% and rest days match to floating-point p
 and 30-game rolling form matches ~99.9%. In CI, `daily.yml` runs `dbt build` (all models
 + tests) on the freshly regenerated data after each daily prediction commit.
 
+**🌐 Live BI site: <https://jarvislee511.github.io/mlb-playoff-predictor-2026/analytics/>** —
+five Evidence pages served from the same Pages site, rebuilt weekly by
+[`analytics-site.yml`](.github/workflows/analytics-site.yml). The
+[feature-validation page](https://jarvislee511.github.io/mlb-playoff-predictor-2026/analytics/methodology)
+is the one to look at: per-feature max/mean absolute difference between the SQL rebuild and
+the pandas original, most of them at 1e-15 to 1e-18.
+
 See **[`analytics/README.md`](analytics/README.md)** for the full walkthrough.
 
 ## Modeling notes & limitations
