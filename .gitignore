@@ -9,3 +9,6 @@ outputs/*.joblib
 data/lineups.csv
 data/batter_logs.csv
 .playwright-mcp/
+
+# Local test venv scratch
+.pytest_cache/

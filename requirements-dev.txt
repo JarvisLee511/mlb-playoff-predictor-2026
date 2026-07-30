@@ -1,0 +1,3 @@
+# Test-only dependencies. The suite needs nothing beyond pytest — every fixture
+# is synthetic, so `pytest` runs offline with no MLB API calls and no data files.
+pytest==9.1.1

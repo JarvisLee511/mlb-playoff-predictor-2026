@@ -220,12 +220,19 @@ def build_bullpen_snapshots(gamelogs: pd.DataFrame, pitcher_logs: pd.DataFrame) 
             "bp_fip": _shrunk_fip(grp["bp_fip_num"].cumsum(), grp["bp_p_ip"].cumsum()),
         }
     )
-    daily_ip = g.groupby(["team_id", "date"])["bp_p_ip"].sum()
+    # Keys are normalised to "YYYY-MM-DD" strings rather than inherited from the
+    # caller's dtype: bullpen_fatigue looks them up by formatted date, so a
+    # gamelogs frame loaded with parse_dates would miss every key and silently
+    # report every bullpen as fully rested.
+    day = pd.to_datetime(g["date"]).dt.strftime("%Y-%m-%d")
+    daily_ip = g.groupby([g["team_id"], day])["bp_p_ip"].sum()
     return snaps, daily_ip.to_dict()
 
 
 def bullpen_fatigue(team_id: int, date, daily_ip: dict, days: int = 3) -> float:
-    """Bullpen innings thrown in the `days` days before `date`."""
+    """Bullpen innings thrown in the `days` days before `date` (never including
+    the game itself)."""
+    date = pd.Timestamp(date)
     total = 0.0
     for k in range(1, days + 1):
         d = (date - pd.Timedelta(days=k)).strftime("%Y-%m-%d")

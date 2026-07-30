@@ -26,6 +26,14 @@ jobs:
 
       - run: pip install -r requirements-ci.txt
 
+      # Runs BEFORE the pipeline: if an Elo or feature invariant is broken there
+      # is no point spending the API calls, and no point publishing predictions
+      # from code that just failed its own leakage checks.
+      - name: Tests
+        run: |
+          pip install -r requirements-dev.txt
+          pytest -q
+
       - name: Run daily pipeline
         run: python daily_update.py
 

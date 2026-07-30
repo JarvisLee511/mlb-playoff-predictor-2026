@@ -122,6 +122,24 @@ streamlit run app/streamlit_app.py
 
 `python run_pipeline.py --no-fetch` reuses cached data and skips the API calls.
 
+## Tests
+
+```bash
+pip install -r requirements-dev.txt
+pytest -q          # 77 tests, ~2 s, no network and no data files
+```
+
+They guard the claims the rest of this README makes: the Elo scale and its
+zero-sum rating transfer, that every rolling stat and both as-of joins exclude the
+current game, that the hand-rolled Skellam matches a brute-force Poisson double
+sum to 1e-9, the delta-vs-Elo sign convention behind the results table, and the
+postseason bracket's structure. `daily.yml` runs them **before** the pipeline.
+
+The suite was itself checked by mutation — plant a plausible bug, confirm the
+tests go red — and catches **12 of 12** planted bugs. That exercise found a real
+fragility in `bullpen_fatigue` and added two tests that were missing. See
+[`tests/README.md`](tests/README.md).
+
 ## Project structure
 
 ```
