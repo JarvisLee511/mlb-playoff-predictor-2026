@@ -1,3 +1,10 @@
+# Published under the /analytics subpath of the project's GitHub Pages site:
+# https://jarvislee511.github.io/mlb-playoff-predictor-2026/analytics/
+# Without this every asset URL is root-relative and 404s there. Evidence reads it
+# only from this file (svelte.config.js -> paths.base); there is no env-var form.
+deployment:
+  basePath: /mlb-playoff-predictor-2026/analytics
+
 appearance:
   default: system
   switcher: true

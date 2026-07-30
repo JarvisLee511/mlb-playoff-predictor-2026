@@ -1,0 +1,76 @@
+name: Publish analytics site (Evidence)
+
+# Builds the Evidence BI site on top of the dbt/DuckDB warehouse and commits the static
+# output to docs/analytics/, served at
+#   https://jarvislee511.github.io/mlb-playoff-predictor-2026/analytics/
+# alongside the existing prediction site (both use the main-branch /docs Pages source).
+#
+# Run manually the first time (Actions -> this workflow -> Run workflow); it then
+# refreshes weekly. Kept off the daily job so the built site doesn't create daily commit
+# noise.
+#
+# The /analytics subpath comes from deployment.basePath in analytics/evidence/
+# evidence.config.yaml. Evidence reads it only from that file - there is no env-var
+# equivalent - and without it every asset URL is root-relative and 404s here.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * 1"   # Mondays, 8 AM ET
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analytics-site
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python deps
+        run: |
+          pip install -r requirements-ci.txt
+          pip install -r requirements-analytics.txt
+
+      - name: Refresh pipeline data
+        run: python daily_update.py
+
+      - name: Build warehouse (dbt)
+        working-directory: analytics/dbt
+        run: |
+          mkdir -p ../warehouse
+          dbt build --profiles-dir .
+
+      - name: Build Evidence site
+        working-directory: analytics/evidence
+        run: |
+          npm ci
+          npm run sources
+          npm run build
+
+      - name: Publish to docs/analytics
+        run: |
+          rm -rf docs/analytics
+          mkdir -p docs/analytics
+          cp -r analytics/evidence/build/* docs/analytics/
+          git config user.name "JarvisLee511"
+          git config user.email "lee.chew@northeastern.edu"
+          git add docs/analytics
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish analytics site $(date -u +%F)"
+            git pull --rebase --autostash
+            git push
+          fi

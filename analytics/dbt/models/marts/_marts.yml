@@ -29,10 +29,19 @@ models:
               arguments: {min_value: 0, max_value: 1}
 
   - name: mart_model_performance
-    description: Out-of-sample scorecard per model plus reference baselines.
+    description: >
+      Out-of-sample scorecard per model plus reference baselines. Every model is scored
+      on the same games (the intersection where all models predicted), so the ranking is
+      like-for-like; n_available keeps each model's full coverage visible.
     columns:
       - name: model
         tests: [not_null, unique]
+      - name: n_scored
+        description: Games in the common subset — identical for every row by construction.
+        tests: [not_null]
+      - name: n_available
+        description: Games this model predicted in total, >= n_scored.
+        tests: [not_null]
       - name: accuracy
         tests:
           - between:
@@ -41,6 +50,13 @@ models:
         tests:
           - between:
               arguments: {min_value: 0, max_value: 2}
+      - name: delta_log_loss_vs_elo
+        description: >
+          Log-loss gap to the Elo baseline; negative beats it. Null for Elo itself and the
+          baselines. A magnitude anywhere near 1 would mean something broke upstream.
+        tests:
+          - between:
+              arguments: {min_value: -1, max_value: 1}
 
   - name: mart_calibration
     description: Reliability curve per model per bin.
