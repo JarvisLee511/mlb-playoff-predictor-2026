@@ -4,7 +4,7 @@ const MODEL_LABELS = {
   elo: "Elo baseline",
   lr: "Logistic regression",
   xgb: "XGBoost",
-  ens: "Ensemble (calibrated)",
+  ens: "Elo+LR stack",
   skl: "Poisson-Skellam",
 };
 const PLOT_LAYOUT = {
@@ -139,6 +139,49 @@ json("accuracy.json").then((d) => {
       </div>`;
     })
     .join("");
+
+  // Head to head: the cards above score each model on its own non-null rows,
+  // which are different samples. This table restricts to the games every model
+  // predicted and puts a paired bootstrap interval on the gap to Elo.
+  const h2h = d.head_to_head;
+  const h2hEl = document.getElementById("h2h");
+  if (h2h && h2h.models) {
+    const rows = Object.entries(MODEL_LABELS)
+      .filter(([k]) => h2h.models[k])
+      .map(([k, label]) => {
+        const m = h2h.models[k];
+        if (k === "elo") {
+          return `<tr><td>${label}</td>` +
+            `<td class="num">${m.log_loss}</td><td class="num">${m.brier}</td>` +
+            `<td class="num">${pct(m.accuracy)}</td><td class="num">–</td><td class="num">–</td></tr>`;
+        }
+        const better = m.delta_vs_elo < 0;
+        const sign = better ? "" : "+";
+        return `<tr><td>${label}</td><td class="num">${m.log_loss}</td>` +
+          `<td class="num">${m.brier}</td><td class="num">${pct(m.accuracy)}</td>` +
+          `<td class="num">${sign}${m.delta_vs_elo.toFixed(4)}</td>` +
+          `<td class="num muted">[${m.delta_ci[0].toFixed(4)}, ${m.delta_ci[1].toFixed(4)}]</td></tr>`;
+      }).join("");
+    // State what the intervals actually show today rather than asserting a
+    // conclusion that could go stale as the sample grows.
+    const challengers = Object.entries(h2h.models).filter(([k]) => k !== "elo");
+    const clearZero = challengers.filter(([, m]) => m.delta_ci[1] < 0).map(([k]) => MODEL_LABELS[k]);
+    const verdict = clearZero.length
+      ? `<strong>${clearZero.join(", ")}</strong> ${clearZero.length > 1 ? "clear" : "clears"} zero, ` +
+        `so ${clearZero.length > 1 ? "those models beat" : "that model beats"} the Elo baseline by more than noise.`
+      : `Every interval spans zero, so on this sample the ML features are ` +
+        `<strong>not distinguishable from the Elo baseline</strong> — the honest read, not a bug.`;
+    h2hEl.innerHTML =
+      `<div class="table-wrap"><table><thead><tr><th>Model</th><th class="num">Log loss</th>` +
+      `<th class="num">Brier</th><th class="num">Accuracy</th>` +
+      `<th class="num">Δ log loss vs Elo</th><th class="num">95% CI (paired bootstrap)</th>` +
+      `</tr></thead><tbody>${rows}</tbody></table></div>` +
+      `<p class="hint">All ${h2h.n} games that every model predicted. Negative Δ beats Elo. ${verdict} ` +
+      `MLB games sit near a coin flip — home teams won ${pct(h2h.home_win_rate)} of these — and Elo already ` +
+      `captures most of what pre-game team strength can tell you.</p>`;
+  } else if (h2hEl) {
+    h2hEl.innerHTML = '<p class="empty">Not enough overlapping predictions yet.</p>';
+  }
 
   Plotly.newPlot(
     "tracker-chart",

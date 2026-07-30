@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: stg_teams
+    description: Team dimension.
+    columns:
+      - name: team_id
+        tests: [not_null, unique]
+
+  - name: stg_games
+    description: One row per game_id with final scores and the home_win label.
+    columns:
+      - name: game_id
+        tests: [not_null, unique]
+      - name: home_win
+        tests:
+          - accepted_values: {values: [0, 1]}
+
+  - name: stg_predictions_log
+    description: Out-of-sample prediction track record.
+    columns:
+      - name: game_id
+        tests: [not_null]
+      - name: p_home_lr
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+      - name: p_home_elo
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+
+  - name: stg_metrics
+    description: Backtest metrics per model (unpivoted from metrics.json).
+    columns:
+      - name: model
+        tests: [not_null, unique]
+      - name: log_loss
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 2}
+
+  - name: stg_calibration
+    description: Reliability bins per model.
+    columns:
+      - name: mean_predicted
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+      - name: fraction_won
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}

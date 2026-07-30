@@ -1,0 +1,6 @@
+model,is_baseline,n_scored,accuracy,brier,log_loss
+xgb,false,15,0.4,0.2641,0.7214
+lr,false,15,0.4667,0.2733,0.7404
+elo,false,15,0.4,0.2783,0.7508
+baseline_coinflip,true,15,0.5,0.25,0.6931
+baseline_always_home,true,15,0.6667,,

@@ -1,0 +1,12 @@
+mlb_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # Warehouse lives under analytics/warehouse. Path is relative to the dbt
+      # working directory (analytics/dbt), so "../warehouse/mlb.duckdb".
+      path: "../warehouse/mlb.duckdb"
+      threads: 4
+      extensions:
+        - httpfs
+        - parquet

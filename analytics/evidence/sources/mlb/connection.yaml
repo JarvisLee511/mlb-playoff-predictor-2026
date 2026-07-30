@@ -1,0 +1,6 @@
+name: mlb
+type: duckdb
+options:
+  # DuckDB warehouse built by dbt (analytics/warehouse/mlb.duckdb), relative to the
+  # Evidence project root. Rebuild it with `dbt build` before `npm run sources`.
+  filename: ../../../warehouse/mlb.duckdb

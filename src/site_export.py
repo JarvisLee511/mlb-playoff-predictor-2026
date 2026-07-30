@@ -112,6 +112,55 @@ def _calibration_bins(p: np.ndarray, y: np.ndarray) -> list[dict]:
     return bins
 
 
+def _head_to_head(finals: pd.DataFrame, n_boot: int = 5000, seed: int = 0) -> dict:
+    """Like-for-like model comparison on the games every model predicted.
+
+    `summary` scores each model on its own non-null rows, because models added
+    later have no prediction for earlier games. That is the right per-model
+    track record but the wrong leaderboard: the rows are different samples, so
+    ranking them against each other compares different sets of games.
+
+    This block restricts to the intersection and reports each model's log-loss
+    gap to the Elo baseline with a paired bootstrap interval, which is the
+    honest way to answer "do the ML features actually add anything?".
+    """
+    cols = [c for c in MODELS.values() if c in finals.columns]
+    common = finals.dropna(subset=cols)
+    if len(common) < 30 or "p_home_elo" not in cols:
+        return {}
+
+    y = common["home_win"].to_numpy(dtype=int)
+    p = {k: common[c].to_numpy(dtype=float) for k, c in MODELS.items() if c in cols}
+    ll = {k: _log_loss_series(v, y) for k, v in p.items()}
+
+    rng = np.random.default_rng(seed)
+    idx = rng.integers(0, len(y), size=(n_boot, len(y)))
+    base = ll["elo"]
+
+    models = {}
+    for k, v in p.items():
+        hits = int(((v > 0.5).astype(int) == y).sum())
+        entry = {
+            "log_loss": round(float(ll[k].mean()), 4),
+            "brier": round(float(((v - y) ** 2).mean()), 4),
+            "accuracy": round(float(hits / len(y)), 4),
+        }
+        if k != "elo":
+            # paired: every resample scores both models on the same games
+            diff = (ll[k][idx].mean(axis=1) - base[idx].mean(axis=1))
+            entry["delta_vs_elo"] = round(float(ll[k].mean() - base.mean()), 5)
+            entry["delta_ci"] = [round(float(np.percentile(diff, 2.5)), 5),
+                                 round(float(np.percentile(diff, 97.5)), 5)]
+            entry["p_beats_elo"] = round(float((diff < 0).mean()), 3)
+        models[k] = entry
+
+    return {
+        "n": int(len(y)),
+        "home_win_rate": round(float(y.mean()), 4),
+        "models": models,
+    }
+
+
 def export_accuracy(log: pd.DataFrame) -> None:
     finals = log[log["status"] == "final"].copy()
     out = {
@@ -119,6 +168,7 @@ def export_accuracy(log: pd.DataFrame) -> None:
         "min_reliable_n": MIN_RELIABLE_N,
         "reliable": bool(len(finals) >= MIN_RELIABLE_N),
         "summary": {},
+        "head_to_head": {},
         "calibration": {},
         "daily": {},
         "recent": [],
@@ -126,6 +176,7 @@ def export_accuracy(log: pd.DataFrame) -> None:
 
     if len(finals):
         finals["home_win"] = finals["home_win"].astype(int)
+        out["head_to_head"] = _head_to_head(finals)
 
         # per-model: older log rows may predate a model's introduction (NaN)
         daily_dates: list[str] = sorted(finals["date"].unique())

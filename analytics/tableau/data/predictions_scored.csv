@@ -1,0 +1,46 @@
+game_date,game_id,home_name,away_name,home_win,prob_col,p_home
+2026-06-10,822970,Tampa Bay Rays,Boston Red Sox,1,p_home_elo,0.539
+2026-06-10,822970,Tampa Bay Rays,Boston Red Sox,1,p_home_lr,0.535
+2026-06-10,822970,Tampa Bay Rays,Boston Red Sox,1,p_home_xgb,0.5313
+2026-06-10,824428,Cleveland Guardians,New York Yankees,0,p_home_elo,0.456
+2026-06-10,824428,Cleveland Guardians,New York Yankees,0,p_home_lr,0.4552
+2026-06-10,824428,Cleveland Guardians,New York Yankees,0,p_home_xgb,0.4529
+2026-06-10,823215,San Francisco Giants,Washington Nationals,1,p_home_elo,0.5324
+2026-06-10,823215,San Francisco Giants,Washington Nationals,1,p_home_lr,0.552
+2026-06-10,823215,San Francisco Giants,Washington Nationals,1,p_home_xgb,0.5108
+2026-06-10,823287,San Diego Padres,Cincinnati Reds,1,p_home_elo,0.5733
+2026-06-10,823287,San Diego Padres,Cincinnati Reds,1,p_home_lr,0.6127
+2026-06-10,823287,San Diego Padres,Cincinnati Reds,1,p_home_xgb,0.6266
+2026-06-10,824831,Baltimore Orioles,Seattle Mariners,1,p_home_elo,0.4627
+2026-06-10,824831,Baltimore Orioles,Seattle Mariners,1,p_home_lr,0.4442
+2026-06-10,824831,Baltimore Orioles,Seattle Mariners,1,p_home_xgb,0.4465
+2026-06-10,823372,Pittsburgh Pirates,Los Angeles Dodgers,1,p_home_elo,0.4067
+2026-06-10,823372,Pittsburgh Pirates,Los Angeles Dodgers,1,p_home_lr,0.407
+2026-06-10,823372,Pittsburgh Pirates,Los Angeles Dodgers,1,p_home_xgb,0.4571
+2026-06-10,824266,Detroit Tigers,Minnesota Twins,0,p_home_elo,0.5672
+2026-06-10,824266,Detroit Tigers,Minnesota Twins,0,p_home_lr,0.5874
+2026-06-10,824266,Detroit Tigers,Minnesota Twins,0,p_home_xgb,0.5868
+2026-06-10,823856,Miami Marlins,Arizona Diamondbacks,1,p_home_elo,0.5061
+2026-06-10,823856,Miami Marlins,Arizona Diamondbacks,1,p_home_lr,0.5283
+2026-06-10,823856,Miami Marlins,Arizona Diamondbacks,1,p_home_xgb,0.5075
+2026-06-10,822804,Toronto Blue Jays,Philadelphia Phillies,0,p_home_elo,0.5062
+2026-06-10,822804,Toronto Blue Jays,Philadelphia Phillies,0,p_home_lr,0.5158
+2026-06-10,822804,Toronto Blue Jays,Philadelphia Phillies,0,p_home_xgb,0.5122
+2026-06-10,823618,New York Mets,St. Louis Cardinals,0,p_home_elo,0.5226
+2026-06-10,823618,New York Mets,St. Louis Cardinals,0,p_home_lr,0.5465
+2026-06-10,823618,New York Mets,St. Louis Cardinals,0,p_home_xgb,0.5177
+2026-06-10,824103,Kansas City Royals,Texas Rangers,0,p_home_elo,0.4959
+2026-06-10,824103,Kansas City Royals,Texas Rangers,0,p_home_lr,0.4945
+2026-06-10,824103,Kansas City Royals,Texas Rangers,0,p_home_xgb,0.5019
+2026-06-10,824590,Chicago White Sox,Atlanta Braves,1,p_home_elo,0.4194
+2026-06-10,824590,Chicago White Sox,Atlanta Braves,1,p_home_lr,0.434
+2026-06-10,824590,Chicago White Sox,Atlanta Braves,1,p_home_xgb,0.4464
+2026-06-10,824348,Colorado Rockies,Chicago Cubs,1,p_home_elo,0.3675
+2026-06-10,824348,Colorado Rockies,Chicago Cubs,1,p_home_lr,0.4016
+2026-06-10,824348,Colorado Rockies,Chicago Cubs,1,p_home_xgb,0.4762
+2026-06-10,824996,Athletics,Milwaukee Brewers,1,p_home_elo,0.3949
+2026-06-10,824996,Athletics,Milwaukee Brewers,1,p_home_lr,0.3942
+2026-06-10,824996,Athletics,Milwaukee Brewers,1,p_home_xgb,0.4008
+2026-06-10,824022,Los Angeles Angels,Houston Astros,1,p_home_elo,0.4818
+2026-06-10,824022,Los Angeles Angels,Houston Astros,1,p_home_lr,0.5068
+2026-06-10,824022,Los Angeles Angels,Houston Astros,1,p_home_xgb,0.5028

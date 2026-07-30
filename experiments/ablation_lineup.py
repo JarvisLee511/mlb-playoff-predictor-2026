@@ -1,8 +1,21 @@
-"""Throwaway: does lineup_woba_diff actually improve the model?
+"""Does lineup_woba_diff actually improve the model? (Answer: no.)
 
 Same data, same split, toggle the one feature. Reports test log loss / AUC /
-Brier with and without it for LR, XGB, and the Elo+LR ensemble stack.
-Run AFTER features.csv has been rebuilt with lineups.
+Brier with and without it for LR, XGB, and the Elo+LR stack.
+
+RESULT (2026-06-13, test = 2025 + played 2026, 3,469 games): +0.00004 log loss
+for LR — nothing. Lineup-average wOBA is collinear with the team season OPS the
+model already has, and a deviation-from-normal variant was flat with a
+wrong-signed coefficient. The feature was dropped from FEATURE_COLS, and the
+lineup/batter data (43 MB) is not refetched daily.
+
+To rerun, the lineup columns have to exist first:
+
+    python -m src.data.lineups            # refetch lineups + per-batter game logs
+    python run_pipeline.py --no-fetch     # rebuild features.csv with them
+    python -m experiments.ablation_lineup # run as a module, from the repo root
+
+Kept as the record of a negative result rather than deleted.
 """
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
@@ -45,6 +58,14 @@ def fit_eval(cols, tr, va, te):
 
 def main():
     df = pd.read_csv(DATA_PROCESSED / "features.csv", parse_dates=["date"])
+    if LINEUP not in df.columns:
+        raise SystemExit(
+            f"features.csv has no '{LINEUP}' column, so there is nothing to ablate.\n"
+            "The feature was removed after this experiment (see the module docstring).\n"
+            "Rebuild it first:\n"
+            "    python -m src.data.lineups\n"
+            "    python run_pipeline.py --no-fetch"
+        )
     df = df[(df["home_enough_history"] == 1) & (df["away_enough_history"] == 1)]
     tr = df[df["season"] <= TRAIN_END]
     va = df[df["season"] == VAL_SEASON]

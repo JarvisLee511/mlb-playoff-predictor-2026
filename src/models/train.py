@@ -3,7 +3,7 @@
 Baseline:  raw Elo probability (no fitting).
 Model 1:   Logistic regression on pre-game features.
 Model 2:   XGBoost on the same features.
-Model 3:   Ensemble — mean of Elo + LR, isotonic-calibrated on validation.
+Model 3:   Ensemble — logistic stack of Elo + LR in logit space, fit on validation.
 Model 4:   Poisson run-scoring model per side -> Skellam win probability
            (also yields expected runs, usable for totals later).
 
@@ -16,7 +16,6 @@ import joblib
 import numpy as np
 import pandas as pd
 from sklearn.calibration import calibration_curve
-from sklearn.isotonic import IsotonicRegression
 from sklearn.linear_model import LogisticRegression, PoissonRegressor
 from sklearn.metrics import brier_score_loss, log_loss, roc_auc_score
 from sklearn.pipeline import make_pipeline

@@ -1,0 +1,71 @@
+version: 2
+
+# External file sources. dbt-duckdb reads them in place via read_csv_auto — no
+# ingestion/copy step. Paths resolve against DuckDB's cwd (analytics/dbt) through
+# the mlb_root var. Files written by the Python pipeline; this layer only reads.
+sources:
+  - name: mlb_pipeline
+    description: >
+      CSV/JSON artifacts produced by the MLB prediction pipeline
+      (src/pipeline.py, src/predictions.py, src/site_export.py).
+
+    tables:
+      # ---- data/ (committed) ------------------------------------------------
+      - name: gamelogs
+        description: One row per team-game; hitting (h_*) and pitching-allowed (p_*) lines.
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/data/gamelogs.csv')"
+
+      - name: pitcher_logs
+        description: One row per pitcher-appearance. gs=1 flags a start.
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/data/pitcher_logs.csv')"
+
+      - name: probables
+        description: One row per game_id; probable starting pitcher ids.
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/data/probables.csv')"
+
+      - name: predictions_log
+        description: >
+          Out-of-sample track record. One row per predicted game, logged pre-game
+          with status=pending, later flipped to final with the true result.
+        loaded_at_field: "cast(date as timestamp)"
+        freshness:
+          warn_after: {count: 3, period: day}
+          error_after: {count: 10, period: day}
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/data/predictions_log.csv')"
+
+      # ---- data/raw/ (regenerated each run) ---------------------------------
+      - name: games
+        description: One row per game_id; final scores and home_win label.
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/data/raw/games.csv')"
+
+      - name: teams
+        description: Team dimension (name, abbrev, league, division).
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/data/raw/teams.csv')"
+
+      # ---- data/processed/ (regenerated each run) ---------------------------
+      - name: features
+        description: The full ~70-column modeling table built by src/features.py.
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/data/processed/features.csv')"
+
+      # ---- outputs/ (committed) ---------------------------------------------
+      - name: calibration
+        description: Reliability bins per model (mean_predicted vs fraction_won).
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/outputs/calibration.csv')"
+
+      - name: elo_current
+        description: Current Elo rating per team.
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/outputs/elo_current.csv')"
+
+      - name: playoff_odds
+        description: Monte-Carlo (10k-sim) playoff/World-Series odds per team.
+        meta:
+          external_location: "read_csv_auto('{{ var('mlb_root') }}/outputs/playoff_odds_2026.csv')"

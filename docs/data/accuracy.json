@@ -59,6 +59,61 @@
    "n": 610
   }
  },
+ "head_to_head": {
+  "n": 610,
+  "home_win_rate": 0.5098,
+  "models": {
+   "elo": {
+    "log_loss": 0.6888,
+    "brier": 0.2478,
+    "accuracy": 0.5459
+   },
+   "lr": {
+    "log_loss": 0.6898,
+    "brier": 0.2483,
+    "accuracy": 0.5361,
+    "delta_vs_elo": 0.00105,
+    "delta_ci": [
+     -0.00524,
+     0.0076
+    ],
+    "p_beats_elo": 0.394
+   },
+   "xgb": {
+    "log_loss": 0.6895,
+    "brier": 0.2481,
+    "accuracy": 0.5377,
+    "delta_vs_elo": 0.0007,
+    "delta_ci": [
+     -0.0058,
+     0.00736
+    ],
+    "p_beats_elo": 0.424
+   },
+   "ens": {
+    "log_loss": 0.6883,
+    "brier": 0.2476,
+    "accuracy": 0.5426,
+    "delta_vs_elo": -0.00047,
+    "delta_ci": [
+     -0.00515,
+     0.00425
+    ],
+    "p_beats_elo": 0.585
+   },
+   "skl": {
+    "log_loss": 0.6954,
+    "brier": 0.2508,
+    "accuracy": 0.5492,
+    "delta_vs_elo": 0.00664,
+    "delta_ci": [
+     -0.004,
+     0.01805
+    ],
+    "p_beats_elo": 0.116
+   }
+  }
+ },
  "calibration": {
   "elo": [
    {

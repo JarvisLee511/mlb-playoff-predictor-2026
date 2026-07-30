@@ -39,3 +39,16 @@ jobs:
             git pull --rebase --autostash
             git push
           fi
+
+      # Analytics-engineering layer: rebuild the DuckDB warehouse from the freshly
+      # regenerated files and run all dbt tests (incl. the feature-parity check).
+      # Runs AFTER the commit so an analytics issue can never block the daily
+      # prediction push; a failure here still surfaces as a red run.
+      - name: Install analytics deps (dbt)
+        run: pip install -r requirements-analytics.txt
+
+      - name: Build & test analytics warehouse (dbt)
+        working-directory: analytics/dbt
+        run: |
+          mkdir -p ../warehouse
+          dbt build --profiles-dir .

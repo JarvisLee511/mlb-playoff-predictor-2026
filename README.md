@@ -34,9 +34,11 @@ Every day at 7:30 AM ET, `.github/workflows/daily.yml` runs `daily_update.py`:
    **probable starting pitchers** (shrunk season-to-date FIP / K−BB% / last-5-starts
    form, from 12 seasons of per-pitcher game logs), **bullpen quality + 3-day workload
    fatigue**, and per-park home advantage. Models: Elo baseline, logistic regression,
-   XGBoost, an **isotonic-calibrated Elo+LR ensemble**, and a **Poisson–Skellam**
-   run-distribution model. Every feature is knowable at first pitch (as-of joins,
-   no leakage). Time-based split: train 2015–2023, validate 2024, test 2025–2026.
+   XGBoost, an **Elo+LR logistic stack** (fit in logit space on the validation season —
+   three parameters, so unlike isotonic regression it cannot overfit a single season),
+   and a **Poisson–Skellam** run-distribution model. Every feature is knowable at first
+   pitch (as-of joins, no leakage). Time-based split: train 2015–2023, validate 2024,
+   test 2025–2026.
 4. **Season simulation** — 10,000 Monte Carlo simulations of the remaining 2026 schedule
    and the full 12-team postseason bracket (Wild Card Bo3 → Division Series Bo5 →
    LCS Bo7 → World Series Bo7) produce each team's probability of making the playoffs,
@@ -54,11 +56,58 @@ and lets one model answer many questions (division odds, byes, World Series) at 
 
 ## Results
 
-Win-probability models are evaluated on held-out 2025–2026 games (never seen in
-training). See `outputs/metrics.json` after running the pipeline — the headline metric
-is **log loss / calibration**, not accuracy: baseball games are close to coin flips
-(the best teams lose 60+ games a year), so a well-calibrated 58% is the realistic
-ceiling, and beating the Elo baseline at all requires the ML features to add signal.
+Two independent out-of-sample evaluations, and they agree: **the ML features do not beat
+the Elo baseline by more than noise.** That is the result, not a bug — and the live site
+[says so on its own Model Tracker tab](https://jarvislee511.github.io/mlb-playoff-predictor-2026/)
+rather than presenting a leaderboard that implies otherwise.
+
+**Backtest** — 4,057 held-out games (2025 + played 2026, never seen in training;
+`outputs/metrics.json`):
+
+| Model | Log loss | Brier | AUC | Accuracy |
+|---|---|---|---|---|
+| Elo baseline | 0.6830 | 0.2450 | 0.566 | 55.9% |
+| Logistic regression | 0.6820 | 0.2446 | 0.571 | 55.3% |
+| XGBoost | 0.6837 | 0.2453 | 0.566 | 55.8% |
+| Elo+LR stack | **0.6820** | 0.2446 | 0.571 | 55.7% |
+| Poisson–Skellam | 0.6878 | 0.2473 | 0.569 | 55.0% |
+
+**Live tracker** — 610 games predicted *before first pitch* and scored the next morning,
+restricted to the games every model called, with a paired bootstrap (5,000 resamples) on
+each model's log-loss gap to Elo:
+
+| Model | Log loss | Accuracy | Δ vs Elo | 95% CI |
+|---|---|---|---|---|
+| Elo baseline | 0.6888 | 54.6% | — | — |
+| Elo+LR stack | **0.6883** | 54.3% | −0.0005 | [−0.0052, +0.0043] |
+| XGBoost | 0.6895 | 53.8% | +0.0007 | [−0.0058, +0.0074] |
+| Logistic regression | 0.6898 | 53.6% | +0.0010 | [−0.0052, +0.0076] |
+| Poisson–Skellam | 0.6954 | 54.9% | +0.0066 | [−0.0040, +0.0181] |
+
+Every interval spans zero. The best variant is 0.0005 log loss ahead of a rating system
+with no fitted features at all — a gap ten times smaller than the sampling noise.
+
+**Why that is the expected answer.** Elo already integrates team strength from every game
+ever played, and the features layered on top (season-to-date rate stats, 30-game form,
+probable-starter quality, bullpen fatigue, rest, park) are largely *functions of the same
+history*. Public pre-game information is close to exhausted; what remains is in-game state,
+pitch-level detail, and day-of bullpen availability. Reporting a 0.001 improvement as a win
+would be the mistake.
+
+**Read log loss, not accuracy.** Always picking the home team scores 51.0% on that live
+sample. The models' own probabilities imply ~56% expected accuracy and they realize ~54%
+with a ±4-point 95% margin — i.e. they are well calibrated, and accuracy at this sample
+size cannot separate them. Calibration curves are on the site.
+
+### Ablations, kept in the record
+
+- **Starting-lineup wOBA** — the full pipeline was built specifically to test it (starting
+  lineups + 12 seasons of per-batter game logs, leak-free as-of snapshots). It moved LR
+  test log loss by **+0.00004**: nothing. Lineup-average wOBA is collinear with the team
+  season OPS already in the model, and a deviation-from-normal variant (meant to isolate a
+  rested star) was flat with a wrong-signed coefficient. Dropped from `FEATURE_COLS`
+  instead of kept for show; `python -m experiments.ablation_lineup` reruns the comparison
+  (it tells you what to rebuild first, since the 43 MB of lineup data is not committed).
 
 ## Quick start
 
@@ -93,8 +142,25 @@ streamlit run app/streamlit_app.py
 ├── docs/                    # static website (GitHub Pages) + its data JSONs
 ├── data/predictions_log.csv # permanent out-of-sample prediction record
 ├── app/streamlit_app.py     # local interactive dashboard
+├── analytics/               # dbt + DuckDB + Dagster layer (see below)
+├── experiments/             # ablations kept as a record of negative results
 └── outputs/                 # odds, metrics, calibration, current Elo
 ```
+
+## Analytics engineering layer (`analytics/`)
+
+A modern-data-stack layer built **on top of** this model without modifying it: a
+**dbt + DuckDB** warehouse re-expresses the pandas feature engineering as tested SQL
+(window functions + ASOF joins), with **Dagster** orchestration and two BI front-ends
+(**Evidence.dev** and **Tableau Public**).
+
+The centrepiece is a validation harness — `mart_feature_validation` diffs every
+SQL-rebuilt feature against the Python `features.csv`: the season-to-date rate stats,
+pitcher snapshots, park HFA, season win% and rest days match to floating-point precision,
+and 30-game rolling form matches ~99.9%. In CI, `daily.yml` runs `dbt build` (all models
++ tests) on the freshly regenerated data after each daily prediction commit.
+
+See **[`analytics/README.md`](analytics/README.md)** for the full walkthrough.
 
 ## Modeling notes & limitations
 
@@ -104,8 +170,12 @@ streamlit run app/streamlit_app.py
   over 10,000 simulations the effect on odds is negligible.
 - The simulation uses Elo probabilities (future games have unknown rolling stats);
   the ML models power game-level evaluation and the matchup predictor.
-- Starting pitchers, injuries, and trades are not modeled — the largest known gap,
-  and the natural next iteration (probable pitchers are available from the same API).
+- **Probable starting pitchers *are* modeled** (shrunk season-to-date FIP and K−BB%, plus
+  last-5-starts form, from 12 seasons of per-pitcher game logs) and so is bullpen quality
+  with 3-day workload fatigue. What is *not* in the model: pitch-level / Statcast detail,
+  day-of bullpen availability, injuries and trades. Injuries and roster moves are fetched
+  and shown on the site as context, but they are not features — the largest known gap and
+  the natural next iteration.
 - The shortened 2020 season is kept for Elo continuity but its small sample is
   handled by the cross-season rolling windows.
 

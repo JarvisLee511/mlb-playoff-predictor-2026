@@ -1,0 +1,37 @@
+name: "mlb_analytics"
+version: "1.0.0"
+config-version: 2
+
+# This is a PARALLEL analytics-engineering layer. It reads the same CSV/JSON
+# files the Python prediction pipeline writes (data/*.csv, data/raw, data/processed,
+# outputs/*) and re-expresses the feature engineering + tracking as SQL models in a
+# DuckDB warehouse. It never modifies the model or its inputs.
+
+profile: "mlb_analytics"
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# mlb_root is resolved relative to DuckDB's working directory, which is wherever
+# dbt is invoked. Invoke dbt from analytics/dbt (see analytics/README.md) so that
+# "../.." points at the repository root. Override with `--vars '{mlb_root: /abs/path}'`.
+vars:
+  mlb_root: "../.."
+
+models:
+  mlb_analytics:
+    staging:
+      +materialized: view
+      +schema: staging
+    intermediate:
+      +materialized: ephemeral
+    marts:
+      +materialized: table
+      +schema: marts

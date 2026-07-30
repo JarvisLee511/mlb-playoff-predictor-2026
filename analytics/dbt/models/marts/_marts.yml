@@ -1,0 +1,69 @@
+version: 2
+
+models:
+  - name: mart_team_game_features
+    description: >
+      Pre-game feature table (one row per game_id) — SQL reimplementation of the
+      model's FEATURE_COLS. Validated against the Python pipeline by
+      mart_feature_validation.
+    columns:
+      - name: game_id
+        tests: [not_null, unique]
+      - name: park_hfa
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+      - name: home_season_winpct
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+
+  - name: mart_feature_validation
+    description: Per-feature agreement between the SQL rebuild and features.csv.
+    columns:
+      - name: feature
+        tests: [not_null, unique]
+      - name: pct_within_tol
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+
+  - name: mart_model_performance
+    description: Out-of-sample scorecard per model plus reference baselines.
+    columns:
+      - name: model
+        tests: [not_null, unique]
+      - name: accuracy
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+      - name: log_loss
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 2}
+
+  - name: mart_calibration
+    description: Reliability curve per model per bin.
+    columns:
+      - name: mean_predicted
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+      - name: fraction_won
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+
+  - name: mart_standings
+    description: Team power board — Elo, current record, Monte-Carlo playoff odds.
+    columns:
+      - name: team_id
+        tests: [not_null, unique]
+      - name: p_win_world_series
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
+      - name: p_make_playoffs
+        tests:
+          - between:
+              arguments: {min_value: 0, max_value: 1}
