@@ -3,93 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MLB 2026 Playoff Predictor</title>
+<title>MLB 2026 Playoff Predictor — live model tracker</title>
+<meta name="description" content="Elo and machine-learning game predictions for the 2026 MLB season, with 10,000-simulation playoff odds and an out-of-sample tracker that scores every prediction the morning after.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230A0E1A%22/><text y=%22.9em%22 x=%2250%22 text-anchor=%22middle%22 font-size=%2288%22 font-family=%22monospace%22 fill=%22%23FFA02F%22>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
 </head>
 <body>
-<header>
-  <h1>⚾ MLB 2026 Playoff Predictor</h1>
-  <p class="sub">Elo + machine learning game predictions, 10,000-sim Monte Carlo playoff odds —
-     retrained and updated automatically every morning.</p>
-  <p class="meta" id="meta-line">Loading…</p>
+
+<header class="status" role="banner">
+  <div class="status__id">
+    <span class="status__mark">MLB 2026</span>
+    <span class="status__desc">Playoff Predictor</span>
+  </div>
+  <dl class="status__readout" id="status-readout">
+    <div class="readout"><dt>Status</dt><dd>Loading…</dd></div>
+  </dl>
 </header>
 
-<nav id="tabs">
-  <button class="tab active" data-tab="today">Today's Games</button>
-  <button class="tab" data-tab="odds">Playoff Odds</button>
-  <button class="tab" data-tab="tracker">Model Tracker</button>
-  <button class="tab" data-tab="moves">Roster Moves</button>
-  <button class="tab" data-tab="about">About</button>
+<nav class="cmd" id="cmd" aria-label="Views">
+  <button class="cmd__key" role="tab" aria-selected="true"  aria-controls="today"   data-tab="today"><kbd>1</kbd><span>Today</span></button>
+  <button class="cmd__key" role="tab" aria-selected="false" aria-controls="odds"    data-tab="odds"><kbd>2</kbd><span>Odds</span></button>
+  <button class="cmd__key" role="tab" aria-selected="false" aria-controls="tracker" data-tab="tracker"><kbd>3</kbd><span>Tracker</span></button>
+  <button class="cmd__key" role="tab" aria-selected="false" aria-controls="moves"   data-tab="moves"><kbd>4</kbd><span>Moves</span></button>
+  <button class="cmd__key" role="tab" aria-selected="false" aria-controls="about"   data-tab="about"><kbd>5</kbd><span>Method</span></button>
 </nav>
 
 <main>
-  <section id="today" class="panel active">
-    <h2 id="today-title">Today's predictions</h2>
-    <div id="today-games" class="cards"></div>
-    <h2 id="tomorrow-title" style="margin-top:26px"></h2>
-    <div id="tomorrow-games" class="cards"></div>
+  <section id="today" class="panel is-active" role="tabpanel" aria-label="Today's games">
+    <div class="bento">
+      <div class="cell cell--w4 cell--head">
+        <span class="cell__label">Slate</span>
+        <h2 class="cell__title" id="today-title">Today's predictions</h2>
+        <p class="hint">Locked before first pitch. The home-win bar shows the headline model; every
+           model's number is listed underneath it.</p>
+      </div>
+    </div>
+    <div class="bento bento--flow" id="today-games"></div>
+    <div class="bento" id="tomorrow-head" hidden>
+      <div class="cell cell--w4 cell--head">
+        <span class="cell__label">Preview</span>
+        <h2 class="cell__title" id="tomorrow-title"></h2>
+        <p class="hint">Re-predicted and locked tomorrow morning — these are not yet on the record.</p>
+      </div>
+    </div>
+    <div class="bento bento--flow" id="tomorrow-games"></div>
   </section>
 
-  <section id="odds" class="panel">
-    <h2>2026 playoff odds <span class="hint">(10,000 season simulations, updated daily)</span></h2>
-    <div id="odds-chart" class="chart"></div>
-    <div class="table-wrap"><table id="odds-table"></table></div>
+  <section id="odds" class="panel" role="tabpanel" aria-label="Playoff odds">
+    <div class="bento">
+      <div class="cell cell--w4 cell--head">
+        <span class="cell__label">Monte Carlo · 10,000 seasons</span>
+        <h2 class="cell__title">2026 playoff odds</h2>
+        <p class="hint">The remaining schedule and the full 12-team bracket, resimulated after every
+           daily retrain. Amber = American League, chrome = National League.</p>
+      </div>
+      <div class="cell cell--w4 cell--flush"><div id="odds-chart" class="chart chart--tall"></div></div>
+      <div class="cell cell--w4 cell--flush"><div class="table-wrap"><table id="odds-table"></table></div></div>
+    </div>
   </section>
 
-  <section id="tracker" class="panel">
-    <h2>Live model tracker <span class="hint">(every prediction logged before first pitch, scored the next morning)</span></h2>
-    <div id="tracker-banner" class="banner" style="display:none"></div>
-    <div id="tracker-cards" class="cards small"></div>
-    <h3>Head to head <span class="hint">(same games for every model — does the ML actually beat Elo?)</span></h3>
-    <div id="h2h"></div>
-    <div id="tracker-chart" class="chart"></div>
-    <h3>Calibration <span class="hint">(do the probabilities mean what they say? points on the diagonal = perfectly calibrated)</span></h3>
-    <div id="calibration-chart" class="chart"></div>
-    <h3>Recent scored predictions</h3>
-    <div class="table-wrap"><table id="recent-table"></table></div>
+  <section id="tracker" class="panel" role="tabpanel" aria-label="Model tracker">
+    <div class="bento">
+      <div class="cell cell--w4 cell--head">
+        <span class="cell__label">Out of sample</span>
+        <h2 class="cell__title">Live model tracker</h2>
+        <p class="hint">Every prediction is written down before first pitch and scored the next
+           morning. Nothing here is a backtest.</p>
+      </div>
+      <div class="cell cell--w4" id="tracker-notice" hidden></div>
+    </div>
+
+    <div class="bento bento--flow" id="tracker-cards"></div>
+
+    <div class="bento">
+      <div class="cell cell--w4 cell--head">
+        <span class="cell__label">Same games, every model</span>
+        <h3 class="cell__title">Head to head</h3>
+        <p class="hint">Does the machine learning actually beat Elo?</p>
+      </div>
+      <div class="cell cell--w4 cell--flush" id="h2h"></div>
+    </div>
+
+    <div class="bento">
+      <div class="cell cell--w2 cell--head">
+        <span class="cell__label">Cumulative</span>
+        <h3 class="cell__title">Log loss over time</h3>
+        <p class="hint">Lower is better.</p>
+      </div>
+      <div class="cell cell--w2 cell--head">
+        <span class="cell__label">Reliability</span>
+        <h3 class="cell__title">Calibration</h3>
+        <p class="hint">Do the probabilities mean what they say? On the diagonal = perfectly calibrated.</p>
+      </div>
+      <div class="cell cell--w2 cell--flush"><div id="tracker-chart" class="chart"></div></div>
+      <div class="cell cell--w2 cell--flush"><div id="calibration-chart" class="chart"></div></div>
+    </div>
+
+    <div class="bento">
+      <div class="cell cell--w4 cell--head">
+        <span class="cell__label">Scored</span>
+        <h3 class="cell__title">Recent predictions</h3>
+      </div>
+      <div class="cell cell--w4 cell--flush"><div class="table-wrap"><table id="recent-table"></table></div></div>
+    </div>
   </section>
 
-  <section id="moves" class="panel">
-    <h2>Injuries &amp; roster moves <span class="hint">(last 10 days)</span></h2>
-    <div id="moves-filters" class="filters"></div>
-    <div class="table-wrap"><table id="moves-table"></table></div>
+  <section id="moves" class="panel" role="tabpanel" aria-label="Roster moves">
+    <div class="bento">
+      <div class="cell cell--w4 cell--head">
+        <span class="cell__label">Last 10 days</span>
+        <h2 class="cell__title">Injuries &amp; roster moves</h2>
+        <p class="hint">Context only — these are fetched and shown, not used as model features.</p>
+        <div class="filters" id="moves-filters" role="group" aria-label="Filter by category"></div>
+      </div>
+      <div class="cell cell--w4 cell--flush"><div class="table-wrap"><table id="moves-table"></table></div></div>
+    </div>
   </section>
 
-  <section id="about" class="panel">
-    <h2>How it works</h2>
-    <div class="prose">
-      <p>Every morning a GitHub Actions job:</p>
-      <ol>
-        <li>Pulls the latest results from the official MLB Stats API (2015–2026, ~26,000+ games).</li>
-        <li>Scores yesterday's predictions and appends them to a permanent log — predictions are
-            always made <em>before</em> games are played, so the Model Tracker is a true
-            out-of-sample track record.</li>
-        <li>Rebuilds each team's season-to-date profile from per-game logs — win/loss form,
-            run differential, advanced stats (OPS, ERA, FIP, WHIP, Pythagorean expected win%),
-            <strong>probable starting pitchers</strong> (shrunk season-to-date FIP, K−BB%,
-            last-5-starts form), <strong>bullpen quality and 3-day workload fatigue</strong>,
-            and per-park home advantage. All features are computed strictly as-of first pitch
-            (no leakage).</li>
-        <li>Retrains five win-probability models daily: a FiveThirtyEight-style
-            <strong>Elo</strong> baseline, <strong>logistic regression</strong>,
-            <strong>XGBoost</strong>, an isotonic-<strong>calibrated ensemble</strong>
-            (headline model), and a <strong>Poisson–Skellam</strong> run-distribution model
-            that predicts expected runs per side.</li>
-        <li>Runs 10,000 Monte Carlo simulations of the remaining schedule and the full 12-team
-            postseason bracket to produce playoff, pennant, and World Series odds.</li>
-        <li>Fetches injury-list moves and call-ups, and publishes everything to this page.</li>
-      </ol>
-      <p>Single MLB games are close to coin flips — the best teams still lose 60+ times a year —
-         so the honest benchmark is <strong>log loss and calibration against the Elo baseline</strong>,
-         not raw accuracy. Starting pitchers and injuries are not yet model features; they are the
-         next planned iteration.</p>
-      <p><a id="repo-link" href="#">Source code on GitHub →</a></p>
+  <section id="about" class="panel" role="tabpanel" aria-label="Method">
+    <div class="bento">
+      <div class="cell cell--w4 cell--head">
+        <span class="cell__label">Method</span>
+        <h2 class="cell__title">What runs every morning</h2>
+      </div>
+      <div class="cell cell--w4">
+        <div class="prose">
+          <p>A GitHub Actions job, in this order:</p>
+          <ol>
+            <li>Pulls the latest results from the official MLB Stats API (2015–2026, ~27,000 games).</li>
+            <li>Scores yesterday's predictions and appends them to a permanent log — predictions are
+                always made <em>before</em> games are played, so the tracker is a true out-of-sample
+                record.</li>
+            <li>Rebuilds each team's season-to-date profile from per-game logs — win/loss form, run
+                differential, advanced stats (OPS, ERA, FIP, WHIP, Pythagorean expected win%),
+                <strong>probable starting pitchers</strong> (shrunk season-to-date FIP, K−BB%,
+                last-5-starts form), <strong>bullpen quality and 3-day workload fatigue</strong>, and
+                per-park home advantage. Every feature is computed strictly as of first pitch, and a
+                test suite fails the run if any of them stops being.</li>
+            <li>Retrains five win-probability models: a FiveThirtyEight-style <strong>Elo</strong>
+                baseline, <strong>logistic regression</strong>, <strong>XGBoost</strong>, an
+                <strong>Elo+LR logistic stack</strong> fit in logit space on the validation season,
+                and a <strong>Poisson–Skellam</strong> run-distribution model.</li>
+            <li>Runs 10,000 Monte Carlo simulations of the remaining schedule and the full 12-team
+                postseason bracket for playoff, pennant, and World Series odds.</li>
+            <li>Fetches injury-list moves and call-ups, then publishes everything to this page.</li>
+          </ol>
+          <p>Single MLB games sit close to coin flips — the best teams still lose 60+ times a year —
+             so the benchmark is <strong>log loss and calibration against the Elo baseline</strong>,
+             not raw accuracy. On the games every model has called, the fitted models land within a
+             thousandth of a log loss of Elo and every bootstrap interval spans zero: the ML features
+             are not adding measurable signal on top of the rating system. That is reported as the
+             finding rather than dressed up, and the Head-to-head table is where to check it.</p>
+          <p>What is <em>not</em> in the model: pitch-level and Statcast detail, day-of bullpen
+             availability, injuries, and trades.</p>
+          <p><a id="repo-link" href="#">Source, tests and methodology on GitHub</a></p>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
-<footer>Data: official MLB Stats API · Educational/portfolio project, not affiliated with MLB · Built by Jarvis Lee</footer>
+<footer>MLB Stats API · educational portfolio project, not affiliated with MLB · Che-Wei (Jarvis) Lee</footer>
+
 <script src="app.js"></script>
 </body>
 </html>
