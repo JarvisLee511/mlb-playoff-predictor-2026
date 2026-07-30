@@ -66,9 +66,13 @@ jobs:
           rm -rf docs/analytics
           mkdir -p docs/analytics
           cp -r analytics/evidence/build/* docs/analytics/
+          # Pages builds /docs with Jekyll, which skips every directory starting
+          # with an underscore - so without this the whole SvelteKit _app/ bundle
+          # is committed but served as 404.
+          touch docs/.nojekyll
           git config user.name "JarvisLee511"
           git config user.email "lee.chew@northeastern.edu"
-          git add docs/analytics
+          git add -f docs/.nojekyll docs/analytics
           if ! git diff --cached --quiet; then
             git commit -m "Publish analytics site $(date -u +%F)"
             git pull --rebase --autostash
