@@ -1,10 +1,10 @@
 [
  {
-  "date": "2026-07-30",
-  "team": "Baltimore Orioles",
-  "player": "Jake Rogers",
-  "category": "Trade",
-  "description": "Detroit Tigers traded C Jake Rogers to Baltimore Orioles for RHP Zane Barnhart."
+  "date": "2026-07-31",
+  "team": "DSL Reds",
+  "player": "Daniel Burgos",
+  "category": "IL (injury)",
+  "description": "DSL Reds activated RHP Daniel Burgos from the 60-day injured list."
  },
  {
   "date": "2026-07-30",
@@ -57,10 +57,10 @@
  },
  {
   "date": "2026-07-30",
-  "team": "Rochester Red Wings",
-  "player": "Seaver King",
+  "team": "Pensacola Blue Wahoos",
+  "player": "Kade Bragg",
   "category": "IL (injury)",
-  "description": "Rochester Red Wings activated SS Seaver King from the 7-day injured list."
+  "description": "Pensacola Blue Wahoos placed LHP Kade Bragg on the 7-day injured list."
  },
  {
   "date": "2026-07-30",
@@ -113,10 +113,10 @@
  },
  {
   "date": "2026-07-30",
-  "team": "Pensacola Blue Wahoos",
-  "player": "Kade Bragg",
+  "team": "Rochester Red Wings",
+  "player": "Seaver King",
   "category": "IL (injury)",
-  "description": "Pensacola Blue Wahoos placed LHP Kade Bragg on the 7-day injured list."
+  "description": "Rochester Red Wings activated SS Seaver King from the 7-day injured list."
  },
  {
   "date": "2026-07-30",
@@ -141,6 +141,13 @@
  },
  {
   "date": "2026-07-30",
+  "team": "Baltimore Orioles",
+  "player": "Jake Rogers",
+  "category": "Trade",
+  "description": "Detroit Tigers traded C Jake Rogers to Baltimore Orioles for RHP Zane Barnhart."
+ },
+ {
+  "date": "2026-07-30",
   "team": "Detroit Tigers",
   "player": "Zane Barnhart",
   "category": "Trade",
@@ -155,10 +162,10 @@
  },
  {
   "date": "2026-07-30",
-  "team": "Cincinnati Reds",
-  "player": "Zach McCambley",
-  "category": "Call-up",
-  "description": "Cincinnati Reds recalled RHP Zach McCambley from Louisville Bats."
+  "team": "Gwinnett Stripers",
+  "player": "AJ Smith-Shawver",
+  "category": "Sent down",
+  "description": "Atlanta Braves optioned RHP AJ Smith-Shawver to Gwinnett Stripers."
  },
  {
   "date": "2026-07-30",
@@ -169,10 +176,10 @@
  },
  {
   "date": "2026-07-30",
-  "team": "Gwinnett Stripers",
-  "player": "AJ Smith-Shawver",
-  "category": "Sent down",
-  "description": "Atlanta Braves optioned RHP AJ Smith-Shawver to Gwinnett Stripers."
+  "team": "Cincinnati Reds",
+  "player": "Zach McCambley",
+  "category": "Call-up",
+  "description": "Cincinnati Reds recalled RHP Zach McCambley from Louisville Bats."
  },
  {
   "date": "2026-07-30",
@@ -352,9 +359,9 @@
  {
   "date": "2026-07-29",
   "team": "FCL Nationals",
-  "player": "Weston Moss",
+  "player": "Luke Williams",
   "category": "Activated",
-  "description": "FCL Nationals activated RHP Weston Moss."
+  "description": "FCL Nationals activated SS Luke Williams."
  },
  {
   "date": "2026-07-29",
@@ -386,17 +393,17 @@
  },
  {
   "date": "2026-07-29",
-  "team": "FCL Nationals",
-  "player": "Luke Williams",
-  "category": "Activated",
-  "description": "FCL Nationals activated SS Luke Williams."
- },
- {
-  "date": "2026-07-29",
   "team": "FCL Phillies",
   "player": "Deven Sheerin",
   "category": "Activated",
   "description": "FCL Phillies activated RHP Deven Sheerin."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "FCL Nationals",
+  "player": "Weston Moss",
+  "category": "Activated",
+  "description": "FCL Nationals activated RHP Weston Moss."
  },
  {
   "date": "2026-07-29",
@@ -492,9 +499,9 @@
  {
   "date": "2026-07-29",
   "team": "FCL Phillies",
-  "player": "Jack Hopko",
+  "player": "Will Gasparino",
   "category": "Activated",
-  "description": "FCL Phillies activated LF Jack Hopko."
+  "description": "FCL Phillies activated OF Will Gasparino."
  },
  {
   "date": "2026-07-29",
@@ -736,17 +743,17 @@
  },
  {
   "date": "2026-07-29",
+  "team": "FCL Phillies",
+  "player": "Jack Hopko",
+  "category": "Activated",
+  "description": "FCL Phillies activated LF Jack Hopko."
+ },
+ {
+  "date": "2026-07-29",
   "team": "FCL Nationals",
   "player": "Cooper Harris",
   "category": "Activated",
   "description": "FCL Nationals activated RHP Cooper Harris."
- },
- {
-  "date": "2026-07-29",
-  "team": "FCL Phillies",
-  "player": "Will Gasparino",
-  "category": "Activated",
-  "description": "FCL Phillies activated OF Will Gasparino."
  },
  {
   "date": "2026-07-29",
@@ -772,9 +779,9 @@
  {
   "date": "2026-07-29",
   "team": "FCL Nationals",
-  "player": "Zack Konstantinovsky",
+  "player": "Anson Seibert",
   "category": "Activated",
-  "description": "FCL Nationals activated RHP Zack Konstantinovsky."
+  "description": "FCL Nationals activated RHP Anson Seibert."
  },
  {
   "date": "2026-07-29",
@@ -1086,17 +1093,17 @@
  },
  {
   "date": "2026-07-29",
-  "team": "FCL Nationals",
-  "player": "Anson Seibert",
-  "category": "Activated",
-  "description": "FCL Nationals activated RHP Anson Seibert."
- },
- {
-  "date": "2026-07-29",
   "team": "ACL Angels",
   "player": "Brady Stuart",
   "category": "Activated",
   "description": "ACL Angels activated RHP Brady Stuart."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "FCL Nationals",
+  "player": "Zack Konstantinovsky",
+  "category": "Activated",
+  "description": "FCL Nationals activated RHP Zack Konstantinovsky."
  },
  {
   "date": "2026-07-29",
@@ -1346,9 +1353,9 @@
  {
   "date": "2026-07-29",
   "team": "ACL Angels",
-  "player": "Jake Jackson",
+  "player": "Jack Salmon",
   "category": "Activated",
-  "description": "ACL Angels activated OF Jake Jackson."
+  "description": "ACL Angels activated OF Jack Salmon."
  },
  {
   "date": "2026-07-29",
@@ -1401,17 +1408,17 @@
  },
  {
   "date": "2026-07-29",
-  "team": "ACL Angels",
-  "player": "Jack Salmon",
-  "category": "Activated",
-  "description": "ACL Angels activated OF Jack Salmon."
- },
- {
-  "date": "2026-07-29",
   "team": "DSL Pirates Black",
   "player": "Jeancer Custodio",
   "category": "IL (injury)",
   "description": "DSL Pirates Black placed OF Jeancer Custodio on the 7-day injured list."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "Akron RubberDucks",
+  "player": "Jose Devers",
+  "category": "IL (injury)",
+  "description": "Akron RubberDucks placed SS Jose Devers on the 7-day injured list."
  },
  {
   "date": "2026-07-29",
@@ -1464,13 +1471,6 @@
  },
  {
   "date": "2026-07-29",
-  "team": "ACL White Sox",
-  "player": "Cole Prosek",
-  "category": "Activated",
-  "description": "ACL White Sox activated 2B Cole Prosek."
- },
- {
-  "date": "2026-07-29",
   "team": "Texas Rangers",
   "player": "Jose Corniell",
   "category": "IL (injury)",
@@ -1478,17 +1478,17 @@
  },
  {
   "date": "2026-07-29",
-  "team": "Akron RubberDucks",
-  "player": "Jose Devers",
-  "category": "IL (injury)",
-  "description": "Akron RubberDucks placed SS Jose Devers on the 7-day injured list."
- },
- {
-  "date": "2026-07-29",
   "team": "Amarillo Sod Poodles",
   "player": "Adonys Perez",
   "category": "IL (injury)",
   "description": "Amarillo Sod Poodles activated LHP Adonys Perez from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "ACL White Sox",
+  "player": "Landon Thome",
+  "category": "Activated",
+  "description": "ACL White Sox activated SS Landon Thome."
  },
  {
   "date": "2026-07-29",
@@ -1612,9 +1612,9 @@
  {
   "date": "2026-07-29",
   "team": "ACL White Sox",
-  "player": "Landon Thome",
+  "player": "Cole Prosek",
   "category": "Activated",
-  "description": "ACL White Sox activated SS Landon Thome."
+  "description": "ACL White Sox activated 2B Cole Prosek."
  },
  {
   "date": "2026-07-29",
@@ -1625,17 +1625,24 @@
  },
  {
   "date": "2026-07-29",
-  "team": "ACL White Sox",
-  "player": "Justin Feld",
+  "team": "FCL Yankees",
+  "player": "Jorsixt Jimenez",
   "category": "Activated",
-  "description": "ACL White Sox activated RHP Justin Feld."
+  "description": "FCL Yankees activated OF Jorsixt Jimenez."
  },
  {
   "date": "2026-07-29",
   "team": "FCL Astros",
-  "player": "Mick Uebelhor",
+  "player": "Owen Nowak",
   "category": "Activated",
-  "description": "FCL Astros activated RHP Mick Uebelhor."
+  "description": "FCL Astros activated OF Owen Nowak."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "ACL White Sox",
+  "player": "Kyle Casteel",
+  "category": "Activated",
+  "description": "ACL White Sox activated RHP Kyle Casteel."
  },
  {
   "date": "2026-07-29",
@@ -1682,9 +1689,16 @@
  {
   "date": "2026-07-29",
   "team": "FCL Astros",
-  "player": "Owen Nowak",
+  "player": "Mick Uebelhor",
   "category": "Activated",
-  "description": "FCL Astros activated OF Owen Nowak."
+  "description": "FCL Astros activated RHP Mick Uebelhor."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "ACL White Sox",
+  "player": "Jayson Jones",
+  "category": "Activated",
+  "description": "ACL White Sox activated 3B Jayson Jones."
  },
  {
   "date": "2026-07-29",
@@ -1692,13 +1706,6 @@
   "player": "Brady Thomas",
   "category": "Activated",
   "description": "FCL Astros activated RHP Brady Thomas."
- },
- {
-  "date": "2026-07-29",
-  "team": "FCL Astros",
-  "player": "Kam Durnin",
-  "category": "Activated",
-  "description": "FCL Astros activated SS Kam Durnin."
  },
  {
   "date": "2026-07-29",
@@ -1745,23 +1752,30 @@
  {
   "date": "2026-07-29",
   "team": "FCL Astros",
-  "player": "John Carver",
+  "player": "Kam Durnin",
   "category": "Activated",
-  "description": "FCL Astros activated RHP John Carver."
+  "description": "FCL Astros activated SS Kam Durnin."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "FCL Astros",
+  "player": "Bryan Carney",
+  "category": "Activated",
+  "description": "FCL Astros activated RHP Bryan Carney."
  },
  {
   "date": "2026-07-29",
   "team": "ACL White Sox",
-  "player": "Kyle Casteel",
+  "player": "Justin Feld",
   "category": "Activated",
-  "description": "ACL White Sox activated RHP Kyle Casteel."
+  "description": "ACL White Sox activated RHP Justin Feld."
  },
  {
   "date": "2026-07-29",
   "team": "ACL White Sox",
-  "player": "Jayson Jones",
+  "player": "Cal Scolari",
   "category": "Activated",
-  "description": "ACL White Sox activated 3B Jayson Jones."
+  "description": "ACL White Sox activated RHP Cal Scolari."
  },
  {
   "date": "2026-07-29",
@@ -1769,13 +1783,6 @@
   "player": "Luke Craytor",
   "category": "Activated",
   "description": "ACL White Sox activated RHP Luke Craytor."
- },
- {
-  "date": "2026-07-29",
-  "team": "ACL White Sox",
-  "player": "Jake Berkland",
-  "category": "Activated",
-  "description": "ACL White Sox activated SS Jake Berkland."
  },
  {
   "date": "2026-07-29",
@@ -1822,9 +1829,16 @@
  {
   "date": "2026-07-29",
   "team": "ACL White Sox",
-  "player": "Cal Scolari",
+  "player": "Jake Berkland",
   "category": "Activated",
-  "description": "ACL White Sox activated RHP Cal Scolari."
+  "description": "ACL White Sox activated SS Jake Berkland."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "ACL White Sox",
+  "player": "Clay Burdette",
+  "category": "Activated",
+  "description": "ACL White Sox activated OF Clay Burdette."
  },
  {
   "date": "2026-07-29",
@@ -1832,13 +1846,6 @@
   "player": "Luke Lawrence",
   "category": "Activated",
   "description": "ACL White Sox activated 3B Luke Lawrence."
- },
- {
-  "date": "2026-07-29",
-  "team": "FCL Astros",
-  "player": "Bryan Carney",
-  "category": "Activated",
-  "description": "FCL Astros activated RHP Bryan Carney."
  },
  {
   "date": "2026-07-29",
@@ -1884,13 +1891,6 @@
  },
  {
   "date": "2026-07-29",
-  "team": "ACL White Sox",
-  "player": "Clay Burdette",
-  "category": "Activated",
-  "description": "ACL White Sox activated OF Clay Burdette."
- },
- {
-  "date": "2026-07-29",
   "team": "FCL Yankees",
   "player": "Andrew Gonzalez",
   "category": "Activated",
@@ -1899,16 +1899,16 @@
  {
   "date": "2026-07-29",
   "team": "FCL Yankees",
-  "player": "Jorsixt Jimenez",
-  "category": "Activated",
-  "description": "FCL Yankees activated OF Jorsixt Jimenez."
- },
- {
-  "date": "2026-07-29",
-  "team": "FCL Yankees",
   "player": "Blake Cyr",
   "category": "Activated",
   "description": "FCL Yankees activated OF Blake Cyr."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "ACL Angels",
+  "player": "Jake Jackson",
+  "category": "Activated",
+  "description": "ACL Angels activated OF Jake Jackson."
  },
  {
   "date": "2026-07-29",
@@ -2459,9 +2459,9 @@
  {
   "date": "2026-07-29",
   "team": "FCL Cardinals",
-  "player": "Tristan Bissetta",
+  "player": "Jacob Johnson",
   "category": "Activated",
-  "description": "FCL Cardinals activated OF Tristan Bissetta."
+  "description": "FCL Cardinals activated 3B Jacob Johnson."
  },
  {
   "date": "2026-07-29",
@@ -3900,17 +3900,17 @@
  },
  {
   "date": "2026-07-29",
-  "team": "FCL Cardinals",
-  "player": "Jacob Johnson",
+  "team": "FCL Astros",
+  "player": "Carson Estridge",
   "category": "Activated",
-  "description": "FCL Cardinals activated 3B Jacob Johnson."
+  "description": "FCL Astros activated RHP Carson Estridge."
  },
  {
   "date": "2026-07-29",
-  "team": "FCL Astros",
-  "player": "Keon Johnson",
+  "team": "FCL Cardinals",
+  "player": "Tristan Bissetta",
   "category": "Activated",
-  "description": "FCL Astros activated SS Keon Johnson."
+  "description": "FCL Cardinals activated OF Tristan Bissetta."
  },
  {
   "date": "2026-07-29",
@@ -4699,23 +4699,23 @@
  {
   "date": "2026-07-29",
   "team": "FCL Astros",
-  "player": "Carson Estridge",
+  "player": "John Carver",
   "category": "Activated",
-  "description": "FCL Astros activated RHP Carson Estridge."
+  "description": "FCL Astros activated RHP John Carver."
  },
  {
   "date": "2026-07-29",
-  "team": "ACL Cubs",
-  "player": "Dylan Marionneaux",
+  "team": "FCL Astros",
+  "player": "Keon Johnson",
   "category": "Activated",
-  "description": "ACL Cubs activated RHP Dylan Marionneaux."
+  "description": "FCL Astros activated SS Keon Johnson."
  },
  {
   "date": "2026-07-29",
   "team": "ACL Dodgers",
-  "player": "Aemed Nasser",
+  "player": "Jack Giordano",
   "category": "Activated",
-  "description": "ACL Dodgers activated OF Aemed Nasser."
+  "description": "ACL Dodgers activated RHP Jack Giordano."
  },
  {
   "date": "2026-07-29",
@@ -4789,10 +4789,10 @@
  },
  {
   "date": "2026-07-29",
-  "team": "ACL Dodgers",
-  "player": "Gavin Van Kempen",
+  "team": "ACL D-backs",
+  "player": "Mason Steele",
   "category": "Activated",
-  "description": "ACL Dodgers activated RHP Gavin Van Kempen."
+  "description": "ACL D-backs activated RHP Mason Steele."
  },
  {
   "date": "2026-07-29",
@@ -4874,9 +4874,9 @@
  {
   "date": "2026-07-29",
   "team": "ACL Dodgers",
-  "player": "Jack Giordano",
+  "player": "Aemed Nasser",
   "category": "Activated",
-  "description": "ACL Dodgers activated RHP Jack Giordano."
+  "description": "ACL Dodgers activated OF Aemed Nasser."
  },
  {
   "date": "2026-07-29",
@@ -4902,9 +4902,9 @@
  {
   "date": "2026-07-29",
   "team": "ACL Cubs",
-  "player": "Luke Guth",
+  "player": "Dylan Marionneaux",
   "category": "Activated",
-  "description": "ACL Cubs activated RHP Luke Guth."
+  "description": "ACL Cubs activated RHP Dylan Marionneaux."
  },
  {
   "date": "2026-07-29",
@@ -4915,10 +4915,10 @@
  },
  {
   "date": "2026-07-29",
-  "team": "ACL D-backs",
-  "player": "Mason Steele",
+  "team": "ACL Dodgers",
+  "player": "Gavin Van Kempen",
   "category": "Activated",
-  "description": "ACL D-backs activated RHP Mason Steele."
+  "description": "ACL Dodgers activated RHP Gavin Van Kempen."
  },
  {
   "date": "2026-07-29",
@@ -4933,6 +4933,13 @@
   "player": "Andrew Evans",
   "category": "Activated",
   "description": "ACL D-backs activated RHP Andrew Evans."
+ },
+ {
+  "date": "2026-07-29",
+  "team": "ACL Cubs",
+  "player": "Luke Guth",
+  "category": "Activated",
+  "description": "ACL Cubs activated RHP Luke Guth."
  },
  {
   "date": "2026-07-29",
@@ -5832,17 +5839,17 @@
  },
  {
   "date": "2026-07-27",
-  "team": "Atlanta Braves",
-  "player": "Ronald Acu\u00f1a Jr.",
-  "category": "IL (injury)",
-  "description": "Atlanta Braves activated RF Ronald Acu\u00f1a Jr. from the 10-day injured list."
- },
- {
-  "date": "2026-07-27",
   "team": "Fort Myers Mighty Mussels",
   "player": "Bryan Acu\u00f1a",
   "category": "IL (injury)",
   "description": "Fort Myers Mighty Mussels activated SS Bryan Acu\u00f1a from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-27",
+  "team": "Boston Red Sox",
+  "player": "Curtis Mead",
+  "category": "Activated",
+  "description": "Boston Red Sox activated 3B Curtis Mead."
  },
  {
   "date": "2026-07-27",
@@ -5937,10 +5944,10 @@
  },
  {
   "date": "2026-07-27",
-  "team": "Boston Red Sox",
-  "player": "Curtis Mead",
-  "category": "Activated",
-  "description": "Boston Red Sox activated 3B Curtis Mead."
+  "team": "Atlanta Braves",
+  "player": "Ronald Acu\u00f1a Jr.",
+  "category": "IL (injury)",
+  "description": "Atlanta Braves activated RF Ronald Acu\u00f1a Jr. from the 10-day injured list."
  },
  {
   "date": "2026-07-27",
@@ -6861,17 +6868,17 @@
  },
  {
   "date": "2026-07-24",
-  "team": "ACL Rockies",
-  "player": "Luke Broderick",
-  "category": "IL (injury)",
-  "description": "ACL Rockies placed RHP Luke Broderick on the full-season injured list."
- },
- {
-  "date": "2026-07-24",
   "team": "Lake County Captains",
   "player": "Ryan Degges",
   "category": "IL (injury)",
   "description": "Lake County Captains activated RHP Ryan Degges from the 7-day injured list."
+ },
+ {
+  "date": "2026-07-24",
+  "team": "ACL Rockies",
+  "player": "Luke Broderick",
+  "category": "IL (injury)",
+  "description": "ACL Rockies placed RHP Luke Broderick on the full-season injured list."
  },
  {
   "date": "2026-07-24",
@@ -7232,10 +7239,10 @@
  },
  {
   "date": "2026-07-24",
-  "team": "Fredericksburg Nationals",
-  "player": "Landon Harmon",
+  "team": "ACL Angels",
+  "player": "Robert Orloski",
   "category": "IL (injury)",
-  "description": "Fredericksburg Nationals activated RHP Landon Harmon from the 7-day injured list."
+  "description": "ACL Angels placed RHP Robert Orloski on the 60-day injured list."
  },
  {
   "date": "2026-07-24",
@@ -7540,10 +7547,10 @@
  },
  {
   "date": "2026-07-24",
-  "team": "ACL Angels",
-  "player": "Robert Orloski",
+  "team": "Fredericksburg Nationals",
+  "player": "Landon Harmon",
   "category": "IL (injury)",
-  "description": "ACL Angels placed RHP Robert Orloski on the 60-day injured list."
+  "description": "Fredericksburg Nationals activated RHP Landon Harmon from the 7-day injured list."
  },
  {
   "date": "2026-07-24",
