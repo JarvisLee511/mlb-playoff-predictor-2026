@@ -61,28 +61,28 @@ the Elo baseline by more than noise.** That is the result, not a bug — and the
 [says so on its own Model Tracker tab](https://jarvislee511.github.io/mlb-playoff-predictor-2026/)
 rather than presenting a leaderboard that implies otherwise.
 
-**Backtest** — 4,057 held-out games (2025 + played 2026, never seen in training;
+**Backtest** — 4,097 held-out games (2025 + played 2026, never seen in training;
 `outputs/metrics.json`):
 
 | Model | Log loss | Brier | AUC | Accuracy |
 |---|---|---|---|---|
-| Elo baseline | 0.6830 | 0.2450 | 0.566 | 55.9% |
-| Logistic regression | 0.6820 | 0.2446 | 0.571 | 55.3% |
-| XGBoost | 0.6837 | 0.2453 | 0.566 | 55.8% |
-| Elo+LR stack | **0.6820** | 0.2446 | 0.571 | 55.7% |
-| Poisson–Skellam | 0.6878 | 0.2473 | 0.569 | 55.0% |
+| Elo baseline | 0.6827 | 0.2449 | 0.567 | 55.9% |
+| Logistic regression | 0.6818 | 0.2444 | 0.571 | 55.3% |
+| XGBoost | 0.6838 | 0.2454 | 0.566 | 55.4% |
+| Elo+LR stack | **0.6818** | 0.2444 | 0.572 | 55.7% |
+| Poisson–Skellam | 0.6874 | 0.2471 | 0.570 | 55.0% |
 
-**Live tracker** — 610 games predicted *before first pitch* and scored the next morning,
+**Live tracker** — 650 games predicted *before first pitch* and scored the next morning,
 restricted to the games every model called, with a paired bootstrap (5,000 resamples) on
 each model's log-loss gap to Elo:
 
 | Model | Log loss | Accuracy | Δ vs Elo | 95% CI |
 |---|---|---|---|---|
-| Elo baseline | 0.6888 | 54.6% | — | — |
-| Elo+LR stack | **0.6883** | 54.3% | −0.0005 | [−0.0052, +0.0043] |
-| XGBoost | 0.6895 | 53.8% | +0.0007 | [−0.0058, +0.0074] |
-| Logistic regression | 0.6898 | 53.6% | +0.0010 | [−0.0052, +0.0076] |
-| Poisson–Skellam | 0.6954 | 54.9% | +0.0066 | [−0.0040, +0.0181] |
+| Elo baseline | 0.6868 | 54.9% | — | — |
+| Elo+LR stack | **0.6863** | 54.2% | −0.0005 | [−0.0051, +0.0041] |
+| XGBoost | 0.6872 | 54.2% | +0.0004 | [−0.0058, +0.0068] |
+| Logistic regression | 0.6876 | 53.7% | +0.0008 | [−0.0053, +0.0071] |
+| Poisson–Skellam | 0.6928 | 54.9% | +0.0060 | [−0.0046, +0.0166] |
 
 Every interval spans zero. The best variant is 0.0005 log loss ahead of a rating system
 with no fitted features at all — a gap ten times smaller than the sampling noise.
@@ -94,10 +94,15 @@ history*. Public pre-game information is close to exhausted; what remains is in-
 pitch-level detail, and day-of bullpen availability. Reporting a 0.001 improvement as a win
 would be the mistake.
 
-**Read log loss, not accuracy.** Always picking the home team scores 51.0% on that live
+**Read log loss, not accuracy.** Always picking the home team scores 51.2% on that live
 sample. The models' own probabilities imply ~56% expected accuracy and they realize ~54%
 with a ±4-point 95% margin — i.e. they are well calibrated, and accuracy at this sample
 size cannot separate them. Calibration curves are on the site.
+
+> The live-sample figures above are rescored by the daily CI run, so they drift by a
+> few tenths of a point. `outputs/metrics.json` and the site always carry the current
+> numbers; the conclusion — that the gap between the models is smaller than the
+> sampling noise — has held every run.
 
 ### Ablations, kept in the record
 
