@@ -356,6 +356,11 @@ td.num, th.num { text-align: right; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+/* Neutral sibling of .notice — same shape, amber instead of alarm red. The tracker
+   slot holds either the small-sample warning or this framing line, never both, so
+   the colour is what tells you which one you are reading. */
+.notice--context { border-color: var(--color-accent); }
+.notice--context .notice__tag { background: var(--color-accent); color: var(--color-accent-ink); }
 .empty { color: var(--color-muted); padding: var(--space-m) 0; }
 
 .prose { max-width: var(--measure); font-size: var(--text-s); }

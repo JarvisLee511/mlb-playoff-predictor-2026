@@ -79,6 +79,15 @@ def _log_loss_series(p: np.ndarray, y: np.ndarray) -> np.ndarray:
 # not-yet-meaningful rather than letting a small sample read as signal.
 MIN_RELIABLE_N = 200
 
+# The practical ceiling for ANY public-data model: the Vegas closing line, which
+# prices in injuries, confirmed lineups, weather and money flow. These two numbers
+# are an EXTERNAL market benchmark, not something this project measures — a live
+# odds feed is the one input that stays out of reach (and using it as a feature
+# would be circular). They are stated so a 54% accuracy is read against ~57.5%
+# rather than against 100%.
+MARKET_CEILING_ACCURACY = 0.575
+MARKET_CEILING_LOG_LOSS = 0.655
+
 
 def _wilson_ci(hits: int, n: int, z: float = 1.96) -> list[float]:
     """95% Wilson score interval for accuracy — honest about small samples."""
@@ -178,6 +187,23 @@ def export_accuracy(log: pd.DataFrame) -> None:
         finals["home_win"] = finals["home_win"].astype(int)
         out["head_to_head"] = _head_to_head(finals)
 
+        # Yardsticks. Accuracy in this sport is meaningless without them: the
+        # floors are "always pick the home team" (measured here, it drifts year to
+        # year) and a coin flip; the ceiling is the closing line above. Reported at
+        # the whole-sample level — a model's own accuracy is computed over the rows
+        # where it has a prediction, which is a handful of games fewer, so these
+        # comparisons are honest to the displayed precision (whole percent) and no
+        # finer.
+        home_rate = float(finals["home_win"].mean())
+        out["baselines"] = {
+            "home_base_rate": round(home_rate, 4),
+            "always_home_accuracy": round(home_rate, 4),
+            "coinflip_accuracy": 0.5,
+            "coinflip_log_loss": round(float(np.log(2)), 4),
+            "market_ceiling_accuracy": MARKET_CEILING_ACCURACY,
+            "market_ceiling_log_loss": MARKET_CEILING_LOG_LOSS,
+        }
+
         # per-model: older log rows may predate a model's introduction (NaN)
         daily_dates: list[str] = sorted(finals["date"].unique())
         out["daily"]["dates"] = daily_dates
@@ -192,8 +218,13 @@ def export_accuracy(log: pd.DataFrame) -> None:
             ll = _log_loss_series(p, y)
             pred = (p > 0.5).astype(int)
             hits = int((pred == y).sum())
+            model_ll = float(ll.mean())
+            # share of the coin-flip → closing-line log-loss gap that this model
+            # closes: 0 = no better than a coin flip, 1 = as good as the market.
+            floor_ll = float(np.log(2))
+            skill = (floor_ll - model_ll) / (floor_ll - MARKET_CEILING_LOG_LOSS)
             out["summary"][key] = {
-                "log_loss": round(float(ll.mean()), 4),
+                "log_loss": round(model_ll, 4),
                 "brier": round(float(((p - y) ** 2).mean()), 4),
                 "accuracy": round(float(hits / len(sub)), 4),
                 "acc_ci": _wilson_ci(hits, len(sub)),
@@ -201,6 +232,7 @@ def export_accuracy(log: pd.DataFrame) -> None:
                 # probabilities; realized ~= expected means well-calibrated,
                 # so a "low" 55% is the honest ceiling, not underperformance.
                 "expected_accuracy": round(float(np.maximum(p, 1 - p).mean()), 4),
+                "skill_vs_ceiling": round(skill, 3),
                 "n": int(len(sub)),
             }
             out["calibration"][key] = _calibration_bins(p, y)

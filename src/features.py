@@ -435,6 +435,20 @@ FEATURE_COLS = [
 # team's season norm, to isolate a star resting) was likewise flat (-0.00002)
 # with a wrong-signed coefficient. Lineups are not refetched daily; regenerate
 # with `python -m src.data.lineups` to reproduce.
+#
+# Starting-pitcher Statcast expected stats were also tested and excluded (2026-06-28).
+# Each starter's PRIOR-season xwOBA-against from Baseball Savant's expected-stats
+# leaderboard (fully leak-free, shrunk to league by prior-year PA) was added as
+# sp_xwoba_diff. Controlled A/B on the 2025+2026 test set: LR test log loss
+# 0.6806 -> 0.6809 (worse), XGB 0.6831 -> 0.6827 (flat); accuracy unchanged. The
+# feature carries real signal (standardized LR coef -0.065, on par with
+# sp_fip_diff at -0.057) but is collinear with the FIP-family pitcher features
+# already in the model — true-talent pitching quality is already captured. This
+# was the highest-value untested public signal; its flat result confirms the
+# model sits at the public-data information ceiling (single-game accuracy ~55%
+# vs the ~57-58% Vegas closing-line ceiling). Levers also verified flat: adding
+# 2024-2025 to the training set (held-out 2026 log loss 0.6872 -> 0.6875) and
+# post-hoc temperature recalibration (<=0.0009 log-loss gain, within noise).
 
 
 def current_team_snapshot(

@@ -190,6 +190,34 @@ json("accuracy.json").then((d) => {
       Only <strong>${d.n_scored}</strong> games scored so far — accuracy needs about
       ${d.min_reliable_n} to mean anything. The 95% margin is still ±${half} points, so read
       log loss against the Elo baseline instead.</p>`;
+  } else if (d.baselines && Object.keys(d.summary).length) {
+    // Past the threshold the slot carries the yardsticks instead. Without them a
+    // mid-fifties accuracy reads as a broken model; against the floor it is the
+    // sport being close to a coin flip. Every number here comes from the export,
+    // so the sentence stays true as the sample grows.
+    const b = d.baselines;
+    const [bk, bs] = Object.entries(d.summary).sort((x, y) => x[1].log_loss - y[1].log_loss)[0];
+    const span = b.market_ceiling_accuracy - b.always_home_accuracy;
+    const closed = span > 0 ? Math.round(((bs.accuracy - b.always_home_accuracy) / span) * 100) : null;
+    const place = closed == null ? ""
+      : closed >= 0 ? ` — about <strong>${closed}%</strong> of the way from that floor to the market`
+      : " — <strong>below</strong> that floor on this sample";
+    const ll = bs.log_loss < b.coinflip_log_loss
+      ? `On log loss it does beat a coin flip (${bs.log_loss} vs ${b.coinflip_log_loss}), and the
+         gap left to ${b.market_ceiling_log_loss} is what private information — injuries, confirmed
+         lineups, weather, money flow — buys that public box scores cannot.`
+      : `On log loss it is not yet separable from a coin flip (${bs.log_loss} vs
+         ${b.coinflip_log_loss}).`;
+    notice.hidden = false;
+    // One decimal on all three, deliberately: rounded to whole percent the reader
+    // recomputes the "% of the way" figure from 51/54/57 and gets a different
+    // answer than the exact one quoted.
+    notice.innerHTML = `<p class="notice notice--context"><span class="notice__tag">Reading the numbers</span>
+      One MLB game is nearly a coin flip, so the ceiling for any public-data model is the closing
+      line (~<strong>${pct(b.market_ceiling_accuracy)}</strong>) and the floor is "always pick the
+      home team" (<strong>${pct(b.always_home_accuracy)}</strong> across these ${d.n_scored}
+      games). ${MODEL_LABELS[bk]} (best of the ${Object.keys(d.summary).length} on log loss, the
+      metric that actually separates them) sits at <strong>${pct(bs.accuracy)}</strong>${place}. ${ll}</p>`;
   }
 
   cards.innerHTML = Object.entries(MODEL_LABELS)
