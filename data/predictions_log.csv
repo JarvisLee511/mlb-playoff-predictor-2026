@@ -786,18 +786,33 @@ date,game_id,home_id,home_name,away_id,away_name,game_time_et,home_pitcher,away_
 2026-08-10,823265,135,San Diego Padres,158,Milwaukee Brewers,21:40,Casey Mize,Logan Henderson,0.4506,0.4422,0.4629,final,3.0,2.0,1.0,0.435,0.3845
 2026-08-10,823189,137,San Francisco Giants,117,Houston Astros,21:45,Blade Tidwell,Hayden Wesneski,0.4877,0.5155,0.5216,final,3.0,6.0,0.0,0.4996,0.4895
 2026-08-10,823918,119,Los Angeles Dodgers,118,Kansas City Royals,22:10,Tarik Skubal,Noah Cameron,0.6435,0.7021,0.7009,final,6.0,5.0,1.0,0.679,0.7658
-2026-08-11,824240,116,Detroit Tigers,114,Cleveland Guardians,18:40,Drew Anderson,Tanner Bibee,0.5664,0.6117,0.6053,pending,,,,0.5913,0.6266
-2026-08-11,823832,146,Miami Marlins,134,Pittsburgh Pirates,18:40,Eury Pérez,Paul Skenes,0.528,0.5103,0.5231,pending,,,,0.5038,0.4753
-2026-08-11,822697,120,Washington Nationals,112,Chicago Cubs,18:45,TBD,Shota Imanaga,0.4294,0.4322,0.4731,pending,,,,0.4229,0.3698
-2026-08-11,823512,147,New York Yankees,136,Seattle Mariners,19:05,Ryan Weathers,Bryan Woo,0.5845,0.5738,0.5912,pending,,,,0.565,0.607
-2026-08-11,822778,141,Toronto Blue Jays,111,Boston Red Sox,19:07,Dylan Cease,Patrick Sandoval,0.4515,0.52,0.4826,pending,,,,0.4958,0.488
-2026-08-11,824886,144,Atlanta Braves,121,New York Mets,19:15,Martín Pérez,Nolan McLean,0.5888,0.5246,0.5364,pending,,,,0.5275,0.4998
-2026-08-11,823673,142,Minnesota Twins,110,Baltimore Orioles,19:40,Bailey Ober,Brandon Young,0.514,0.5089,0.5025,pending,,,,0.4998,0.4992
-2026-08-11,824563,145,Chicago White Sox,113,Cincinnati Reds,19:40,Sean Burke,Nick Lodolo,0.5473,0.6353,0.6093,pending,,,,0.6063,0.6503
-2026-08-11,823019,138,St. Louis Cardinals,143,Philadelphia Phillies,19:45,Andre Pallante,Cristopher Sánchez,0.4746,0.4269,0.4196,pending,,,,0.4279,0.4033
-2026-08-11,823997,108,Los Angeles Angels,140,Texas Rangers,21:38,Ryan Johnson,Cody Bradford,0.4448,0.4253,0.4524,pending,,,,0.4207,0.3637
-2026-08-11,825046,109,Arizona Diamondbacks,115,Colorado Rockies,21:40,Mitch Bratt,Tomoyuki Sugano,0.6568,0.6604,0.6476,pending,,,,0.6482,0.6518
-2026-08-11,824970,133,Athletics,139,Tampa Bay Rays,21:40,Mason Barnett,Nick Martinez,0.3915,0.3997,0.4093,pending,,,,0.3901,0.3254
-2026-08-11,823264,135,San Diego Padres,158,Milwaukee Brewers,21:40,Walker Buehler,Kyle Harrison,0.4538,0.3988,0.3804,pending,,,,0.4018,0.3155
-2026-08-11,823186,137,San Francisco Giants,117,Houston Astros,21:45,TBD,Hunter Brown,0.4818,0.5089,0.5072,pending,,,,0.4932,0.4827
-2026-08-11,823917,119,Los Angeles Dodgers,118,Kansas City Royals,22:10,Blake Snell,Michael Wacha,0.6454,0.6653,0.6889,pending,,,,0.6498,0.7105
+2026-08-11,824240,116,Detroit Tigers,114,Cleveland Guardians,18:40,Drew Anderson,Tanner Bibee,0.5664,0.6117,0.6053,final,6.0,4.0,1.0,0.5913,0.6266
+2026-08-11,823832,146,Miami Marlins,134,Pittsburgh Pirates,18:40,Eury Pérez,Paul Skenes,0.528,0.5103,0.5231,final,2.0,0.0,1.0,0.5038,0.4753
+2026-08-11,822697,120,Washington Nationals,112,Chicago Cubs,18:45,TBD,Shota Imanaga,0.4294,0.4322,0.4731,final,6.0,8.0,0.0,0.4229,0.3698
+2026-08-11,823512,147,New York Yankees,136,Seattle Mariners,19:05,Ryan Weathers,Bryan Woo,0.5845,0.5738,0.5912,final,4.0,1.0,1.0,0.565,0.607
+2026-08-11,822778,141,Toronto Blue Jays,111,Boston Red Sox,19:07,Dylan Cease,Patrick Sandoval,0.4515,0.52,0.4826,final,5.0,3.0,1.0,0.4958,0.488
+2026-08-11,824886,144,Atlanta Braves,121,New York Mets,19:15,Martín Pérez,Nolan McLean,0.5888,0.5246,0.5364,final,4.0,0.0,1.0,0.5275,0.4998
+2026-08-11,823673,142,Minnesota Twins,110,Baltimore Orioles,19:40,Bailey Ober,Brandon Young,0.514,0.5089,0.5025,final,2.0,5.0,0.0,0.4998,0.4992
+2026-08-11,824563,145,Chicago White Sox,113,Cincinnati Reds,19:40,Sean Burke,Nick Lodolo,0.5473,0.6353,0.6093,final,4.0,5.0,0.0,0.6063,0.6503
+2026-08-11,823019,138,St. Louis Cardinals,143,Philadelphia Phillies,19:45,Andre Pallante,Cristopher Sánchez,0.4746,0.4269,0.4196,final,2.0,0.0,1.0,0.4279,0.4033
+2026-08-11,823997,108,Los Angeles Angels,140,Texas Rangers,21:38,Ryan Johnson,Cody Bradford,0.4448,0.4253,0.4524,final,3.0,2.0,1.0,0.4207,0.3637
+2026-08-11,825046,109,Arizona Diamondbacks,115,Colorado Rockies,21:40,Mitch Bratt,Tomoyuki Sugano,0.6568,0.6604,0.6476,final,2.0,3.0,0.0,0.6482,0.6518
+2026-08-11,824970,133,Athletics,139,Tampa Bay Rays,21:40,Mason Barnett,Nick Martinez,0.3915,0.3997,0.4093,final,4.0,12.0,0.0,0.3901,0.3254
+2026-08-11,823264,135,San Diego Padres,158,Milwaukee Brewers,21:40,Walker Buehler,Kyle Harrison,0.4538,0.3988,0.3804,final,11.0,2.0,1.0,0.4018,0.3155
+2026-08-11,823186,137,San Francisco Giants,117,Houston Astros,21:45,TBD,Hunter Brown,0.4818,0.5089,0.5072,final,4.0,1.0,1.0,0.4932,0.4827
+2026-08-11,823917,119,Los Angeles Dodgers,118,Kansas City Royals,22:10,Blake Snell,Michael Wacha,0.6454,0.6653,0.6889,final,5.0,4.0,1.0,0.6498,0.7105
+2026-08-12,823672,142,Minnesota Twins,110,Baltimore Orioles,13:40,Zebby Matthews,Shane Baz,0.5079,0.501,0.5066,pending,,,,0.4924,0.4731
+2026-08-12,823017,138,St. Louis Cardinals,143,Philadelphia Phillies,14:15,Kyle Leahy,Zack Wheeler,0.4796,0.4423,0.4589,pending,,,,0.441,0.4241
+2026-08-12,824967,133,Athletics,139,Tampa Bay Rays,15:05,Jack Perkins,Drew Rasmussen,0.3844,0.3635,0.3825,pending,,,,0.3606,0.2496
+2026-08-12,825047,109,Arizona Diamondbacks,115,Colorado Rockies,15:40,Merrill Kelly,Ryan Feltner,0.6532,0.6474,0.622,pending,,,,0.6372,0.6655
+2026-08-12,823187,137,San Francisco Giants,117,Houston Astros,15:45,TBD,Bryan King,0.488,0.5214,0.5346,pending,,,,0.5042,0.4964
+2026-08-12,823263,135,San Diego Padres,158,Milwaukee Brewers,16:10,Robbie Ray,Dustin May,0.4646,0.433,0.4326,pending,,,,0.4307,0.3835
+2026-08-12,824241,116,Detroit Tigers,114,Cleveland Guardians,18:40,Framber Valdez,Foster Griffin,0.5705,0.5622,0.5667,pending,,,,0.5531,0.559
+2026-08-12,823833,146,Miami Marlins,134,Pittsburgh Pirates,18:40,Janson Junk,Carmen Mlodzinski,0.5325,0.5498,0.5511,pending,,,,0.5355,0.53
+2026-08-12,822698,120,Washington Nationals,112,Chicago Cubs,18:45,Jackson Kent,David Peterson,0.4254,0.4532,0.4652,pending,,,,0.4384,0.4113
+2026-08-12,823511,147,New York Yankees,136,Seattle Mariners,19:05,Will Warren,Bryce Miller,0.5893,0.568,0.565,pending,,,,0.5615,0.5864
+2026-08-12,822779,141,Toronto Blue Jays,111,Boston Red Sox,19:07,José Soriano,Ranger Suarez,0.4567,0.4187,0.4269,pending,,,,0.418,0.3508
+2026-08-12,824883,144,Atlanta Braves,121,New York Mets,19:15,Tyler Mahle,Zac Thornton,0.5944,0.5847,0.5843,pending,,,,0.5756,0.5929
+2026-08-12,824562,145,Chicago White Sox,113,Cincinnati Reds,19:40,Luis Castillo,Rhett Lowder,0.544,0.5921,0.5808,pending,,,,0.5712,0.5727
+2026-08-12,823916,119,Los Angeles Dodgers,118,Kansas City Royals,22:10,Eric Lauer,Daniel Lynch IV,0.6474,0.6124,0.6211,pending,,,,0.6084,0.6421
+2026-08-12,823994,108,Los Angeles Angels,140,Texas Rangers,22:10,George Klassen,Cal Quantrill,0.4481,0.4563,0.449,pending,,,,0.4454,0.4074
