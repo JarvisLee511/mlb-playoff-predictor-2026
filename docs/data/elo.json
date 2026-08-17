@@ -3,180 +3,180 @@
   "team_name": "Milwaukee Brewers",
   "abbrev": "MIL",
   "league": "National League",
-  "elo": 1560.4
+  "elo": 1562.9
  },
  {
   "team_name": "Los Angeles Dodgers",
   "abbrev": "LAD",
   "league": "National League",
-  "elo": 1551.4
+  "elo": 1549.0
  },
  {
   "team_name": "Chicago Cubs",
   "abbrev": "CHC",
   "league": "National League",
-  "elo": 1548.3
+  "elo": 1544.6
  },
  {
   "team_name": "Boston Red Sox",
   "abbrev": "BOS",
   "league": "American League",
-  "elo": 1542.7
+  "elo": 1539.8
  },
  {
   "team_name": "Atlanta Braves",
   "abbrev": "ATL",
   "league": "National League",
-  "elo": 1536.3
+  "elo": 1537.8
  },
  {
   "team_name": "New York Yankees",
   "abbrev": "NYY",
   "league": "American League",
-  "elo": 1535.7
+  "elo": 1536.7
  },
  {
   "team_name": "Tampa Bay Rays",
   "abbrev": "TB",
   "league": "American League",
-  "elo": 1531.0
+  "elo": 1527.2
  },
  {
   "team_name": "Philadelphia Phillies",
   "abbrev": "PHI",
   "league": "National League",
-  "elo": 1522.9
- },
- {
-  "team_name": "Detroit Tigers",
-  "abbrev": "DET",
-  "league": "American League",
-  "elo": 1521.7
+  "elo": 1524.4
  },
  {
   "team_name": "San Diego Padres",
   "abbrev": "SD",
   "league": "National League",
-  "elo": 1519.2
+  "elo": 1521.8
+ },
+ {
+  "team_name": "Detroit Tigers",
+  "abbrev": "DET",
+  "league": "American League",
+  "elo": 1519.9
  },
  {
   "team_name": "Arizona Diamondbacks",
   "abbrev": "AZ",
   "league": "National League",
-  "elo": 1516.1
- },
- {
-  "team_name": "Houston Astros",
-  "abbrev": "HOU",
-  "league": "American League",
-  "elo": 1500.6
+  "elo": 1514.6
  },
  {
   "team_name": "Chicago White Sox",
   "abbrev": "CWS",
   "league": "American League",
-  "elo": 1499.8
- },
- {
-  "team_name": "Toronto Blue Jays",
-  "abbrev": "TOR",
-  "league": "American League",
-  "elo": 1498.8
+  "elo": 1501.6
  },
  {
   "team_name": "Miami Marlins",
   "abbrev": "MIA",
   "league": "National League",
-  "elo": 1498.1
+  "elo": 1501.0
+ },
+ {
+  "team_name": "Houston Astros",
+  "abbrev": "HOU",
+  "league": "American League",
+  "elo": 1499.5
  },
  {
   "team_name": "St. Louis Cardinals",
   "abbrev": "STL",
   "league": "National League",
-  "elo": 1494.2
+  "elo": 1498.0
  },
  {
-  "team_name": "Cleveland Guardians",
-  "abbrev": "CLE",
+  "team_name": "Toronto Blue Jays",
+  "abbrev": "TOR",
   "league": "American League",
-  "elo": 1493.7
- },
- {
-  "team_name": "Pittsburgh Pirates",
-  "abbrev": "PIT",
-  "league": "National League",
-  "elo": 1493.4
+  "elo": 1497.9
  },
  {
   "team_name": "Baltimore Orioles",
   "abbrev": "BAL",
   "league": "American League",
-  "elo": 1493.1
+  "elo": 1496.9
+ },
+ {
+  "team_name": "Pittsburgh Pirates",
+  "abbrev": "PIT",
+  "league": "National League",
+  "elo": 1496.4
  },
  {
   "team_name": "Seattle Mariners",
   "abbrev": "SEA",
   "league": "American League",
-  "elo": 1492.1
+  "elo": 1493.2
  },
  {
   "team_name": "New York Mets",
   "abbrev": "NYM",
   "league": "National League",
-  "elo": 1490.9
+  "elo": 1491.8
+ },
+ {
+  "team_name": "Cleveland Guardians",
+  "abbrev": "CLE",
+  "league": "American League",
+  "elo": 1491.0
  },
  {
   "team_name": "Texas Rangers",
   "abbrev": "TEX",
   "league": "American League",
-  "elo": 1486.2
+  "elo": 1483.9
  },
  {
   "team_name": "Washington Nationals",
   "abbrev": "WSH",
   "league": "National League",
-  "elo": 1480.7
+  "elo": 1479.8
  },
  {
   "team_name": "Minnesota Twins",
   "abbrev": "MIN",
   "league": "American League",
-  "elo": 1477.6
+  "elo": 1476.1
  },
  {
   "team_name": "Cincinnati Reds",
   "abbrev": "CIN",
   "league": "National League",
-  "elo": 1477.3
+  "elo": 1474.4
  },
  {
   "team_name": "San Francisco Giants",
   "abbrev": "SF",
   "league": "National League",
-  "elo": 1475.1
+  "elo": 1471.6
  },
  {
   "team_name": "Kansas City Royals",
   "abbrev": "KC",
   "league": "American League",
-  "elo": 1461.2
+  "elo": 1463.3
  },
  {
   "team_name": "Los Angeles Angels",
   "abbrev": "LAA",
   "league": "American League",
-  "elo": 1446.9
+  "elo": 1444.9
  },
  {
   "team_name": "Athletics",
   "abbrev": "ATH",
   "league": "American League",
-  "elo": 1433.4
+  "elo": 1435.7
  },
  {
   "team_name": "Colorado Rockies",
   "abbrev": "COL",
   "league": "National League",
-  "elo": 1421.2
+  "elo": 1424.7
  }
 ]
