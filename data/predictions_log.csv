@@ -869,13 +869,13 @@ date,game_id,home_id,home_name,away_id,away_name,game_time_et,home_pitcher,away_
 2026-08-16,823991,108,Los Angeles Angels,118,Kansas City Royals,16:07,Ryan Johnson,Noah Cameron,0.5025,0.4924,0.4964,final,0.0,3.0,0.0,0.4847,0.451
 2026-08-16,823912,119,Los Angeles Dodgers,158,Milwaukee Brewers,16:10,Tarik Skubal,Logan Henderson,0.5101,0.5315,0.538,final,2.0,6.0,0.0,0.5167,0.5641
 2026-08-16,824156,117,Houston Astros,136,Seattle Mariners,19:20,Hunter Brown,Bryan Woo,0.5352,0.4971,0.5493,final,2.0,3.0,0.0,0.495,0.5075
-2026-08-17,824514,113,Cincinnati Reds,138,St. Louis Cardinals,13:40,TBD,TBD,0.4891,0.4994,0.5085,pending,,,,0.4873,0.456
-2026-08-17,824478,113,Cincinnati Reds,138,St. Louis Cardinals,18:40,Rhett Lowder,TBD,0.4891,0.4742,0.4831,pending,,,,0.4677,0.4224
-2026-08-17,822939,139,Tampa Bay Rays,110,Baltimore Orioles,18:05,Shane McClanahan,Brandon Young,0.5662,0.5975,0.605,pending,,,,0.5799,0.6127
-2026-08-17,823427,143,Philadelphia Phillies,146,Miami Marlins,18:40,Cristopher Sánchez,Janson Junk,0.5565,0.6235,0.5932,pending,,,,0.5986,0.6481
+2026-08-17,824514,113,Cincinnati Reds,138,St. Louis Cardinals,13:40,TBD,TBD,0.4891,0.4994,0.5085,final,1.0,2.0,0.0,0.4873,0.456
+2026-08-17,824478,113,Cincinnati Reds,138,St. Louis Cardinals,18:40,Rhett Lowder,TBD,0.4891,0.4742,0.4831,final,6.0,5.0,1.0,0.4677,0.4224
+2026-08-17,822939,139,Tampa Bay Rays,110,Baltimore Orioles,18:05,Shane McClanahan,Brandon Young,0.5662,0.5975,0.605,final,7.0,6.0,1.0,0.5799,0.6127
+2026-08-17,823427,143,Philadelphia Phillies,146,Miami Marlins,18:40,Cristopher Sánchez,Janson Junk,0.5565,0.6235,0.5932,final,6.0,5.0,1.0,0.5986,0.6481
 2026-08-17,823343,134,Pittsburgh Pirates,116,Detroit Tigers,19:05,Carmen Mlodzinski,Framber Valdez,0.4892,0.5012,0.5108,pending,,,,0.4888,0.4432
 2026-08-17,824725,111,Boston Red Sox,109,Arizona Diamondbacks,19:10,TBD,Mitch Bratt,0.559,0.5916,0.5885,pending,,,,0.5738,0.5828
-2026-08-17,823589,121,New York Mets,135,San Diego Padres,19:10,Nolan McLean,Walker Buehler,0.4799,0.5362,0.5081,pending,,,,0.5142,0.5208
+2026-08-17,823589,121,New York Mets,135,San Diego Padres,19:10,Nolan McLean,Walker Buehler,0.4799,0.5362,0.5081,final,2.0,1.0,1.0,0.5142,0.5208
 2026-08-17,824077,118,Kansas City Royals,133,Athletics,19:40,Michael Wacha,Mason Barnett,0.5624,0.6156,0.6063,pending,,,,0.5935,0.6447
 2026-08-17,823668,142,Minnesota Twins,144,Atlanta Braves,19:40,Bailey Ober,Martín Pérez,0.4346,0.4549,0.4563,pending,,,,0.4416,0.4137
 2026-08-17,824641,112,Chicago Cubs,145,Chicago White Sox,20:05,Shota Imanaga,Luis Castillo,0.584,0.5849,0.5829,pending,,,,0.5737,0.6014

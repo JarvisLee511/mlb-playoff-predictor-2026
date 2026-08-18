@@ -12,7 +12,7 @@
    "p_home_xgb": 0.5085,
    "p_home_ens": 0.4873,
    "p_home_skl": 0.456,
-   "status": "pending"
+   "status": "final"
   },
   {
    "game_time_et": "18:05",
@@ -25,7 +25,7 @@
    "p_home_xgb": 0.605,
    "p_home_ens": 0.5799,
    "p_home_skl": 0.6127,
-   "status": "pending"
+   "status": "final"
   },
   {
    "game_time_et": "18:40",
@@ -38,7 +38,7 @@
    "p_home_xgb": 0.4831,
    "p_home_ens": 0.4677,
    "p_home_skl": 0.4224,
-   "status": "pending"
+   "status": "final"
   },
   {
    "game_time_et": "18:40",
@@ -51,7 +51,7 @@
    "p_home_xgb": 0.5932,
    "p_home_ens": 0.5986,
    "p_home_skl": 0.6481,
-   "status": "pending"
+   "status": "final"
   },
   {
    "game_time_et": "19:05",
@@ -90,7 +90,7 @@
    "p_home_xgb": 0.5081,
    "p_home_ens": 0.5142,
    "p_home_skl": 0.5208,
-   "status": "pending"
+   "status": "final"
   },
   {
    "game_time_et": "19:40",
@@ -151,13 +151,13 @@
    "game_time_et": "18:35",
    "home_name": "Baltimore Orioles",
    "away_name": "New York Yankees",
-   "home_pitcher": "TBD",
-   "away_pitcher": "Will Warren",
-   "p_home_elo": 0.4658,
-   "p_home_lr": 0.4798,
-   "p_home_xgb": 0.4731,
-   "p_home_ens": 0.4673,
-   "p_home_skl": 0.4493,
+   "home_pitcher": "Shane Baz",
+   "away_pitcher": "Carlos Rod\u00f3n",
+   "p_home_elo": 0.4645,
+   "p_home_lr": 0.4848,
+   "p_home_xgb": 0.4863,
+   "p_home_ens": 0.471,
+   "p_home_skl": 0.441,
    "status": "pending"
   },
   {
@@ -167,10 +167,10 @@
    "home_pitcher": "Braxton Ashcraft",
    "away_pitcher": "Keider Montero",
    "p_home_elo": 0.4892,
-   "p_home_lr": 0.5352,
+   "p_home_lr": 0.5346,
    "p_home_xgb": 0.5287,
-   "p_home_ens": 0.5154,
-   "p_home_skl": 0.5054,
+   "p_home_ens": 0.5148,
+   "p_home_skl": 0.5036,
    "status": "pending"
   },
   {
@@ -191,25 +191,25 @@
    "home_name": "Cincinnati Reds",
    "away_name": "St. Louis Cardinals",
    "home_pitcher": "Andrew Abbott",
-   "away_pitcher": "TBD",
-   "p_home_elo": 0.4891,
-   "p_home_lr": 0.4617,
-   "p_home_xgb": 0.4761,
-   "p_home_ens": 0.4579,
-   "p_home_skl": 0.4048,
+   "away_pitcher": "Kyle Leahy",
+   "p_home_elo": 0.4892,
+   "p_home_lr": 0.4557,
+   "p_home_xgb": 0.4701,
+   "p_home_ens": 0.4533,
+   "p_home_skl": 0.3868,
    "status": "pending"
   },
   {
    "game_time_et": "18:40",
    "home_name": "Tampa Bay Rays",
    "away_name": "Toronto Blue Jays",
-   "home_pitcher": "TBD",
+   "home_pitcher": "Nick Martinez",
    "away_pitcher": "Jos\u00e9 Soriano",
-   "p_home_elo": 0.5648,
-   "p_home_lr": 0.5809,
-   "p_home_xgb": 0.5885,
-   "p_home_ens": 0.5666,
-   "p_home_skl": 0.6011,
+   "p_home_elo": 0.5661,
+   "p_home_lr": 0.5737,
+   "p_home_xgb": 0.5578,
+   "p_home_ens": 0.5611,
+   "p_home_skl": 0.5728,
    "status": "pending"
   },
   {
@@ -218,11 +218,11 @@
    "away_name": "Miami Marlins",
    "home_pitcher": "Zack Wheeler",
    "away_pitcher": "TBD",
-   "p_home_elo": 0.5565,
-   "p_home_lr": 0.6094,
-   "p_home_xgb": 0.5907,
-   "p_home_ens": 0.5874,
-   "p_home_skl": 0.6201,
+   "p_home_elo": 0.5591,
+   "p_home_lr": 0.6101,
+   "p_home_xgb": 0.5898,
+   "p_home_ens": 0.5885,
+   "p_home_skl": 0.6188,
    "status": "pending"
   },
   {
@@ -232,23 +232,23 @@
    "home_pitcher": "Ranger Suarez",
    "away_pitcher": "Merrill Kelly",
    "p_home_elo": 0.559,
-   "p_home_lr": 0.6407,
+   "p_home_lr": 0.6422,
    "p_home_xgb": 0.6023,
-   "p_home_ens": 0.6129,
-   "p_home_skl": 0.645,
+   "p_home_ens": 0.6141,
+   "p_home_skl": 0.6499,
    "status": "pending"
   },
   {
    "game_time_et": "19:10",
    "home_name": "New York Mets",
    "away_name": "San Diego Padres",
-   "home_pitcher": "TBD",
+   "home_pitcher": "Zac Thornton",
    "away_pitcher": "Robbie Ray",
-   "p_home_elo": 0.4799,
-   "p_home_lr": 0.5189,
-   "p_home_xgb": 0.505,
-   "p_home_ens": 0.5007,
-   "p_home_skl": 0.4959,
+   "p_home_elo": 0.483,
+   "p_home_lr": 0.5084,
+   "p_home_xgb": 0.5036,
+   "p_home_ens": 0.4931,
+   "p_home_skl": 0.4744,
    "status": "pending"
   },
   {
@@ -258,10 +258,10 @@
    "home_pitcher": "TBD",
    "away_pitcher": "Jack Perkins",
    "p_home_elo": 0.5624,
-   "p_home_lr": 0.5869,
+   "p_home_lr": 0.587,
    "p_home_xgb": 0.5696,
-   "p_home_ens": 0.5708,
-   "p_home_skl": 0.5992,
+   "p_home_ens": 0.5709,
+   "p_home_skl": 0.6,
    "status": "pending"
   },
   {
@@ -271,10 +271,10 @@
    "home_pitcher": "Zebby Matthews",
    "away_pitcher": "Tyler Mahle",
    "p_home_elo": 0.4346,
-   "p_home_lr": 0.4365,
+   "p_home_lr": 0.4368,
    "p_home_xgb": 0.4411,
-   "p_home_ens": 0.4274,
-   "p_home_skl": 0.3824,
+   "p_home_ens": 0.4276,
+   "p_home_skl": 0.3836,
    "status": "pending"
   },
   {
@@ -284,10 +284,10 @@
    "home_pitcher": "Kyle Harrison",
    "away_pitcher": "Bryce Miller",
    "p_home_elo": 0.6209,
-   "p_home_lr": 0.6376,
+   "p_home_lr": 0.6375,
    "p_home_xgb": 0.6521,
    "p_home_ens": 0.6227,
-   "p_home_skl": 0.6713,
+   "p_home_skl": 0.671,
    "status": "pending"
   },
   {
@@ -310,23 +310,23 @@
    "home_pitcher": "Kevin Gausman",
    "away_pitcher": "TBD",
    "p_home_elo": 0.584,
-   "p_home_lr": 0.5926,
-   "p_home_xgb": 0.5997,
-   "p_home_ens": 0.5797,
-   "p_home_skl": 0.5997,
+   "p_home_lr": 0.5937,
+   "p_home_xgb": 0.5998,
+   "p_home_ens": 0.5806,
+   "p_home_skl": 0.6017,
    "status": "pending"
   },
   {
    "game_time_et": "20:10",
    "home_name": "Houston Astros",
    "away_name": "Los Angeles Angels",
-   "home_pitcher": "TBD",
+   "home_pitcher": "Cristian Javier",
    "away_pitcher": "George Klassen",
    "p_home_elo": 0.6003,
-   "p_home_lr": 0.6396,
-   "p_home_xgb": 0.6425,
-   "p_home_ens": 0.6202,
-   "p_home_skl": 0.6777,
+   "p_home_lr": 0.6092,
+   "p_home_xgb": 0.6167,
+   "p_home_ens": 0.5961,
+   "p_home_skl": 0.6334,
    "status": "pending"
   },
   {
@@ -336,10 +336,10 @@
    "home_pitcher": "Ryan Feltner",
    "away_pitcher": "Eric Lauer",
    "p_home_elo": 0.349,
-   "p_home_lr": 0.382,
+   "p_home_lr": 0.3823,
    "p_home_xgb": 0.4875,
-   "p_home_ens": 0.3677,
-   "p_home_skl": 0.3277,
+   "p_home_ens": 0.3679,
+   "p_home_skl": 0.3272,
    "status": "pending"
   }
  ]
