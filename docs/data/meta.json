@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-19 08:02 UTC",
+ "generated_at_utc": "2026-08-19 11:49 UTC",
  "n_predictions_logged": 911,
  "n_scored": 893,
  "backtest_metrics": {
@@ -11,8 +11,8 @@
    "n_games": 4325
   },
   "logistic_regression": {
-   "log_loss": 0.6820653681550242,
-   "brier": 0.244561993260029,
+   "log_loss": 0.6820653681550243,
+   "brier": 0.24456199326002906,
    "auc": 0.570787123347249,
    "accuracy": 0.553757225433526,
    "n_games": 4325
@@ -25,7 +25,7 @@
    "n_games": 4325
   },
   "ensemble": {
-   "log_loss": 0.6820309771149964,
+   "log_loss": 0.6820309771149965,
    "brier": 0.2445518889658991,
    "auc": 0.5711522047997359,
    "accuracy": 0.5574566473988439,
