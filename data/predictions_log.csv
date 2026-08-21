@@ -21,7 +21,7 @@ date,game_id,home_id,home_name,away_id,away_name,game_time_et,home_pitcher,away_
 2026-06-11,824346,115,Colorado Rockies,112,Chicago Cubs,15:10,Ryan Feltner,Edward Cabrera,0.3888,0.4164,0.4903,final,3.0,9.0,0.0,0.4024,0.3983
 2026-06-11,823371,134,Pittsburgh Pirates,119,Los Angeles Dodgers,18:40,Mitch Keller,Justin Wrobleski,0.4218,0.4181,0.4483,final,6.0,8.0,0.0,0.4105,0.337
 2026-06-11,824827,110,Baltimore Orioles,136,Seattle Mariners,19:05,Kyle Bradish,Bryan Woo,0.4738,0.4372,0.4306,final,7.0,5.0,1.0,0.4358,0.3561
-2026-06-11,824589,145,Chicago White Sox,144,Atlanta Braves,19:40,TBD,Martín Pérez,0.4309,0.4507,0.4752,pending,,,,0.4376,0.3929
+2026-06-11,824589,145,Chicago White Sox,144,Atlanta Braves,19:40,TBD,Martín Pérez,0.4309,0.4507,0.4752,final,0.0,2.0,0.0,0.4376,0.3929
 2026-06-12,823370,134,Pittsburgh Pirates,146,Miami Marlins,18:40,Braxton Ashcraft,Sandy Alcantara,0.5302,0.5807,0.5744,final,3.0,8.0,0.0,0.5594,0.5883
 2026-06-12,822726,120,Washington Nationals,136,Seattle Mariners,18:45,Zack Littell,Bryce Miller,0.4617,0.3772,0.3448,final,2.0,10.0,0.0,0.3864,0.3277
 2026-06-12,824826,110,Baltimore Orioles,135,San Diego Padres,19:05,Shane Baz,Griffin Canning,0.4987,0.5281,0.5385,final,7.0,3.0,1.0,0.5117,0.5211
@@ -910,11 +910,26 @@ date,game_id,home_id,home_name,away_id,away_name,game_time_et,home_pitcher,away_
 2026-08-19,822860,140,Texas Rangers,120,Washington Nationals,20:05,Kumar Rocker,Cade Cavalli,0.5363,0.5118,0.5253,final,0.0,6.0,0.0,0.5066,0.4623
 2026-08-19,824155,117,Houston Astros,108,Los Angeles Angels,20:10,Ethan Pecko,Walbert Ureña,0.5948,0.6133,0.6295,final,3.0,2.0,1.0,0.5982,0.6375
 2026-08-19,824318,115,Colorado Rockies,119,Los Angeles Dodgers,20:40,Kyle Freeland,Roki Sasaki,0.3418,0.3735,0.4892,final,4.0,6.0,0.0,0.3596,0.3223
-2026-08-20,824474,113,Cincinnati Reds,138,St. Louis Cardinals,12:40,Brady Singer,Michael McGreevy,0.4864,0.4799,0.5013,pending,,,,0.4716,0.4373
-2026-08-20,824395,114,Cleveland Guardians,137,San Francisco Giants,13:10,Gavin Williams,Landen Roupp,0.5555,0.6079,0.621,pending,,,,0.586,0.648
-2026-08-20,822934,139,Tampa Bay Rays,141,Toronto Blue Jays,13:10,Ian Seymour,Shane Bieber,0.5601,0.6433,0.6161,pending,,,,0.6152,0.6767
-2026-08-20,824074,118,Kansas City Royals,133,Athletics,14:10,Randy Dobnak,Gage Jump,0.5749,0.5649,0.563,pending,,,,0.5561,0.5724
-2026-08-20,823747,158,Milwaukee Brewers,136,Seattle Mariners,14:10,Robert Gasser,George Kirby,0.6249,0.6189,0.6229,pending,,,,0.6088,0.6684
-2026-08-20,824802,110,Baltimore Orioles,147,New York Yankees,18:35,Kyle Bradish,Gerrit Cole,0.4558,0.4404,0.4335,pending,,,,0.4347,0.3804
-2026-08-20,822861,140,Texas Rangers,120,Washington Nationals,20:05,Jacob deGrom,Andrew Alvarez,0.5273,0.5891,0.5982,pending,,,,0.5654,0.5898
-2026-08-20,824153,117,Houston Astros,108,Los Angeles Angels,20:10,Peter Lambert,Grayson Rodriguez,0.5971,0.6278,0.6446,pending,,,,0.6101,0.6608
+2026-08-20,824474,113,Cincinnati Reds,138,St. Louis Cardinals,12:40,Brady Singer,Michael McGreevy,0.4864,0.4799,0.5013,final,9.0,10.0,0.0,0.4716,0.4373
+2026-08-20,824395,114,Cleveland Guardians,137,San Francisco Giants,13:10,Gavin Williams,Landen Roupp,0.5555,0.6079,0.621,final,5.0,2.0,1.0,0.586,0.648
+2026-08-20,822934,139,Tampa Bay Rays,141,Toronto Blue Jays,13:10,Ian Seymour,Shane Bieber,0.5601,0.6433,0.6161,final,1.0,5.0,0.0,0.6152,0.6767
+2026-08-20,824074,118,Kansas City Royals,133,Athletics,14:10,Randy Dobnak,Gage Jump,0.5749,0.5649,0.563,final,6.0,2.0,1.0,0.5561,0.5724
+2026-08-20,823747,158,Milwaukee Brewers,136,Seattle Mariners,14:10,Robert Gasser,George Kirby,0.6249,0.6189,0.6229,final,7.0,4.0,1.0,0.6088,0.6684
+2026-08-20,824802,110,Baltimore Orioles,147,New York Yankees,18:35,Kyle Bradish,Gerrit Cole,0.4558,0.4404,0.4335,final,1.0,6.0,0.0,0.4347,0.3804
+2026-08-20,822861,140,Texas Rangers,120,Washington Nationals,20:05,Jacob deGrom,Andrew Alvarez,0.5273,0.5891,0.5982,final,2.0,0.0,1.0,0.5654,0.5898
+2026-08-20,824153,117,Houston Astros,108,Los Angeles Angels,20:10,Peter Lambert,Grayson Rodriguez,0.5971,0.6278,0.6446,final,3.0,18.0,0.0,0.6101,0.6608
+2026-08-21,823746,158,Milwaukee Brewers,144,Atlanta Braves,16:10,Jacob Misiorowski,Chris Sale,0.5695,0.6251,0.5906,pending,,,,0.6025,0.6245
+2026-08-21,823420,143,Philadelphia Phillies,138,St. Louis Cardinals,18:40,Jesús Luzardo,TBD,0.564,0.6201,0.5908,pending,,,,0.5974,0.6422
+2026-08-21,823510,147,New York Yankees,141,Toronto Blue Jays,19:05,Cam Schlittler,TBD,0.5792,0.6445,0.6424,pending,,,,0.6199,0.6852
+2026-08-21,824721,111,Boston Red Sox,137,San Francisco Giants,19:10,Sonny Gray,Logan Webb,0.6293,0.6316,0.6349,pending,,,,0.6197,0.6513
+2026-08-21,823830,146,Miami Marlins,120,Washington Nationals,19:10,Ryan Gusto,Brad Lord,0.5488,0.5891,0.6042,pending,,,,0.5698,0.5768
+2026-08-21,824800,110,Baltimore Orioles,139,Tampa Bay Rays,19:15,Trevor Rogers,Freddy Peralta,0.4759,0.4949,0.5085,pending,,,,0.4811,0.4515
+2026-08-21,824559,145,Chicago White Sox,121,New York Mets,19:40,Sean Burke,Sean Manaea,0.534,0.5628,0.5903,pending,,,,0.546,0.5348
+2026-08-21,824072,118,Kansas City Royals,116,Detroit Tigers,20:10,Noah Cameron,Troy Melton,0.4528,0.448,0.4545,pending,,,,0.4399,0.3781
+2026-08-21,824152,117,Houston Astros,133,Athletics,20:10,Hayden Wesneski,J.T. Ginn,0.6134,0.6358,0.6621,pending,,,,0.6198,0.6651
+2026-08-21,822857,140,Texas Rangers,108,Los Angeles Angels,20:15,MacKenzie Gore,Reid Detmers,0.5714,0.5639,0.5515,pending,,,,0.5545,0.5498
+2026-08-21,824317,115,Colorado Rockies,114,Cleveland Guardians,20:40,Tanner Gordon,Joey Cantillo,0.4176,0.4379,0.4786,pending,,,,0.425,0.4212
+2026-08-21,825045,109,Arizona Diamondbacks,113,Cincinnati Reds,21:40,Eduardo Rodriguez,Nick Lodolo,0.5769,0.6183,0.6079,pending,,,,0.5985,0.6386
+2026-08-21,823262,135,San Diego Padres,142,Minnesota Twins,21:40,TBD,Connor Prielipp,0.5784,0.5851,0.5671,pending,,,,0.5727,0.5818
+2026-08-21,823911,119,Los Angeles Dodgers,134,Pittsburgh Pirates,22:10,Yoshinobu Yamamoto,Bubba Chandler,0.6012,0.6575,0.6837,pending,,,,0.6347,0.6981
+2026-08-21,823101,136,Seattle Mariners,112,Chicago Cubs,22:10,Emerson Hancock,Matthew Boyd,0.4452,0.4981,0.4615,pending,,,,0.4773,0.4499
