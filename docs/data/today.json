@@ -297,10 +297,10 @@
    "home_pitcher": "TBD",
    "away_pitcher": "Tanner Gordon",
    "p_home_elo": 0.6144,
-   "p_home_lr": 0.6277,
+   "p_home_lr": 0.6276,
    "p_home_xgb": 0.6386,
-   "p_home_ens": 0.6136,
-   "p_home_skl": 0.6394,
+   "p_home_ens": 0.6135,
+   "p_home_skl": 0.6393,
    "status": "pending"
   },
   {
@@ -362,10 +362,10 @@
    "home_pitcher": "Sean Burke",
    "away_pitcher": "MacKenzie Gore",
    "p_home_elo": 0.5338,
-   "p_home_lr": 0.5591,
+   "p_home_lr": 0.559,
    "p_home_xgb": 0.5956,
    "p_home_ens": 0.5431,
-   "p_home_skl": 0.5414,
+   "p_home_skl": 0.5413,
    "status": "pending"
   },
   {
