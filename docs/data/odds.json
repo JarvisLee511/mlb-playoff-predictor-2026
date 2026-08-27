@@ -5,12 +5,12 @@
   "league": "National League",
   "division": "National League Central",
   "current_wins": 82,
-  "proj_wins": 99.1,
+  "proj_wins": 99.0,
   "make_playoffs": 1.0,
-  "win_division": 0.9725,
-  "first_round_bye": 0.9265,
-  "win_pennant": 0.3356,
-  "win_world_series": 0.2074
+  "win_division": 0.9702,
+  "first_round_bye": 0.9204,
+  "win_pennant": 0.3375,
+  "win_world_series": 0.2176
  },
  {
   "team_name": "Los Angeles Dodgers",
@@ -18,12 +18,12 @@
   "league": "National League",
   "division": "National League West",
   "current_wins": 80,
-  "proj_wins": 97.2,
+  "proj_wins": 97.3,
   "make_playoffs": 1.0,
-  "win_division": 0.9925,
-  "first_round_bye": 0.8167,
-  "win_pennant": 0.2581,
-  "win_world_series": 0.1545
+  "win_division": 0.9934,
+  "first_round_bye": 0.8293,
+  "win_pennant": 0.2596,
+  "win_world_series": 0.1567
  },
  {
   "team_name": "New York Yankees",
@@ -32,24 +32,11 @@
   "division": "American League East",
   "current_wins": 75,
   "proj_wins": 92.2,
-  "make_playoffs": 0.9997,
-  "win_division": 0.2959,
-  "first_round_bye": 0.2959,
-  "win_pennant": 0.2315,
-  "win_world_series": 0.11
- },
- {
-  "team_name": "Boston Red Sox",
-  "abbrev": "BOS",
-  "league": "American League",
-  "division": "American League East",
-  "current_wins": 73,
-  "proj_wins": 89.4,
-  "make_playoffs": 0.996,
-  "win_division": 0.0664,
-  "first_round_bye": 0.0664,
-  "win_pennant": 0.1905,
-  "win_world_series": 0.0943
+  "make_playoffs": 0.9996,
+  "win_division": 0.2976,
+  "first_round_bye": 0.2976,
+  "win_pennant": 0.231,
+  "win_world_series": 0.1117
  },
  {
   "team_name": "Tampa Bay Rays",
@@ -59,10 +46,23 @@
   "current_wins": 79,
   "proj_wins": 94.1,
   "make_playoffs": 1.0,
-  "win_division": 0.6377,
-  "first_round_bye": 0.6377,
-  "win_pennant": 0.2084,
-  "win_world_series": 0.0907
+  "win_division": 0.635,
+  "first_round_bye": 0.635,
+  "win_pennant": 0.2114,
+  "win_world_series": 0.0893
+ },
+ {
+  "team_name": "Boston Red Sox",
+  "abbrev": "BOS",
+  "league": "American League",
+  "division": "American League East",
+  "current_wins": 73,
+  "proj_wins": 89.4,
+  "make_playoffs": 0.997,
+  "win_division": 0.0674,
+  "first_round_bye": 0.0674,
+  "win_pennant": 0.1826,
+  "win_world_series": 0.0876
  },
  {
   "team_name": "Chicago Cubs",
@@ -70,12 +70,12 @@
   "league": "National League",
   "division": "National League Central",
   "current_wins": 76,
-  "proj_wins": 91.1,
-  "make_playoffs": 0.972,
-  "win_division": 0.0275,
-  "first_round_bye": 0.0203,
-  "win_pennant": 0.1211,
-  "win_world_series": 0.0684
+  "proj_wins": 91.2,
+  "make_playoffs": 0.9731,
+  "win_division": 0.0298,
+  "first_round_bye": 0.0243,
+  "win_pennant": 0.1233,
+  "win_world_series": 0.067
  },
  {
   "team_name": "Atlanta Braves",
@@ -83,12 +83,12 @@
   "league": "National League",
   "division": "National League East",
   "current_wins": 78,
-  "proj_wins": 93.9,
-  "make_playoffs": 0.9976,
-  "win_division": 0.8807,
-  "first_round_bye": 0.228,
-  "win_pennant": 0.1292,
-  "win_world_series": 0.0676
+  "proj_wins": 93.8,
+  "make_playoffs": 0.9966,
+  "win_division": 0.8828,
+  "first_round_bye": 0.2151,
+  "win_pennant": 0.1271,
+  "win_world_series": 0.0664
  },
  {
   "team_name": "Chicago White Sox",
@@ -97,11 +97,11 @@
   "division": "American League Central",
   "current_wins": 70,
   "proj_wins": 85.2,
-  "make_playoffs": 0.8983,
-  "win_division": 0.7221,
-  "first_round_bye": 0.6708,
-  "win_pennant": 0.1494,
-  "win_world_series": 0.0524
+  "make_playoffs": 0.905,
+  "win_division": 0.7291,
+  "first_round_bye": 0.6723,
+  "win_pennant": 0.1598,
+  "win_world_series": 0.0568
  },
  {
   "team_name": "Philadelphia Phillies",
@@ -110,11 +110,24 @@
   "division": "National League East",
   "current_wins": 74,
   "proj_wins": 88.8,
-  "make_playoffs": 0.8635,
-  "win_division": 0.119,
-  "first_round_bye": 0.0073,
-  "win_pennant": 0.0729,
-  "win_world_series": 0.0381
+  "make_playoffs": 0.8641,
+  "win_division": 0.1171,
+  "first_round_bye": 0.0092,
+  "win_pennant": 0.0749,
+  "win_world_series": 0.0394
+ },
+ {
+  "team_name": "Cleveland Guardians",
+  "abbrev": "CLE",
+  "league": "American League",
+  "division": "American League Central",
+  "current_wins": 68,
+  "proj_wins": 82.6,
+  "make_playoffs": 0.6297,
+  "win_division": 0.2493,
+  "first_round_bye": 0.2179,
+  "win_pennant": 0.0857,
+  "win_world_series": 0.0301
  },
  {
   "team_name": "San Diego Padres",
@@ -123,24 +136,11 @@
   "division": "National League West",
   "current_wins": 72,
   "proj_wins": 87.2,
-  "make_playoffs": 0.6993,
-  "win_division": 0.0065,
-  "first_round_bye": 0.001,
-  "win_pennant": 0.0581,
-  "win_world_series": 0.0313
- },
- {
-  "team_name": "Cleveland Guardians",
-  "abbrev": "CLE",
-  "league": "American League",
-  "division": "American League Central",
-  "current_wins": 68,
-  "proj_wins": 82.7,
-  "make_playoffs": 0.6329,
-  "win_division": 0.2545,
-  "first_round_bye": 0.223,
-  "win_pennant": 0.0862,
-  "win_world_series": 0.0297
+  "make_playoffs": 0.697,
+  "win_division": 0.0052,
+  "first_round_bye": 0.0016,
+  "win_pennant": 0.0502,
+  "win_world_series": 0.0256
  },
  {
   "team_name": "Houston Astros",
@@ -149,11 +149,11 @@
   "division": "American League West",
   "current_wins": 66,
   "proj_wins": 80.2,
-  "make_playoffs": 0.4675,
-  "win_division": 0.4413,
-  "first_round_bye": 0.0539,
-  "win_pennant": 0.0471,
-  "win_world_series": 0.0165
+  "make_playoffs": 0.476,
+  "win_division": 0.4472,
+  "first_round_bye": 0.0532,
+  "win_pennant": 0.0452,
+  "win_world_series": 0.0148
  },
  {
   "team_name": "Arizona Diamondbacks",
@@ -161,25 +161,12 @@
   "league": "National League",
   "division": "National League West",
   "current_wins": 71,
-  "proj_wins": 85.6,
-  "make_playoffs": 0.4166,
-  "win_division": 0.001,
-  "first_round_bye": 0.0002,
-  "win_pennant": 0.0236,
-  "win_world_series": 0.0103
- },
- {
-  "team_name": "Seattle Mariners",
-  "abbrev": "SEA",
-  "league": "American League",
-  "division": "American League West",
-  "current_wins": 64,
-  "proj_wins": 79.0,
-  "make_playoffs": 0.2935,
-  "win_division": 0.2742,
-  "first_round_bye": 0.0173,
-  "win_pennant": 0.0272,
-  "win_world_series": 0.0085
+  "proj_wins": 85.7,
+  "make_playoffs": 0.4133,
+  "win_division": 0.0014,
+  "first_round_bye": 0.0001,
+  "win_pennant": 0.0243,
+  "win_world_series": 0.0102
  },
  {
   "team_name": "Texas Rangers",
@@ -188,11 +175,24 @@
   "division": "American League West",
   "current_wins": 66,
   "proj_wins": 79.2,
-  "make_playoffs": 0.3128,
-  "win_division": 0.2845,
-  "first_round_bye": 0.0196,
-  "win_pennant": 0.0244,
-  "win_world_series": 0.0066
+  "make_playoffs": 0.3121,
+  "win_division": 0.2846,
+  "first_round_bye": 0.0237,
+  "win_pennant": 0.0251,
+  "win_world_series": 0.008
+ },
+ {
+  "team_name": "Seattle Mariners",
+  "abbrev": "SEA",
+  "league": "American League",
+  "division": "American League West",
+  "current_wins": 64,
+  "proj_wins": 79.0,
+  "make_playoffs": 0.2937,
+  "win_division": 0.2682,
+  "first_round_bye": 0.0186,
+  "win_pennant": 0.0235,
+  "win_world_series": 0.0072
  },
  {
   "team_name": "Toronto Blue Jays",
@@ -200,12 +200,12 @@
   "league": "American League",
   "division": "American League East",
   "current_wins": 65,
-  "proj_wins": 79.6,
-  "make_playoffs": 0.1766,
+  "proj_wins": 79.7,
+  "make_playoffs": 0.1869,
   "win_division": 0.0,
   "first_round_bye": 0.0,
-  "win_pennant": 0.0146,
-  "win_world_series": 0.0046
+  "win_pennant": 0.017,
+  "win_world_series": 0.0054
  },
  {
   "team_name": "Baltimore Orioles",
@@ -213,12 +213,12 @@
   "league": "American League",
   "division": "American League East",
   "current_wins": 65,
-  "proj_wins": 79.2,
-  "make_playoffs": 0.137,
+  "proj_wins": 78.7,
+  "make_playoffs": 0.1095,
   "win_division": 0.0,
   "first_round_bye": 0.0,
-  "win_pennant": 0.0112,
-  "win_world_series": 0.004
+  "win_pennant": 0.0108,
+  "win_world_series": 0.0026
  },
  {
   "team_name": "Detroit Tigers",
@@ -227,11 +227,11 @@
   "division": "American League Central",
   "current_wins": 62,
   "proj_wins": 77.4,
-  "make_playoffs": 0.0477,
-  "win_division": 0.0125,
-  "first_round_bye": 0.0089,
-  "win_pennant": 0.0067,
-  "win_world_series": 0.0034
+  "make_playoffs": 0.0501,
+  "win_division": 0.0105,
+  "first_round_bye": 0.0069,
+  "win_pennant": 0.0054,
+  "win_world_series": 0.0021
  },
  {
   "team_name": "Miami Marlins",
@@ -240,10 +240,10 @@
   "division": "National League East",
   "current_wins": 68,
   "proj_wins": 81.3,
-  "make_playoffs": 0.0399,
-  "win_division": 0.0003,
+  "make_playoffs": 0.0397,
+  "win_division": 0.0001,
   "first_round_bye": 0.0,
-  "win_pennant": 0.0013,
+  "win_pennant": 0.0024,
   "win_world_series": 0.0008
  },
  {
@@ -253,24 +253,24 @@
   "division": "American League Central",
   "current_wins": 64,
   "proj_wins": 77.2,
-  "make_playoffs": 0.0375,
-  "win_division": 0.0109,
-  "first_round_bye": 0.0065,
-  "win_pennant": 0.0028,
-  "win_world_series": 0.0008
+  "make_playoffs": 0.0403,
+  "win_division": 0.0111,
+  "first_round_bye": 0.0074,
+  "win_pennant": 0.0025,
+  "win_world_series": 0.0005
  },
  {
   "team_name": "St. Louis Cardinals",
   "abbrev": "STL",
   "league": "National League",
   "division": "National League Central",
-  "current_wins": 66,
-  "proj_wins": 79.8,
-  "make_playoffs": 0.0091,
+  "current_wins": 67,
+  "proj_wins": 80.4,
+  "make_playoffs": 0.0148,
   "win_division": 0.0,
   "first_round_bye": 0.0,
-  "win_pennant": 0.0001,
-  "win_world_series": 0.0001
+  "win_pennant": 0.0007,
+  "win_world_series": 0.0002
  },
  {
   "team_name": "Athletics",
@@ -305,7 +305,7 @@
   "division": "American League Central",
   "current_wins": 59,
   "proj_wins": 71.8,
-  "make_playoffs": 0.0005,
+  "make_playoffs": 0.0001,
   "win_division": 0.0,
   "first_round_bye": 0.0,
   "win_pennant": 0.0,
@@ -317,7 +317,7 @@
   "league": "National League",
   "division": "National League Central",
   "current_wins": 63,
-  "proj_wins": 74.0,
+  "proj_wins": 73.9,
   "make_playoffs": 0.0,
   "win_division": 0.0,
   "first_round_bye": 0.0,
@@ -330,7 +330,7 @@
   "league": "National League",
   "division": "National League West",
   "current_wins": 52,
-  "proj_wins": 62.9,
+  "proj_wins": 62.4,
   "make_playoffs": 0.0,
   "win_division": 0.0,
   "first_round_bye": 0.0,
@@ -344,7 +344,7 @@
   "division": "National League Central",
   "current_wins": 65,
   "proj_wins": 78.4,
-  "make_playoffs": 0.002,
+  "make_playoffs": 0.0014,
   "win_division": 0.0,
   "first_round_bye": 0.0,
   "win_pennant": 0.0,
@@ -356,7 +356,7 @@
   "league": "National League",
   "division": "National League East",
   "current_wins": 60,
-  "proj_wins": 73.9,
+  "proj_wins": 74.0,
   "make_playoffs": 0.0,
   "win_division": 0.0,
   "first_round_bye": 0.0,
@@ -381,8 +381,8 @@
   "abbrev": "WSH",
   "league": "National League",
   "division": "National League East",
-  "current_wins": 62,
-  "proj_wins": 74.3,
+  "current_wins": 63,
+  "proj_wins": 74.8,
   "make_playoffs": 0.0,
   "win_division": 0.0,
   "first_round_bye": 0.0,
