@@ -206,10 +206,10 @@
    "home_pitcher": "Zac Thornton",
    "away_pitcher": "Anthony Molina",
    "p_home_elo": 0.5511,
-   "p_home_lr": 0.5614,
-   "p_home_xgb": 0.5692,
+   "p_home_lr": 0.5613,
+   "p_home_xgb": 0.5689,
    "p_home_ens": 0.5484,
-   "p_home_skl": 0.5648,
+   "p_home_skl": 0.5647,
    "status": "pending"
   },
   {
@@ -219,10 +219,10 @@
    "home_pitcher": "Ryan Gusto",
    "away_pitcher": "TBD",
    "p_home_elo": 0.4556,
-   "p_home_lr": 0.4777,
-   "p_home_xgb": 0.4999,
-   "p_home_ens": 0.4636,
-   "p_home_skl": 0.4279,
+   "p_home_lr": 0.4778,
+   "p_home_xgb": 0.496,
+   "p_home_ens": 0.4637,
+   "p_home_skl": 0.428,
    "status": "pending"
   },
   {
@@ -233,9 +233,9 @@
    "away_pitcher": "Mart\u00edn P\u00e9rez",
    "p_home_elo": 0.5268,
    "p_home_lr": 0.6018,
-   "p_home_xgb": 0.557,
+   "p_home_xgb": 0.5615,
    "p_home_ens": 0.5754,
-   "p_home_skl": 0.5948,
+   "p_home_skl": 0.5947,
    "status": "pending"
   },
   {
@@ -245,9 +245,9 @@
    "home_pitcher": "Parker Messick",
    "away_pitcher": "Framber Valdez",
    "p_home_elo": 0.5177,
-   "p_home_lr": 0.5876,
-   "p_home_xgb": 0.5698,
-   "p_home_ens": 0.5623,
+   "p_home_lr": 0.5875,
+   "p_home_xgb": 0.5711,
+   "p_home_ens": 0.5622,
    "p_home_skl": 0.5981,
    "status": "pending"
   },
@@ -260,7 +260,7 @@
    "p_home_elo": 0.5994,
    "p_home_lr": 0.6443,
    "p_home_xgb": 0.6435,
-   "p_home_ens": 0.6237,
+   "p_home_ens": 0.6238,
    "p_home_skl": 0.639,
    "status": "pending"
   },
@@ -272,9 +272,9 @@
    "away_pitcher": "Dustin May",
    "p_home_elo": 0.3821,
    "p_home_lr": 0.3359,
-   "p_home_xgb": 0.3918,
-   "p_home_ens": 0.3387,
-   "p_home_skl": 0.2698,
+   "p_home_xgb": 0.3971,
+   "p_home_ens": 0.3386,
+   "p_home_skl": 0.2697,
    "status": "pending"
   },
   {
@@ -285,7 +285,7 @@
    "away_pitcher": "Sonny Gray",
    "p_home_elo": 0.4613,
    "p_home_lr": 0.4284,
-   "p_home_xgb": 0.4256,
+   "p_home_xgb": 0.4263,
    "p_home_ens": 0.4264,
    "p_home_skl": 0.3653,
    "status": "pending"
@@ -298,7 +298,7 @@
    "away_pitcher": "Drew Rasmussen",
    "p_home_elo": 0.4709,
    "p_home_lr": 0.4813,
-   "p_home_xgb": 0.4724,
+   "p_home_xgb": 0.4705,
    "p_home_ens": 0.4695,
    "p_home_skl": 0.4435,
    "status": "pending"
@@ -310,9 +310,9 @@
    "home_pitcher": "Seth Lugo",
    "away_pitcher": "Max Scherzer",
    "p_home_elo": 0.4862,
-   "p_home_lr": 0.509,
-   "p_home_xgb": 0.5207,
-   "p_home_ens": 0.4942,
+   "p_home_lr": 0.5089,
+   "p_home_xgb": 0.5233,
+   "p_home_ens": 0.4941,
    "p_home_skl": 0.4804,
    "status": "pending"
   },
@@ -323,8 +323,8 @@
    "home_pitcher": "Anthony Kay",
    "away_pitcher": "Taj Bradley",
    "p_home_elo": 0.5509,
-   "p_home_lr": 0.522,
-   "p_home_xgb": 0.5317,
+   "p_home_lr": 0.5221,
+   "p_home_xgb": 0.5312,
    "p_home_ens": 0.5177,
    "p_home_skl": 0.4646,
    "status": "pending"
@@ -336,10 +336,10 @@
    "home_pitcher": "Ethan Pecko",
    "away_pitcher": "Brandon Pfaadt",
    "p_home_elo": 0.5121,
-   "p_home_lr": 0.4982,
-   "p_home_xgb": 0.4785,
+   "p_home_lr": 0.4983,
+   "p_home_xgb": 0.4796,
    "p_home_ens": 0.4911,
-   "p_home_skl": 0.4615,
+   "p_home_skl": 0.4616,
    "status": "pending"
   },
   {
@@ -350,7 +350,7 @@
    "away_pitcher": "Carlos Rod\u00f3n",
    "p_home_elo": 0.4859,
    "p_home_lr": 0.4709,
-   "p_home_xgb": 0.4754,
+   "p_home_xgb": 0.4771,
    "p_home_ens": 0.4645,
    "p_home_skl": 0.4185,
    "status": "pending"
@@ -363,7 +363,7 @@
    "away_pitcher": "Matthew Liberatore",
    "p_home_elo": 0.4125,
    "p_home_lr": 0.4321,
-   "p_home_xgb": 0.4722,
+   "p_home_xgb": 0.468,
    "p_home_ens": 0.4194,
    "p_home_skl": 0.399,
    "status": "pending"
@@ -375,10 +375,10 @@
    "home_pitcher": "Tyler Glasnow",
    "away_pitcher": "Cade Cavalli",
    "p_home_elo": 0.6277,
-   "p_home_lr": 0.6493,
-   "p_home_xgb": 0.665,
-   "p_home_ens": 0.6334,
-   "p_home_skl": 0.6612,
+   "p_home_lr": 0.6494,
+   "p_home_xgb": 0.6667,
+   "p_home_ens": 0.6335,
+   "p_home_skl": 0.6613,
    "status": "pending"
   },
   {
@@ -389,9 +389,9 @@
    "away_pitcher": "TBD",
    "p_home_elo": 0.6032,
    "p_home_lr": 0.6327,
-   "p_home_xgb": 0.644,
+   "p_home_xgb": 0.6428,
    "p_home_ens": 0.6153,
-   "p_home_skl": 0.6253,
+   "p_home_skl": 0.6252,
    "status": "pending"
   }
  ]
