@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-06 11:44 UTC",
+ "generated_at_utc": "2026-09-06 13:59 UTC",
  "n_predictions_logged": 1152,
  "n_scored": 1137,
  "backtest_metrics": {
@@ -11,7 +11,7 @@
    "n_games": 4569
   },
   "logistic_regression": {
-   "log_loss": 0.6814833051347751,
+   "log_loss": 0.6814833051347752,
    "brier": 0.2442767095473211,
    "auc": 0.5732366557524495,
    "accuracy": 0.5548260013131976,
