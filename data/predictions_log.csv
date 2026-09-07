@@ -1136,18 +1136,29 @@ date,game_id,home_id,home_name,away_id,away_name,game_time_et,home_pitcher,away_
 2026-09-05,824310,115,Colorado Rockies,138,St. Louis Cardinals,20:10,Mason Adams,Matthew Liberatore,0.4101,0.4321,0.4734,final,10.0,7.0,1.0,0.4189,0.3881
 2026-09-05,823904,119,Los Angeles Dodgers,120,Washington Nationals,21:10,Tyler Glasnow,Cade Cavalli,0.631,0.65,0.6589,final,6.0,5.0,1.0,0.6347,0.6733
 2026-09-05,823094,136,Seattle Mariners,133,Athletics,21:40,George Kirby,Jeffrey Springs,0.5997,0.6686,0.6395,final,2.0,6.0,0.0,0.6433,0.6811
-2026-09-06,824469,113,Cincinnati Reds,158,Milwaukee Brewers,12:10,Brady Singer,Kyle Harrison,0.3834,0.3262,0.344,pending,,,,0.3312,0.2475
-2026-09-06,823417,143,Philadelphia Phillies,144,Atlanta Braves,13:10,Aaron Nola,Tyler Mahle,0.5251,0.5309,0.5038,pending,,,,0.5193,0.512
-2026-09-06,824794,110,Baltimore Orioles,111,Boston Red Sox,13:35,Kyle Bradish,Payton Tolle,0.4515,0.4258,0.4251,pending,,,,0.4225,0.3611
-2026-09-06,823336,134,Pittsburgh Pirates,108,Los Angeles Angels,13:35,Paul Skenes,Walbert Ureña,0.5928,0.6552,0.6328,pending,,,,0.6312,0.6673
-2026-09-06,824385,114,Cleveland Guardians,116,Detroit Tigers,13:40,Gavin Williams,Jackson Jobe,0.5147,0.6091,0.5674,pending,,,,0.5788,0.636
-2026-09-06,823578,121,New York Mets,137,San Francisco Giants,13:40,Christian Scott,Cesar Perdomo,0.5496,0.5767,0.592,pending,,,,0.5602,0.5765
-2026-09-06,823822,146,Miami Marlins,112,Chicago Cubs,13:40,Tyler Phillips,Clay Holmes,0.4459,0.4489,0.4475,pending,,,,0.4393,0.391
-2026-09-06,824142,117,Houston Astros,109,Arizona Diamondbacks,14:10,Peter Lambert,Eduardo Rodriguez,0.5136,0.536,0.5172,pending,,,,0.5209,0.5223
-2026-09-06,824065,118,Kansas City Royals,141,Toronto Blue Jays,14:10,Randy Dobnak,Spencer Arrighetti,0.4746,0.4772,0.4927,pending,,,,0.4671,0.455
-2026-09-06,822848,140,Texas Rangers,139,Tampa Bay Rays,14:35,MacKenzie Gore,Ian Seymour,0.4625,0.4499,0.469,pending,,,,0.4434,0.3946
-2026-09-06,824309,115,Colorado Rockies,138,St. Louis Cardinals,15:10,Tanner Gordon,Kyle Leahy,0.417,0.4425,0.4646,pending,,,,0.4284,0.3808
-2026-09-06,823091,136,Seattle Mariners,133,Athletics,16:10,Bryan Woo,Gage Jump,0.5917,0.6425,0.6274,pending,,,,0.6208,0.6421
-2026-09-06,823253,135,San Diego Padres,147,New York Yankees,16:10,Michael King,Gerrit Cole,0.4822,0.4515,0.4484,pending,,,,0.4486,0.3903
-2026-09-06,824552,145,Chicago White Sox,142,Minnesota Twins,18:20,Bryan Hudson,Bailey Ober,0.551,0.6022,0.6066,pending,,,,0.5806,0.5774
-2026-09-06,823903,119,Los Angeles Dodgers,120,Washington Nationals,22:10,Justin Wrobleski,Andrew Alvarez,0.633,0.6486,0.6392,pending,,,,0.6339,0.6529
+2026-09-06,824469,113,Cincinnati Reds,158,Milwaukee Brewers,12:10,Brady Singer,Kyle Harrison,0.3834,0.3262,0.344,final,12.0,8.0,1.0,0.3312,0.2475
+2026-09-06,823417,143,Philadelphia Phillies,144,Atlanta Braves,13:10,Aaron Nola,Tyler Mahle,0.5251,0.5309,0.5038,final,4.0,5.0,0.0,0.5193,0.512
+2026-09-06,824794,110,Baltimore Orioles,111,Boston Red Sox,13:35,Kyle Bradish,Payton Tolle,0.4515,0.4258,0.4251,final,1.0,3.0,0.0,0.4225,0.3611
+2026-09-06,823336,134,Pittsburgh Pirates,108,Los Angeles Angels,13:35,Paul Skenes,Walbert Ureña,0.5928,0.6552,0.6328,final,1.0,0.0,1.0,0.6312,0.6673
+2026-09-06,824385,114,Cleveland Guardians,116,Detroit Tigers,13:40,Gavin Williams,Jackson Jobe,0.5147,0.6091,0.5674,final,3.0,2.0,1.0,0.5788,0.636
+2026-09-06,823578,121,New York Mets,137,San Francisco Giants,13:40,Christian Scott,Cesar Perdomo,0.5496,0.5767,0.592,final,4.0,2.0,1.0,0.5602,0.5765
+2026-09-06,823822,146,Miami Marlins,112,Chicago Cubs,13:40,Tyler Phillips,Clay Holmes,0.4459,0.4489,0.4475,final,10.0,3.0,1.0,0.4393,0.391
+2026-09-06,824142,117,Houston Astros,109,Arizona Diamondbacks,14:10,Peter Lambert,Eduardo Rodriguez,0.5136,0.536,0.5172,final,2.0,3.0,0.0,0.5209,0.5223
+2026-09-06,824065,118,Kansas City Royals,141,Toronto Blue Jays,14:10,Randy Dobnak,Spencer Arrighetti,0.4746,0.4772,0.4927,final,6.0,1.0,1.0,0.4671,0.455
+2026-09-06,822848,140,Texas Rangers,139,Tampa Bay Rays,14:35,MacKenzie Gore,Ian Seymour,0.4625,0.4499,0.469,final,8.0,6.0,1.0,0.4434,0.3946
+2026-09-06,824309,115,Colorado Rockies,138,St. Louis Cardinals,15:10,Tanner Gordon,Kyle Leahy,0.417,0.4425,0.4646,final,8.0,10.0,0.0,0.4284,0.3808
+2026-09-06,823091,136,Seattle Mariners,133,Athletics,16:10,Bryan Woo,Gage Jump,0.5917,0.6425,0.6274,final,2.0,0.0,1.0,0.6208,0.6421
+2026-09-06,823253,135,San Diego Padres,147,New York Yankees,16:10,Michael King,Gerrit Cole,0.4822,0.4515,0.4484,final,4.0,3.0,1.0,0.4486,0.3903
+2026-09-06,824552,145,Chicago White Sox,142,Minnesota Twins,18:20,Bryan Hudson,Bailey Ober,0.551,0.6022,0.6066,final,10.0,1.0,1.0,0.5806,0.5774
+2026-09-06,823903,119,Los Angeles Dodgers,120,Washington Nationals,22:10,Justin Wrobleski,Andrew Alvarez,0.633,0.6486,0.6392,final,7.0,5.0,1.0,0.6339,0.6529
+2026-09-07,823415,143,Philadelphia Phillies,144,Atlanta Braves,13:05,Jesús Luzardo,Grant Holmes,0.522,0.613,0.5447,pending,,,,0.5833,0.6294
+2026-09-07,823820,146,Miami Marlins,121,New York Mets,13:10,Eury Pérez,Jonah Tong,0.5329,0.5811,0.5875,pending,,,,0.5602,0.5664
+2026-09-07,824715,111,Boston Red Sox,108,Los Angeles Angels,13:35,TBD,Grayson Rodriguez,0.6592,0.6752,0.6659,pending,,,,0.6604,0.6776
+2026-09-07,824793,110,Baltimore Orioles,114,Cleveland Guardians,13:35,Trevor Rogers,Joey Cantillo,0.5121,0.5399,0.5376,pending,,,,0.5236,0.5163
+2026-09-07,824062,118,Kansas City Royals,109,Arizona Diamondbacks,14:10,Noah Cameron,TBD,0.4819,0.4971,0.5049,pending,,,,0.4841,0.4733
+2026-09-07,823742,158,Milwaukee Brewers,112,Chicago Cubs,14:10,Robert Gasser,Matthew Boyd,0.555,0.5679,0.5903,pending,,,,0.5544,0.5706
+2026-09-07,824229,116,Detroit Tigers,142,Minnesota Twins,15:10,Troy Melton,TBD,0.5615,0.5825,0.5971,pending,,,,0.5671,0.5546
+2026-09-07,823254,135,San Diego Padres,120,Washington Nationals,17:10,Nick Pivetta,Jake Irvin,0.5898,0.6529,0.6347,pending,,,,0.6288,0.6587
+2026-09-07,823175,137,San Francisco Giants,138,St. Louis Cardinals,20:10,Logan Webb,Michael McGreevy,0.4884,0.5385,0.5434,pending,,,,0.5177,0.5204
+2026-09-07,823902,119,Los Angeles Dodgers,113,Cincinnati Reds,21:10,TBD,Chase Burns,0.6343,0.624,0.6188,pending,,,,0.6148,0.6534
+2026-09-07,824958,133,Athletics,141,Toronto Blue Jays,22:05,Jacob Lopez,Dylan Cease,0.4165,0.3449,0.3813,pending,,,,0.3523,0.2722
