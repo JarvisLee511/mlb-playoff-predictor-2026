@@ -1,26 +1,26 @@
 team_id,elo,team_name,abbrev,league,division
 158,1570.5250459816161,Milwaukee Brewers,MIL,National League,National League Central
 119,1559.3959919592546,Los Angeles Dodgers,LAD,National League,National League West
-147,1549.0848064010675,New York Yankees,NYY,American League,American League East
+147,1550.928330162647,New York Yankees,NYY,American League,American League East
 112,1541.5946402905251,Chicago Cubs,CHC,National League,National League Central
 111,1539.5455690547658,Boston Red Sox,BOS,American League,American League East
-143,1538.2756987921725,Philadelphia Phillies,PHI,National League,National League East
-139,1530.1704945996764,Tampa Bay Rays,TB,American League,American League East
-144,1530.153514677678,Atlanta Braves,ATL,National League,National League East
+143,1537.0708954377394,Philadelphia Phillies,PHI,National League,National League East
+144,1531.725677631522,Atlanta Braves,ATL,National League,National League East
+139,1528.5983316458323,Tampa Bay Rays,TB,American League,American League East
 135,1524.478204485546,San Diego Padres,SD,National League,National League West
 109,1508.5655043855495,Arizona Diamondbacks,AZ,National League,National League West
 141,1505.860184487577,Toronto Blue Jays,TOR,American League,American League East
 116,1504.5309337077315,Detroit Tigers,DET,American League,American League Central
-134,1500.994413975086,Pittsburgh Pirates,PIT,National League,National League Central
-117,1498.6406055768543,Houston Astros,HOU,American League,American League West
+134,1502.6965855406663,Pittsburgh Pirates,PIT,National League,National League Central
+117,1499.8454089312875,Houston Astros,HOU,American League,American League West
 114,1497.176771060104,Cleveland Guardians,CLE,American League,American League Central
 121,1496.9011475489574,New York Mets,NYM,National League,National League East
-145,1496.4368998888094,Chicago White Sox,CWS,American League,American League Central
+145,1494.734728323229,Chicago White Sox,CWS,American League,American League Central
 110,1492.5537358727797,Baltimore Orioles,BAL,American League,American League East
 146,1492.4212387176426,Miami Marlins,MIA,National League,National League East
 138,1490.5646455037474,St. Louis Cardinals,STL,National League,National League Central
-140,1487.3729033299649,Texas Rangers,TEX,American League,American League West
-136,1482.38564390062,Seattle Mariners,SEA,American League,American League West
+140,1486.3661277795272,Texas Rangers,TEX,American League,American League West
+136,1483.3924194510575,Seattle Mariners,SEA,American League,American League West
 118,1479.217905569574,Kansas City Royals,KC,American League,American League Central
 142,1473.4047719418388,Minnesota Twins,MIN,American League,American League Central
 137,1472.834560999402,San Francisco Giants,SF,National League,National League West
@@ -28,4 +28,4 @@ team_id,elo,team_name,abbrev,league,division
 120,1468.912777018676,Washington Nationals,WSH,National League,National League East
 108,1449.5523501251475,Los Angeles Angels,LAA,American League,American League West
 133,1434.7851714178487,Athletics,ATH,American League,American League West
-115,1414.1686218104776,Colorado Rockies,COL,National League,National League West
+115,1412.325098048898,Colorado Rockies,COL,National League,National League West
