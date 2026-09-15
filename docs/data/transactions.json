@@ -1205,10 +1205,10 @@
  },
  {
   "date": "2026-09-09",
-  "team": "Springfield Cardinals",
-  "player": "Brandon Clarke",
+  "team": "Montgomery Biscuits",
+  "player": "Roel Garcia III",
   "category": "Activated",
-  "description": "Springfield Cardinals activated LHP Brandon Clarke."
+  "description": "Montgomery Biscuits activated RHP Roel Garcia III from the Development List."
  },
  {
   "date": "2026-09-09",
@@ -1216,6 +1216,13 @@
   "player": "Bryce Elder",
   "category": "IL (injury)",
   "description": "Atlanta Braves placed RHP Bryce Elder on the 15-day injured list retroactive to September 6, 2026. Right knee surgery."
+ },
+ {
+  "date": "2026-09-09",
+  "team": "Baltimore Orioles",
+  "player": "Blaze Alexander",
+  "category": "IL (injury)",
+  "description": "Baltimore Orioles placed 3B Blaze Alexander on the 10-day injured list. Low back discomfort."
  },
  {
   "date": "2026-09-09",
@@ -1240,17 +1247,10 @@
  },
  {
   "date": "2026-09-09",
-  "team": "Montgomery Biscuits",
-  "player": "Roel Garcia III",
-  "category": "Activated",
-  "description": "Montgomery Biscuits activated RHP Roel Garcia III from the Development List."
- },
- {
-  "date": "2026-09-09",
-  "team": "Syracuse Mets",
-  "player": "Jefry Yan",
-  "category": "Activated",
-  "description": "Syracuse Mets activated LHP Jefry Yan."
+  "team": "Chesapeake Baysox",
+  "player": "Keagan Gillies",
+  "category": "IL (injury)",
+  "description": "Chesapeake Baysox activated RHP Keagan Gillies from the 7-day injured list."
  },
  {
   "date": "2026-09-09",
@@ -1261,24 +1261,24 @@
  },
  {
   "date": "2026-09-09",
-  "team": "Las Vegas Aviators",
-  "player": "Justin Riemer",
+  "team": "Miami Marlins",
+  "player": "Pete Fairbanks",
   "category": "IL (injury)",
-  "description": "Las Vegas Aviators placed 2B Justin Riemer on the 7-day injured list."
+  "description": "Miami Marlins activated RHP Pete Fairbanks from the 15-day injured list."
  },
  {
   "date": "2026-09-09",
-  "team": "Baltimore Orioles",
-  "player": "Blaze Alexander",
-  "category": "IL (injury)",
-  "description": "Baltimore Orioles placed 3B Blaze Alexander on the 10-day injured list. Low back discomfort."
+  "team": "Springfield Cardinals",
+  "player": "Brandon Clarke",
+  "category": "Activated",
+  "description": "Springfield Cardinals activated LHP Brandon Clarke."
  },
  {
   "date": "2026-09-09",
-  "team": "Chesapeake Baysox",
-  "player": "Keagan Gillies",
-  "category": "IL (injury)",
-  "description": "Chesapeake Baysox activated RHP Keagan Gillies from the 7-day injured list."
+  "team": "Syracuse Mets",
+  "player": "Jefry Yan",
+  "category": "Activated",
+  "description": "Syracuse Mets activated LHP Jefry Yan."
  },
  {
   "date": "2026-09-09",
@@ -1296,10 +1296,10 @@
  },
  {
   "date": "2026-09-09",
-  "team": "Reno Aces",
-  "player": "Blake Walston",
-  "category": "Sent down",
-  "description": "Arizona Diamondbacks optioned LHP Blake Walston to Reno Aces."
+  "team": "Atlanta Braves",
+  "player": "Bailey Falter",
+  "category": "Call-up",
+  "description": "Atlanta Braves selected the contract of LHP Bailey Falter from Gwinnett Stripers."
  },
  {
   "date": "2026-09-09",
@@ -1310,6 +1310,13 @@
  },
  {
   "date": "2026-09-09",
+  "team": "Las Vegas Aviators",
+  "player": "Justin Riemer",
+  "category": "IL (injury)",
+  "description": "Las Vegas Aviators placed 2B Justin Riemer on the 7-day injured list."
+ },
+ {
+  "date": "2026-09-09",
   "team": "Springfield Cardinals",
   "player": "Tai Peete",
   "category": "IL (injury)",
@@ -1317,10 +1324,17 @@
  },
  {
   "date": "2026-09-09",
-  "team": "Syracuse Mets",
-  "player": "Justin Hagenman",
-  "category": "Activated",
-  "description": "Syracuse Mets activated RHP Justin Hagenman."
+  "team": "Baltimore Orioles",
+  "player": "Jeremiah Jackson",
+  "category": "Call-up",
+  "description": "Baltimore Orioles recalled 2B Jeremiah Jackson from Norfolk Tides."
+ },
+ {
+  "date": "2026-09-09",
+  "team": "Rochester Red Wings",
+  "player": "Zak Kent",
+  "category": "Sent down",
+  "description": "Washington Nationals optioned RHP Zak Kent to Rochester Red Wings."
  },
  {
   "date": "2026-09-09",
@@ -1328,6 +1342,13 @@
   "player": "Bradley Blalock",
   "category": "Sent down",
   "description": "Miami Marlins optioned RHP Bradley Blalock to Jacksonville Jumbo Shrimp."
+ },
+ {
+  "date": "2026-09-09",
+  "team": "San Francisco Giants",
+  "player": "Duncan Davitt",
+  "category": "Waiver claim",
+  "description": "San Francisco Giants claimed RHP Duncan Davitt off waivers from Atlanta Braves."
  },
  {
   "date": "2026-09-09",
@@ -1345,13 +1366,6 @@
  },
  {
   "date": "2026-09-09",
-  "team": "Baltimore Orioles",
-  "player": "Jeremiah Jackson",
-  "category": "Call-up",
-  "description": "Baltimore Orioles recalled 2B Jeremiah Jackson from Norfolk Tides."
- },
- {
-  "date": "2026-09-09",
   "team": "Washington Nationals",
   "player": "Eddy Yean",
   "category": "Call-up",
@@ -1359,45 +1373,10 @@
  },
  {
   "date": "2026-09-09",
-  "team": "San Francisco Giants",
-  "player": "Duncan Davitt",
-  "category": "Waiver claim",
-  "description": "San Francisco Giants claimed RHP Duncan Davitt off waivers from Atlanta Braves."
- },
- {
-  "date": "2026-09-09",
-  "team": "Atlanta Braves",
-  "player": "Bailey Falter",
-  "category": "Call-up",
-  "description": "Atlanta Braves selected the contract of LHP Bailey Falter from Gwinnett Stripers."
- },
- {
-  "date": "2026-09-09",
-  "team": "Rochester Red Wings",
-  "player": "Zak Kent",
+  "team": "Reno Aces",
+  "player": "Blake Walston",
   "category": "Sent down",
-  "description": "Washington Nationals optioned RHP Zak Kent to Rochester Red Wings."
- },
- {
-  "date": "2026-09-09",
-  "team": "Corpus Christi Hooks",
-  "player": "Max Holy",
-  "category": "IL (injury)",
-  "description": "Corpus Christi Hooks activated SS Max Holy from the 7-day injured list."
- },
- {
-  "date": "2026-09-09",
-  "team": "Miami Marlins",
-  "player": "Pete Fairbanks",
-  "category": "IL (injury)",
-  "description": "Miami Marlins activated RHP Pete Fairbanks from the 15-day injured list."
- },
- {
-  "date": "2026-09-09",
-  "team": "Norfolk Tides",
-  "player": "Michael Forret",
-  "category": "IL (injury)",
-  "description": "Norfolk Tides placed RHP Michael Forret on the 7-day injured list."
+  "description": "Arizona Diamondbacks optioned LHP Blake Walston to Reno Aces."
  },
  {
   "date": "2026-09-09",
@@ -1405,6 +1384,13 @@
   "player": "Bailey Falter",
   "category": "Activated",
   "description": "Atlanta Braves activated LHP Bailey Falter."
+ },
+ {
+  "date": "2026-09-09",
+  "team": "Syracuse Mets",
+  "player": "Justin Hagenman",
+  "category": "Activated",
+  "description": "Syracuse Mets activated RHP Justin Hagenman."
  },
  {
   "date": "2026-09-09",
@@ -1426,6 +1412,20 @@
   "player": "Nate Dohm",
   "category": "Activated",
   "description": "Springfield Cardinals activated RHP Nate Dohm from the Development List."
+ },
+ {
+  "date": "2026-09-09",
+  "team": "Corpus Christi Hooks",
+  "player": "Max Holy",
+  "category": "IL (injury)",
+  "description": "Corpus Christi Hooks activated SS Max Holy from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-09",
+  "team": "Norfolk Tides",
+  "player": "Michael Forret",
+  "category": "IL (injury)",
+  "description": "Norfolk Tides placed RHP Michael Forret on the 7-day injured list."
  },
  {
   "date": "2026-09-09",
