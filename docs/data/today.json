@@ -282,12 +282,12 @@
    "home_name": "Chicago White Sox",
    "away_name": "Detroit Tigers",
    "home_pitcher": "TBD",
-   "away_pitcher": "TBD",
+   "away_pitcher": "Framber Valdez",
    "p_home_elo": 0.4926,
-   "p_home_lr": 0.5129,
-   "p_home_xgb": 0.5194,
-   "p_home_ens": 0.4986,
-   "p_home_skl": 0.4878,
+   "p_home_lr": 0.5359,
+   "p_home_xgb": 0.5362,
+   "p_home_ens": 0.5165,
+   "p_home_skl": 0.5227,
    "status": "pending"
   },
   {
