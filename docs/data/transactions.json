@@ -1,10 +1,10 @@
 [
  {
   "date": "2026-10-03",
-  "team": "Atlanta Braves",
-  "player": "JR Ritchie",
+  "team": "Los Angeles Dodgers",
+  "player": "Josue De Paula",
   "category": "Activated",
-  "description": "Atlanta Braves activated RHP JR Ritchie."
+  "description": "Los Angeles Dodgers activated DH Josue De Paula."
  },
  {
   "date": "2026-10-03",
@@ -22,24 +22,17 @@
  },
  {
   "date": "2026-10-03",
-  "team": "Atlanta Braves",
-  "player": "Lane Thomas",
-  "category": "Activated",
-  "description": "Atlanta Braves activated LF Lane Thomas."
- },
- {
-  "date": "2026-10-03",
-  "team": "Los Angeles Dodgers",
-  "player": "Josue De Paula",
-  "category": "Activated",
-  "description": "Los Angeles Dodgers activated DH Josue De Paula."
- },
- {
-  "date": "2026-10-03",
   "team": "San Diego Padres",
   "player": "Randy V\u00e1squez",
   "category": "Activated",
   "description": "San Diego Padres activated RHP Randy V\u00e1squez."
+ },
+ {
+  "date": "2026-10-03",
+  "team": "Atlanta Braves",
+  "player": "JR Ritchie",
+  "category": "Activated",
+  "description": "Atlanta Braves activated RHP JR Ritchie."
  },
  {
   "date": "2026-10-03",
@@ -49,11 +42,74 @@
   "description": "New York Yankees activated LHP Ryan Weathers."
  },
  {
+  "date": "2026-10-03",
+  "team": "Atlanta Braves",
+  "player": "Lane Thomas",
+  "category": "Activated",
+  "description": "Atlanta Braves activated LF Lane Thomas."
+ },
+ {
   "date": "2026-10-02",
-  "team": "Seattle Mariners",
-  "player": "Michael Toglia",
-  "category": "Waiver claim",
-  "description": "Seattle Mariners claimed 1B Michael Toglia off waivers from Cincinnati Reds."
+  "team": "Philadelphia Phillies",
+  "player": "Max Lazar",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated RHP Max Lazar."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Gabriel Rincones Jr.",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated RF Gabriel Rincones Jr.."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Brooks Raley",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated LHP Brooks Raley."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Orion Kerkering",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated RHP Orion Kerkering."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Kameron Misner",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated CF Kameron Misner."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Colby Thomas",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated RF Colby Thomas."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Nestor Cortes",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated LHP Nestor Cortes."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Andrew Hoffmann",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated RHP Andrew Hoffmann."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Luis Arraez",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated 2B Luis Arraez."
  },
  {
   "date": "2026-10-02",
@@ -61,6 +117,41 @@
   "player": "Andrew Vaughn",
   "category": "IL (injury)",
   "description": "Milwaukee Brewers activated 1B Andrew Vaughn from the 10-day injured list."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Alan Rangel",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated RHP Alan Rangel."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Grant Holman",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated RHP Grant Holman."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Mois\u00e9s Chace",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated RHP Mois\u00e9s Chace."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Kyle Backhus",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled LHP Kyle Backhus from Lehigh Valley IronPigs."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Seattle Mariners",
+  "player": "Michael Toglia",
+  "category": "Waiver claim",
+  "description": "Seattle Mariners claimed 1B Michael Toglia off waivers from Cincinnati Reds."
  },
  {
   "date": "2026-10-02",
@@ -73,8 +164,57 @@
   "date": "2026-10-02",
   "team": "Philadelphia Phillies",
   "player": "Kyle Backhus",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled LHP Kyle Backhus from Lehigh Valley IronPigs."
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated LHP Kyle Backhus."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Chicago Cubs",
+  "player": "James Triantos",
+  "category": "Activated",
+  "description": "Chicago Cubs activated 2B James Triantos."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Houston Astros",
+  "player": "Enyel De Los Santos",
+  "category": "Activated",
+  "description": "Houston Astros activated RHP Enyel De Los Santos."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Chicago Cubs",
+  "player": "Julian Aguiar",
+  "category": "Activated",
+  "description": "Chicago Cubs activated RHP Julian Aguiar."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Houston Astros",
+  "player": "Alimber Santa",
+  "category": "Activated",
+  "description": "Houston Astros activated RHP Alimber Santa."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Boston Red Sox",
+  "player": "Masataka Yoshida",
+  "category": "Activated",
+  "description": "Boston Red Sox activated DH Masataka Yoshida."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Chicago Cubs",
+  "player": "Jordan Wicks",
+  "category": "Activated",
+  "description": "Chicago Cubs activated LHP Jordan Wicks."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Chicago Cubs",
+  "player": "Braxton Garrett",
+  "category": "Activated",
+  "description": "Chicago Cubs activated LHP Braxton Garrett."
  },
  {
   "date": "2026-10-01",
@@ -92,55 +232,6 @@
  },
  {
   "date": "2026-10-01",
-  "team": "Boston Red Sox",
-  "player": "Masataka Yoshida",
-  "category": "Activated",
-  "description": "Boston Red Sox activated DH Masataka Yoshida."
- },
- {
-  "date": "2026-10-01",
-  "team": "Chicago Cubs",
-  "player": "Braxton Garrett",
-  "category": "Activated",
-  "description": "Chicago Cubs activated LHP Braxton Garrett."
- },
- {
-  "date": "2026-10-01",
-  "team": "Chicago Cubs",
-  "player": "Jordan Wicks",
-  "category": "Activated",
-  "description": "Chicago Cubs activated LHP Jordan Wicks."
- },
- {
-  "date": "2026-10-01",
-  "team": "Chicago Cubs",
-  "player": "James Triantos",
-  "category": "Activated",
-  "description": "Chicago Cubs activated 2B James Triantos."
- },
- {
-  "date": "2026-10-01",
-  "team": "Houston Astros",
-  "player": "Alimber Santa",
-  "category": "Activated",
-  "description": "Houston Astros activated RHP Alimber Santa."
- },
- {
-  "date": "2026-10-01",
-  "team": "Chicago Cubs",
-  "player": "Julian Aguiar",
-  "category": "Activated",
-  "description": "Chicago Cubs activated RHP Julian Aguiar."
- },
- {
-  "date": "2026-10-01",
-  "team": "Houston Astros",
-  "player": "Enyel De Los Santos",
-  "category": "Activated",
-  "description": "Houston Astros activated RHP Enyel De Los Santos."
- },
- {
-  "date": "2026-10-01",
   "team": "Houston Astros",
   "player": "LaMonte Wade Jr.",
   "category": "Activated",
@@ -148,10 +239,10 @@
  },
  {
   "date": "2026-10-01",
-  "team": "Boston Red Sox",
-  "player": "Raymond Burgos",
+  "team": "Chicago Cubs",
+  "player": "Ethan Roberts",
   "category": "Activated",
-  "description": "Boston Red Sox activated LHP Raymond Burgos."
+  "description": "Chicago Cubs activated RHP Ethan Roberts."
  },
  {
   "date": "2026-10-01",
@@ -176,17 +267,10 @@
  },
  {
   "date": "2026-10-01",
-  "team": "Chicago Cubs",
-  "player": "Ethan Roberts",
+  "team": "Boston Red Sox",
+  "player": "Raymond Burgos",
   "category": "Activated",
-  "description": "Chicago Cubs activated RHP Ethan Roberts."
- },
- {
-  "date": "2026-10-01",
-  "team": "Houston Astros",
-  "player": "Zach Cole",
-  "category": "Activated",
-  "description": "Houston Astros activated LF Zach Cole."
+  "description": "Boston Red Sox activated LHP Raymond Burgos."
  },
  {
   "date": "2026-10-01",
@@ -218,6 +302,13 @@
  },
  {
   "date": "2026-10-01",
+  "team": "Houston Astros",
+  "player": "Zach Cole",
+  "category": "Activated",
+  "description": "Houston Astros activated LF Zach Cole."
+ },
+ {
+  "date": "2026-10-01",
   "team": "Boston Red Sox",
   "player": "Jedixson Paez",
   "category": "Activated",
@@ -225,10 +316,10 @@
  },
  {
   "date": "2026-10-01",
-  "team": "Houston Astros",
-  "player": "Kai-Wei Teng",
+  "team": "Boston Red Sox",
+  "player": "Tanner Houck",
   "category": "Activated",
-  "description": "Houston Astros activated RHP Kai-Wei Teng."
+  "description": "Boston Red Sox activated RHP Tanner Houck."
  },
  {
   "date": "2026-10-01",
@@ -281,6 +372,13 @@
  },
  {
   "date": "2026-10-01",
+  "team": "Houston Astros",
+  "player": "Kai-Wei Teng",
+  "category": "Activated",
+  "description": "Houston Astros activated RHP Kai-Wei Teng."
+ },
+ {
+  "date": "2026-10-01",
   "team": "Boston Red Sox",
   "player": "Mickey Gasper",
   "category": "Activated",
@@ -317,37 +415,16 @@
  {
   "date": "2026-10-01",
   "team": "Boston Red Sox",
-  "player": "Jovani Mor\u00e1n",
-  "category": "Activated",
-  "description": "Boston Red Sox activated LHP Jovani Mor\u00e1n."
- },
- {
-  "date": "2026-10-01",
-  "team": "Boston Red Sox",
   "player": "Tyron Guerrero",
   "category": "Activated",
   "description": "Boston Red Sox activated RHP Tyron Guerrero."
  },
  {
   "date": "2026-10-01",
-  "team": "Chicago Cubs",
-  "player": "Justin Dean",
-  "category": "Activated",
-  "description": "Chicago Cubs activated CF Justin Dean."
- },
- {
-  "date": "2026-10-01",
-  "team": "Houston Astros",
-  "player": "Daulton Varsho",
-  "category": "Activated",
-  "description": "Houston Astros activated CF Daulton Varsho."
- },
- {
-  "date": "2026-10-01",
   "team": "Boston Red Sox",
-  "player": "Anthony Seigler",
+  "player": "Roman Anthony",
   "category": "Activated",
-  "description": "Boston Red Sox activated 2B Anthony Seigler."
+  "description": "Boston Red Sox activated LF Roman Anthony."
  },
  {
   "date": "2026-10-01",
@@ -359,23 +436,30 @@
  {
   "date": "2026-10-01",
   "team": "Boston Red Sox",
-  "player": "Tanner Houck",
+  "player": "Jovani Mor\u00e1n",
   "category": "Activated",
-  "description": "Boston Red Sox activated RHP Tanner Houck."
+  "description": "Boston Red Sox activated LHP Jovani Mor\u00e1n."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Houston Astros",
+  "player": "Daulton Varsho",
+  "category": "Activated",
+  "description": "Houston Astros activated CF Daulton Varsho."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Chicago Cubs",
+  "player": "Justin Dean",
+  "category": "Activated",
+  "description": "Chicago Cubs activated CF Justin Dean."
  },
  {
   "date": "2026-10-01",
   "team": "Boston Red Sox",
-  "player": "Roman Anthony",
+  "player": "Anthony Seigler",
   "category": "Activated",
-  "description": "Boston Red Sox activated LF Roman Anthony."
- },
- {
-  "date": "2026-09-30",
-  "team": "Mesa Solar Sox",
-  "player": "Luis Rujano",
-  "category": "Activated",
-  "description": "Mesa Solar Sox activated RHP Luis Rujano."
+  "description": "Boston Red Sox activated 2B Anthony Seigler."
  },
  {
   "date": "2026-09-30",
@@ -385,11 +469,18 @@
   "description": "Boston Red Sox activated 3B Curtis Mead."
  },
  {
+  "date": "2026-09-30",
+  "team": "Mesa Solar Sox",
+  "player": "Luis Rujano",
+  "category": "Activated",
+  "description": "Mesa Solar Sox activated RHP Luis Rujano."
+ },
+ {
   "date": "2026-09-29",
-  "team": "St. Louis Cardinals",
-  "player": "Hunter Dobbins",
+  "team": "DSL Giants Black",
+  "player": "Jose Meza",
   "category": "IL (injury)",
-  "description": "St. Louis Cardinals activated RHP Hunter Dobbins from the 15-day injured list."
+  "description": "DSL Giants Black activated RHP Jose Meza from the 7-day injured list."
  },
  {
   "date": "2026-09-29",
@@ -436,23 +527,23 @@
  {
   "date": "2026-09-29",
   "team": "DSL Giants Black",
-  "player": "Jose Meza",
-  "category": "IL (injury)",
-  "description": "DSL Giants Black activated RHP Jose Meza from the 7-day injured list."
- },
- {
-  "date": "2026-09-29",
-  "team": "DSL Giants Black",
   "player": "Elkyns Villarreal",
   "category": "IL (injury)",
   "description": "DSL Giants Black activated RHP Elkyns Villarreal from the 7-day injured list."
  },
  {
   "date": "2026-09-29",
-  "team": "New York Yankees",
-  "player": "Giancarlo Stanton",
+  "team": "Atlanta Braves",
+  "player": "Luke Williams",
+  "category": "Call-up",
+  "description": "Atlanta Braves selected the contract of SS Luke Williams from Gwinnett Stripers."
+ },
+ {
+  "date": "2026-09-29",
+  "team": "St. Louis Cardinals",
+  "player": "Hunter Dobbins",
   "category": "IL (injury)",
-  "description": "New York Yankees activated DH Giancarlo Stanton from the 60-day injured list."
+  "description": "St. Louis Cardinals activated RHP Hunter Dobbins from the 15-day injured list."
  },
  {
   "date": "2026-09-29",
@@ -485,786 +576,30 @@
  {
   "date": "2026-09-29",
   "team": "Atlanta Braves",
-  "player": "Luke Williams",
-  "category": "Call-up",
-  "description": "Atlanta Braves selected the contract of SS Luke Williams from Gwinnett Stripers."
- },
- {
-  "date": "2026-09-29",
-  "team": "Atlanta Braves",
   "player": "Rowdy Tellez",
   "category": "Call-up",
   "description": "Atlanta Braves selected the contract of 1B Rowdy Tellez from Gwinnett Stripers."
  },
  {
-  "date": "2026-09-28",
-  "team": "Arizona Diamondbacks",
-  "player": "Kohl Drake",
-  "category": "Call-up",
-  "description": "Arizona Diamondbacks recalled LHP Kohl Drake from Reno Aces."
- },
- {
-  "date": "2026-09-28",
-  "team": "Washington Nationals",
-  "player": "Jake Bird",
-  "category": "Call-up",
-  "description": "Washington Nationals recalled RHP Jake Bird from Rochester Red Wings."
- },
- {
-  "date": "2026-09-28",
-  "team": "Pittsburgh Pirates",
-  "player": "Tyler Callihan",
-  "category": "Call-up",
-  "description": "Pittsburgh Pirates recalled LF Tyler Callihan from Indianapolis Indians."
- },
- {
-  "date": "2026-09-28",
-  "team": "Pittsburgh Pirates",
-  "player": "Thomas Harrington",
-  "category": "Call-up",
-  "description": "Pittsburgh Pirates recalled RHP Thomas Harrington from Indianapolis Indians."
- },
- {
-  "date": "2026-09-28",
-  "team": "Atlanta Braves",
-  "player": "James Karinchak",
-  "category": "Call-up",
-  "description": "Atlanta Braves recalled RHP James Karinchak from Gwinnett Stripers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Seattle Mariners",
-  "player": "Willie MacIver",
-  "category": "Call-up",
-  "description": "Seattle Mariners recalled C Willie MacIver from Tacoma Rainiers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Milwaukee Brewers",
-  "player": "Coleman Crow",
-  "category": "Call-up",
-  "description": "Milwaukee Brewers recalled RHP Coleman Crow from Nashville Sounds."
- },
- {
-  "date": "2026-09-28",
-  "team": "New York Mets",
-  "player": "Christian Cairo",
-  "category": "Call-up",
-  "description": "New York Mets recalled SS Christian Cairo from Syracuse Mets."
- },
- {
-  "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "TJ Shook",
-  "category": "Call-up",
-  "description": "Colorado Rockies recalled RHP TJ Shook from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Angels",
-  "player": "Logan Porter",
-  "category": "Call-up",
-  "description": "Los Angeles Angels recalled C Logan Porter from Salt Lake Bees."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cleveland Guardians",
-  "player": "Blake Perkins",
-  "category": "Call-up",
-  "description": "Cleveland Guardians recalled CF Blake Perkins from Columbus Clippers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Atlanta Braves",
-  "player": "Tyler Uberstine",
-  "category": "Call-up",
-  "description": "Atlanta Braves recalled RHP Tyler Uberstine from Gwinnett Stripers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Atlanta Braves",
-  "player": "Jim Jarvis",
-  "category": "Call-up",
-  "description": "Atlanta Braves recalled SS Jim Jarvis from Gwinnett Stripers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cleveland Guardians",
-  "player": "Franco Aleman",
-  "category": "Call-up",
-  "description": "Cleveland Guardians recalled RHP Franco Aleman from Columbus Clippers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Jayden Murray",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled RHP Jayden Murray from Iowa Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Julian Aguiar",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled RHP Julian Aguiar from ACL Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Arizona Diamondbacks",
-  "player": "Blake Walston",
-  "category": "Call-up",
-  "description": "Arizona Diamondbacks recalled LHP Blake Walston from Reno Aces."
- },
- {
-  "date": "2026-09-28",
-  "team": "Minnesota Twins",
-  "player": "Kendry Rojas",
-  "category": "Call-up",
-  "description": "Minnesota Twins recalled LHP Kendry Rojas from St. Paul Saints."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Diego Padres",
-  "player": "Will Wagner",
-  "category": "Call-up",
-  "description": "San Diego Padres recalled DH Will Wagner from El Paso Chihuahuas."
- },
- {
-  "date": "2026-09-28",
-  "team": "Philadelphia Phillies",
-  "player": "Mois\u00e9s Chace",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled RHP Mois\u00e9s Chace from Reading Fightin Phils."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Alimber Santa",
-  "category": "Call-up",
-  "description": "Houston Astros recalled RHP Alimber Santa from Sugar Land Space Cowboys."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago White Sox",
-  "player": "Tyler Schweitzer",
-  "category": "Call-up",
-  "description": "Chicago White Sox recalled LHP Tyler Schweitzer from Charlotte Knights."
- },
- {
-  "date": "2026-09-28",
-  "team": "Boston Red Sox",
-  "player": "Kristian Campbell",
-  "category": "Call-up",
-  "description": "Boston Red Sox recalled OF Kristian Campbell from Worcester Red Sox."
- },
- {
-  "date": "2026-09-28",
-  "team": "Boston Red Sox",
-  "player": "Tsung-Che Cheng",
-  "category": "Call-up",
-  "description": "Boston Red Sox recalled SS Tsung-Che Cheng from Worcester Red Sox."
- },
- {
-  "date": "2026-09-28",
-  "team": "Milwaukee Brewers",
-  "player": "Jeferson Quero",
-  "category": "Call-up",
-  "description": "Milwaukee Brewers recalled C Jeferson Quero from Nashville Sounds."
- },
- {
-  "date": "2026-09-28",
-  "team": "Miami Marlins",
-  "player": "Josh White",
-  "category": "Call-up",
-  "description": "Miami Marlins recalled RHP Josh White from Jacksonville Jumbo Shrimp."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Angels",
-  "player": "Nacho Alvarez Jr.",
-  "category": "Call-up",
-  "description": "Los Angeles Angels recalled SS Nacho Alvarez Jr. from Salt Lake Bees."
- },
- {
-  "date": "2026-09-28",
-  "team": "St. Louis Cardinals",
-  "player": "Jimmy Crooks",
-  "category": "Call-up",
-  "description": "St. Louis Cardinals recalled C Jimmy Crooks from Memphis Redbirds."
- },
- {
-  "date": "2026-09-28",
-  "team": "St. Louis Cardinals",
-  "player": "Ryan Fernandez",
-  "category": "Call-up",
-  "description": "St. Louis Cardinals recalled RHP Ryan Fernandez from Memphis Redbirds."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Diego Padres",
-  "player": "Mason McCoy",
-  "category": "Call-up",
-  "description": "San Diego Padres recalled 2B Mason McCoy from El Paso Chihuahuas."
- },
- {
-  "date": "2026-09-28",
-  "team": "Milwaukee Brewers",
-  "player": "Brandon Sproat",
-  "category": "Call-up",
-  "description": "Milwaukee Brewers recalled RHP Brandon Sproat from Nashville Sounds."
- },
- {
-  "date": "2026-09-28",
-  "team": "Seattle Mariners",
-  "player": "Ryan Bliss",
-  "category": "Call-up",
-  "description": "Seattle Mariners recalled 2B Ryan Bliss from Tacoma Rainiers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Milwaukee Brewers",
-  "player": "Jared Koenig",
-  "category": "Call-up",
-  "description": "Milwaukee Brewers recalled LHP Jared Koenig from Nashville Sounds."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cleveland Guardians",
-  "player": "Cooper Ingle",
-  "category": "Call-up",
-  "description": "Cleveland Guardians recalled C Cooper Ingle from Columbus Clippers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Kevin Alc\u00e1ntara",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled DH Kevin Alc\u00e1ntara from Iowa Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Tyler Ferguson",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled RHP Tyler Ferguson from Iowa Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "Jeff Criswell",
-  "category": "Call-up",
-  "description": "Colorado Rockies recalled RHP Jeff Criswell from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "Washington Nationals",
-  "player": "Eddy Yean",
-  "category": "Call-up",
-  "description": "Washington Nationals recalled RHP Eddy Yean from Rochester Red Wings."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cleveland Guardians",
-  "player": "Kyle Manzardo",
-  "category": "Call-up",
-  "description": "Cleveland Guardians recalled 1B Kyle Manzardo from Columbus Clippers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cleveland Guardians",
-  "player": "CJ Kayfus",
-  "category": "Call-up",
-  "description": "Cleveland Guardians recalled 1B CJ Kayfus from Columbus Clippers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Ronel Blanco",
-  "category": "Call-up",
-  "description": "Houston Astros recalled RHP Ronel Blanco from Sugar Land Space Cowboys."
- },
- {
-  "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "Blake Adams",
-  "category": "Call-up",
-  "description": "Colorado Rockies recalled RHP Blake Adams from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Zach Maxwell",
-  "category": "Call-up",
-  "description": "Cincinnati Reds recalled RHP Zach Maxwell from Louisville Bats."
- },
- {
-  "date": "2026-09-28",
-  "team": "Toronto Blue Jays",
-  "player": "Devereaux Harrison",
-  "category": "Call-up",
-  "description": "Toronto Blue Jays recalled RHP Devereaux Harrison from Buffalo Bisons."
- },
- {
-  "date": "2026-09-28",
-  "team": "Seattle Mariners",
-  "player": "Patrick Wisdom",
-  "category": "Call-up",
-  "description": "Seattle Mariners recalled 3B Patrick Wisdom from Tacoma Rainiers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "David Davalillo",
-  "category": "Call-up",
-  "description": "Texas Rangers recalled RHP David Davalillo from Round Rock Express."
- },
- {
-  "date": "2026-09-28",
-  "team": "Arizona Diamondbacks",
-  "player": "Juan Burgos",
-  "category": "Call-up",
-  "description": "Arizona Diamondbacks recalled RHP Juan Burgos from Reno Aces."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Logan O'Hoppe",
-  "category": "Call-up",
-  "description": "Texas Rangers recalled DH Logan O'Hoppe from ACL Rangers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Miami Marlins",
-  "player": "Patrick Monteverde",
-  "category": "Call-up",
-  "description": "Miami Marlins recalled LHP Patrick Monteverde from Jacksonville Jumbo Shrimp."
- },
- {
-  "date": "2026-09-28",
-  "team": "Miami Marlins",
-  "player": "Brandan Bidois",
-  "category": "Call-up",
-  "description": "Miami Marlins recalled RHP Brandan Bidois from Jacksonville Jumbo Shrimp."
- },
- {
-  "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Henry Baez",
-  "category": "Call-up",
-  "description": "Athletics recalled RHP Henry Baez from Midland RockHounds."
- },
- {
-  "date": "2026-09-28",
-  "team": "Toronto Blue Jays",
-  "player": "Ricky Tiedemann",
-  "category": "Call-up",
-  "description": "Toronto Blue Jays recalled LHP Ricky Tiedemann from Buffalo Bisons."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Angels",
-  "player": "Sam Aldegheri",
-  "category": "Call-up",
-  "description": "Los Angeles Angels recalled LHP Sam Aldegheri from Salt Lake Bees."
- },
- {
-  "date": "2026-09-28",
-  "team": "Detroit Tigers",
-  "player": "Thayron Liranzo",
-  "category": "Call-up",
-  "description": "Detroit Tigers recalled C Thayron Liranzo from Erie SeaWolves."
- },
- {
-  "date": "2026-09-28",
-  "team": "Detroit Tigers",
-  "player": "Enmanuel De Jesus",
-  "category": "Call-up",
-  "description": "Detroit Tigers recalled LHP Enmanuel De Jesus from Toledo Mud Hens."
- },
- {
-  "date": "2026-09-28",
-  "team": "Washington Nationals",
-  "player": "Kyle Nicolas",
-  "category": "Call-up",
-  "description": "Washington Nationals recalled RHP Kyle Nicolas from Rochester Red Wings."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cleveland Guardians",
-  "player": "Andrew Walters",
-  "category": "Call-up",
-  "description": "Cleveland Guardians recalled RHP Andrew Walters from Columbus Clippers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Noelvi Marte",
-  "category": "Call-up",
-  "description": "Cincinnati Reds recalled RF Noelvi Marte from Louisville Bats."
- },
- {
-  "date": "2026-09-28",
-  "team": "Baltimore Orioles",
-  "player": "Trey Gibson",
-  "category": "Call-up",
-  "description": "Baltimore Orioles recalled RHP Trey Gibson from FCL Orioles."
- },
- {
-  "date": "2026-09-28",
-  "team": "Boston Red Sox",
-  "player": "Romy Gonzalez",
-  "category": "Call-up",
-  "description": "Boston Red Sox recalled DH Romy Gonzalez from Worcester Red Sox."
- },
- {
-  "date": "2026-09-28",
-  "team": "Miami Marlins",
-  "player": "Logan Driscoll",
-  "category": "Call-up",
-  "description": "Miami Marlins recalled C Logan Driscoll from Jacksonville Jumbo Shrimp."
- },
- {
-  "date": "2026-09-28",
-  "team": "El Paso Chihuahuas",
-  "player": "Trevor Gott",
-  "category": "IL (injury)",
-  "description": "El Paso Chihuahuas activated RHP Trevor Gott from the 7-day injured list."
- },
- {
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "team": "New York Yankees",
-  "player": "Angel Chivilli",
-  "category": "Call-up",
-  "description": "New York Yankees recalled RHP Angel Chivilli from Scranton/Wilkes-Barre RailRiders."
- },
- {
-  "date": "2026-09-28",
-  "team": "Boston Red Sox",
-  "player": "Raymond Burgos",
-  "category": "Call-up",
-  "description": "Boston Red Sox recalled LHP Raymond Burgos from Worcester Red Sox."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Emiliano Teodo",
-  "category": "Call-up",
-  "description": "Texas Rangers recalled RHP Emiliano Teodo from Round Rock Express."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Leandro Lopez",
-  "category": "Call-up",
-  "description": "Texas Rangers recalled RHP Leandro Lopez from Frisco RoughRiders."
+  "player": "Giancarlo Stanton",
+  "category": "IL (injury)",
+  "description": "New York Yankees activated DH Giancarlo Stanton from the 60-day injured list."
  },
  {
   "date": "2026-09-28",
   "team": "Tampa Bay Rays",
-  "player": "Jadher Areinamo",
+  "player": "Joe Boyle",
   "category": "Call-up",
-  "description": "Tampa Bay Rays recalled 2B Jadher Areinamo from Durham Bulls."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tampa Bay Rays",
-  "player": "Kenny Piper",
-  "category": "Call-up",
-  "description": "Tampa Bay Rays recalled C Kenny Piper from Durham Bulls."
- },
- {
-  "date": "2026-09-28",
-  "team": "Minnesota Twins",
-  "player": "Gabriel Gonzalez",
-  "category": "Call-up",
-  "description": "Minnesota Twins recalled RF Gabriel Gonzalez from St. Paul Saints."
- },
- {
-  "date": "2026-09-28",
-  "team": "Minnesota Twins",
-  "player": "Hendry Mendez",
-  "category": "Call-up",
-  "description": "Minnesota Twins recalled OF Hendry Mendez from St. Paul Saints."
- },
- {
-  "date": "2026-09-28",
-  "team": "Minnesota Twins",
-  "player": "Matt Wallner",
-  "category": "Call-up",
-  "description": "Minnesota Twins recalled RF Matt Wallner from St. Paul Saints."
+  "description": "Tampa Bay Rays recalled RHP Joe Boyle from Durham Bulls."
  },
  {
   "date": "2026-09-28",
   "team": "San Diego Padres",
-  "player": "Jhony Brito",
+  "player": "Rodolfo Dur\u00e1n",
   "category": "Call-up",
-  "description": "San Diego Padres recalled RHP Jhony Brito from El Paso Chihuahuas."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "James Triantos",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled 2B James Triantos from Iowa Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Salt Lake Bees",
-  "player": "Nacho Alvarez Jr.",
-  "category": "IL (injury)",
-  "description": "Salt Lake Bees activated SS Nacho Alvarez Jr. from the 60-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Angels",
-  "player": "Kyren Paris",
-  "category": "IL (injury)",
-  "description": "Los Angeles Angels activated 2B Kyren Paris from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "Ryan Ritter",
-  "category": "Call-up",
-  "description": "Colorado Rockies recalled SS Ryan Ritter from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Diego Padres",
-  "player": "Jeremiah Estrada",
-  "category": "IL (injury)",
-  "description": "San Diego Padres activated RHP Jeremiah Estrada from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Baltimore Orioles",
-  "player": "Luis Robert Jr.",
-  "category": "IL (injury)",
-  "description": "Baltimore Orioles activated CF Luis Robert Jr. from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Kansas City Royals",
-  "player": "Tony Gonsolin",
-  "category": "IL (injury)",
-  "description": "Kansas City Royals activated RHP Tony Gonsolin from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Baltimore Orioles",
-  "player": "Jackson Holliday",
-  "category": "IL (injury)",
-  "description": "Baltimore Orioles activated 2B Jackson Holliday from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Brice Matthews",
-  "category": "IL (injury)",
-  "description": "Houston Astros activated CF Brice Matthews from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tacoma Rainiers",
-  "player": "Josh Hood",
-  "category": "Activated",
-  "description": "Tacoma Rainiers activated SS Josh Hood from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Reading Fightin Phils",
-  "player": "Mois\u00e9s Chace",
-  "category": "IL (injury)",
-  "description": "Reading Fightin Phils activated RHP Mois\u00e9s Chace from the 60-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Miami Marlins",
-  "player": "Pete Fairbanks",
-  "category": "IL (injury)",
-  "description": "Miami Marlins activated RHP Pete Fairbanks from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Minnesota Twins",
-  "player": "Jeff Hoffman",
-  "category": "IL (injury)",
-  "description": "Minnesota Twins activated RHP Jeff Hoffman from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Boston Red Sox",
-  "player": "Tyron Guerrero",
-  "category": "IL (injury)",
-  "description": "Boston Red Sox activated RHP Tyron Guerrero from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Enyel De Los Santos",
-  "category": "IL (injury)",
-  "description": "Houston Astros activated RHP Enyel De Los Santos from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Toronto Blue Jays",
-  "player": "Luis Ur\u00edas",
-  "category": "IL (injury)",
-  "description": "Toronto Blue Jays activated 2B Luis Ur\u00edas from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Minnesota Twins",
-  "player": "Jack Anderson",
-  "category": "Call-up",
-  "description": "Minnesota Twins recalled RHP Jack Anderson from St. Paul Saints."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tampa Bay Rays",
-  "player": "Nick Madrigal",
-  "category": "Call-up",
-  "description": "Tampa Bay Rays recalled 3B Nick Madrigal from Durham Bulls."
- },
- {
-  "date": "2026-09-28",
-  "team": "Pittsburgh Pirates",
-  "player": "Nick Yorke",
-  "category": "Call-up",
-  "description": "Pittsburgh Pirates recalled 3B Nick Yorke from Indianapolis Indians."
- },
- {
-  "date": "2026-09-28",
-  "team": "Philadelphia Phillies",
-  "player": "Colby Thomas",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled RF Colby Thomas from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Johnathan Rodr\u00edguez",
-  "category": "Call-up",
-  "description": "Athletics recalled RF Johnathan Rodr\u00edguez from Las Vegas Aviators."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "BJ Murray Jr.",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled 3B BJ Murray Jr. from Iowa Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Hayden Juenger",
-  "category": "Call-up",
-  "description": "Athletics recalled RHP Hayden Juenger from Las Vegas Aviators."
- },
- {
-  "date": "2026-09-28",
-  "team": "Kansas City Royals",
-  "player": "Mitch Spence",
-  "category": "Call-up",
-  "description": "Kansas City Royals recalled RHP Mitch Spence from Omaha Storm Chasers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Washington Nationals",
-  "player": "Paxton Schultz",
-  "category": "Call-up",
-  "description": "Washington Nationals recalled RHP Paxton Schultz from Rochester Red Wings."
- },
- {
-  "date": "2026-09-28",
-  "team": "Philadelphia Phillies",
-  "player": "Kameron Misner",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled CF Kameron Misner from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Baltimore Orioles",
-  "player": "Reed Trimble",
-  "category": "Call-up",
-  "description": "Baltimore Orioles recalled LF Reed Trimble from Norfolk Tides."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago White Sox",
-  "player": "Drew Thorpe",
-  "category": "Call-up",
-  "description": "Chicago White Sox recalled RHP Drew Thorpe from Charlotte Knights."
- },
- {
-  "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "Chad Stevens",
-  "category": "Call-up",
-  "description": "Colorado Rockies recalled 2B Chad Stevens from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "New York Mets",
-  "player": "Eric Wagaman",
-  "category": "Call-up",
-  "description": "New York Mets recalled 1B Eric Wagaman from Syracuse Mets."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Diego Padres",
-  "player": "Hunter Stratton",
-  "category": "Call-up",
-  "description": "San Diego Padres recalled RHP Hunter Stratton from El Paso Chihuahuas."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Diego Padres",
-  "player": "JP Sears",
-  "category": "Call-up",
-  "description": "San Diego Padres recalled LHP JP Sears from El Paso Chihuahuas."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Dodgers",
-  "player": "Hyeseong Kim",
-  "category": "Call-up",
-  "description": "Los Angeles Dodgers recalled SS Hyeseong Kim from Oklahoma City Comets."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Justin Dean",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled CF Justin Dean from Iowa Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tampa Bay Rays",
-  "player": "Carson Williams",
-  "category": "Call-up",
-  "description": "Tampa Bay Rays recalled SS Carson Williams from Durham Bulls."
- },
- {
-  "date": "2026-09-28",
-  "team": "Seattle Mariners",
-  "player": "Troy Watson",
-  "category": "Call-up",
-  "description": "Seattle Mariners recalled RHP Troy Watson from Tacoma Rainiers."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Francisco Giants",
-  "player": "Yunior Marte",
-  "category": "Call-up",
-  "description": "San Francisco Giants recalled RHP Yunior Marte from Sacramento River Cats."
- },
- {
-  "date": "2026-09-28",
-  "team": "Kansas City Royals",
-  "player": "Easton McGee",
-  "category": "Call-up",
-  "description": "Kansas City Royals recalled RHP Easton McGee from Omaha Storm Chasers."
+  "description": "San Diego Padres recalled C Rodolfo Dur\u00e1n from El Paso Chihuahuas."
  },
  {
   "date": "2026-09-28",
@@ -1275,10 +610,115 @@
  },
  {
   "date": "2026-09-28",
+  "team": "Pittsburgh Pirates",
+  "player": "Thomas Harrington",
+  "category": "Call-up",
+  "description": "Pittsburgh Pirates recalled RHP Thomas Harrington from Indianapolis Indians."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Kansas City Royals",
+  "player": "Easton McGee",
+  "category": "Call-up",
+  "description": "Kansas City Royals recalled RHP Easton McGee from Omaha Storm Chasers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Francisco Giants",
+  "player": "Yunior Marte",
+  "category": "Call-up",
+  "description": "San Francisco Giants recalled RHP Yunior Marte from Sacramento River Cats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "St. Louis Cardinals",
+  "player": "Ryan Fernandez",
+  "category": "Call-up",
+  "description": "St. Louis Cardinals recalled RHP Ryan Fernandez from Memphis Redbirds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Gavin Collyer",
+  "category": "Call-up",
+  "description": "Texas Rangers recalled RHP Gavin Collyer from ACL Rangers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Seattle Mariners",
+  "player": "Troy Watson",
+  "category": "Call-up",
+  "description": "Seattle Mariners recalled RHP Troy Watson from Tacoma Rainiers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Noelvi Marte",
+  "category": "Call-up",
+  "description": "Cincinnati Reds recalled RF Noelvi Marte from Louisville Bats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Arizona Diamondbacks",
+  "player": "Mitch Bratt",
+  "category": "Call-up",
+  "description": "Arizona Diamondbacks recalled LHP Mitch Bratt from Reno Aces."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Minnesota Twins",
+  "player": "Kendry Rojas",
+  "category": "Call-up",
+  "description": "Minnesota Twins recalled LHP Kendry Rojas from St. Paul Saints."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago Cubs",
+  "player": "Jordan Wicks",
+  "category": "Call-up",
+  "description": "Chicago Cubs recalled LHP Jordan Wicks from Iowa Cubs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago Cubs",
+  "player": "Jayden Murray",
+  "category": "Call-up",
+  "description": "Chicago Cubs recalled RHP Jayden Murray from Iowa Cubs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Miami Marlins",
+  "player": "Logan Driscoll",
+  "category": "Call-up",
+  "description": "Miami Marlins recalled C Logan Driscoll from Jacksonville Jumbo Shrimp."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Pittsburgh Pirates",
+  "player": "Nick Yorke",
+  "category": "Call-up",
+  "description": "Pittsburgh Pirates recalled 3B Nick Yorke from Indianapolis Indians."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Milwaukee Brewers",
+  "player": "Brandon Sproat",
+  "category": "Call-up",
+  "description": "Milwaukee Brewers recalled RHP Brandon Sproat from Nashville Sounds."
+ },
+ {
+  "date": "2026-09-28",
   "team": "Minnesota Twins",
   "player": "Marco Raya",
   "category": "Call-up",
   "description": "Minnesota Twins recalled RHP Marco Raya from St. Paul Saints."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Athletics",
+  "player": "Johnathan Rodr\u00edguez",
+  "category": "Call-up",
+  "description": "Athletics recalled RF Johnathan Rodr\u00edguez from Las Vegas Aviators."
  },
  {
   "date": "2026-09-28",
@@ -1296,66 +736,17 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Atlanta Braves",
-  "player": "Blake Burkhalter",
+  "team": "Chicago Cubs",
+  "player": "BJ Murray Jr.",
   "category": "Call-up",
-  "description": "Atlanta Braves recalled RHP Blake Burkhalter from Gwinnett Stripers."
+  "description": "Chicago Cubs recalled 3B BJ Murray Jr. from Iowa Cubs."
  },
  {
   "date": "2026-09-28",
-  "team": "Arizona Diamondbacks",
-  "player": "Dylan Ray",
+  "team": "Athletics",
+  "player": "Hayden Juenger",
   "category": "Call-up",
-  "description": "Arizona Diamondbacks recalled RHP Dylan Ray from Reno Aces."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Edwin Arroyo",
-  "category": "Call-up",
-  "description": "Cincinnati Reds recalled 2B Edwin Arroyo from Louisville Bats."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cleveland Guardians",
-  "player": "Yorman G\u00f3mez",
-  "category": "Call-up",
-  "description": "Cleveland Guardians recalled RHP Yorman G\u00f3mez from Columbus Clippers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Pittsburgh Pirates",
-  "player": "Wilber Dotel",
-  "category": "Call-up",
-  "description": "Pittsburgh Pirates recalled RHP Wilber Dotel from FCL Pirates."
- },
- {
-  "date": "2026-09-28",
-  "team": "St. Louis Cardinals",
-  "player": "Cooper Hjerpe",
-  "category": "Call-up",
-  "description": "St. Louis Cardinals recalled LHP Cooper Hjerpe from Memphis Redbirds."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Ivan Johnson",
-  "category": "Call-up",
-  "description": "Cincinnati Reds recalled 2B Ivan Johnson from Louisville Bats."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Diego Padres",
-  "player": "Rodolfo Dur\u00e1n",
-  "category": "Call-up",
-  "description": "San Diego Padres recalled C Rodolfo Dur\u00e1n from El Paso Chihuahuas."
- },
- {
-  "date": "2026-09-28",
-  "team": "St. Louis Cardinals",
-  "player": "Chase Hampton",
-  "category": "Waiver claim",
-  "description": "St. Louis Cardinals claimed RHP Chase Hampton off waivers from Washington Nationals."
+  "description": "Athletics recalled RHP Hayden Juenger from Las Vegas Aviators."
  },
  {
   "date": "2026-09-28",
@@ -1363,97 +754,6 @@
   "player": "Drey Jameson",
   "category": "Call-up",
   "description": "Arizona Diamondbacks recalled RHP Drey Jameson from Reno Aces."
- },
- {
-  "date": "2026-09-28",
-  "team": "Arizona Diamondbacks",
-  "player": "Gerardo Carrillo",
-  "category": "Call-up",
-  "description": "Arizona Diamondbacks recalled RHP Gerardo Carrillo from Reno Aces."
- },
- {
-  "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "Hayden Harris",
-  "category": "Call-up",
-  "description": "Colorado Rockies recalled LHP Hayden Harris from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "New York Mets",
-  "player": "Jack Weisenburger",
-  "category": "Call-up",
-  "description": "New York Mets recalled RHP Jack Weisenburger from FCL Mets."
- },
- {
-  "date": "2026-09-28",
-  "team": "Detroit Tigers",
-  "player": "Jake Miller",
-  "category": "Call-up",
-  "description": "Detroit Tigers recalled LHP Jake Miller from Erie SeaWolves."
- },
- {
-  "date": "2026-09-28",
-  "team": "Washington Nationals",
-  "player": "Carson Palmquist",
-  "category": "Call-up",
-  "description": "Washington Nationals recalled LHP Carson Palmquist from Rochester Red Wings."
- },
- {
-  "date": "2026-09-28",
-  "team": "Baltimore Orioles",
-  "player": "Luis De Le\u00f3n",
-  "category": "Call-up",
-  "description": "Baltimore Orioles recalled LHP Luis De Le\u00f3n from FCL Orioles."
- },
- {
-  "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Luis Morales",
-  "category": "Call-up",
-  "description": "Athletics recalled RHP Luis Morales from Las Vegas Aviators."
- },
- {
-  "date": "2026-09-28",
-  "team": "Arizona Diamondbacks",
-  "player": "Mitch Bratt",
-  "category": "Call-up",
-  "description": "Arizona Diamondbacks recalled LHP Mitch Bratt from Reno Aces."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Gavin Collyer",
-  "category": "Call-up",
-  "description": "Texas Rangers recalled RHP Gavin Collyer from ACL Rangers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tampa Bay Rays",
-  "player": "Joe Boyle",
-  "category": "Call-up",
-  "description": "Tampa Bay Rays recalled RHP Joe Boyle from Durham Bulls."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Jordan Wicks",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled LHP Jordan Wicks from Iowa Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Ethan Roberts",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled RHP Ethan Roberts from Iowa Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Kansas City Royals",
-  "player": "Carlos Duran",
-  "category": "Call-up",
-  "description": "Kansas City Royals recalled RHP Carlos Duran from Omaha Storm Chasers."
  },
  {
   "date": "2026-09-28",
@@ -1471,101 +771,45 @@
  },
  {
   "date": "2026-09-28",
+  "team": "Arizona Diamondbacks",
+  "player": "Gerardo Carrillo",
+  "category": "Call-up",
+  "description": "Arizona Diamondbacks recalled RHP Gerardo Carrillo from Reno Aces."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tampa Bay Rays",
+  "player": "Carson Williams",
+  "category": "Call-up",
+  "description": "Tampa Bay Rays recalled SS Carson Williams from Durham Bulls."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Dodgers",
+  "player": "Hyeseong Kim",
+  "category": "Call-up",
+  "description": "Los Angeles Dodgers recalled SS Hyeseong Kim from Oklahoma City Comets."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "David Davalillo",
+  "category": "Call-up",
+  "description": "Texas Rangers recalled RHP David Davalillo from Round Rock Express."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Philadelphia Phillies",
+  "player": "Grant Holman",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled RHP Grant Holman from Lehigh Valley IronPigs."
+ },
+ {
+  "date": "2026-09-28",
   "team": "Toronto Blue Jays",
   "player": "Spencer Arrighetti",
   "category": "Call-up",
   "description": "Toronto Blue Jays recalled RHP Spencer Arrighetti from FCL Blue Jays."
- },
- {
-  "date": "2026-09-28",
-  "team": "Toronto Blue Jays",
-  "player": "Jos\u00e9 Rodr\u00edguez",
-  "category": "Call-up",
-  "description": "Toronto Blue Jays recalled RHP Jos\u00e9 Rodr\u00edguez from FCL Blue Jays."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Joey Loperfido",
-  "category": "Call-up",
-  "description": "Houston Astros recalled LF Joey Loperfido from Sugar Land Space Cowboys."
- },
- {
-  "date": "2026-09-28",
-  "team": "Seattle Mariners",
-  "player": "Josh Simpson",
-  "category": "Call-up",
-  "description": "Seattle Mariners recalled LHP Josh Simpson from Tacoma Rainiers."
- },
- {
-  "date": "2026-09-28",
-  "team": "New York Mets",
-  "player": "Cameron Weston",
-  "category": "Call-up",
-  "description": "New York Mets recalled RHP Cameron Weston from Syracuse Mets."
- },
- {
-  "date": "2026-09-28",
-  "team": "Philadelphia Phillies",
-  "player": "Andrew Hoffmann",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled RHP Andrew Hoffmann from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Joey Estes",
-  "category": "Call-up",
-  "description": "Athletics recalled RHP Joey Estes from Las Vegas Aviators."
- },
- {
-  "date": "2026-09-28",
-  "team": "Pittsburgh Pirates",
-  "player": "Jack Brannigan",
-  "category": "Call-up",
-  "description": "Pittsburgh Pirates recalled SS Jack Brannigan from Indianapolis Indians."
- },
- {
-  "date": "2026-09-28",
-  "team": "St. Louis Cardinals",
-  "player": "Matt Svanson",
-  "category": "Call-up",
-  "description": "St. Louis Cardinals recalled RHP Matt Svanson from Memphis Redbirds."
- },
- {
-  "date": "2026-09-28",
-  "team": "Philadelphia Phillies",
-  "player": "Nestor Cortes",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled LHP Nestor Cortes from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-09-28",
-  "team": "New York Mets",
-  "player": "Dylan Ross",
-  "category": "Call-up",
-  "description": "New York Mets recalled RHP Dylan Ross from Syracuse Mets."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Zach Cole",
-  "category": "Call-up",
-  "description": "Houston Astros recalled LF Zach Cole from Sugar Land Space Cowboys."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago White Sox",
-  "player": "Rikuu Nishida",
-  "category": "Call-up",
-  "description": "Chicago White Sox recalled RF Rikuu Nishida from Charlotte Knights."
- },
- {
-  "date": "2026-09-28",
-  "team": "Pittsburgh Pirates",
-  "player": "Jhostynxon Garcia",
-  "category": "Call-up",
-  "description": "Pittsburgh Pirates recalled RF Jhostynxon Garcia from Indianapolis Indians."
  },
  {
   "date": "2026-09-28",
@@ -1583,24 +827,31 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Chase Petty",
+  "team": "Los Angeles Angels",
+  "player": "Nacho Alvarez Jr.",
   "category": "Call-up",
-  "description": "Cincinnati Reds recalled RHP Chase Petty from Louisville Bats."
+  "description": "Los Angeles Angels recalled SS Nacho Alvarez Jr. from Salt Lake Bees."
  },
  {
   "date": "2026-09-28",
-  "team": "Pittsburgh Pirates",
-  "player": "Khristian Curtis",
+  "team": "St. Louis Cardinals",
+  "player": "Jimmy Crooks",
   "category": "Call-up",
-  "description": "Pittsburgh Pirates recalled RHP Khristian Curtis from FCL Pirates."
+  "description": "St. Louis Cardinals recalled C Jimmy Crooks from Memphis Redbirds."
  },
  {
   "date": "2026-09-28",
-  "team": "New York Yankees",
-  "player": "Jasson Dom\u00ednguez",
+  "team": "Athletics",
+  "player": "Joey Estes",
   "category": "Call-up",
-  "description": "New York Yankees recalled RF Jasson Dom\u00ednguez from Scranton/Wilkes-Barre RailRiders."
+  "description": "Athletics recalled RHP Joey Estes from Las Vegas Aviators."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Atlanta Braves",
+  "player": "Jim Jarvis",
+  "category": "Call-up",
+  "description": "Atlanta Braves recalled SS Jim Jarvis from Gwinnett Stripers."
  },
  {
   "date": "2026-09-28",
@@ -1646,6 +897,13 @@
  },
  {
   "date": "2026-09-28",
+  "team": "Chicago White Sox",
+  "player": "Rikuu Nishida",
+  "category": "Call-up",
+  "description": "Chicago White Sox recalled RF Rikuu Nishida from Charlotte Knights."
+ },
+ {
+  "date": "2026-09-28",
   "team": "Baltimore Orioles",
   "player": "Yosver Zulueta",
   "category": "Call-up",
@@ -1653,108 +911,388 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Gavin Hollowell",
-  "category": "Call-up",
-  "description": "Chicago Cubs recalled RHP Gavin Hollowell from ACL Cubs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Arizona Diamondbacks",
-  "player": "LuJames Groover",
-  "category": "Call-up",
-  "description": "Arizona Diamondbacks recalled 1B LuJames Groover from Reno Aces."
- },
- {
-  "date": "2026-09-28",
   "team": "Toronto Blue Jays",
-  "player": "Yohendrick Pi\u00f1ango",
+  "player": "Ricky Tiedemann",
   "category": "Call-up",
-  "description": "Toronto Blue Jays recalled LF Yohendrick Pi\u00f1ango from Buffalo Bisons."
+  "description": "Toronto Blue Jays recalled LHP Ricky Tiedemann from Buffalo Bisons."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Angels",
+  "player": "Sam Aldegheri",
+  "category": "Call-up",
+  "description": "Los Angeles Angels recalled LHP Sam Aldegheri from Salt Lake Bees."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Detroit Tigers",
+  "player": "Thayron Liranzo",
+  "category": "Call-up",
+  "description": "Detroit Tigers recalled C Thayron Liranzo from Erie SeaWolves."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Detroit Tigers",
+  "player": "Enmanuel De Jesus",
+  "category": "Call-up",
+  "description": "Detroit Tigers recalled LHP Enmanuel De Jesus from Toledo Mud Hens."
  },
  {
   "date": "2026-09-28",
   "team": "Washington Nationals",
-  "player": "Clayton Beeter",
+  "player": "Kyle Nicolas",
   "category": "Call-up",
-  "description": "Washington Nationals recalled RHP Clayton Beeter from Rochester Red Wings."
+  "description": "Washington Nationals recalled RHP Kyle Nicolas from Rochester Red Wings."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Atlanta Braves",
+  "player": "Tyler Uberstine",
+  "category": "Call-up",
+  "description": "Atlanta Braves recalled RHP Tyler Uberstine from Gwinnett Stripers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Atlanta Braves",
+  "player": "James Karinchak",
+  "category": "Call-up",
+  "description": "Atlanta Braves recalled RHP James Karinchak from Gwinnett Stripers."
  },
  {
   "date": "2026-09-28",
   "team": "Cleveland Guardians",
-  "player": "Kahlil Watson",
+  "player": "Andrew Walters",
   "category": "Call-up",
-  "description": "Cleveland Guardians recalled RF Kahlil Watson from Columbus Clippers."
+  "description": "Cleveland Guardians recalled RHP Andrew Walters from Columbus Clippers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Diego Padres",
+  "player": "Mason McCoy",
+  "category": "Call-up",
+  "description": "San Diego Padres recalled 2B Mason McCoy from El Paso Chihuahuas."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Milwaukee Brewers",
+  "player": "Coleman Crow",
+  "category": "Call-up",
+  "description": "Milwaukee Brewers recalled RHP Coleman Crow from Nashville Sounds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Colorado Rockies",
+  "player": "Jeff Criswell",
+  "category": "Call-up",
+  "description": "Colorado Rockies recalled RHP Jeff Criswell from Albuquerque Isotopes."
  },
  {
   "date": "2026-09-28",
   "team": "Boston Red Sox",
-  "player": "Tyler Samaniego",
+  "player": "Raymond Burgos",
   "category": "Call-up",
-  "description": "Boston Red Sox recalled LHP Tyler Samaniego from Worcester Red Sox."
- },
- {
-  "date": "2026-09-28",
-  "team": "Kansas City Royals",
-  "player": "Steven Zobac",
-  "category": "Call-up",
-  "description": "Kansas City Royals recalled RHP Steven Zobac from Northwest Arkansas Naturals."
+  "description": "Boston Red Sox recalled LHP Raymond Burgos from Worcester Red Sox."
  },
  {
   "date": "2026-09-28",
   "team": "Washington Nationals",
-  "player": "Andrew Pinckney",
+  "player": "Eddy Yean",
   "category": "Call-up",
-  "description": "Washington Nationals recalled LF Andrew Pinckney from Rochester Red Wings."
+  "description": "Washington Nationals recalled RHP Eddy Yean from Rochester Red Wings."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Minnesota Twins",
+  "player": "Hendry Mendez",
+  "category": "Call-up",
+  "description": "Minnesota Twins recalled OF Hendry Mendez from St. Paul Saints."
  },
  {
   "date": "2026-09-28",
   "team": "Chicago White Sox",
-  "player": "Shane Smith",
+  "player": "Tyler Schweitzer",
   "category": "Call-up",
-  "description": "Chicago White Sox recalled RHP Shane Smith from Charlotte Knights."
- },
- {
-  "date": "2026-09-28",
-  "team": "Baltimore Orioles",
-  "player": "Codi Heuer",
-  "category": "Call-up",
-  "description": "Baltimore Orioles recalled RHP Codi Heuer from Norfolk Tides."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Dodgers",
-  "player": "Paul Gervase",
-  "category": "Call-up",
-  "description": "Los Angeles Dodgers recalled RHP Paul Gervase from Oklahoma City Comets."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Dodgers",
-  "player": "Eliezer Alfonzo",
-  "category": "Call-up",
-  "description": "Los Angeles Dodgers recalled C Eliezer Alfonzo from Oklahoma City Comets."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Dodgers",
-  "player": "Ronan Kopp",
-  "category": "Call-up",
-  "description": "Los Angeles Dodgers recalled LHP Ronan Kopp from Oklahoma City Comets."
+  "description": "Chicago White Sox recalled LHP Tyler Schweitzer from Charlotte Knights."
  },
  {
   "date": "2026-09-28",
   "team": "Cleveland Guardians",
-  "player": "Logan Allen",
+  "player": "Yorman G\u00f3mez",
   "category": "Call-up",
-  "description": "Cleveland Guardians recalled LHP Logan Allen from Columbus Clippers."
+  "description": "Cleveland Guardians recalled RHP Yorman G\u00f3mez from Columbus Clippers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Boston Red Sox",
+  "player": "Kristian Campbell",
+  "category": "Call-up",
+  "description": "Boston Red Sox recalled OF Kristian Campbell from Worcester Red Sox."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Boston Red Sox",
+  "player": "Tsung-Che Cheng",
+  "category": "Call-up",
+  "description": "Boston Red Sox recalled SS Tsung-Che Cheng from Worcester Red Sox."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tampa Bay Rays",
+  "player": "Nick Madrigal",
+  "category": "Call-up",
+  "description": "Tampa Bay Rays recalled 3B Nick Madrigal from Durham Bulls."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Colorado Rockies",
+  "player": "Ryan Ritter",
+  "category": "Call-up",
+  "description": "Colorado Rockies recalled SS Ryan Ritter from Albuquerque Isotopes."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Minnesota Twins",
+  "player": "Jack Anderson",
+  "category": "Call-up",
+  "description": "Minnesota Twins recalled RHP Jack Anderson from St. Paul Saints."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Pittsburgh Pirates",
+  "player": "Tyler Callihan",
+  "category": "Call-up",
+  "description": "Pittsburgh Pirates recalled LF Tyler Callihan from Indianapolis Indians."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Yankees",
+  "player": "Angel Chivilli",
+  "category": "Call-up",
+  "description": "New York Yankees recalled RHP Angel Chivilli from Scranton/Wilkes-Barre RailRiders."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tampa Bay Rays",
+  "player": "Kenny Piper",
+  "category": "Call-up",
+  "description": "Tampa Bay Rays recalled C Kenny Piper from Durham Bulls."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Colorado Rockies",
+  "player": "Blake Adams",
+  "category": "Call-up",
+  "description": "Colorado Rockies recalled RHP Blake Adams from Albuquerque Isotopes."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Minnesota Twins",
+  "player": "Gabriel Gonzalez",
+  "category": "Call-up",
+  "description": "Minnesota Twins recalled RF Gabriel Gonzalez from St. Paul Saints."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Boston Red Sox",
+  "player": "Romy Gonzalez",
+  "category": "Call-up",
+  "description": "Boston Red Sox recalled DH Romy Gonzalez from Worcester Red Sox."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Toronto Blue Jays",
+  "player": "Jos\u00e9 Rodr\u00edguez",
+  "category": "Call-up",
+  "description": "Toronto Blue Jays recalled RHP Jos\u00e9 Rodr\u00edguez from FCL Blue Jays."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Minnesota Twins",
+  "player": "Matt Wallner",
+  "category": "Call-up",
+  "description": "Minnesota Twins recalled RF Matt Wallner from St. Paul Saints."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Diego Padres",
+  "player": "Jhony Brito",
+  "category": "Call-up",
+  "description": "San Diego Padres recalled RHP Jhony Brito from El Paso Chihuahuas."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago Cubs",
+  "player": "James Triantos",
+  "category": "Call-up",
+  "description": "Chicago Cubs recalled 2B James Triantos from Iowa Cubs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Athletics",
+  "player": "Joe Rock",
+  "category": "Call-up",
+  "description": "Athletics recalled LHP Joe Rock from Las Vegas Aviators."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Baltimore Orioles",
+  "player": "Trey Gibson",
+  "category": "Call-up",
+  "description": "Baltimore Orioles recalled RHP Trey Gibson from FCL Orioles."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Enyel De Los Santos",
+  "category": "IL (injury)",
+  "description": "Houston Astros activated RHP Enyel De Los Santos from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Toronto Blue Jays",
+  "player": "Luis Ur\u00edas",
+  "category": "IL (injury)",
+  "description": "Toronto Blue Jays activated 2B Luis Ur\u00edas from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Seattle Mariners",
+  "player": "Cole Wilcox",
+  "category": "IL (injury)",
+  "description": "Seattle Mariners activated RHP Cole Wilcox from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
   "team": "New York Mets",
-  "player": "Hayden Senger",
+  "player": "Philip Abner",
+  "category": "Activated",
+  "description": "New York Mets activated LHP Philip Abner."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Mets",
+  "player": "Daniel Duarte",
+  "category": "IL (injury)",
+  "description": "New York Mets activated RHP Daniel Duarte from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Boston Red Sox",
+  "player": "Mickey Gasper",
+  "category": "IL (injury)",
+  "description": "Boston Red Sox activated DH Mickey Gasper from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Atlanta Braves",
+  "player": "Bryce Elder",
+  "category": "IL (injury)",
+  "description": "Atlanta Braves activated RHP Bryce Elder from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Alimber Santa",
   "category": "Call-up",
-  "description": "New York Mets recalled C Hayden Senger from Syracuse Mets."
+  "description": "Houston Astros recalled RHP Alimber Santa from Sugar Land Space Cowboys."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Edwin Arroyo",
+  "category": "Call-up",
+  "description": "Cincinnati Reds recalled 2B Edwin Arroyo from Louisville Bats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Arizona Diamondbacks",
+  "player": "Dylan Ray",
+  "category": "Call-up",
+  "description": "Arizona Diamondbacks recalled RHP Dylan Ray from Reno Aces."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Atlanta Braves",
+  "player": "Blake Burkhalter",
+  "category": "Call-up",
+  "description": "Atlanta Braves recalled RHP Blake Burkhalter from Gwinnett Stripers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cleveland Guardians",
+  "player": "Kyle Manzardo",
+  "category": "Call-up",
+  "description": "Cleveland Guardians recalled 1B Kyle Manzardo from Columbus Clippers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cleveland Guardians",
+  "player": "CJ Kayfus",
+  "category": "Call-up",
+  "description": "Cleveland Guardians recalled 1B CJ Kayfus from Columbus Clippers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Joey Loperfido",
+  "category": "Call-up",
+  "description": "Houston Astros recalled LF Joey Loperfido from Sugar Land Space Cowboys."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Arizona Diamondbacks",
+  "player": "Kade Strowd",
+  "category": "Call-up",
+  "description": "Arizona Diamondbacks recalled RHP Kade Strowd from Reno Aces."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago White Sox",
+  "player": "Drew Thorpe",
+  "category": "Call-up",
+  "description": "Chicago White Sox recalled RHP Drew Thorpe from Charlotte Knights."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Colorado Rockies",
+  "player": "Chad Stevens",
+  "category": "Call-up",
+  "description": "Colorado Rockies recalled 2B Chad Stevens from Albuquerque Isotopes."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Mets",
+  "player": "Eric Wagaman",
+  "category": "Call-up",
+  "description": "New York Mets recalled 1B Eric Wagaman from Syracuse Mets."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Diego Padres",
+  "player": "Will Wagner",
+  "category": "Call-up",
+  "description": "San Diego Padres recalled DH Will Wagner from El Paso Chihuahuas."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Diego Padres",
+  "player": "Hunter Stratton",
+  "category": "Call-up",
+  "description": "San Diego Padres recalled RHP Hunter Stratton from El Paso Chihuahuas."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Diego Padres",
+  "player": "JP Sears",
+  "category": "Call-up",
+  "description": "San Diego Padres recalled LHP JP Sears from El Paso Chihuahuas."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Philadelphia Phillies",
+  "player": "Colby Thomas",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled RF Colby Thomas from Lehigh Valley IronPigs."
  },
  {
   "date": "2026-09-28",
@@ -1765,10 +1303,143 @@
  },
  {
   "date": "2026-09-28",
-  "team": "San Diego Padres",
-  "player": "Gage Workman",
+  "team": "Colorado Rockies",
+  "player": "Gabriel Hughes",
   "category": "Call-up",
-  "description": "San Diego Padres recalled 3B Gage Workman from El Paso Chihuahuas."
+  "description": "Colorado Rockies recalled RHP Gabriel Hughes from Albuquerque Isotopes."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Ivan Johnson",
+  "category": "Call-up",
+  "description": "Cincinnati Reds recalled 2B Ivan Johnson from Louisville Bats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Emiliano Teodo",
+  "category": "Call-up",
+  "description": "Texas Rangers recalled RHP Emiliano Teodo from Round Rock Express."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Pittsburgh Pirates",
+  "player": "Wilber Dotel",
+  "category": "Call-up",
+  "description": "Pittsburgh Pirates recalled RHP Wilber Dotel from FCL Pirates."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Minnesota Twins",
+  "player": "Eric Orze",
+  "category": "Call-up",
+  "description": "Minnesota Twins recalled RHP Eric Orze from St. Paul Saints."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Angels",
+  "player": "Brett Kerry",
+  "category": "Call-up",
+  "description": "Los Angeles Angels recalled RHP Brett Kerry from Salt Lake Bees."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Milwaukee Brewers",
+  "player": "Jared Koenig",
+  "category": "Call-up",
+  "description": "Milwaukee Brewers recalled LHP Jared Koenig from Nashville Sounds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Washington Nationals",
+  "player": "Luis Perales",
+  "category": "Call-up",
+  "description": "Washington Nationals recalled RHP Luis Perales from Rochester Red Wings."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Philadelphia Phillies",
+  "player": "Gabriel Rincones Jr.",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled RF Gabriel Rincones Jr. from Lehigh Valley IronPigs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cleveland Guardians",
+  "player": "Cooper Ingle",
+  "category": "Call-up",
+  "description": "Cleveland Guardians recalled C Cooper Ingle from Columbus Clippers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago Cubs",
+  "player": "Kevin Alc\u00e1ntara",
+  "category": "Call-up",
+  "description": "Chicago Cubs recalled DH Kevin Alc\u00e1ntara from Iowa Cubs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago Cubs",
+  "player": "Tyler Ferguson",
+  "category": "Call-up",
+  "description": "Chicago Cubs recalled RHP Tyler Ferguson from Iowa Cubs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Philadelphia Phillies",
+  "player": "Mois\u00e9s Chace",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled RHP Mois\u00e9s Chace from Reading Fightin Phils."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Miami Marlins",
+  "player": "Josh White",
+  "category": "Call-up",
+  "description": "Miami Marlins recalled RHP Josh White from Jacksonville Jumbo Shrimp."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Yankees",
+  "player": "Max Schuemann",
+  "category": "Call-up",
+  "description": "New York Yankees recalled LF Max Schuemann from Scranton/Wilkes-Barre RailRiders."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Ronel Blanco",
+  "category": "Call-up",
+  "description": "Houston Astros recalled RHP Ronel Blanco from Sugar Land Space Cowboys."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Colorado Rockies",
+  "player": "Blas Casta\u00f1o",
+  "category": "Call-up",
+  "description": "Colorado Rockies recalled RHP Blas Casta\u00f1o from Albuquerque Isotopes."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Miami Marlins",
+  "player": "Patrick Monteverde",
+  "category": "Call-up",
+  "description": "Miami Marlins recalled LHP Patrick Monteverde from Jacksonville Jumbo Shrimp."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Pittsburgh Pirates",
+  "player": "Khristian Curtis",
+  "category": "Call-up",
+  "description": "Pittsburgh Pirates recalled RHP Khristian Curtis from FCL Pirates."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Yankees",
+  "player": "Jasson Dom\u00ednguez",
+  "category": "Call-up",
+  "description": "New York Yankees recalled RF Jasson Dom\u00ednguez from Scranton/Wilkes-Barre RailRiders."
  },
  {
   "date": "2026-09-28",
@@ -1800,10 +1471,24 @@
  },
  {
   "date": "2026-09-28",
+  "team": "Miami Marlins",
+  "player": "Brandan Bidois",
+  "category": "Call-up",
+  "description": "Miami Marlins recalled RHP Brandan Bidois from Jacksonville Jumbo Shrimp."
+ },
+ {
+  "date": "2026-09-28",
   "team": "Kansas City Royals",
   "player": "Ben Kudrna",
   "category": "Call-up",
   "description": "Kansas City Royals recalled RHP Ben Kudrna from Omaha Storm Chasers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Athletics",
+  "player": "Henry Baez",
+  "category": "Call-up",
+  "description": "Athletics recalled RHP Henry Baez from Midland RockHounds."
  },
  {
   "date": "2026-09-28",
@@ -1828,6 +1513,13 @@
  },
  {
   "date": "2026-09-28",
+  "team": "Washington Nationals",
+  "player": "Clayton Beeter",
+  "category": "Call-up",
+  "description": "Washington Nationals recalled RHP Clayton Beeter from Rochester Red Wings."
+ },
+ {
+  "date": "2026-09-28",
   "team": "Milwaukee Brewers",
   "player": "Tyler Black",
   "category": "Call-up",
@@ -1835,10 +1527,24 @@
  },
  {
   "date": "2026-09-28",
+  "team": "Kansas City Royals",
+  "player": "Steven Zobac",
+  "category": "Call-up",
+  "description": "Kansas City Royals recalled RHP Steven Zobac from Northwest Arkansas Naturals."
+ },
+ {
+  "date": "2026-09-28",
   "team": "Colorado Rockies",
   "player": "Eiberson Castellano",
   "category": "Call-up",
   "description": "Colorado Rockies recalled RHP Eiberson Castellano from Albuquerque Isotopes."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Washington Nationals",
+  "player": "Andrew Pinckney",
+  "category": "Call-up",
+  "description": "Washington Nationals recalled LF Andrew Pinckney from Rochester Red Wings."
  },
  {
   "date": "2026-09-28",
@@ -1856,10 +1562,241 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Adam Macko",
+  "team": "San Diego Padres",
+  "player": "Gage Workman",
   "category": "Call-up",
-  "description": "Texas Rangers recalled LHP Adam Macko from ACL Rangers."
+  "description": "San Diego Padres recalled 3B Gage Workman from El Paso Chihuahuas."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Arizona Diamondbacks",
+  "player": "LuJames Groover",
+  "category": "Call-up",
+  "description": "Arizona Diamondbacks recalled 1B LuJames Groover from Reno Aces."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Toronto Blue Jays",
+  "player": "Yohendrick Pi\u00f1ango",
+  "category": "Call-up",
+  "description": "Toronto Blue Jays recalled LF Yohendrick Pi\u00f1ango from Buffalo Bisons."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago White Sox",
+  "player": "Shane Smith",
+  "category": "Call-up",
+  "description": "Chicago White Sox recalled RHP Shane Smith from Charlotte Knights."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Baltimore Orioles",
+  "player": "Codi Heuer",
+  "category": "Call-up",
+  "description": "Baltimore Orioles recalled RHP Codi Heuer from Norfolk Tides."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago Cubs",
+  "player": "Gavin Hollowell",
+  "category": "Call-up",
+  "description": "Chicago Cubs recalled RHP Gavin Hollowell from ACL Cubs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Logan O'Hoppe",
+  "category": "Call-up",
+  "description": "Texas Rangers recalled DH Logan O'Hoppe from ACL Rangers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Colorado Rockies",
+  "player": "Sterlin Thompson",
+  "category": "Call-up",
+  "description": "Colorado Rockies recalled RF Sterlin Thompson from Albuquerque Isotopes."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Chase Petty",
+  "category": "Call-up",
+  "description": "Cincinnati Reds recalled RHP Chase Petty from Louisville Bats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Athletics",
+  "player": "Hunter Bigge",
+  "category": "Call-up",
+  "description": "Athletics recalled RHP Hunter Bigge from Las Vegas Aviators."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Francisco Giants",
+  "player": "Miguel Mendez",
+  "category": "Call-up",
+  "description": "San Francisco Giants recalled RHP Miguel Mendez from Richmond Flying Squirrels."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Detroit Tigers",
+  "player": "Andrew Sears",
+  "category": "Call-up",
+  "description": "Detroit Tigers recalled LHP Andrew Sears from FCL Tigers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Zach Maxwell",
+  "category": "Call-up",
+  "description": "Cincinnati Reds recalled RHP Zach Maxwell from Louisville Bats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago White Sox",
+  "player": "Tanner McDougal",
+  "category": "Call-up",
+  "description": "Chicago White Sox recalled RHP Tanner McDougal from Charlotte Knights."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago White Sox",
+  "player": "Edgar Quero",
+  "category": "Call-up",
+  "description": "Chicago White Sox recalled C Edgar Quero from Charlotte Knights."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Toronto Blue Jays",
+  "player": "Devereaux Harrison",
+  "category": "Call-up",
+  "description": "Toronto Blue Jays recalled RHP Devereaux Harrison from Buffalo Bisons."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Milwaukee Brewers",
+  "player": "Akil Baddoo",
+  "category": "Call-up",
+  "description": "Milwaukee Brewers recalled LF Akil Baddoo from Nashville Sounds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Angels",
+  "player": "Logan Porter",
+  "category": "Call-up",
+  "description": "Los Angeles Angels recalled C Logan Porter from Salt Lake Bees."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Winston Santos",
+  "category": "Call-up",
+  "description": "Texas Rangers recalled RHP Winston Santos from ACL Rangers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Seattle Mariners",
+  "player": "Ryan Bliss",
+  "category": "Call-up",
+  "description": "Seattle Mariners recalled 2B Ryan Bliss from Tacoma Rainiers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Leo Balcazar",
+  "category": "Call-up",
+  "description": "Cincinnati Reds recalled SS Leo Balcazar from Louisville Bats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Colorado Rockies",
+  "player": "Sean Sullivan",
+  "category": "Call-up",
+  "description": "Colorado Rockies recalled LHP Sean Sullivan from Albuquerque Isotopes."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Seattle Mariners",
+  "player": "Patrick Wisdom",
+  "category": "Call-up",
+  "description": "Seattle Mariners recalled 3B Patrick Wisdom from Tacoma Rainiers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Miami Marlins",
+  "player": "Maximo Acosta",
+  "category": "Call-up",
+  "description": "Miami Marlins recalled SS Maximo Acosta from Jacksonville Jumbo Shrimp."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Jose Franco",
+  "category": "Call-up",
+  "description": "Cincinnati Reds recalled RHP Jose Franco from Louisville Bats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Philadelphia Phillies",
+  "player": "Alan Rangel",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled RHP Alan Rangel from Lehigh Valley IronPigs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Athletics",
+  "player": "Kade Morris",
+  "category": "Call-up",
+  "description": "Athletics recalled RHP Kade Morris from Las Vegas Aviators."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Washington Nationals",
+  "player": "Jake Bird",
+  "category": "Call-up",
+  "description": "Washington Nationals recalled RHP Jake Bird from Rochester Red Wings."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Pittsburgh Pirates",
+  "player": "Jhostynxon Garcia",
+  "category": "Call-up",
+  "description": "Pittsburgh Pirates recalled RF Jhostynxon Garcia from Indianapolis Indians."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Milwaukee Brewers",
+  "player": "Garrett Stallings",
+  "category": "Call-up",
+  "description": "Milwaukee Brewers recalled RHP Garrett Stallings from Nashville Sounds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Arizona Diamondbacks",
+  "player": "Juan Burgos",
+  "category": "Call-up",
+  "description": "Arizona Diamondbacks recalled RHP Juan Burgos from Reno Aces."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Ben Peoples",
+  "category": "Call-up",
+  "description": "Texas Rangers recalled RHP Ben Peoples from Round Rock Express."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Angels",
+  "player": "Caden Dana",
+  "category": "Call-up",
+  "description": "Los Angeles Angels recalled RHP Caden Dana from Salt Lake Bees."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Detroit Tigers",
+  "player": "Corey Julks",
+  "category": "Call-up",
+  "description": "Detroit Tigers recalled LF Corey Julks from Toledo Mud Hens."
  },
  {
   "date": "2026-09-28",
@@ -1867,6 +1804,265 @@
   "player": "Kai-Wei Teng",
   "category": "Call-up",
   "description": "Houston Astros recalled RHP Kai-Wei Teng from Sugar Land Space Cowboys."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "St. Louis Cardinals",
+  "player": "Tekoah Roby",
+  "category": "Call-up",
+  "description": "St. Louis Cardinals recalled RHP Tekoah Roby from Memphis Redbirds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cleveland Guardians",
+  "player": "Kahlil Watson",
+  "category": "Call-up",
+  "description": "Cleveland Guardians recalled RF Kahlil Watson from Columbus Clippers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago White Sox",
+  "player": "Junior Perez",
+  "category": "Call-up",
+  "description": "Chicago White Sox recalled CF Junior Perez from Charlotte Knights."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Toronto Blue Jays",
+  "player": "Shawn Ross",
+  "category": "Call-up",
+  "description": "Toronto Blue Jays recalled C Shawn Ross from Buffalo Bisons."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "St. Louis Cardinals",
+  "player": "Matt Svanson",
+  "category": "Call-up",
+  "description": "St. Louis Cardinals recalled RHP Matt Svanson from Memphis Redbirds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cleveland Guardians",
+  "player": "Logan Allen",
+  "category": "Call-up",
+  "description": "Cleveland Guardians recalled LHP Logan Allen from Columbus Clippers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Zach Cole",
+  "category": "Call-up",
+  "description": "Houston Astros recalled LF Zach Cole from Sugar Land Space Cowboys."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Dodgers",
+  "player": "Landon Knack",
+  "category": "Call-up",
+  "description": "Los Angeles Dodgers recalled RHP Landon Knack from Oklahoma City Comets."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago Cubs",
+  "player": "Julian Aguiar",
+  "category": "Call-up",
+  "description": "Chicago Cubs recalled RHP Julian Aguiar from ACL Cubs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Mets",
+  "player": "Hayden Senger",
+  "category": "Call-up",
+  "description": "New York Mets recalled C Hayden Senger from Syracuse Mets."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Seattle Mariners",
+  "player": "Josh Simpson",
+  "category": "Call-up",
+  "description": "Seattle Mariners recalled LHP Josh Simpson from Tacoma Rainiers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Francisco Giants",
+  "player": "Cesar Perdomo",
+  "category": "Call-up",
+  "description": "San Francisco Giants recalled LHP Cesar Perdomo from Sacramento River Cats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Zach Dezenzo",
+  "category": "Call-up",
+  "description": "Houston Astros recalled LF Zach Dezenzo from Sugar Land Space Cowboys."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Athletics",
+  "player": "Braden Nett",
+  "category": "Call-up",
+  "description": "Athletics recalled RHP Braden Nett from Midland RockHounds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago Cubs",
+  "player": "Justin Dean",
+  "category": "Call-up",
+  "description": "Chicago Cubs recalled CF Justin Dean from Iowa Cubs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Mets",
+  "player": "Dylan Ross",
+  "category": "Call-up",
+  "description": "New York Mets recalled RHP Dylan Ross from Syracuse Mets."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Mets",
+  "player": "Cameron Weston",
+  "category": "Call-up",
+  "description": "New York Mets recalled RHP Cameron Weston from Syracuse Mets."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Boston Red Sox",
+  "player": "Tyler Samaniego",
+  "category": "Call-up",
+  "description": "Boston Red Sox recalled LHP Tyler Samaniego from Worcester Red Sox."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Athletics",
+  "player": "Darell Hernaiz",
+  "category": "Call-up",
+  "description": "Athletics recalled SS Darell Hernaiz from Las Vegas Aviators."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Chicago Cubs",
+  "player": "Ethan Roberts",
+  "category": "Call-up",
+  "description": "Chicago Cubs recalled RHP Ethan Roberts from Iowa Cubs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Philadelphia Phillies",
+  "player": "Nestor Cortes",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled LHP Nestor Cortes from Lehigh Valley IronPigs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Leandro Lopez",
+  "category": "Call-up",
+  "description": "Texas Rangers recalled RHP Leandro Lopez from Frisco RoughRiders."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tampa Bay Rays",
+  "player": "Jadher Areinamo",
+  "category": "Call-up",
+  "description": "Tampa Bay Rays recalled 2B Jadher Areinamo from Durham Bulls."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "St. Louis Cardinals",
+  "player": "Chase Hampton",
+  "category": "Waiver claim",
+  "description": "St. Louis Cardinals claimed RHP Chase Hampton off waivers from Washington Nationals."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Atlanta Braves",
+  "player": "Rolddy Mu\u00f1oz",
+  "category": "Call-up",
+  "description": "Atlanta Braves recalled RHP Rolddy Mu\u00f1oz from Gwinnett Stripers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Philadelphia Phillies",
+  "player": "Andrew Hoffmann",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled RHP Andrew Hoffmann from Lehigh Valley IronPigs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Chase Solesky",
+  "category": "Call-up",
+  "description": "Cincinnati Reds recalled RHP Chase Solesky from Louisville Bats."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Milwaukee Brewers",
+  "player": "Jeferson Quero",
+  "category": "Call-up",
+  "description": "Milwaukee Brewers recalled C Jeferson Quero from Nashville Sounds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "St. Louis Cardinals",
+  "player": "Cooper Hjerpe",
+  "category": "Call-up",
+  "description": "St. Louis Cardinals recalled LHP Cooper Hjerpe from Memphis Redbirds."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Diego Padres",
+  "player": "Garrett Hawkins",
+  "category": "Call-up",
+  "description": "San Diego Padres recalled RHP Garrett Hawkins from El Paso Chihuahuas."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Pittsburgh Pirates",
+  "player": "Jack Brannigan",
+  "category": "Call-up",
+  "description": "Pittsburgh Pirates recalled SS Jack Brannigan from Indianapolis Indians."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cleveland Guardians",
+  "player": "Blake Perkins",
+  "category": "Call-up",
+  "description": "Cleveland Guardians recalled CF Blake Perkins from Columbus Clippers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Baltimore Orioles",
+  "player": "Reed Trimble",
+  "category": "Call-up",
+  "description": "Baltimore Orioles recalled LF Reed Trimble from Norfolk Tides."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Seattle Mariners",
+  "player": "Willie MacIver",
+  "category": "Call-up",
+  "description": "Seattle Mariners recalled C Willie MacIver from Tacoma Rainiers."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Dodgers",
+  "player": "Paul Gervase",
+  "category": "Call-up",
+  "description": "Los Angeles Dodgers recalled RHP Paul Gervase from Oklahoma City Comets."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Dodgers",
+  "player": "Eliezer Alfonzo",
+  "category": "Call-up",
+  "description": "Los Angeles Dodgers recalled C Eliezer Alfonzo from Oklahoma City Comets."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Adam Macko",
+  "category": "Call-up",
+  "description": "Texas Rangers recalled LHP Adam Macko from ACL Rangers."
  },
  {
   "date": "2026-09-28",
@@ -1891,59 +2087,31 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Philadelphia Phillies",
-  "player": "Grant Holman",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled RHP Grant Holman from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Leo Balcazar",
-  "category": "Call-up",
-  "description": "Cincinnati Reds recalled SS Leo Balcazar from Louisville Bats."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Jose Franco",
-  "category": "Call-up",
-  "description": "Cincinnati Reds recalled RHP Jose Franco from Louisville Bats."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Ben Peoples",
-  "category": "Call-up",
-  "description": "Texas Rangers recalled RHP Ben Peoples from Round Rock Express."
- },
- {
-  "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "Sterlin Thompson",
-  "category": "Call-up",
-  "description": "Colorado Rockies recalled RF Sterlin Thompson from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "Blas Casta\u00f1o",
-  "category": "Call-up",
-  "description": "Colorado Rockies recalled RHP Blas Casta\u00f1o from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "St. Louis Cardinals",
-  "player": "Tekoah Roby",
-  "category": "Call-up",
-  "description": "St. Louis Cardinals recalled RHP Tekoah Roby from Memphis Redbirds."
- },
- {
-  "date": "2026-09-28",
   "team": "Detroit Tigers",
   "player": "Yilber D\u00edaz",
   "category": "Call-up",
   "description": "Detroit Tigers recalled RHP Yilber D\u00edaz from Toledo Mud Hens."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Colorado Rockies",
+  "player": "Hayden Harris",
+  "category": "Call-up",
+  "description": "Colorado Rockies recalled LHP Hayden Harris from Albuquerque Isotopes."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Mets",
+  "player": "Jack Weisenburger",
+  "category": "Call-up",
+  "description": "New York Mets recalled RHP Jack Weisenburger from FCL Mets."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Dodgers",
+  "player": "Ronan Kopp",
+  "category": "Call-up",
+  "description": "Los Angeles Dodgers recalled LHP Ronan Kopp from Oklahoma City Comets."
  },
  {
   "date": "2026-09-28",
@@ -1954,437 +2122,115 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Hunter Bigge",
-  "category": "Call-up",
-  "description": "Athletics recalled RHP Hunter Bigge from Las Vegas Aviators."
- },
- {
-  "date": "2026-09-28",
   "team": "Detroit Tigers",
-  "player": "Corey Julks",
+  "player": "Jake Miller",
   "category": "Call-up",
-  "description": "Detroit Tigers recalled LF Corey Julks from Toledo Mud Hens."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Francisco Giants",
-  "player": "Cesar Perdomo",
-  "category": "Call-up",
-  "description": "San Francisco Giants recalled LHP Cesar Perdomo from Sacramento River Cats."
- },
- {
-  "date": "2026-09-28",
-  "team": "Detroit Tigers",
-  "player": "Andrew Sears",
-  "category": "Call-up",
-  "description": "Detroit Tigers recalled LHP Andrew Sears from FCL Tigers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Zach Dezenzo",
-  "category": "Call-up",
-  "description": "Houston Astros recalled LF Zach Dezenzo from Sugar Land Space Cowboys."
- },
- {
-  "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Braden Nett",
-  "category": "Call-up",
-  "description": "Athletics recalled RHP Braden Nett from Midland RockHounds."
- },
- {
-  "date": "2026-09-28",
-  "team": "Arizona Diamondbacks",
-  "player": "Kade Strowd",
-  "category": "Call-up",
-  "description": "Arizona Diamondbacks recalled RHP Kade Strowd from Reno Aces."
- },
- {
-  "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "Gabriel Hughes",
-  "category": "Call-up",
-  "description": "Colorado Rockies recalled RHP Gabriel Hughes from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "Minnesota Twins",
-  "player": "Eric Orze",
-  "category": "Call-up",
-  "description": "Minnesota Twins recalled RHP Eric Orze from St. Paul Saints."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Angels",
-  "player": "Brett Kerry",
-  "category": "Call-up",
-  "description": "Los Angeles Angels recalled RHP Brett Kerry from Salt Lake Bees."
+  "description": "Detroit Tigers recalled LHP Jake Miller from Erie SeaWolves."
  },
  {
   "date": "2026-09-28",
   "team": "Washington Nationals",
-  "player": "Luis Perales",
+  "player": "Carson Palmquist",
   "category": "Call-up",
-  "description": "Washington Nationals recalled RHP Luis Perales from Rochester Red Wings."
+  "description": "Washington Nationals recalled LHP Carson Palmquist from Rochester Red Wings."
  },
  {
   "date": "2026-09-28",
-  "team": "Philadelphia Phillies",
-  "player": "Gabriel Rincones Jr.",
+  "team": "Baltimore Orioles",
+  "player": "Luis De Le\u00f3n",
   "category": "Call-up",
-  "description": "Philadelphia Phillies recalled RF Gabriel Rincones Jr. from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Joe Rock",
-  "category": "Call-up",
-  "description": "Athletics recalled LHP Joe Rock from Las Vegas Aviators."
- },
- {
-  "date": "2026-09-28",
-  "team": "Toronto Blue Jays",
-  "player": "Shawn Ross",
-  "category": "Call-up",
-  "description": "Toronto Blue Jays recalled C Shawn Ross from Buffalo Bisons."
+  "description": "Baltimore Orioles recalled LHP Luis De Le\u00f3n from FCL Orioles."
  },
  {
   "date": "2026-09-28",
   "team": "Athletics",
-  "player": "Darell Hernaiz",
+  "player": "Luis Morales",
   "category": "Call-up",
-  "description": "Athletics recalled SS Darell Hernaiz from Las Vegas Aviators."
+  "description": "Athletics recalled RHP Luis Morales from Las Vegas Aviators."
  },
  {
   "date": "2026-09-28",
-  "team": "San Francisco Giants",
-  "player": "Miguel Mendez",
-  "category": "Call-up",
-  "description": "San Francisco Giants recalled RHP Miguel Mendez from Richmond Flying Squirrels."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago White Sox",
-  "player": "Tanner McDougal",
-  "category": "Call-up",
-  "description": "Chicago White Sox recalled RHP Tanner McDougal from Charlotte Knights."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Angels",
-  "player": "Caden Dana",
-  "category": "Call-up",
-  "description": "Los Angeles Angels recalled RHP Caden Dana from Salt Lake Bees."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago White Sox",
-  "player": "Edgar Quero",
-  "category": "Call-up",
-  "description": "Chicago White Sox recalled C Edgar Quero from Charlotte Knights."
- },
- {
-  "date": "2026-09-28",
-  "team": "Milwaukee Brewers",
-  "player": "Akil Baddoo",
-  "category": "Call-up",
-  "description": "Milwaukee Brewers recalled LF Akil Baddoo from Nashville Sounds."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Winston Santos",
-  "category": "Call-up",
-  "description": "Texas Rangers recalled RHP Winston Santos from ACL Rangers."
+  "team": "Salt River Rafters",
+  "player": "Antonio Gomez",
+  "category": "Activated",
+  "description": "Salt River Rafters activated RHP Antonio Gomez."
  },
  {
   "date": "2026-09-28",
   "team": "Colorado Rockies",
-  "player": "Sean Sullivan",
+  "player": "TJ Shook",
   "category": "Call-up",
-  "description": "Colorado Rockies recalled LHP Sean Sullivan from Albuquerque Isotopes."
- },
- {
-  "date": "2026-09-28",
-  "team": "Miami Marlins",
-  "player": "Maximo Acosta",
-  "category": "Call-up",
-  "description": "Miami Marlins recalled SS Maximo Acosta from Jacksonville Jumbo Shrimp."
- },
- {
-  "date": "2026-09-28",
-  "team": "Philadelphia Phillies",
-  "player": "Alan Rangel",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled RHP Alan Rangel from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Kade Morris",
-  "category": "Call-up",
-  "description": "Athletics recalled RHP Kade Morris from Las Vegas Aviators."
- },
- {
-  "date": "2026-09-28",
-  "team": "Atlanta Braves",
-  "player": "Rolddy Mu\u00f1oz",
-  "category": "Call-up",
-  "description": "Atlanta Braves recalled RHP Rolddy Mu\u00f1oz from Gwinnett Stripers."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Chase Solesky",
-  "category": "Call-up",
-  "description": "Cincinnati Reds recalled RHP Chase Solesky from Louisville Bats."
+  "description": "Colorado Rockies recalled RHP TJ Shook from Albuquerque Isotopes."
  },
  {
   "date": "2026-09-28",
   "team": "New York Mets",
-  "player": "Philip Abner",
-  "category": "Activated",
-  "description": "New York Mets activated LHP Philip Abner."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Diego Padres",
-  "player": "Garrett Hawkins",
+  "player": "Christian Cairo",
   "category": "Call-up",
-  "description": "San Diego Padres recalled RHP Garrett Hawkins from El Paso Chihuahuas."
+  "description": "New York Mets recalled SS Christian Cairo from Syracuse Mets."
  },
  {
   "date": "2026-09-28",
-  "team": "Chicago White Sox",
-  "player": "Junior Perez",
+  "team": "Cleveland Guardians",
+  "player": "Franco Aleman",
   "category": "Call-up",
-  "description": "Chicago White Sox recalled CF Junior Perez from Charlotte Knights."
- },
- {
-  "date": "2026-09-28",
-  "team": "Seattle Mariners",
-  "player": "Cole Wilcox",
-  "category": "IL (injury)",
-  "description": "Seattle Mariners activated RHP Cole Wilcox from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "New York Mets",
-  "player": "Daniel Duarte",
-  "category": "IL (injury)",
-  "description": "New York Mets activated RHP Daniel Duarte from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Francisco Giants",
-  "player": "Bryce Eldridge",
-  "category": "IL (injury)",
-  "description": "San Francisco Giants activated DH Bryce Eldridge from the 7-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Omaha Storm Chasers",
-  "player": "Ethan Bosacker",
-  "category": "Activated",
-  "description": "Omaha Storm Chasers activated RHP Ethan Bosacker from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tacoma Rainiers",
-  "player": "Nick Hull",
-  "category": "Activated",
-  "description": "Tacoma Rainiers activated RHP Nick Hull from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Chase Burns",
-  "category": "IL (injury)",
-  "description": "Cincinnati Reds activated RHP Chase Burns from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Baltimore Orioles",
-  "player": "Blaze Alexander",
-  "category": "IL (injury)",
-  "description": "Baltimore Orioles activated 3B Blaze Alexander from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tacoma Rainiers",
-  "player": "Jake Harvey",
-  "category": "Activated",
-  "description": "Tacoma Rainiers activated C Jake Harvey from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Tony Santillan",
-  "category": "IL (injury)",
-  "description": "Cincinnati Reds activated RHP Tony Santillan from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Francisco Giants",
-  "player": "Willy Adames",
-  "category": "IL (injury)",
-  "description": "San Francisco Giants activated SS Willy Adames from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Sacramento River Cats",
-  "player": "Darien Smith",
-  "category": "Activated",
-  "description": "Sacramento River Cats activated RHP Darien Smith from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Daulton Varsho",
-  "category": "IL (injury)",
-  "description": "Houston Astros activated CF Daulton Varsho from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Detroit Tigers",
-  "player": "Colt Keith",
-  "category": "IL (injury)",
-  "description": "Detroit Tigers activated 3B Colt Keith from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Toronto Blue Jays",
-  "player": "Rudy Martin Jr.",
-  "category": "IL (injury)",
-  "description": "Toronto Blue Jays activated RF Rudy Martin Jr. from the 10-day injured list."
+  "description": "Cleveland Guardians recalled RHP Franco Aleman from Columbus Clippers."
  },
  {
   "date": "2026-09-28",
   "team": "Kansas City Royals",
-  "player": "Nick Loftin",
-  "category": "Activated",
-  "description": "Kansas City Royals activated 3B Nick Loftin from the paternity list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Detroit Tigers",
-  "player": "Troy Melton",
-  "category": "IL (injury)",
-  "description": "Detroit Tigers activated RHP Troy Melton from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Kansas City Royals",
-  "player": "Beck Way",
-  "category": "IL (injury)",
-  "description": "Kansas City Royals activated RHP Beck Way from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Edward Cabrera",
-  "category": "Activated",
-  "description": "Chicago Cubs activated RHP Edward Cabrera."
- },
- {
-  "date": "2026-09-28",
-  "team": "Knoxville Smokies",
-  "player": "Colin Hynek",
-  "category": "Activated",
-  "description": "Knoxville Smokies activated C Colin Hynek from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Arkansas Travelers",
-  "player": "Felnin Celesten",
-  "category": "IL (injury)",
-  "description": "Arkansas Travelers activated SS Felnin Celesten from the 7-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "St. Louis Cardinals",
-  "player": "Blaze Jordan",
-  "category": "IL (injury)",
-  "description": "St. Louis Cardinals activated 3B Blaze Jordan from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Columbus Clippers",
-  "player": "CJ Kayfus",
-  "category": "IL (injury)",
-  "description": "Columbus Clippers activated LF CJ Kayfus from the 60-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Joc Pederson",
-  "category": "IL (injury)",
-  "description": "Texas Rangers activated DH Joc Pederson from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Baltimore Orioles",
-  "player": "Samuel Basallo",
-  "category": "IL (injury)",
-  "description": "Baltimore Orioles activated C Samuel Basallo from the 7-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago White Sox",
-  "player": "Jake Rogers",
-  "category": "Activated",
-  "description": "Chicago White Sox activated C Jake Rogers from the paternity list."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Diego Padres",
-  "player": "Miguel Andujar",
-  "category": "IL (injury)",
-  "description": "San Diego Padres activated DH Miguel Andujar from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tacoma Rainiers",
-  "player": "Gabe Mosser",
-  "category": "Activated",
-  "description": "Tacoma Rainiers activated RHP Gabe Mosser from the Development List."
+  "player": "Carlos Duran",
+  "category": "Call-up",
+  "description": "Kansas City Royals recalled RHP Carlos Duran from Omaha Storm Chasers."
  },
  {
   "date": "2026-09-28",
   "team": "Arizona Diamondbacks",
-  "player": "Corbin Burnes",
-  "category": "IL (injury)",
-  "description": "Arizona Diamondbacks activated RHP Corbin Burnes from the 15-day injured list."
+  "player": "Kohl Drake",
+  "category": "Call-up",
+  "description": "Arizona Diamondbacks recalled LHP Kohl Drake from Reno Aces."
  },
  {
   "date": "2026-09-28",
-  "team": "Toronto Blue Jays",
-  "player": "Shane Bieber",
-  "category": "IL (injury)",
-  "description": "Toronto Blue Jays activated RHP Shane Bieber from the 15-day injured list."
+  "team": "Kansas City Royals",
+  "player": "Mitch Spence",
+  "category": "Call-up",
+  "description": "Kansas City Royals recalled RHP Mitch Spence from Omaha Storm Chasers."
  },
  {
   "date": "2026-09-28",
-  "team": "Cincinnati Reds",
-  "player": "Julian Garcia",
-  "category": "IL (injury)",
-  "description": "Cincinnati Reds activated RHP Julian Garcia from the 15-day injured list."
+  "team": "Washington Nationals",
+  "player": "Paxton Schultz",
+  "category": "Call-up",
+  "description": "Washington Nationals recalled RHP Paxton Schultz from Rochester Red Wings."
  },
  {
   "date": "2026-09-28",
-  "team": "Seattle Mariners",
-  "player": "Andr\u00e9s Mu\u00f1oz",
-  "category": "IL (injury)",
-  "description": "Seattle Mariners activated RHP Andr\u00e9s Mu\u00f1oz from the 15-day injured list."
+  "team": "Arizona Diamondbacks",
+  "player": "Blake Walston",
+  "category": "Call-up",
+  "description": "Arizona Diamondbacks recalled LHP Blake Walston from Reno Aces."
  },
  {
   "date": "2026-09-28",
-  "team": "Miami Marlins",
-  "player": "Anthony Bender",
+  "team": "Philadelphia Phillies",
+  "player": "Kameron Misner",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled CF Kameron Misner from Lehigh Valley IronPigs."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "El Paso Chihuahuas",
+  "player": "Ethan Routzahn",
   "category": "IL (injury)",
-  "description": "Miami Marlins activated RHP Anthony Bender from the 15-day injured list."
+  "description": "El Paso Chihuahuas activated RHP Ethan Routzahn from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Minnesota Twins",
+  "player": "Trevor Larnach",
+  "category": "IL (injury)",
+  "description": "Minnesota Twins activated LF Trevor Larnach from the 10-day injured list."
  },
  {
   "date": "2026-09-28",
@@ -2395,73 +2241,10 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Northwest Arkansas Naturals",
-  "player": "Justin Lamkin",
+  "team": "Columbia Fireflies",
+  "player": "Hiro Wyatt",
   "category": "Activated",
-  "description": "Northwest Arkansas Naturals activated LHP Justin Lamkin."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Josh Jung",
-  "category": "IL (injury)",
-  "description": "Texas Rangers activated 3B Josh Jung from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Cristian Javier",
-  "category": "IL (injury)",
-  "description": "Houston Astros activated RHP Cristian Javier from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Houston Astros",
-  "player": "Steven Okert",
-  "category": "IL (injury)",
-  "description": "Houston Astros activated LHP Steven Okert from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Toronto Blue Jays",
-  "player": "Jameson Taillon",
-  "category": "IL (injury)",
-  "description": "Toronto Blue Jays activated RHP Jameson Taillon from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Francisco Giants",
-  "player": "Nate Furman",
-  "category": "IL (injury)",
-  "description": "San Francisco Giants activated 2B Nate Furman from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tacoma Rainiers",
-  "player": "Simeon Woods Richardson",
-  "category": "Activated",
-  "description": "Tacoma Rainiers activated RHP Simeon Woods Richardson from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Arkansas Travelers",
-  "player": "Michael Hobbs",
-  "category": "IL (injury)",
-  "description": "Arkansas Travelers activated RHP Michael Hobbs from the 7-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Michel Ota\u00f1ez",
-  "category": "IL (injury)",
-  "description": "Texas Rangers activated RHP Michel Ota\u00f1ez from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "New York Mets",
-  "player": "Jonathan Pintaro",
-  "category": "IL (injury)",
-  "description": "New York Mets activated RHP Jonathan Pintaro from the 15-day injured list."
+  "description": "Columbia Fireflies activated RHP Hiro Wyatt."
  },
  {
   "date": "2026-09-28",
@@ -2486,27 +2269,6 @@
  },
  {
   "date": "2026-09-28",
-  "team": "New York Mets",
-  "player": "Christian Scott",
-  "category": "IL (injury)",
-  "description": "New York Mets activated RHP Christian Scott from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Salt River Rafters",
-  "player": "Anthony Mena",
-  "category": "Activated",
-  "description": "Salt River Rafters activated RHP Anthony Mena."
- },
- {
-  "date": "2026-09-28",
-  "team": "Round Rock Express",
-  "player": "Dalton Pence",
-  "category": "Activated",
-  "description": "Round Rock Express activated LHP Dalton Pence from the Development List."
- },
- {
-  "date": "2026-09-28",
   "team": "Los Angeles Angels",
   "player": "Ben Joyce",
   "category": "IL (injury)",
@@ -2521,31 +2283,52 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Tacoma Rainiers",
-  "player": "Spencer Packard",
+  "team": "Cincinnati Reds",
+  "player": "Julian Garcia",
   "category": "IL (injury)",
-  "description": "Tacoma Rainiers activated OF Spencer Packard from the 7-day injured list."
+  "description": "Cincinnati Reds activated RHP Julian Garcia from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
-  "team": "Mesa Solar Sox",
-  "player": "Harrison Feinberg",
-  "category": "Activated",
-  "description": "Mesa Solar Sox activated OF Harrison Feinberg."
+  "team": "Toronto Blue Jays",
+  "player": "Shane Bieber",
+  "category": "IL (injury)",
+  "description": "Toronto Blue Jays activated RHP Shane Bieber from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
-  "team": "Pittsburgh Pirates",
-  "player": "Braxton Ashcraft",
+  "team": "Washington Nationals",
+  "player": "Orlando Ribalta",
   "category": "IL (injury)",
-  "description": "Pittsburgh Pirates activated RHP Braxton Ashcraft from the 15-day injured list."
+  "description": "Washington Nationals activated RHP Orlando Ribalta from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
-  "team": "St. Louis Cardinals",
-  "player": "Everson Pereira",
+  "team": "Tampa Bay Rays",
+  "player": "Shane McClanahan",
   "category": "IL (injury)",
-  "description": "St. Louis Cardinals activated RF Everson Pereira from the 10-day injured list."
+  "description": "Tampa Bay Rays activated LHP Shane McClanahan from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Kyle Higashioka",
+  "category": "IL (injury)",
+  "description": "Texas Rangers activated C Kyle Higashioka from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Milwaukee Brewers",
+  "player": "Grant Anderson",
+  "category": "IL (injury)",
+  "description": "Milwaukee Brewers activated RHP Grant Anderson from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Athletics",
+  "player": "Gage Jump",
+  "category": "IL (injury)",
+  "description": "Athletics activated LHP Gage Jump from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
@@ -2556,34 +2339,6 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Northwest Arkansas Naturals",
-  "player": "Drew Beam",
-  "category": "Activated",
-  "description": "Northwest Arkansas Naturals activated RHP Drew Beam from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Los Angeles Angels",
-  "player": "Samy Natera Jr.",
-  "category": "IL (injury)",
-  "description": "Los Angeles Angels activated LHP Samy Natera Jr. from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "El Paso Chihuahuas",
-  "player": "Ethan Routzahn",
-  "category": "IL (injury)",
-  "description": "El Paso Chihuahuas activated RHP Ethan Routzahn from the 7-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Miami Marlins",
-  "player": "Tyler Zuber",
-  "category": "IL (injury)",
-  "description": "Miami Marlins activated RHP Tyler Zuber from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
   "team": "St. Louis Cardinals",
   "player": "Joshua B\u00e1ez",
   "category": "IL (injury)",
@@ -2591,24 +2346,87 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Atlanta Braves",
-  "player": "Bryce Elder",
+  "team": "Reading Fightin Phils",
+  "player": "Mois\u00e9s Chace",
   "category": "IL (injury)",
-  "description": "Atlanta Braves activated RHP Bryce Elder from the 15-day injured list."
+  "description": "Reading Fightin Phils activated RHP Mois\u00e9s Chace from the 60-day injured list."
  },
  {
   "date": "2026-09-28",
-  "team": "Boston Red Sox",
-  "player": "Mickey Gasper",
+  "team": "Baltimore Orioles",
+  "player": "Jackson Holliday",
   "category": "IL (injury)",
-  "description": "Boston Red Sox activated DH Mickey Gasper from the 10-day injured list."
+  "description": "Baltimore Orioles activated 2B Jackson Holliday from the 10-day injured list."
  },
  {
   "date": "2026-09-28",
-  "team": "Omaha Storm Chasers",
-  "player": "Ben Kudrna",
+  "team": "Los Angeles Angels",
+  "player": "Kyren Paris",
   "category": "IL (injury)",
-  "description": "Omaha Storm Chasers activated RHP Ben Kudrna from the 60-day injured list."
+  "description": "Los Angeles Angels activated 2B Kyren Paris from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Detroit Tigers",
+  "player": "Colt Keith",
+  "category": "IL (injury)",
+  "description": "Detroit Tigers activated 3B Colt Keith from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Toronto Blue Jays",
+  "player": "Rudy Martin Jr.",
+  "category": "IL (injury)",
+  "description": "Toronto Blue Jays activated RF Rudy Martin Jr. from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Kansas City Royals",
+  "player": "Beck Way",
+  "category": "IL (injury)",
+  "description": "Kansas City Royals activated RHP Beck Way from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Knoxville Smokies",
+  "player": "Colin Hynek",
+  "category": "Activated",
+  "description": "Knoxville Smokies activated C Colin Hynek from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "St. Louis Cardinals",
+  "player": "Blaze Jordan",
+  "category": "IL (injury)",
+  "description": "St. Louis Cardinals activated 3B Blaze Jordan from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Joc Pederson",
+  "category": "IL (injury)",
+  "description": "Texas Rangers activated DH Joc Pederson from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Baltimore Orioles",
+  "player": "Samuel Basallo",
+  "category": "IL (injury)",
+  "description": "Baltimore Orioles activated C Samuel Basallo from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Francisco Giants",
+  "player": "Nate Furman",
+  "category": "IL (injury)",
+  "description": "San Francisco Giants activated 2B Nate Furman from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Cristian Javier",
+  "category": "IL (injury)",
+  "description": "Houston Astros activated RHP Cristian Javier from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
@@ -2619,6 +2437,69 @@
  },
  {
   "date": "2026-09-28",
+  "team": "Northwest Arkansas Naturals",
+  "player": "Justin Lamkin",
+  "category": "Activated",
+  "description": "Northwest Arkansas Naturals activated LHP Justin Lamkin."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Pittsburgh Pirates",
+  "player": "Braxton Ashcraft",
+  "category": "IL (injury)",
+  "description": "Pittsburgh Pirates activated RHP Braxton Ashcraft from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Colorado Rockies",
+  "player": "Willi Castro",
+  "category": "IL (injury)",
+  "description": "Colorado Rockies activated 2B Willi Castro from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Salt River Rafters",
+  "player": "Anthony Mena",
+  "category": "Activated",
+  "description": "Salt River Rafters activated RHP Anthony Mena."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Steven Okert",
+  "category": "IL (injury)",
+  "description": "Houston Astros activated LHP Steven Okert from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Michel Ota\u00f1ez",
+  "category": "IL (injury)",
+  "description": "Texas Rangers activated RHP Michel Ota\u00f1ez from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Mets",
+  "player": "Christian Scott",
+  "category": "IL (injury)",
+  "description": "New York Mets activated RHP Christian Scott from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Kansas City Royals",
+  "player": "Nick Loftin",
+  "category": "Activated",
+  "description": "Kansas City Royals activated 3B Nick Loftin from the paternity list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Francisco Giants",
+  "player": "Willy Adames",
+  "category": "IL (injury)",
+  "description": "San Francisco Giants activated SS Willy Adames from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
   "team": "Athletics",
   "player": "Max Muncy",
   "category": "IL (injury)",
@@ -2626,10 +2507,262 @@
  },
  {
   "date": "2026-09-28",
-  "team": "San Francisco Giants",
-  "player": "JT Brubaker",
+  "team": "New York Mets",
+  "player": "Robert Stock",
   "category": "IL (injury)",
-  "description": "San Francisco Giants activated RHP JT Brubaker from the 10-day injured list."
+  "description": "New York Mets activated RHP Robert Stock from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Boston Red Sox",
+  "player": "Tyron Guerrero",
+  "category": "IL (injury)",
+  "description": "Boston Red Sox activated RHP Tyron Guerrero from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "New York Mets",
+  "player": "Jonathan Pintaro",
+  "category": "IL (injury)",
+  "description": "New York Mets activated RHP Jonathan Pintaro from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tacoma Rainiers",
+  "player": "Gabe Mosser",
+  "category": "Activated",
+  "description": "Tacoma Rainiers activated RHP Gabe Mosser from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Detroit Tigers",
+  "player": "Kyle Finnegan",
+  "category": "IL (injury)",
+  "description": "Detroit Tigers activated RHP Kyle Finnegan from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Detroit Tigers",
+  "player": "Troy Melton",
+  "category": "IL (injury)",
+  "description": "Detroit Tigers activated RHP Troy Melton from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Miami Marlins",
+  "player": "Max Meyer",
+  "category": "IL (injury)",
+  "description": "Miami Marlins activated RHP Max Meyer from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tacoma Rainiers",
+  "player": "Jakson Reetz",
+  "category": "Activated",
+  "description": "Tacoma Rainiers activated C Jakson Reetz from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Memphis Redbirds",
+  "player": "Tekoah Roby",
+  "category": "Activated",
+  "description": "Memphis Redbirds activated RHP Tekoah Roby."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Northwest Arkansas Naturals",
+  "player": "Drew Beam",
+  "category": "Activated",
+  "description": "Northwest Arkansas Naturals activated RHP Drew Beam from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Baltimore Orioles",
+  "player": "Luis Robert Jr.",
+  "category": "IL (injury)",
+  "description": "Baltimore Orioles activated CF Luis Robert Jr. from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Seattle Mariners",
+  "player": "Andr\u00e9s Mu\u00f1oz",
+  "category": "IL (injury)",
+  "description": "Seattle Mariners activated RHP Andr\u00e9s Mu\u00f1oz from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Miami Marlins",
+  "player": "Anthony Bender",
+  "category": "IL (injury)",
+  "description": "Miami Marlins activated RHP Anthony Bender from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Arkansas Travelers",
+  "player": "Will Armbruester",
+  "category": "IL (injury)",
+  "description": "Arkansas Travelers activated RHP Will Armbruester from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Pittsburgh Pirates",
+  "player": "Isaac Mattson",
+  "category": "IL (injury)",
+  "description": "Pittsburgh Pirates activated RHP Isaac Mattson from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Kansas City Royals",
+  "player": "Tony Gonsolin",
+  "category": "IL (injury)",
+  "description": "Kansas City Royals activated RHP Tony Gonsolin from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tacoma Rainiers",
+  "player": "Jacob Nottingham",
+  "category": "Activated",
+  "description": "Tacoma Rainiers activated C Jacob Nottingham from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Francisco Giants",
+  "player": "Logan Webb",
+  "category": "IL (injury)",
+  "description": "San Francisco Giants activated RHP Logan Webb from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Seattle Mariners",
+  "player": "Brock Rodden",
+  "category": "IL (injury)",
+  "description": "Seattle Mariners activated SS Brock Rodden from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Miami Marlins",
+  "player": "Tyler Zuber",
+  "category": "IL (injury)",
+  "description": "Miami Marlins activated RHP Tyler Zuber from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Texas Rangers",
+  "player": "Josh Jung",
+  "category": "IL (injury)",
+  "description": "Texas Rangers activated 3B Josh Jung from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Arkansas Travelers",
+  "player": "Michael Hobbs",
+  "category": "IL (injury)",
+  "description": "Arkansas Travelers activated RHP Michael Hobbs from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tacoma Rainiers",
+  "player": "Jake Harvey",
+  "category": "Activated",
+  "description": "Tacoma Rainiers activated C Jake Harvey from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Tony Santillan",
+  "category": "IL (injury)",
+  "description": "Cincinnati Reds activated RHP Tony Santillan from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Salt Lake Bees",
+  "player": "Nacho Alvarez Jr.",
+  "category": "IL (injury)",
+  "description": "Salt Lake Bees activated SS Nacho Alvarez Jr. from the 60-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tacoma Rainiers",
+  "player": "Simeon Woods Richardson",
+  "category": "Activated",
+  "description": "Tacoma Rainiers activated RHP Simeon Woods Richardson from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Toronto Blue Jays",
+  "player": "Jameson Taillon",
+  "category": "IL (injury)",
+  "description": "Toronto Blue Jays activated RHP Jameson Taillon from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Diego Padres",
+  "player": "Miguel Andujar",
+  "category": "IL (injury)",
+  "description": "San Diego Padres activated DH Miguel Andujar from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Omaha Storm Chasers",
+  "player": "Ben Kudrna",
+  "category": "IL (injury)",
+  "description": "Omaha Storm Chasers activated RHP Ben Kudrna from the 60-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Arkansas Travelers",
+  "player": "Jimmy Kingsbury",
+  "category": "IL (injury)",
+  "description": "Arkansas Travelers activated RHP Jimmy Kingsbury from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tacoma Rainiers",
+  "player": "Nick Hull",
+  "category": "Activated",
+  "description": "Tacoma Rainiers activated RHP Nick Hull from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Sacramento River Cats",
+  "player": "Darien Smith",
+  "category": "Activated",
+  "description": "Sacramento River Cats activated RHP Darien Smith from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Daulton Varsho",
+  "category": "IL (injury)",
+  "description": "Houston Astros activated CF Daulton Varsho from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Francisco Giants",
+  "player": "Bryce Eldridge",
+  "category": "IL (injury)",
+  "description": "San Francisco Giants activated DH Bryce Eldridge from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cincinnati Reds",
+  "player": "Chase Burns",
+  "category": "IL (injury)",
+  "description": "Cincinnati Reds activated RHP Chase Burns from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Mesa Solar Sox",
+  "player": "Harrison Feinberg",
+  "category": "Activated",
+  "description": "Mesa Solar Sox activated OF Harrison Feinberg."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Los Angeles Angels",
+  "player": "Samy Natera Jr.",
+  "category": "IL (injury)",
+  "description": "Los Angeles Angels activated LHP Samy Natera Jr. from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
@@ -2668,108 +2801,24 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Arkansas Travelers",
-  "player": "Will Armbruester",
+  "team": "Baltimore Orioles",
+  "player": "Blaze Alexander",
   "category": "IL (injury)",
-  "description": "Arkansas Travelers activated RHP Will Armbruester from the 7-day injured list."
+  "description": "Baltimore Orioles activated 3B Blaze Alexander from the 10-day injured list."
  },
  {
   "date": "2026-09-28",
-  "team": "Minnesota Twins",
-  "player": "Trevor Larnach",
-  "category": "IL (injury)",
-  "description": "Minnesota Twins activated LF Trevor Larnach from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Salt River Rafters",
-  "player": "Antonio Gomez",
+  "team": "Chicago White Sox",
+  "player": "Jake Rogers",
   "category": "Activated",
-  "description": "Salt River Rafters activated RHP Antonio Gomez."
+  "description": "Chicago White Sox activated C Jake Rogers from the paternity list."
  },
  {
   "date": "2026-09-28",
-  "team": "Tampa Bay Rays",
-  "player": "Garrett Cleavinger",
+  "team": "Arizona Diamondbacks",
+  "player": "Corbin Burnes",
   "category": "IL (injury)",
-  "description": "Tampa Bay Rays activated LHP Garrett Cleavinger from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "New York Mets",
-  "player": "Robert Stock",
-  "category": "IL (injury)",
-  "description": "New York Mets activated RHP Robert Stock from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Athletics",
-  "player": "Gage Jump",
-  "category": "IL (injury)",
-  "description": "Athletics activated LHP Gage Jump from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tacoma Rainiers",
-  "player": "Jacob Nottingham",
-  "category": "Activated",
-  "description": "Tacoma Rainiers activated C Jacob Nottingham from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Chicago Cubs",
-  "player": "Trent Thornton",
-  "category": "IL (injury)",
-  "description": "Chicago Cubs activated RHP Trent Thornton from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tampa Bay Rays",
-  "player": "Shane McClanahan",
-  "category": "IL (injury)",
-  "description": "Tampa Bay Rays activated LHP Shane McClanahan from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Memphis Redbirds",
-  "player": "Tekoah Roby",
-  "category": "Activated",
-  "description": "Memphis Redbirds activated RHP Tekoah Roby."
- },
- {
-  "date": "2026-09-28",
-  "team": "San Francisco Giants",
-  "player": "Logan Webb",
-  "category": "IL (injury)",
-  "description": "San Francisco Giants activated RHP Logan Webb from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tacoma Rainiers",
-  "player": "Jakson Reetz",
-  "category": "Activated",
-  "description": "Tacoma Rainiers activated C Jakson Reetz from the Development List."
- },
- {
-  "date": "2026-09-28",
-  "team": "Washington Nationals",
-  "player": "Orlando Ribalta",
-  "category": "IL (injury)",
-  "description": "Washington Nationals activated RHP Orlando Ribalta from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Seattle Mariners",
-  "player": "Brock Rodden",
-  "category": "IL (injury)",
-  "description": "Seattle Mariners activated SS Brock Rodden from the 10-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Cleveland Guardians",
-  "player": "Rhys Hoskins",
-  "category": "IL (injury)",
-  "description": "Cleveland Guardians activated 1B Rhys Hoskins from the 10-day injured list."
+  "description": "Arizona Diamondbacks activated RHP Corbin Burnes from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
@@ -2780,34 +2829,6 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Arkansas Travelers",
-  "player": "Jimmy Kingsbury",
-  "category": "IL (injury)",
-  "description": "Arkansas Travelers activated RHP Jimmy Kingsbury from the 7-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Seattle Mariners",
-  "player": "Brendan Donovan",
-  "category": "IL (injury)",
-  "description": "Seattle Mariners activated 3B Brendan Donovan from the 7-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Tampa Bay Rays",
-  "player": "Tyler Wells",
-  "category": "IL (injury)",
-  "description": "Tampa Bay Rays activated RHP Tyler Wells from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
-  "team": "Miami Marlins",
-  "player": "Max Meyer",
-  "category": "IL (injury)",
-  "description": "Miami Marlins activated RHP Max Meyer from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
   "team": "Minnesota Twins",
   "player": "Byron Buxton",
   "category": "IL (injury)",
@@ -2815,17 +2836,38 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Milwaukee Brewers",
-  "player": "Grant Anderson",
-  "category": "IL (injury)",
-  "description": "Milwaukee Brewers activated RHP Grant Anderson from the 15-day injured list."
+  "team": "Round Rock Express",
+  "player": "Dalton Pence",
+  "category": "Activated",
+  "description": "Round Rock Express activated LHP Dalton Pence from the Development List."
  },
  {
   "date": "2026-09-28",
-  "team": "Colorado Rockies",
-  "player": "Willi Castro",
+  "team": "Chicago Cubs",
+  "player": "Edward Cabrera",
+  "category": "Activated",
+  "description": "Chicago Cubs activated RHP Edward Cabrera."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Arkansas Travelers",
+  "player": "Felnin Celesten",
   "category": "IL (injury)",
-  "description": "Colorado Rockies activated 2B Willi Castro from the 10-day injured list."
+  "description": "Arkansas Travelers activated SS Felnin Celesten from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Columbus Clippers",
+  "player": "CJ Kayfus",
+  "category": "IL (injury)",
+  "description": "Columbus Clippers activated LF CJ Kayfus from the 60-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tacoma Rainiers",
+  "player": "Spencer Packard",
+  "category": "IL (injury)",
+  "description": "Tacoma Rainiers activated OF Spencer Packard from the 7-day injured list."
  },
  {
   "date": "2026-09-28",
@@ -2836,20 +2878,6 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Columbia Fireflies",
-  "player": "Hiro Wyatt",
-  "category": "Activated",
-  "description": "Columbia Fireflies activated RHP Hiro Wyatt."
- },
- {
-  "date": "2026-09-28",
-  "team": "Pittsburgh Pirates",
-  "player": "Isaac Mattson",
-  "category": "IL (injury)",
-  "description": "Pittsburgh Pirates activated RHP Isaac Mattson from the 15-day injured list."
- },
- {
-  "date": "2026-09-28",
   "team": "Arkansas Travelers",
   "player": "Daniel Amaral",
   "category": "Activated",
@@ -2857,17 +2885,101 @@
  },
  {
   "date": "2026-09-28",
-  "team": "Detroit Tigers",
-  "player": "Kyle Finnegan",
+  "team": "Chicago Cubs",
+  "player": "Trent Thornton",
   "category": "IL (injury)",
-  "description": "Detroit Tigers activated RHP Kyle Finnegan from the 15-day injured list."
+  "description": "Chicago Cubs activated RHP Trent Thornton from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
-  "team": "Texas Rangers",
-  "player": "Kyle Higashioka",
+  "team": "San Francisco Giants",
+  "player": "JT Brubaker",
   "category": "IL (injury)",
-  "description": "Texas Rangers activated C Kyle Higashioka from the 10-day injured list."
+  "description": "San Francisco Giants activated RHP JT Brubaker from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Cleveland Guardians",
+  "player": "Rhys Hoskins",
+  "category": "IL (injury)",
+  "description": "Cleveland Guardians activated 1B Rhys Hoskins from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Omaha Storm Chasers",
+  "player": "Ethan Bosacker",
+  "category": "Activated",
+  "description": "Omaha Storm Chasers activated RHP Ethan Bosacker from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Seattle Mariners",
+  "player": "Brendan Donovan",
+  "category": "IL (injury)",
+  "description": "Seattle Mariners activated 3B Brendan Donovan from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Minnesota Twins",
+  "player": "Jeff Hoffman",
+  "category": "IL (injury)",
+  "description": "Minnesota Twins activated RHP Jeff Hoffman from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tampa Bay Rays",
+  "player": "Tyler Wells",
+  "category": "IL (injury)",
+  "description": "Tampa Bay Rays activated RHP Tyler Wells from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Houston Astros",
+  "player": "Brice Matthews",
+  "category": "IL (injury)",
+  "description": "Houston Astros activated CF Brice Matthews from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tacoma Rainiers",
+  "player": "Josh Hood",
+  "category": "Activated",
+  "description": "Tacoma Rainiers activated SS Josh Hood from the Development List."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Miami Marlins",
+  "player": "Pete Fairbanks",
+  "category": "IL (injury)",
+  "description": "Miami Marlins activated RHP Pete Fairbanks from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "Tampa Bay Rays",
+  "player": "Garrett Cleavinger",
+  "category": "IL (injury)",
+  "description": "Tampa Bay Rays activated LHP Garrett Cleavinger from the 15-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "St. Louis Cardinals",
+  "player": "Everson Pereira",
+  "category": "IL (injury)",
+  "description": "St. Louis Cardinals activated RF Everson Pereira from the 10-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "El Paso Chihuahuas",
+  "player": "Trevor Gott",
+  "category": "IL (injury)",
+  "description": "El Paso Chihuahuas activated RHP Trevor Gott from the 7-day injured list."
+ },
+ {
+  "date": "2026-09-28",
+  "team": "San Diego Padres",
+  "player": "Jeremiah Estrada",
+  "category": "IL (injury)",
+  "description": "San Diego Padres activated RHP Jeremiah Estrada from the 15-day injured list."
  },
  {
   "date": "2026-09-28",
@@ -2878,10 +2990,17 @@
  },
  {
   "date": "2026-09-27",
-  "team": "Los Angeles Dodgers",
-  "player": "Blake Treinen",
+  "team": "Syracuse Mets",
+  "player": "Matt Seelinger",
+  "category": "Activated",
+  "description": "Syracuse Mets activated RHP Matt Seelinger from the Development List."
+ },
+ {
+  "date": "2026-09-27",
+  "team": "Springfield Cardinals",
+  "player": "Deniel Ortiz",
   "category": "IL (injury)",
-  "description": "Los Angeles Dodgers placed RHP Blake Treinen on the 15-day injured list. Right shoulder inflammation."
+  "description": "Springfield Cardinals activated 3B Deniel Ortiz from the 7-day injured list."
  },
  {
   "date": "2026-09-27",
@@ -2920,24 +3039,10 @@
  },
  {
   "date": "2026-09-27",
-  "team": "Syracuse Mets",
-  "player": "Matt Seelinger",
-  "category": "Activated",
-  "description": "Syracuse Mets activated RHP Matt Seelinger from the Development List."
- },
- {
-  "date": "2026-09-27",
   "team": "Indianapolis Indians",
   "player": "Beau Burrows",
   "category": "Activated",
   "description": "Indianapolis Indians activated RHP Beau Burrows from the Development List."
- },
- {
-  "date": "2026-09-27",
-  "team": "Reading Fightin Phils",
-  "player": "Mark Kolozsvary",
-  "category": "Activated",
-  "description": "Reading Fightin Phils activated C Mark Kolozsvary."
  },
  {
   "date": "2026-09-27",
@@ -2952,6 +3057,13 @@
   "player": "Tyron Guerrero",
   "category": "IL (injury)",
   "description": "Boston Red Sox placed RHP Tyron Guerrero on the 15-day injured list retroactive to September 24, 2026. Right shoulder strain."
+ },
+ {
+  "date": "2026-09-27",
+  "team": "Los Angeles Dodgers",
+  "player": "Blake Treinen",
+  "category": "IL (injury)",
+  "description": "Los Angeles Dodgers placed RHP Blake Treinen on the 15-day injured list. Right shoulder inflammation."
  },
  {
   "date": "2026-09-27",
@@ -3039,10 +3151,10 @@
  },
  {
   "date": "2026-09-27",
-  "team": "Springfield Cardinals",
-  "player": "Deniel Ortiz",
-  "category": "IL (injury)",
-  "description": "Springfield Cardinals activated 3B Deniel Ortiz from the 7-day injured list."
+  "team": "Reading Fightin Phils",
+  "player": "Mark Kolozsvary",
+  "category": "Activated",
+  "description": "Reading Fightin Phils activated C Mark Kolozsvary."
  },
  {
   "date": "2026-09-27",
@@ -3053,10 +3165,10 @@
  },
  {
   "date": "2026-09-27",
-  "team": "New York Mets",
-  "player": "Jefry Yan",
-  "category": "Call-up",
-  "description": "New York Mets recalled LHP Jefry Yan from FCL Mets."
+  "team": "ACL Rangers",
+  "player": "Logan O'Hoppe",
+  "category": "Sent down",
+  "description": "Texas Rangers optioned DH Logan O'Hoppe to ACL Rangers."
  },
  {
   "date": "2026-09-27",
@@ -3123,24 +3235,17 @@
  },
  {
   "date": "2026-09-27",
+  "team": "New York Mets",
+  "player": "Jefry Yan",
+  "category": "Call-up",
+  "description": "New York Mets recalled LHP Jefry Yan from FCL Mets."
+ },
+ {
+  "date": "2026-09-27",
   "team": "FCL Tigers",
   "player": "Brant Hurter",
   "category": "Sent down",
   "description": "Detroit Tigers optioned LHP Brant Hurter to FCL Tigers."
- },
- {
-  "date": "2026-09-27",
-  "team": "Springfield Cardinals",
-  "player": "Chase Heath",
-  "category": "Activated",
-  "description": "Springfield Cardinals activated C Chase Heath from the Development List."
- },
- {
-  "date": "2026-09-27",
-  "team": "ACL Rangers",
-  "player": "Logan O'Hoppe",
-  "category": "Sent down",
-  "description": "Texas Rangers optioned DH Logan O'Hoppe to ACL Rangers."
  },
  {
   "date": "2026-09-27",
@@ -3151,6 +3256,13 @@
  },
  {
   "date": "2026-09-27",
+  "team": "Los Angeles Dodgers",
+  "player": "Bobby Miller",
+  "category": "Call-up",
+  "description": "Los Angeles Dodgers recalled RHP Bobby Miller from Oklahoma City Comets."
+ },
+ {
+  "date": "2026-09-27",
   "team": "Worcester Red Sox",
   "player": "Jedixson Paez",
   "category": "Sent down",
@@ -3158,31 +3270,10 @@
  },
  {
   "date": "2026-09-27",
-  "team": "Houston Astros",
-  "player": "Raynel Delgado",
-  "category": "Call-up",
-  "description": "Houston Astros recalled 2B Raynel Delgado from Sugar Land Space Cowboys."
- },
- {
-  "date": "2026-09-27",
-  "team": "Boston Red Sox",
-  "player": "Wyatt Olds",
-  "category": "Call-up",
-  "description": "Boston Red Sox recalled RHP Wyatt Olds from Worcester Red Sox."
- },
- {
-  "date": "2026-09-27",
-  "team": "Sugar Land Space Cowboys",
-  "player": "Ronel Blanco",
-  "category": "Sent down",
-  "description": "Houston Astros optioned RHP Ronel Blanco to Sugar Land Space Cowboys."
- },
- {
-  "date": "2026-09-27",
-  "team": "Los Angeles Dodgers",
-  "player": "Bobby Miller",
-  "category": "Call-up",
-  "description": "Los Angeles Dodgers recalled RHP Bobby Miller from Oklahoma City Comets."
+  "team": "Springfield Cardinals",
+  "player": "Chase Heath",
+  "category": "Activated",
+  "description": "Springfield Cardinals activated C Chase Heath from the Development List."
  },
  {
   "date": "2026-09-27",
@@ -3199,18 +3290,53 @@
   "description": "Reading Fightin Phils activated RHP Aaron Combs from the 7-day injured list."
  },
  {
-  "date": "2026-09-26",
-  "team": "Las Vegas Aviators",
-  "player": "Justin Riemer",
-  "category": "IL (injury)",
-  "description": "Las Vegas Aviators activated 2B Justin Riemer from the 7-day injured list."
+  "date": "2026-09-27",
+  "team": "Sugar Land Space Cowboys",
+  "player": "Ronel Blanco",
+  "category": "Sent down",
+  "description": "Houston Astros optioned RHP Ronel Blanco to Sugar Land Space Cowboys."
+ },
+ {
+  "date": "2026-09-27",
+  "team": "Boston Red Sox",
+  "player": "Wyatt Olds",
+  "category": "Call-up",
+  "description": "Boston Red Sox recalled RHP Wyatt Olds from Worcester Red Sox."
+ },
+ {
+  "date": "2026-09-27",
+  "team": "Houston Astros",
+  "player": "Raynel Delgado",
+  "category": "Call-up",
+  "description": "Houston Astros recalled 2B Raynel Delgado from Sugar Land Space Cowboys."
  },
  {
   "date": "2026-09-26",
-  "team": "Las Vegas Aviators",
-  "player": "Gustavo Rodriguez",
+  "team": "Detroit Tigers",
+  "player": "Justin Verlander",
+  "category": "Activated",
+  "description": "Detroit Tigers activated RHP Justin Verlander from the reserve list."
+ },
+ {
+  "date": "2026-09-26",
+  "team": "Rochester Red Wings",
+  "player": "Sandy Gaston",
+  "category": "Activated",
+  "description": "Rochester Red Wings activated RHP Sandy Gaston from the Development List."
+ },
+ {
+  "date": "2026-09-26",
+  "team": "Minnesota Twins",
+  "player": "Jeff Hoffman",
   "category": "IL (injury)",
-  "description": "Las Vegas Aviators activated RHP Gustavo Rodriguez from the 7-day injured list."
+  "description": "Minnesota Twins placed RHP Jeff Hoffman on the 15-day injured list retroactive to September 23, 2026. Right forearm inflammation."
+ },
+ {
+  "date": "2026-09-26",
+  "team": "Washington Nationals",
+  "player": "Connelly Early",
+  "category": "IL (injury)",
+  "description": "Washington Nationals activated LHP Connelly Early from the 60-day injured list."
  },
  {
   "date": "2026-09-26",
@@ -3222,37 +3348,16 @@
  {
   "date": "2026-09-26",
   "team": "Las Vegas Aviators",
-  "player": "Andrew Bash",
-  "category": "Activated",
-  "description": "Las Vegas Aviators activated RHP Andrew Bash from the Development List."
- },
- {
-  "date": "2026-09-26",
-  "team": "Washington Nationals",
-  "player": "Connelly Early",
+  "player": "Gustavo Rodriguez",
   "category": "IL (injury)",
-  "description": "Washington Nationals activated LHP Connelly Early from the 60-day injured list."
+  "description": "Las Vegas Aviators activated RHP Gustavo Rodriguez from the 7-day injured list."
  },
  {
   "date": "2026-09-26",
-  "team": "Minnesota Twins",
-  "player": "Jeff Hoffman",
+  "team": "Las Vegas Aviators",
+  "player": "Justin Riemer",
   "category": "IL (injury)",
-  "description": "Minnesota Twins placed RHP Jeff Hoffman on the 15-day injured list retroactive to September 23, 2026. Right forearm inflammation."
- },
- {
-  "date": "2026-09-26",
-  "team": "Detroit Tigers",
-  "player": "Justin Verlander",
-  "category": "Activated",
-  "description": "Detroit Tigers activated RHP Justin Verlander from the reserve list."
- },
- {
-  "date": "2026-09-26",
-  "team": "San Diego Padres",
-  "player": "Casey Mize",
-  "category": "IL (injury)",
-  "description": "San Diego Padres placed RHP Casey Mize on the 15-day injured list. Right ankle sprain."
+  "description": "Las Vegas Aviators activated 2B Justin Riemer from the 7-day injured list."
  },
  {
   "date": "2026-09-26",
@@ -3263,10 +3368,10 @@
  },
  {
   "date": "2026-09-26",
-  "team": "Las Vegas Aviators",
-  "player": "Jamie Arnold",
+  "team": "San Diego Padres",
+  "player": "Casey Mize",
   "category": "IL (injury)",
-  "description": "Las Vegas Aviators activated LHP Jamie Arnold from the 7-day injured list."
+  "description": "San Diego Padres placed RHP Casey Mize on the 15-day injured list. Right ankle sprain."
  },
  {
   "date": "2026-09-26",
@@ -3274,13 +3379,6 @@
   "player": "Andrew Sears",
   "category": "Activated",
   "description": "FCL Tigers activated LHP Andrew Sears."
- },
- {
-  "date": "2026-09-26",
-  "team": "Rochester Red Wings",
-  "player": "Sandy Gaston",
-  "category": "Activated",
-  "description": "Rochester Red Wings activated RHP Sandy Gaston from the Development List."
  },
  {
   "date": "2026-09-26",
@@ -3302,6 +3400,13 @@
   "player": "Dallas Keuchel",
   "category": "Activated",
   "description": "Las Vegas Aviators activated LHP Dallas Keuchel from the Development List."
+ },
+ {
+  "date": "2026-09-26",
+  "team": "Las Vegas Aviators",
+  "player": "Jamie Arnold",
+  "category": "IL (injury)",
+  "description": "Las Vegas Aviators activated LHP Jamie Arnold from the 7-day injured list."
  },
  {
   "date": "2026-09-26",
@@ -3327,16 +3432,23 @@
  {
   "date": "2026-09-26",
   "team": "Las Vegas Aviators",
+  "player": "Andrew Bash",
+  "category": "Activated",
+  "description": "Las Vegas Aviators activated RHP Andrew Bash from the Development List."
+ },
+ {
+  "date": "2026-09-26",
+  "team": "Las Vegas Aviators",
   "player": "Chad Wallach",
   "category": "IL (injury)",
   "description": "Las Vegas Aviators activated C Chad Wallach from the 7-day injured list."
  },
  {
   "date": "2026-09-26",
-  "team": "Chicago White Sox",
-  "player": "Drew Romo",
-  "category": "Call-up",
-  "description": "Chicago White Sox recalled C Drew Romo from Charlotte Knights."
+  "team": "Sacramento River Cats",
+  "player": "Yunior Marte",
+  "category": "Sent down",
+  "description": "San Francisco Giants optioned RHP Yunior Marte to Sacramento River Cats."
  },
  {
   "date": "2026-09-26",
@@ -3347,10 +3459,10 @@
  },
  {
   "date": "2026-09-26",
-  "team": "Kansas City Royals",
-  "player": "Matthew Lugo",
+  "team": "Chicago White Sox",
+  "player": "Drew Romo",
   "category": "Call-up",
-  "description": "Kansas City Royals recalled LF Matthew Lugo from Omaha Storm Chasers."
+  "description": "Chicago White Sox recalled C Drew Romo from Charlotte Knights."
  },
  {
   "date": "2026-09-26",
@@ -3382,13 +3494,6 @@
  },
  {
   "date": "2026-09-26",
-  "team": "Sacramento River Cats",
-  "player": "Yunior Marte",
-  "category": "Sent down",
-  "description": "San Francisco Giants optioned RHP Yunior Marte to Sacramento River Cats."
- },
- {
-  "date": "2026-09-26",
   "team": "FCL Mets",
   "player": "Jefry Yan",
   "category": "Sent down",
@@ -3400,6 +3505,13 @@
   "player": "Luis Perales",
   "category": "Sent down",
   "description": "Washington Nationals optioned RHP Luis Perales to Rochester Red Wings."
+ },
+ {
+  "date": "2026-09-26",
+  "team": "Kansas City Royals",
+  "player": "Matthew Lugo",
+  "category": "Call-up",
+  "description": "Kansas City Royals recalled LF Matthew Lugo from Omaha Storm Chasers."
  },
  {
   "date": "2026-09-26",
