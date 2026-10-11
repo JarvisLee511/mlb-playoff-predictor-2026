@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-11",
+  "team": "Los Angeles Dodgers",
+  "player": "Justin Wrobleski",
+  "category": "Activated",
+  "description": "Los Angeles Dodgers activated LHP Justin Wrobleski."
+ },
+ {
   "date": "2026-10-09",
   "team": "Atlanta Braves",
   "player": "Danny Young",
@@ -484,27 +491,6 @@
  },
  {
   "date": "2026-10-03",
-  "team": "San Diego Padres",
-  "player": "Randy V\u00e1squez",
-  "category": "Activated",
-  "description": "San Diego Padres activated RHP Randy V\u00e1squez."
- },
- {
-  "date": "2026-10-03",
-  "team": "New York Yankees",
-  "player": "Ryan Weathers",
-  "category": "Activated",
-  "description": "New York Yankees activated LHP Ryan Weathers."
- },
- {
-  "date": "2026-10-03",
-  "team": "Atlanta Braves",
-  "player": "Lane Thomas",
-  "category": "Activated",
-  "description": "Atlanta Braves activated LF Lane Thomas."
- },
- {
-  "date": "2026-10-03",
   "team": "Atlanta Braves",
   "player": "AJ Smith-Shawver",
   "category": "Activated",
@@ -516,6 +502,27 @@
   "player": "Tyler Davis",
   "category": "Activated",
   "description": "Chicago White Sox activated RHP Tyler Davis."
+ },
+ {
+  "date": "2026-10-03",
+  "team": "Atlanta Braves",
+  "player": "Lane Thomas",
+  "category": "Activated",
+  "description": "Atlanta Braves activated LF Lane Thomas."
+ },
+ {
+  "date": "2026-10-03",
+  "team": "San Diego Padres",
+  "player": "Randy V\u00e1squez",
+  "category": "Activated",
+  "description": "San Diego Padres activated RHP Randy V\u00e1squez."
+ },
+ {
+  "date": "2026-10-03",
+  "team": "New York Yankees",
+  "player": "Ryan Weathers",
+  "category": "Activated",
+  "description": "New York Yankees activated LHP Ryan Weathers."
  },
  {
   "date": "2026-10-02",
