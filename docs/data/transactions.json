@@ -64,10 +64,10 @@
  },
  {
   "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "JP Sears",
+  "team": "Atlanta Braves",
+  "player": "Rolddy Mu\u00f1oz",
   "category": "Activated",
-  "description": "San Diego Padres activated LHP JP Sears."
+  "description": "Atlanta Braves activated RHP Rolddy Mu\u00f1oz."
  },
  {
   "date": "2026-10-08",
@@ -162,10 +162,10 @@
  },
  {
   "date": "2026-10-08",
-  "team": "Atlanta Braves",
-  "player": "Rolddy Mu\u00f1oz",
+  "team": "San Diego Padres",
+  "player": "JP Sears",
   "category": "Activated",
-  "description": "Atlanta Braves activated RHP Rolddy Mu\u00f1oz."
+  "description": "San Diego Padres activated LHP JP Sears."
  },
  {
   "date": "2026-10-08",
@@ -184,16 +184,16 @@
  {
   "date": "2026-10-08",
   "team": "San Diego Padres",
-  "player": "Jhony Brito",
-  "category": "Activated",
-  "description": "San Diego Padres activated RHP Jhony Brito."
+  "player": "Kyle Hart",
+  "category": "Call-up",
+  "description": "San Diego Padres recalled LHP Kyle Hart from ACL Padres."
  },
  {
   "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Luis Gil",
-  "category": "Call-up",
-  "description": "New York Yankees recalled RHP Luis Gil from FCL Yankees."
+  "team": "San Diego Padres",
+  "player": "Jhony Brito",
+  "category": "Activated",
+  "description": "San Diego Padres activated RHP Jhony Brito."
  },
  {
   "date": "2026-10-08",
@@ -253,10 +253,10 @@
  },
  {
   "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Kyle Hart",
+  "team": "New York Yankees",
+  "player": "Luis Gil",
   "category": "Call-up",
-  "description": "San Diego Padres recalled LHP Kyle Hart from ACL Padres."
+  "description": "New York Yankees recalled RHP Luis Gil from FCL Yankees."
  },
  {
   "date": "2026-10-08",
@@ -351,20 +351,6 @@
  },
  {
   "date": "2026-10-05",
-  "team": "Oklahoma City Comets",
-  "player": "Chris Newell",
-  "category": "Activated",
-  "description": "Oklahoma City Comets activated OF Chris Newell from the Development List."
- },
- {
-  "date": "2026-10-05",
-  "team": "Rochester Red Wings",
-  "player": "Buddy Kennedy",
-  "category": "IL (injury)",
-  "description": "Rochester Red Wings activated 3B Buddy Kennedy from the 7-day injured list."
- },
- {
-  "date": "2026-10-05",
   "team": "DSL Phillies",
   "player": "Hua Ho",
   "category": "Activated",
@@ -376,6 +362,13 @@
   "player": "Estevan Moreno",
   "category": "IL (injury)",
   "description": "Inland Empire 66ers activated 3B Estevan Moreno from the 7-day injured list."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "Rochester Red Wings",
+  "player": "Buddy Kennedy",
+  "category": "IL (injury)",
+  "description": "Rochester Red Wings activated 3B Buddy Kennedy from the 7-day injured list."
  },
  {
   "date": "2026-10-05",
@@ -469,6 +462,13 @@
   "description": "Rochester Red Wings activated RHP Holden Powell from the Development List."
  },
  {
+  "date": "2026-10-05",
+  "team": "Oklahoma City Comets",
+  "player": "Chris Newell",
+  "category": "Activated",
+  "description": "Oklahoma City Comets activated OF Chris Newell from the Development List."
+ },
+ {
   "date": "2026-10-03",
   "team": "Los Angeles Dodgers",
   "player": "Josue De Paula",
@@ -481,6 +481,13 @@
   "player": "JR Ritchie",
   "category": "Activated",
   "description": "Atlanta Braves activated RHP JR Ritchie."
+ },
+ {
+  "date": "2026-10-03",
+  "team": "San Diego Padres",
+  "player": "Randy V\u00e1squez",
+  "category": "Activated",
+  "description": "San Diego Padres activated RHP Randy V\u00e1squez."
  },
  {
   "date": "2026-10-03",
@@ -511,11 +518,11 @@
   "description": "Chicago White Sox activated RHP Tyler Davis."
  },
  {
-  "date": "2026-10-03",
-  "team": "San Diego Padres",
-  "player": "Randy V\u00e1squez",
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Mois\u00e9s Chace",
   "category": "Activated",
-  "description": "San Diego Padres activated RHP Randy V\u00e1squez."
+  "description": "Philadelphia Phillies activated RHP Mois\u00e9s Chace."
  },
  {
   "date": "2026-10-02",
@@ -523,20 +530,6 @@
   "player": "Kameron Misner",
   "category": "Activated",
   "description": "Philadelphia Phillies activated CF Kameron Misner."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Grant Holman",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Grant Holman."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Gabriel Rincones Jr.",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RF Gabriel Rincones Jr.."
  },
  {
   "date": "2026-10-02",
@@ -569,13 +562,6 @@
  {
   "date": "2026-10-02",
   "team": "Philadelphia Phillies",
-  "player": "Max Lazar",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Max Lazar."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
   "player": "Alan Rangel",
   "category": "Activated",
   "description": "Philadelphia Phillies activated RHP Alan Rangel."
@@ -583,9 +569,30 @@
  {
   "date": "2026-10-02",
   "team": "Philadelphia Phillies",
-  "player": "Mois\u00e9s Chace",
+  "player": "Grant Holman",
   "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Mois\u00e9s Chace."
+  "description": "Philadelphia Phillies activated RHP Grant Holman."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Gabriel Rincones Jr.",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated RF Gabriel Rincones Jr.."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Luis Arraez",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated 2B Luis Arraez."
+ },
+ {
+  "date": "2026-10-02",
+  "team": "Philadelphia Phillies",
+  "player": "Kyle Backhus",
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled LHP Kyle Backhus from Lehigh Valley IronPigs."
  },
  {
   "date": "2026-10-02",
@@ -598,15 +605,15 @@
   "date": "2026-10-02",
   "team": "Philadelphia Phillies",
   "player": "Orion Kerkering",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Orion Kerkering."
+  "category": "Call-up",
+  "description": "Philadelphia Phillies recalled RHP Orion Kerkering from Lehigh Valley IronPigs."
  },
  {
   "date": "2026-10-02",
   "team": "Philadelphia Phillies",
-  "player": "Nestor Cortes",
+  "player": "Max Lazar",
   "category": "Activated",
-  "description": "Philadelphia Phillies activated LHP Nestor Cortes."
+  "description": "Philadelphia Phillies activated RHP Max Lazar."
  },
  {
   "date": "2026-10-02",
@@ -618,72 +625,16 @@
  {
   "date": "2026-10-02",
   "team": "Philadelphia Phillies",
-  "player": "Kyle Backhus",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled LHP Kyle Backhus from Lehigh Valley IronPigs."
+  "player": "Nestor Cortes",
+  "category": "Activated",
+  "description": "Philadelphia Phillies activated LHP Nestor Cortes."
  },
  {
   "date": "2026-10-02",
   "team": "Philadelphia Phillies",
   "player": "Orion Kerkering",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled RHP Orion Kerkering from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Luis Arraez",
   "category": "Activated",
-  "description": "Philadelphia Phillies activated 2B Luis Arraez."
- },
- {
-  "date": "2026-10-01",
-  "team": "Boston Red Sox",
-  "player": "Tanner Houck",
-  "category": "Activated",
-  "description": "Boston Red Sox activated RHP Tanner Houck."
- },
- {
-  "date": "2026-10-01",
-  "team": "Chicago Cubs",
-  "player": "Jayden Murray",
-  "category": "Activated",
-  "description": "Chicago Cubs activated RHP Jayden Murray."
- },
- {
-  "date": "2026-10-01",
-  "team": "Chicago Cubs",
-  "player": "Justin Dean",
-  "category": "Activated",
-  "description": "Chicago Cubs activated CF Justin Dean."
- },
- {
-  "date": "2026-10-01",
-  "team": "Houston Astros",
-  "player": "Daulton Varsho",
-  "category": "Activated",
-  "description": "Houston Astros activated CF Daulton Varsho."
- },
- {
-  "date": "2026-10-01",
-  "team": "Houston Astros",
-  "player": "Zach Dezenzo",
-  "category": "Activated",
-  "description": "Houston Astros activated LF Zach Dezenzo."
- },
- {
-  "date": "2026-10-01",
-  "team": "Boston Red Sox",
-  "player": "Roman Anthony",
-  "category": "Activated",
-  "description": "Boston Red Sox activated LF Roman Anthony."
- },
- {
-  "date": "2026-10-01",
-  "team": "Boston Red Sox",
-  "player": "Tyron Guerrero",
-  "category": "Activated",
-  "description": "Boston Red Sox activated RHP Tyron Guerrero."
+  "description": "Philadelphia Phillies activated RHP Orion Kerkering."
  },
  {
   "date": "2026-10-01",
@@ -701,6 +652,48 @@
  },
  {
   "date": "2026-10-01",
+  "team": "Boston Red Sox",
+  "player": "Tyron Guerrero",
+  "category": "Activated",
+  "description": "Boston Red Sox activated RHP Tyron Guerrero."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Boston Red Sox",
+  "player": "Roman Anthony",
+  "category": "Activated",
+  "description": "Boston Red Sox activated LF Roman Anthony."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Boston Red Sox",
+  "player": "Tanner Houck",
+  "category": "Activated",
+  "description": "Boston Red Sox activated RHP Tanner Houck."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Houston Astros",
+  "player": "Daulton Varsho",
+  "category": "Activated",
+  "description": "Houston Astros activated CF Daulton Varsho."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Chicago Cubs",
+  "player": "Justin Dean",
+  "category": "Activated",
+  "description": "Chicago Cubs activated CF Justin Dean."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Chicago Cubs",
+  "player": "Jayden Murray",
+  "category": "Activated",
+  "description": "Chicago Cubs activated RHP Jayden Murray."
+ },
+ {
+  "date": "2026-10-01",
   "team": "Houston Astros",
   "player": "LaMonte Wade Jr.",
   "category": "Activated",
@@ -709,9 +702,16 @@
  {
   "date": "2026-10-01",
   "team": "Houston Astros",
-  "player": "Alimber Santa",
+  "player": "Zach Dezenzo",
   "category": "Activated",
-  "description": "Houston Astros activated RHP Alimber Santa."
+  "description": "Houston Astros activated LF Zach Dezenzo."
+ },
+ {
+  "date": "2026-10-01",
+  "team": "Great Lakes Loons",
+  "player": "Reynaldo Yean",
+  "category": "Activated",
+  "description": "Great Lakes Loons activated RHP Reynaldo Yean from the Development List."
  },
  {
   "date": "2026-10-01",
@@ -883,10 +883,10 @@
  },
  {
   "date": "2026-10-01",
-  "team": "Columbus Clippers",
-  "player": "Rorik Maltrud",
+  "team": "Houston Astros",
+  "player": "Alimber Santa",
   "category": "Activated",
-  "description": "Columbus Clippers activated RHP Rorik Maltrud from the Development List."
+  "description": "Houston Astros activated RHP Alimber Santa."
  },
  {
   "date": "2026-10-01",
@@ -946,23 +946,9 @@
  },
  {
   "date": "2026-10-01",
-  "team": "Great Lakes Loons",
-  "player": "Reynaldo Yean",
+  "team": "Columbus Clippers",
+  "player": "Rorik Maltrud",
   "category": "Activated",
-  "description": "Great Lakes Loons activated RHP Reynaldo Yean from the Development List."
- },
- {
-  "date": "2026-09-30",
-  "team": "Mesa Solar Sox",
-  "player": "Luis Rujano",
-  "category": "Activated",
-  "description": "Mesa Solar Sox activated RHP Luis Rujano."
- },
- {
-  "date": "2026-09-30",
-  "team": "Boston Red Sox",
-  "player": "Curtis Mead",
-  "category": "Activated",
-  "description": "Boston Red Sox activated 3B Curtis Mead."
+  "description": "Columbus Clippers activated RHP Rorik Maltrud from the Development List."
  }
 ]
