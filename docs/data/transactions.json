@@ -1,10 +1,17 @@
 [
  {
-  "date": "2026-10-12",
-  "team": "Cleveland Guardians",
-  "player": "Slade Cecconi",
+  "date": "2026-10-13",
+  "team": "Jaguares de Nayarit",
+  "player": "Joel Flores",
   "category": "Activated",
-  "description": "Cleveland Guardians activated RHP Slade Cecconi."
+  "description": "Jaguares de Nayarit activated IF Joel Flores."
+ },
+ {
+  "date": "2026-10-13",
+  "team": "Jaguares de Nayarit",
+  "player": "Joel Flores",
+  "category": "Activated",
+  "description": "Jaguares de Nayarit activated IF Joel Flores."
  },
  {
   "date": "2026-10-12",
@@ -12,6 +19,13 @@
   "player": "Brody Hopkins",
   "category": "Activated",
   "description": "Tampa Bay Rays activated RHP Brody Hopkins."
+ },
+ {
+  "date": "2026-10-12",
+  "team": "Cleveland Guardians",
+  "player": "Slade Cecconi",
+  "category": "Activated",
+  "description": "Cleveland Guardians activated RHP Slade Cecconi."
  },
  {
   "date": "2026-10-11",
@@ -29,10 +43,45 @@
  },
  {
   "date": "2026-10-08",
-  "team": "Atlanta Braves",
-  "player": "Reynaldo L\u00f3pez",
+  "team": "San Diego Padres",
+  "player": "Griffin Canning",
   "category": "Activated",
-  "description": "Atlanta Braves activated RHP Reynaldo L\u00f3pez."
+  "description": "San Diego Padres activated RHP Griffin Canning."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "New York Yankees",
+  "player": "Yerry De los Santos",
+  "category": "Activated",
+  "description": "New York Yankees activated RHP Yerry De los Santos."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Gage Workman",
+  "category": "Activated",
+  "description": "San Diego Padres activated 3B Gage Workman."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Sung-Mun Song",
+  "category": "Activated",
+  "description": "San Diego Padres activated 2B Sung-Mun Song."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Mason McCoy",
+  "category": "Activated",
+  "description": "San Diego Padres activated 2B Mason McCoy."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "New York Yankees",
+  "player": "Jasson Dom\u00ednguez",
+  "category": "Activated",
+  "description": "New York Yankees activated RF Jasson Dom\u00ednguez."
  },
  {
   "date": "2026-10-08",
@@ -44,9 +93,9 @@
  {
   "date": "2026-10-08",
   "team": "San Diego Padres",
-  "player": "Griffin Canning",
+  "player": "Randy V\u00e1squez",
   "category": "Activated",
-  "description": "San Diego Padres activated RHP Griffin Canning."
+  "description": "San Diego Padres activated RHP Randy V\u00e1squez."
  },
  {
   "date": "2026-10-08",
@@ -64,10 +113,10 @@
  },
  {
   "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Randy V\u00e1squez",
+  "team": "New York Yankees",
+  "player": "Angel Chivilli",
   "category": "Activated",
-  "description": "San Diego Padres activated RHP Randy V\u00e1squez."
+  "description": "New York Yankees activated RHP Angel Chivilli."
  },
  {
   "date": "2026-10-08",
@@ -92,213 +141,10 @@
  },
  {
   "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Hunter Stratton",
-  "category": "Activated",
-  "description": "San Diego Padres activated RHP Hunter Stratton."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Michael Fulmer",
-  "category": "Activated",
-  "description": "New York Yankees activated RHP Michael Fulmer."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Mason McCoy",
-  "category": "Activated",
-  "description": "San Diego Padres activated 2B Mason McCoy."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "JP Sears",
-  "category": "Activated",
-  "description": "San Diego Padres activated LHP JP Sears."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Will Wagner",
-  "category": "Activated",
-  "description": "San Diego Padres activated DH Will Wagner."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Wandy Peralta",
-  "category": "Activated",
-  "description": "San Diego Padres activated LHP Wandy Peralta."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Garrett Hawkins",
-  "category": "Activated",
-  "description": "San Diego Padres activated RHP Garrett Hawkins."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "J.C. Escarra",
-  "category": "Activated",
-  "description": "New York Yankees activated C J.C. Escarra."
- },
- {
-  "date": "2026-10-08",
   "team": "Atlanta Braves",
-  "player": "Tyler Uberstine",
+  "player": "Reynaldo L\u00f3pez",
   "category": "Activated",
-  "description": "Atlanta Braves activated RHP Tyler Uberstine."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Jhony Brito",
-  "category": "Activated",
-  "description": "San Diego Padres activated RHP Jhony Brito."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Jasson Dom\u00ednguez",
-  "category": "Activated",
-  "description": "New York Yankees activated RF Jasson Dom\u00ednguez."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Gage Workman",
-  "category": "Activated",
-  "description": "San Diego Padres activated 3B Gage Workman."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Sung-Mun Song",
-  "category": "Activated",
-  "description": "San Diego Padres activated 2B Sung-Mun Song."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Brendan Beck",
-  "category": "Call-up",
-  "description": "New York Yankees recalled RHP Brendan Beck from FCL Yankees."
- },
- {
-  "date": "2026-10-08",
-  "team": "Los Angeles Dodgers",
-  "player": "Kyle Hurt",
-  "category": "Call-up",
-  "description": "Los Angeles Dodgers recalled RHP Kyle Hurt from Oklahoma City Comets."
- },
- {
-  "date": "2026-10-08",
-  "team": "Milwaukee Brewers",
-  "player": "Colton Gordon",
-  "category": "Call-up",
-  "description": "Milwaukee Brewers recalled LHP Colton Gordon from Biloxi Shuckers."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Luis Gil",
-  "category": "Call-up",
-  "description": "New York Yankees recalled RHP Luis Gil from FCL Yankees."
- },
- {
-  "date": "2026-10-08",
-  "team": "Atlanta Braves",
-  "player": "Owen Murphy",
-  "category": "Call-up",
-  "description": "Atlanta Braves recalled RHP Owen Murphy from FCL Braves."
- },
- {
-  "date": "2026-10-08",
-  "team": "Atlanta Braves",
-  "player": "Michael Grove",
-  "category": "Call-up",
-  "description": "Atlanta Braves recalled RHP Michael Grove from Gwinnett Stripers."
- },
- {
-  "date": "2026-10-08",
-  "team": "Tampa Bay Rays",
-  "player": "Alex Cook",
-  "category": "Call-up",
-  "description": "Tampa Bay Rays recalled RHP Alex Cook from Durham Bulls."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Kyle Hart",
-  "category": "Call-up",
-  "description": "San Diego Padres recalled LHP Kyle Hart from ACL Padres."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Bradley Hanner",
-  "category": "Call-up",
-  "description": "New York Yankees recalled RHP Bradley Hanner from FCL Yankees."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Clarke Schmidt",
-  "category": "Activated",
-  "description": "New York Yankees activated RHP Clarke Schmidt."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Max Schuemann",
-  "category": "Activated",
-  "description": "New York Yankees activated LF Max Schuemann."
- },
- {
-  "date": "2026-10-08",
-  "team": "San Diego Padres",
-  "player": "Casey Mize",
-  "category": "IL (injury)",
-  "description": "San Diego Padres activated RHP Casey Mize from the 15-day injured list."
- },
- {
-  "date": "2026-10-08",
-  "team": "Atlanta Braves",
-  "player": "Dominic Smith",
-  "category": "Activated",
-  "description": "Atlanta Braves activated DH Dominic Smith."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Aaron Judge",
-  "category": "Activated",
-  "description": "New York Yankees activated RF Aaron Judge."
- },
- {
-  "date": "2026-10-08",
-  "team": "Atlanta Braves",
-  "player": "Mart\u00edn P\u00e9rez",
-  "category": "Activated",
-  "description": "Atlanta Braves activated LHP Mart\u00edn P\u00e9rez."
- },
- {
-  "date": "2026-10-08",
-  "team": "Atlanta Braves",
-  "player": "Blake Burkhalter",
-  "category": "Activated",
-  "description": "Atlanta Braves activated RHP Blake Burkhalter."
- },
- {
-  "date": "2026-10-08",
-  "team": "New York Yankees",
-  "player": "Angel Chivilli",
-  "category": "Activated",
-  "description": "New York Yankees activated RHP Angel Chivilli."
+  "description": "Atlanta Braves activated RHP Reynaldo L\u00f3pez."
  },
  {
   "date": "2026-10-08",
@@ -310,16 +156,128 @@
  {
   "date": "2026-10-08",
   "team": "New York Yankees",
-  "player": "Yerry De los Santos",
+  "player": "Aaron Judge",
   "category": "Activated",
-  "description": "New York Yankees activated RHP Yerry De los Santos."
+  "description": "New York Yankees activated RF Aaron Judge."
  },
  {
   "date": "2026-10-08",
   "team": "Atlanta Braves",
-  "player": "DaShawn Keirsey Jr.",
+  "player": "Blake Burkhalter",
   "category": "Activated",
-  "description": "Atlanta Braves activated CF DaShawn Keirsey Jr.."
+  "description": "Atlanta Braves activated RHP Blake Burkhalter."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "Atlanta Braves",
+  "player": "Mart\u00edn P\u00e9rez",
+  "category": "Activated",
+  "description": "Atlanta Braves activated LHP Mart\u00edn P\u00e9rez."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Hunter Stratton",
+  "category": "Activated",
+  "description": "San Diego Padres activated RHP Hunter Stratton."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "Atlanta Braves",
+  "player": "Dominic Smith",
+  "category": "Activated",
+  "description": "Atlanta Braves activated DH Dominic Smith."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Casey Mize",
+  "category": "IL (injury)",
+  "description": "San Diego Padres activated RHP Casey Mize from the 15-day injured list."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "New York Yankees",
+  "player": "Clarke Schmidt",
+  "category": "Activated",
+  "description": "New York Yankees activated RHP Clarke Schmidt."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "New York Yankees",
+  "player": "Brendan Beck",
+  "category": "Call-up",
+  "description": "New York Yankees recalled RHP Brendan Beck from FCL Yankees."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "New York Yankees",
+  "player": "Bradley Hanner",
+  "category": "Call-up",
+  "description": "New York Yankees recalled RHP Bradley Hanner from FCL Yankees."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Kyle Hart",
+  "category": "Call-up",
+  "description": "San Diego Padres recalled LHP Kyle Hart from ACL Padres."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "Tampa Bay Rays",
+  "player": "Alex Cook",
+  "category": "Call-up",
+  "description": "Tampa Bay Rays recalled RHP Alex Cook from Durham Bulls."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "Atlanta Braves",
+  "player": "Michael Grove",
+  "category": "Call-up",
+  "description": "Atlanta Braves recalled RHP Michael Grove from Gwinnett Stripers."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "Atlanta Braves",
+  "player": "Owen Murphy",
+  "category": "Call-up",
+  "description": "Atlanta Braves recalled RHP Owen Murphy from FCL Braves."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "New York Yankees",
+  "player": "Luis Gil",
+  "category": "Call-up",
+  "description": "New York Yankees recalled RHP Luis Gil from FCL Yankees."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "Milwaukee Brewers",
+  "player": "Colton Gordon",
+  "category": "Call-up",
+  "description": "Milwaukee Brewers recalled LHP Colton Gordon from Biloxi Shuckers."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "Los Angeles Dodgers",
+  "player": "Kyle Hurt",
+  "category": "Call-up",
+  "description": "Los Angeles Dodgers recalled RHP Kyle Hurt from Oklahoma City Comets."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "New York Yankees",
+  "player": "Michael Fulmer",
+  "category": "Activated",
+  "description": "New York Yankees activated RHP Michael Fulmer."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "JP Sears",
+  "category": "Activated",
+  "description": "San Diego Padres activated LHP JP Sears."
  },
  {
   "date": "2026-10-08",
@@ -327,6 +285,13 @@
   "player": "Tim Hill",
   "category": "Activated",
   "description": "New York Yankees activated LHP Tim Hill."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Jhony Brito",
+  "category": "Activated",
+  "description": "San Diego Padres activated RHP Jhony Brito."
  },
  {
   "date": "2026-10-08",
@@ -341,6 +306,55 @@
   "player": "Bryce Elder",
   "category": "Activated",
   "description": "Atlanta Braves activated RHP Bryce Elder."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "New York Yankees",
+  "player": "Max Schuemann",
+  "category": "Activated",
+  "description": "New York Yankees activated LF Max Schuemann."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "Atlanta Braves",
+  "player": "DaShawn Keirsey Jr.",
+  "category": "Activated",
+  "description": "Atlanta Braves activated CF DaShawn Keirsey Jr.."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Will Wagner",
+  "category": "Activated",
+  "description": "San Diego Padres activated DH Will Wagner."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "Atlanta Braves",
+  "player": "Tyler Uberstine",
+  "category": "Activated",
+  "description": "Atlanta Braves activated RHP Tyler Uberstine."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "New York Yankees",
+  "player": "J.C. Escarra",
+  "category": "Activated",
+  "description": "New York Yankees activated C J.C. Escarra."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Garrett Hawkins",
+  "category": "Activated",
+  "description": "San Diego Padres activated RHP Garrett Hawkins."
+ },
+ {
+  "date": "2026-10-08",
+  "team": "San Diego Padres",
+  "player": "Wandy Peralta",
+  "category": "Activated",
+  "description": "San Diego Padres activated LHP Wandy Peralta."
  },
  {
   "date": "2026-10-07",
@@ -365,45 +379,10 @@
  },
  {
   "date": "2026-10-05",
-  "team": "DSL Phillies",
-  "player": "Hua Ho",
-  "category": "Activated",
-  "description": "DSL Phillies activated RHP Hua Ho from the restricted list."
- },
- {
-  "date": "2026-10-05",
-  "team": "ACL Dodgers",
-  "player": "Samuel Savinon",
-  "category": "IL (injury)",
-  "description": "ACL Dodgers activated RHP Samuel Savinon from the 7-day injured list."
- },
- {
-  "date": "2026-10-05",
-  "team": "Oklahoma City Comets",
-  "player": "Nick Robertson",
-  "category": "Activated",
-  "description": "Oklahoma City Comets activated RHP Nick Robertson from the Development List."
- },
- {
-  "date": "2026-10-05",
-  "team": "Inland Empire 66ers",
-  "player": "Estevan Moreno",
-  "category": "IL (injury)",
-  "description": "Inland Empire 66ers activated 3B Estevan Moreno from the 7-day injured list."
- },
- {
-  "date": "2026-10-05",
   "team": "Rochester Red Wings",
   "player": "Isaac Lyon",
   "category": "Activated",
   "description": "Rochester Red Wings activated RHP Isaac Lyon from the Development List."
- },
- {
-  "date": "2026-10-05",
-  "team": "Rochester Red Wings",
-  "player": "Tom Cosgrove",
-  "category": "Activated",
-  "description": "Rochester Red Wings activated LHP Tom Cosgrove from the Development List."
  },
  {
   "date": "2026-10-05",
@@ -415,16 +394,9 @@
  {
   "date": "2026-10-05",
   "team": "Rochester Red Wings",
-  "player": "Buddy Kennedy",
-  "category": "IL (injury)",
-  "description": "Rochester Red Wings activated 3B Buddy Kennedy from the 7-day injured list."
- },
- {
-  "date": "2026-10-05",
-  "team": "Oklahoma City Comets",
-  "player": "Chris Newell",
+  "player": "Tom Cosgrove",
   "category": "Activated",
-  "description": "Oklahoma City Comets activated OF Chris Newell from the Development List."
+  "description": "Rochester Red Wings activated LHP Tom Cosgrove from the Development List."
  },
  {
   "date": "2026-10-05",
@@ -436,9 +408,72 @@
  {
   "date": "2026-10-05",
   "team": "Rochester Red Wings",
+  "player": "Andry Lara",
+  "category": "Activated",
+  "description": "Rochester Red Wings activated RHP Andry Lara from the Development List."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "Inland Empire 66ers",
+  "player": "Estevan Moreno",
+  "category": "IL (injury)",
+  "description": "Inland Empire 66ers activated 3B Estevan Moreno from the 7-day injured list."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "Oklahoma City Comets",
+  "player": "Nick Robertson",
+  "category": "Activated",
+  "description": "Oklahoma City Comets activated RHP Nick Robertson from the Development List."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "DSL Phillies",
+  "player": "Hua Ho",
+  "category": "Activated",
+  "description": "DSL Phillies activated RHP Hua Ho from the restricted list."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "Oklahoma City Comets",
+  "player": "Chris Newell",
+  "category": "Activated",
+  "description": "Oklahoma City Comets activated OF Chris Newell from the Development List."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "Rochester Red Wings",
+  "player": "Buddy Kennedy",
+  "category": "IL (injury)",
+  "description": "Rochester Red Wings activated 3B Buddy Kennedy from the 7-day injured list."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "Oklahoma City Comets",
+  "player": "Ryder Ryan",
+  "category": "Activated",
+  "description": "Oklahoma City Comets activated RHP Ryder Ryan from the Development List."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "ACL Dodgers",
+  "player": "Samuel Savinon",
+  "category": "IL (injury)",
+  "description": "ACL Dodgers activated RHP Samuel Savinon from the 7-day injured list."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "Rochester Red Wings",
   "player": "Phillip Glasser",
   "category": "IL (injury)",
   "description": "Rochester Red Wings activated 2B Phillip Glasser from the 7-day injured list."
+ },
+ {
+  "date": "2026-10-05",
+  "team": "Oklahoma City Comets",
+  "player": "Jackson Ferris",
+  "category": "Activated",
+  "description": "Oklahoma City Comets activated LHP Jackson Ferris from the Development List."
  },
  {
   "date": "2026-10-05",
@@ -450,23 +485,9 @@
  {
   "date": "2026-10-05",
   "team": "Rochester Red Wings",
-  "player": "Andry Lara",
-  "category": "Activated",
-  "description": "Rochester Red Wings activated RHP Andry Lara from the Development List."
- },
- {
-  "date": "2026-10-05",
-  "team": "Rochester Red Wings",
   "player": "Holden Powell",
   "category": "Activated",
   "description": "Rochester Red Wings activated RHP Holden Powell from the Development List."
- },
- {
-  "date": "2026-10-05",
-  "team": "Oklahoma City Comets",
-  "player": "Ryder Ryan",
-  "category": "Activated",
-  "description": "Oklahoma City Comets activated RHP Ryder Ryan from the Development List."
  },
  {
   "date": "2026-10-05",
@@ -483,32 +504,11 @@
   "description": "Rochester Red Wings activated RHP Chandler Champlain from the Development List."
  },
  {
-  "date": "2026-10-05",
-  "team": "Oklahoma City Comets",
-  "player": "Jackson Ferris",
-  "category": "Activated",
-  "description": "Oklahoma City Comets activated LHP Jackson Ferris from the Development List."
- },
- {
   "date": "2026-10-03",
-  "team": "New York Yankees",
-  "player": "Ryan Weathers",
+  "team": "Chicago White Sox",
+  "player": "Tyler Davis",
   "category": "Activated",
-  "description": "New York Yankees activated LHP Ryan Weathers."
- },
- {
-  "date": "2026-10-03",
-  "team": "Atlanta Braves",
-  "player": "Lane Thomas",
-  "category": "Activated",
-  "description": "Atlanta Braves activated LF Lane Thomas."
- },
- {
-  "date": "2026-10-03",
-  "team": "Los Angeles Dodgers",
-  "player": "Josue De Paula",
-  "category": "Activated",
-  "description": "Los Angeles Dodgers activated DH Josue De Paula."
+  "description": "Chicago White Sox activated RHP Tyler Davis."
  },
  {
   "date": "2026-10-03",
@@ -519,10 +519,17 @@
  },
  {
   "date": "2026-10-03",
-  "team": "Chicago White Sox",
-  "player": "Tyler Davis",
+  "team": "New York Yankees",
+  "player": "Ryan Weathers",
   "category": "Activated",
-  "description": "Chicago White Sox activated RHP Tyler Davis."
+  "description": "New York Yankees activated LHP Ryan Weathers."
+ },
+ {
+  "date": "2026-10-03",
+  "team": "Los Angeles Dodgers",
+  "player": "Josue De Paula",
+  "category": "Activated",
+  "description": "Los Angeles Dodgers activated DH Josue De Paula."
  },
  {
   "date": "2026-10-03",
@@ -539,122 +546,10 @@
   "description": "Atlanta Braves activated RHP JR Ritchie."
  },
  {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Gabriel Rincones Jr.",
+  "date": "2026-10-03",
+  "team": "Atlanta Braves",
+  "player": "Lane Thomas",
   "category": "Activated",
-  "description": "Philadelphia Phillies activated RF Gabriel Rincones Jr.."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Kameron Misner",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated CF Kameron Misner."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Grant Holman",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Grant Holman."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Mois\u00e9s Chace",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Mois\u00e9s Chace."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Luis Arraez",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated 2B Luis Arraez."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Orion Kerkering",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Orion Kerkering."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Max Lazar",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Max Lazar."
- },
- {
-  "date": "2026-10-02",
-  "team": "Milwaukee Brewers",
-  "player": "Andrew Vaughn",
-  "category": "IL (injury)",
-  "description": "Milwaukee Brewers activated 1B Andrew Vaughn from the 10-day injured list."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Colby Thomas",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RF Colby Thomas."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Alan Rangel",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Alan Rangel."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Nestor Cortes",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated LHP Nestor Cortes."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Andrew Hoffmann",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated RHP Andrew Hoffmann."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Brooks Raley",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated LHP Brooks Raley."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Orion Kerkering",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled RHP Orion Kerkering from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Kyle Backhus",
-  "category": "Call-up",
-  "description": "Philadelphia Phillies recalled LHP Kyle Backhus from Lehigh Valley IronPigs."
- },
- {
-  "date": "2026-10-02",
-  "team": "Seattle Mariners",
-  "player": "Michael Toglia",
-  "category": "Waiver claim",
-  "description": "Seattle Mariners claimed 1B Michael Toglia off waivers from Cincinnati Reds."
- },
- {
-  "date": "2026-10-02",
-  "team": "Philadelphia Phillies",
-  "player": "Kyle Backhus",
-  "category": "Activated",
-  "description": "Philadelphia Phillies activated LHP Kyle Backhus."
+  "description": "Atlanta Braves activated LF Lane Thomas."
  }
 ]
