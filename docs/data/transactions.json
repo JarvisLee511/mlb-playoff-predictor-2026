@@ -1,24 +1,10 @@
 [
  {
   "date": "2026-10-14",
-  "team": "Caneros de los Mochis",
-  "player": "Roberto Urias",
-  "category": "Activated",
-  "description": "Caneros de los Mochis activated IF Roberto Urias."
- },
- {
-  "date": "2026-10-14",
   "team": "Algodoneros de Guasave",
-  "player": "Kevin Ribon",
+  "player": "Jorge Monroy",
   "category": "Activated",
-  "description": "Algodoneros de Guasave activated RHP Kevin Ribon from the reserve list."
- },
- {
-  "date": "2026-10-14",
-  "team": "Caneros de los Mochis",
-  "player": "Asael Sanchez",
-  "category": "Activated",
-  "description": "Caneros de los Mochis activated OF Asael Sanchez from the reserve list."
+  "description": "Algodoneros de Guasave activated RHP Jorge Monroy."
  },
  {
   "date": "2026-10-14",
@@ -26,6 +12,13 @@
   "player": "Yael Romero",
   "category": "Activated",
   "description": "Algodoneros de Guasave activated 1B Yael Romero."
+ },
+ {
+  "date": "2026-10-14",
+  "team": "Caneros de los Mochis",
+  "player": "Roberto Urias",
+  "category": "Activated",
+  "description": "Caneros de los Mochis activated IF Roberto Urias."
  },
  {
   "date": "2026-10-14",
@@ -37,9 +30,16 @@
  {
   "date": "2026-10-14",
   "team": "Algodoneros de Guasave",
-  "player": "Jorge Monroy",
+  "player": "Alberto Barriga",
   "category": "Activated",
-  "description": "Algodoneros de Guasave activated RHP Jorge Monroy."
+  "description": "Algodoneros de Guasave activated C Alberto Barriga."
+ },
+ {
+  "date": "2026-10-14",
+  "team": "Caneros de los Mochis",
+  "player": "Asael Sanchez",
+  "category": "Activated",
+  "description": "Caneros de los Mochis activated OF Asael Sanchez from the reserve list."
  },
  {
   "date": "2026-10-14",
@@ -57,10 +57,24 @@
  },
  {
   "date": "2026-10-14",
-  "team": "Algodoneros de Guasave",
-  "player": "Alberto Barriga",
+  "team": "Aguilas de Mexicali",
+  "player": "Angel Lopez",
   "category": "Activated",
-  "description": "Algodoneros de Guasave activated C Alberto Barriga."
+  "description": "Aguilas de Mexicali activated LHP Angel Lopez."
+ },
+ {
+  "date": "2026-10-14",
+  "team": "Algodoneros de Guasave",
+  "player": "Kristian Delgado",
+  "category": "Activated",
+  "description": "Algodoneros de Guasave activated 3B Kristian Delgado."
+ },
+ {
+  "date": "2026-10-14",
+  "team": "Algodoneros de Guasave",
+  "player": "Kevin Ribon",
+  "category": "Activated",
+  "description": "Algodoneros de Guasave activated RHP Kevin Ribon from the reserve list."
  },
  {
   "date": "2026-10-14",
@@ -71,24 +85,10 @@
  },
  {
   "date": "2026-10-14",
-  "team": "Aguilas de Mexicali",
-  "player": "Angel Lopez",
-  "category": "Activated",
-  "description": "Aguilas de Mexicali activated LHP Angel Lopez."
- },
- {
-  "date": "2026-10-14",
   "team": "Tomateros de Culiacan",
   "player": "Jon Singleton",
   "category": "Activated",
   "description": "Tomateros de Culiacan activated 1B Jon Singleton."
- },
- {
-  "date": "2026-10-14",
-  "team": "Algodoneros de Guasave",
-  "player": "Kristian Delgado",
-  "category": "Activated",
-  "description": "Algodoneros de Guasave activated 3B Kristian Delgado."
  },
  {
   "date": "2026-10-14",
