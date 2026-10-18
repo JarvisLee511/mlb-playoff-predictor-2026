@@ -1,17 +1,17 @@
 [
  {
   "date": "2026-10-17",
+  "team": "Aguilas de Mexicali",
+  "player": "Fernando Lozano",
+  "category": "Activated",
+  "description": "Aguilas de Mexicali activated RHP Fernando Lozano."
+ },
+ {
+  "date": "2026-10-17",
   "team": "Venados de Mazatlan",
   "player": "Edgar Rodriguez",
   "category": "Activated",
   "description": "Venados de Mazatlan activated RHP Edgar Rodriguez from the reserve list."
- },
- {
-  "date": "2026-10-17",
-  "team": "Yaquis de Obregon",
-  "player": "Cristian Alvarado",
-  "category": "Activated",
-  "description": "Yaquis de Obregon activated RHP Cristian Alvarado from the reserve list."
  },
  {
   "date": "2026-10-17",
@@ -22,24 +22,10 @@
  },
  {
   "date": "2026-10-17",
-  "team": "Venados de Mazatlan",
-  "player": "Santiago Gomez",
+  "team": "Aguilas de Mexicali",
+  "player": "Alonso Becerra",
   "category": "Activated",
-  "description": "Venados de Mazatlan activated SS Santiago Gomez."
- },
- {
-  "date": "2026-10-17",
-  "team": "Caneros de los Mochis",
-  "player": "Francisco Pazos",
-  "category": "Activated",
-  "description": "Caneros de los Mochis activated RHP Francisco Pazos from the reserve list."
- },
- {
-  "date": "2026-10-17",
-  "team": "Jaguares de Nayarit",
-  "player": "Marco Fregozo",
-  "category": "Activated",
-  "description": "Jaguares de Nayarit activated RHP Marco Fregozo from the reserve list."
+  "description": "Aguilas de Mexicali activated LHP Alonso Becerra from the reserve list."
  },
  {
   "date": "2026-10-17",
@@ -57,10 +43,24 @@
  },
  {
   "date": "2026-10-17",
-  "team": "Aguilas de Mexicali",
-  "player": "Fernando Lozano",
+  "team": "Yaquis de Obregon",
+  "player": "Cristian Alvarado",
   "category": "Activated",
-  "description": "Aguilas de Mexicali activated RHP Fernando Lozano."
+  "description": "Yaquis de Obregon activated RHP Cristian Alvarado from the reserve list."
+ },
+ {
+  "date": "2026-10-17",
+  "team": "Venados de Mazatlan",
+  "player": "Leonel Becerra",
+  "category": "Activated",
+  "description": "Venados de Mazatlan activated RHP Leonel Becerra from the reserve list."
+ },
+ {
+  "date": "2026-10-17",
+  "team": "Jaguares de Nayarit",
+  "player": "Marco Fregozo",
+  "category": "Activated",
+  "description": "Jaguares de Nayarit activated RHP Marco Fregozo from the reserve list."
  },
  {
   "date": "2026-10-17",
@@ -78,10 +78,17 @@
  },
  {
   "date": "2026-10-17",
-  "team": "Aguilas de Mexicali",
-  "player": "Alonso Becerra",
+  "team": "Venados de Mazatlan",
+  "player": "Santiago Gomez",
   "category": "Activated",
-  "description": "Aguilas de Mexicali activated LHP Alonso Becerra from the reserve list."
+  "description": "Venados de Mazatlan activated SS Santiago Gomez."
+ },
+ {
+  "date": "2026-10-17",
+  "team": "Caneros de los Mochis",
+  "player": "Francisco Pazos",
+  "category": "Activated",
+  "description": "Caneros de los Mochis activated RHP Francisco Pazos from the reserve list."
  },
  {
   "date": "2026-10-17",
@@ -96,13 +103,6 @@
   "player": "Nick Margevicius",
   "category": "Activated",
   "description": "Naranjeros de Hermosillo activated LHP Nick Margevicius."
- },
- {
-  "date": "2026-10-17",
-  "team": "Venados de Mazatlan",
-  "player": "Leonel Becerra",
-  "category": "Activated",
-  "description": "Venados de Mazatlan activated RHP Leonel Becerra from the reserve list."
  },
  {
   "date": "2026-10-16",
