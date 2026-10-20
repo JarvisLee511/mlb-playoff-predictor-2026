@@ -99,10 +99,10 @@
  },
  {
   "date": "2026-10-17",
-  "team": "Venados de Mazatlan",
-  "player": "Octavio Acosta",
+  "team": "Aguilas de Mexicali",
+  "player": "Alonso Becerra",
   "category": "Activated",
-  "description": "Venados de Mazatlan activated RHP Octavio Acosta."
+  "description": "Aguilas de Mexicali activated LHP Alonso Becerra from the reserve list."
  },
  {
   "date": "2026-10-17",
@@ -113,10 +113,10 @@
  },
  {
   "date": "2026-10-17",
-  "team": "Aguilas de Mexicali",
-  "player": "Alonso Becerra",
+  "team": "Venados de Mazatlan",
+  "player": "Octavio Acosta",
   "category": "Activated",
-  "description": "Aguilas de Mexicali activated LHP Alonso Becerra from the reserve list."
+  "description": "Venados de Mazatlan activated RHP Octavio Acosta."
  },
  {
   "date": "2026-10-17",
@@ -149,9 +149,9 @@
  {
   "date": "2026-10-16",
   "team": "Toros del Este",
-  "player": "Eguy Rosario",
+  "player": "Ismael Alcantara",
   "category": "Activated",
-  "description": "Toros del Este activated 3B Eguy Rosario."
+  "description": "Toros del Este activated CF Ismael Alcantara."
  },
  {
   "date": "2026-10-16",
@@ -163,9 +163,9 @@
  {
   "date": "2026-10-16",
   "team": "Toros del Este",
-  "player": "Ismael Alcantara",
+  "player": "Eguy Rosario",
   "category": "Activated",
-  "description": "Toros del Este activated CF Ismael Alcantara."
+  "description": "Toros del Este activated 3B Eguy Rosario."
  },
  {
   "date": "2026-10-16",
@@ -176,17 +176,17 @@
  },
  {
   "date": "2026-10-16",
-  "team": "Venados de Mazatlan",
-  "player": "Victor Morales",
-  "category": "Activated",
-  "description": "Venados de Mazatlan activated RHP Victor Morales from the reserve list."
- },
- {
-  "date": "2026-10-16",
   "team": "Caneros de los Mochis",
   "player": "Erubiel Armenta",
   "category": "Activated",
   "description": "Caneros de los Mochis activated LHP Erubiel Armenta from the reserve list."
+ },
+ {
+  "date": "2026-10-16",
+  "team": "Venados de Mazatlan",
+  "player": "Victor Morales",
+  "category": "Activated",
+  "description": "Venados de Mazatlan activated RHP Victor Morales from the reserve list."
  },
  {
   "date": "2026-10-15",
@@ -198,16 +198,9 @@
  {
   "date": "2026-10-14",
   "team": "Algodoneros de Guasave",
-  "player": "Kevin Ribon",
+  "player": "Yael Romero",
   "category": "Activated",
-  "description": "Algodoneros de Guasave activated RHP Kevin Ribon from the reserve list."
- },
- {
-  "date": "2026-10-14",
-  "team": "Algodoneros de Guasave",
-  "player": "Kristian Delgado",
-  "category": "Activated",
-  "description": "Algodoneros de Guasave activated 3B Kristian Delgado."
+  "description": "Algodoneros de Guasave activated 1B Yael Romero."
  },
  {
   "date": "2026-10-14",
@@ -247,9 +240,16 @@
  {
   "date": "2026-10-14",
   "team": "Algodoneros de Guasave",
-  "player": "Yael Romero",
+  "player": "Kevin Ribon",
   "category": "Activated",
-  "description": "Algodoneros de Guasave activated 1B Yael Romero."
+  "description": "Algodoneros de Guasave activated RHP Kevin Ribon from the reserve list."
+ },
+ {
+  "date": "2026-10-14",
+  "team": "Algodoneros de Guasave",
+  "player": "Kristian Delgado",
+  "category": "Activated",
+  "description": "Algodoneros de Guasave activated 3B Kristian Delgado."
  },
  {
   "date": "2026-10-14",
@@ -334,12 +334,5 @@
   "player": "Jayvien Sandridge",
   "category": "IL (injury)",
   "description": "Norfolk Tides activated LHP Jayvien Sandridge from the 60-day injured list."
- },
- {
-  "date": "2026-10-09",
-  "team": "Atlanta Braves",
-  "player": "Danny Young",
-  "category": "Call-up",
-  "description": "Atlanta Braves selected the contract of LHP Danny Young from Gwinnett Stripers."
  }
 ]
