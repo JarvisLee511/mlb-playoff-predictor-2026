@@ -1,24 +1,10 @@
 [
  {
-  "date": "2026-10-22",
-  "team": "Caneros de los Mochis",
-  "player": "Victor Garcia",
+  "date": "2026-10-23",
+  "team": "Tampa Bay Rays",
+  "player": "Garrett Cleavinger",
   "category": "Activated",
-  "description": "Caneros de los Mochis activated RHP Victor Garcia from the reserve list."
- },
- {
-  "date": "2026-10-22",
-  "team": "Venados de Mazatlan",
-  "player": "Jonatan Bernal",
-  "category": "Activated",
-  "description": "Venados de Mazatlan activated RHP Jonatan Bernal from the reserve list."
- },
- {
-  "date": "2026-10-22",
-  "team": "Charros de Jalisco",
-  "player": "Luis Moreno",
-  "category": "Activated",
-  "description": "Charros de Jalisco activated RHP Luis Moreno from the reserve list."
+  "description": "Tampa Bay Rays activated LHP Garrett Cleavinger."
  },
  {
   "date": "2026-10-22",
@@ -29,10 +15,17 @@
  },
  {
   "date": "2026-10-22",
-  "team": "Naranjeros de Hermosillo",
-  "player": "Rolando Mora",
+  "team": "Charros de Jalisco",
+  "player": "Luis Moreno",
   "category": "Activated",
-  "description": "Naranjeros de Hermosillo activated RHP Rolando Mora from the reserve list."
+  "description": "Charros de Jalisco activated RHP Luis Moreno from the reserve list."
+ },
+ {
+  "date": "2026-10-22",
+  "team": "Venados de Mazatlan",
+  "player": "Jonatan Bernal",
+  "category": "Activated",
+  "description": "Venados de Mazatlan activated RHP Jonatan Bernal from the reserve list."
  },
  {
   "date": "2026-10-22",
@@ -43,17 +36,17 @@
  },
  {
   "date": "2026-10-22",
-  "team": "Yaquis de Obregon",
-  "player": "Cristian Alvarado",
+  "team": "Naranjeros de Hermosillo",
+  "player": "Rolando Mora",
   "category": "Activated",
-  "description": "Yaquis de Obregon activated RHP Cristian Alvarado from the reserve list."
+  "description": "Naranjeros de Hermosillo activated RHP Rolando Mora from the reserve list."
  },
  {
   "date": "2026-10-22",
-  "team": "Tomateros de Culiacan",
-  "player": "Baltazar Arredondo",
+  "team": "Caneros de los Mochis",
+  "player": "Victor Garcia",
   "category": "Activated",
-  "description": "Tomateros de Culiacan activated LHP Baltazar Arredondo from the reserve list."
+  "description": "Caneros de los Mochis activated RHP Victor Garcia from the reserve list."
  },
  {
   "date": "2026-10-22",
@@ -70,11 +63,18 @@
   "description": "Charros de Jalisco activated LHP Isaias Felix from the reserve list."
  },
  {
-  "date": "2026-10-21",
-  "team": "Mayos de Navojoa",
-  "player": "Luis Valdez",
+  "date": "2026-10-22",
+  "team": "Tomateros de Culiacan",
+  "player": "Baltazar Arredondo",
   "category": "Activated",
-  "description": "Mayos de Navojoa activated LHP Luis Valdez from the reserve list."
+  "description": "Tomateros de Culiacan activated LHP Baltazar Arredondo from the reserve list."
+ },
+ {
+  "date": "2026-10-22",
+  "team": "Yaquis de Obregon",
+  "player": "Cristian Alvarado",
+  "category": "Activated",
+  "description": "Yaquis de Obregon activated RHP Cristian Alvarado from the reserve list."
  },
  {
   "date": "2026-10-21",
@@ -82,27 +82,6 @@
   "player": "Raul Castellon",
   "category": "Activated",
   "description": "Caneros de los Mochis activated RHP Raul Castellon from the reserve list."
- },
- {
-  "date": "2026-10-21",
-  "team": "Mayos de Navojoa",
-  "player": "Jorge Moyoroqui",
-  "category": "Activated",
-  "description": "Mayos de Navojoa activated RHP Jorge Moyoroqui from the reserve list."
- },
- {
-  "date": "2026-10-21",
-  "team": "Estrellas Orientales",
-  "player": "Juan Santana",
-  "category": "Activated",
-  "description": "Estrellas Orientales activated SS Juan Santana."
- },
- {
-  "date": "2026-10-21",
-  "team": "Charros de Jalisco",
-  "player": "Carlos Baez",
-  "category": "Activated",
-  "description": "Charros de Jalisco activated 2B Carlos Baez from the reserve list."
  },
  {
   "date": "2026-10-21",
@@ -120,10 +99,38 @@
  },
  {
   "date": "2026-10-21",
+  "team": "Venados de Mazatlan",
+  "player": "Ruben Reyes",
+  "category": "Activated",
+  "description": "Venados de Mazatlan activated LHP Ruben Reyes from the reserve list."
+ },
+ {
+  "date": "2026-10-21",
+  "team": "Estrellas Orientales",
+  "player": "Juan Santana",
+  "category": "Activated",
+  "description": "Estrellas Orientales activated SS Juan Santana."
+ },
+ {
+  "date": "2026-10-21",
+  "team": "Charros de Jalisco",
+  "player": "Carlos Baez",
+  "category": "Activated",
+  "description": "Charros de Jalisco activated 2B Carlos Baez from the reserve list."
+ },
+ {
+  "date": "2026-10-21",
   "team": "Yaquis de Obregon",
   "player": "Edgar Gallegos",
   "category": "Activated",
   "description": "Yaquis de Obregon activated RHP Edgar Gallegos from the reserve list."
+ },
+ {
+  "date": "2026-10-21",
+  "team": "Mayos de Navojoa",
+  "player": "Jorge Moyoroqui",
+  "category": "Activated",
+  "description": "Mayos de Navojoa activated RHP Jorge Moyoroqui from the reserve list."
  },
  {
   "date": "2026-10-21",
@@ -148,24 +155,24 @@
  },
  {
   "date": "2026-10-21",
-  "team": "Venados de Mazatlan",
-  "player": "Ruben Reyes",
+  "team": "Mayos de Navojoa",
+  "player": "Luis Valdez",
   "category": "Activated",
-  "description": "Venados de Mazatlan activated LHP Ruben Reyes from the reserve list."
- },
- {
-  "date": "2026-10-20",
-  "team": "Naranjeros de Hermosillo",
-  "player": "Augusto Mendieta",
-  "category": "Activated",
-  "description": "Naranjeros de Hermosillo activated RHP Augusto Mendieta from the reserve list."
+  "description": "Mayos de Navojoa activated LHP Luis Valdez from the reserve list."
  },
  {
   "date": "2026-10-20",
   "team": "Aguilas de Mexicali",
-  "player": "Yamil Castillo",
+  "player": "Sergio Garcia-Repper",
   "category": "Activated",
-  "description": "Aguilas de Mexicali activated RHP Yamil Castillo from the reserve list."
+  "description": "Aguilas de Mexicali activated RHP Sergio Garcia-Repper from the reserve list."
+ },
+ {
+  "date": "2026-10-20",
+  "team": "Mayos de Navojoa",
+  "player": "Oscar Soria",
+  "category": "Activated",
+  "description": "Mayos de Navojoa activated RHP Oscar Soria from the reserve list."
  },
  {
   "date": "2026-10-20",
@@ -183,6 +190,27 @@
  },
  {
   "date": "2026-10-20",
+  "team": "Naranjeros de Hermosillo",
+  "player": "Enrique Castillo",
+  "category": "Activated",
+  "description": "Naranjeros de Hermosillo activated RHP Enrique Castillo from the reserve list."
+ },
+ {
+  "date": "2026-10-20",
+  "team": "Naranjeros de Hermosillo",
+  "player": "Augusto Mendieta",
+  "category": "Activated",
+  "description": "Naranjeros de Hermosillo activated RHP Augusto Mendieta from the reserve list."
+ },
+ {
+  "date": "2026-10-20",
+  "team": "Algodoneros de Guasave",
+  "player": "Rogelio Cobos",
+  "category": "Activated",
+  "description": "Algodoneros de Guasave activated OF Rogelio Cobos from the reserve list."
+ },
+ {
+  "date": "2026-10-20",
   "team": "Estrellas Orientales",
   "player": "Spencer Bivens",
   "category": "Activated",
@@ -194,6 +222,27 @@
   "player": "Alex Carrillo",
   "category": "Activated",
   "description": "Tiburones de La Guaira activated RHP Alex Carrillo."
+ },
+ {
+  "date": "2026-10-20",
+  "team": "Caneros de los Mochis",
+  "player": "Francisco Pazos",
+  "category": "Activated",
+  "description": "Caneros de los Mochis activated RHP Francisco Pazos from the reserve list."
+ },
+ {
+  "date": "2026-10-20",
+  "team": "Algodoneros de Guasave",
+  "player": "Yael Romero",
+  "category": "Activated",
+  "description": "Algodoneros de Guasave activated 1B Yael Romero from the reserve list."
+ },
+ {
+  "date": "2026-10-20",
+  "team": "Aguilas de Mexicali",
+  "player": "Roberto Gonzalez",
+  "category": "Activated",
+  "description": "Aguilas de Mexicali activated 2B Roberto Gonzalez from the reserve list."
  },
  {
   "date": "2026-10-20",
@@ -211,48 +260,6 @@
  },
  {
   "date": "2026-10-20",
-  "team": "Naranjeros de Hermosillo",
-  "player": "Enrique Castillo",
-  "category": "Activated",
-  "description": "Naranjeros de Hermosillo activated RHP Enrique Castillo from the reserve list."
- },
- {
-  "date": "2026-10-20",
-  "team": "Mayos de Navojoa",
-  "player": "Oscar Soria",
-  "category": "Activated",
-  "description": "Mayos de Navojoa activated RHP Oscar Soria from the reserve list."
- },
- {
-  "date": "2026-10-20",
-  "team": "Algodoneros de Guasave",
-  "player": "Rogelio Cobos",
-  "category": "Activated",
-  "description": "Algodoneros de Guasave activated OF Rogelio Cobos from the reserve list."
- },
- {
-  "date": "2026-10-20",
-  "team": "Aguilas de Mexicali",
-  "player": "Roberto Gonzalez",
-  "category": "Activated",
-  "description": "Aguilas de Mexicali activated 2B Roberto Gonzalez from the reserve list."
- },
- {
-  "date": "2026-10-20",
-  "team": "Aguilas de Mexicali",
-  "player": "Sergio Garcia-Repper",
-  "category": "Activated",
-  "description": "Aguilas de Mexicali activated RHP Sergio Garcia-Repper from the reserve list."
- },
- {
-  "date": "2026-10-20",
-  "team": "Algodoneros de Guasave",
-  "player": "Yael Romero",
-  "category": "Activated",
-  "description": "Algodoneros de Guasave activated 1B Yael Romero from the reserve list."
- },
- {
-  "date": "2026-10-20",
   "team": "Leones del Escogido",
   "player": "Michael De La Cruz",
   "category": "Activated",
@@ -267,17 +274,24 @@
  },
  {
   "date": "2026-10-20",
-  "team": "Caneros de los Mochis",
-  "player": "Francisco Pazos",
+  "team": "Aguilas de Mexicali",
+  "player": "Yamil Castillo",
   "category": "Activated",
-  "description": "Caneros de los Mochis activated RHP Francisco Pazos from the reserve list."
+  "description": "Aguilas de Mexicali activated RHP Yamil Castillo from the reserve list."
  },
  {
   "date": "2026-10-18",
-  "team": "Algodoneros de Guasave",
-  "player": "Jose Alvarez",
+  "team": "Jaguares de Nayarit",
+  "player": "Erick Rodriguez",
   "category": "Activated",
-  "description": "Algodoneros de Guasave activated RHP Jose Alvarez from the reserve list."
+  "description": "Jaguares de Nayarit activated RHP Erick Rodriguez from the reserve list."
+ },
+ {
+  "date": "2026-10-18",
+  "team": "Jaguares de Nayarit",
+  "player": "Diego Hernandez",
+  "category": "Activated",
+  "description": "Jaguares de Nayarit activated RHP Diego Hernandez from the reserve list."
  },
  {
   "date": "2026-10-18",
@@ -288,10 +302,10 @@
  },
  {
   "date": "2026-10-18",
-  "team": "Jaguares de Nayarit",
-  "player": "Diego Hernandez",
+  "team": "Algodoneros de Guasave",
+  "player": "Jose Alvarez",
   "category": "Activated",
-  "description": "Jaguares de Nayarit activated RHP Diego Hernandez from the reserve list."
+  "description": "Algodoneros de Guasave activated RHP Jose Alvarez from the reserve list."
  },
  {
   "date": "2026-10-18",
@@ -308,18 +322,11 @@
   "description": "Algodoneros de Guasave activated 2B Victor Rodriguez from the reserve list."
  },
  {
-  "date": "2026-10-18",
-  "team": "Jaguares de Nayarit",
-  "player": "Erick Rodriguez",
-  "category": "Activated",
-  "description": "Jaguares de Nayarit activated RHP Erick Rodriguez from the reserve list."
- },
- {
   "date": "2026-10-17",
-  "team": "Jaguares de Nayarit",
-  "player": "Marco Fregozo",
+  "team": "Naranjeros de Hermosillo",
+  "player": "Cristhofer Lozoya",
   "category": "Activated",
-  "description": "Jaguares de Nayarit activated RHP Marco Fregozo from the reserve list."
+  "description": "Naranjeros de Hermosillo activated RHP Cristhofer Lozoya from the reserve list."
  },
  {
   "date": "2026-10-17",
@@ -330,24 +337,17 @@
  },
  {
   "date": "2026-10-17",
-  "team": "Aguilas de Mexicali",
-  "player": "Alonso Becerra",
+  "team": "Tigres del Licey",
+  "player": "Vladimir Gutierrez",
   "category": "Activated",
-  "description": "Aguilas de Mexicali activated LHP Alonso Becerra from the reserve list."
+  "description": "Tigres del Licey activated RHP Vladimir Gutierrez."
  },
  {
   "date": "2026-10-17",
-  "team": "Caneros de los Mochis",
-  "player": "Alejandro Carrillo",
+  "team": "Yaquis de Obregon",
+  "player": "Cristian Alvarado",
   "category": "Activated",
-  "description": "Caneros de los Mochis activated LHP Alejandro Carrillo from the reserve list."
- },
- {
-  "date": "2026-10-17",
-  "team": "Venados de Mazatlan",
-  "player": "Octavio Acosta",
-  "category": "Activated",
-  "description": "Venados de Mazatlan activated RHP Octavio Acosta."
+  "description": "Yaquis de Obregon activated RHP Cristian Alvarado from the reserve list."
  },
  {
   "date": "2026-10-17",
@@ -362,6 +362,20 @@
   "player": "Francisco Pazos",
   "category": "Activated",
   "description": "Caneros de los Mochis activated RHP Francisco Pazos from the reserve list."
+ },
+ {
+  "date": "2026-10-17",
+  "team": "Aguilas de Mexicali",
+  "player": "Alonso Becerra",
+  "category": "Activated",
+  "description": "Aguilas de Mexicali activated LHP Alonso Becerra from the reserve list."
+ },
+ {
+  "date": "2026-10-17",
+  "team": "Naranjeros de Hermosillo",
+  "player": "Nick Margevicius",
+  "category": "Activated",
+  "description": "Naranjeros de Hermosillo activated LHP Nick Margevicius."
  },
  {
   "date": "2026-10-17",
@@ -386,17 +400,24 @@
  },
  {
   "date": "2026-10-17",
-  "team": "Tigres del Licey",
-  "player": "Vladimir Gutierrez",
+  "team": "Caneros de los Mochis",
+  "player": "Alejandro Carrillo",
   "category": "Activated",
-  "description": "Tigres del Licey activated RHP Vladimir Gutierrez."
+  "description": "Caneros de los Mochis activated LHP Alejandro Carrillo from the reserve list."
  },
  {
   "date": "2026-10-17",
-  "team": "Yaquis de Obregon",
-  "player": "Cristian Alvarado",
+  "team": "Venados de Mazatlan",
+  "player": "Octavio Acosta",
   "category": "Activated",
-  "description": "Yaquis de Obregon activated RHP Cristian Alvarado from the reserve list."
+  "description": "Venados de Mazatlan activated RHP Octavio Acosta."
+ },
+ {
+  "date": "2026-10-17",
+  "team": "Jaguares de Nayarit",
+  "player": "Marco Fregozo",
+  "category": "Activated",
+  "description": "Jaguares de Nayarit activated RHP Marco Fregozo from the reserve list."
  },
  {
   "date": "2026-10-17",
@@ -404,20 +425,6 @@
   "player": "Augusto Mendieta",
   "category": "Activated",
   "description": "Naranjeros de Hermosillo activated RHP Augusto Mendieta from the reserve list."
- },
- {
-  "date": "2026-10-17",
-  "team": "Naranjeros de Hermosillo",
-  "player": "Cristhofer Lozoya",
-  "category": "Activated",
-  "description": "Naranjeros de Hermosillo activated RHP Cristhofer Lozoya from the reserve list."
- },
- {
-  "date": "2026-10-17",
-  "team": "Naranjeros de Hermosillo",
-  "player": "Nick Margevicius",
-  "category": "Activated",
-  "description": "Naranjeros de Hermosillo activated LHP Nick Margevicius."
  },
  {
   "date": "2026-10-16",
@@ -428,10 +435,10 @@
  },
  {
   "date": "2026-10-16",
-  "team": "Naranjeros de Hermosillo",
-  "player": "Orlando Gonzalez",
+  "team": "Venados de Mazatlan",
+  "player": "Jesus Rios",
   "category": "Activated",
-  "description": "Naranjeros de Hermosillo activated RHP Orlando Gonzalez from the reserve list."
+  "description": "Venados de Mazatlan activated RHP Jesus Rios from the reserve list."
  },
  {
   "date": "2026-10-16",
@@ -449,17 +456,17 @@
  },
  {
   "date": "2026-10-16",
-  "team": "Venados de Mazatlan",
-  "player": "Jesus Rios",
-  "category": "Activated",
-  "description": "Venados de Mazatlan activated RHP Jesus Rios from the reserve list."
- },
- {
-  "date": "2026-10-16",
   "team": "Toros del Este",
   "player": "Ismael Alcantara",
   "category": "Activated",
   "description": "Toros del Este activated CF Ismael Alcantara."
+ },
+ {
+  "date": "2026-10-16",
+  "team": "Naranjeros de Hermosillo",
+  "player": "Orlando Gonzalez",
+  "category": "Activated",
+  "description": "Naranjeros de Hermosillo activated RHP Orlando Gonzalez from the reserve list."
  },
  {
   "date": "2026-10-15",
@@ -485,41 +492,6 @@
  {
   "date": "2026-10-14",
   "team": "Algodoneros de Guasave",
-  "player": "Kristian Delgado",
-  "category": "Activated",
-  "description": "Algodoneros de Guasave activated 3B Kristian Delgado."
- },
- {
-  "date": "2026-10-14",
-  "team": "Tomateros de Culiacan",
-  "player": "Baltazar Arredondo",
-  "category": "Activated",
-  "description": "Tomateros de Culiacan activated LHP Baltazar Arredondo from the reserve list."
- },
- {
-  "date": "2026-10-14",
-  "team": "Aguilas de Mexicali",
-  "player": "Angel Lopez",
-  "category": "Activated",
-  "description": "Aguilas de Mexicali activated LHP Angel Lopez."
- },
- {
-  "date": "2026-10-14",
-  "team": "Caneros de los Mochis",
-  "player": "Asael Sanchez",
-  "category": "Activated",
-  "description": "Caneros de los Mochis activated OF Asael Sanchez from the reserve list."
- },
- {
-  "date": "2026-10-14",
-  "team": "Algodoneros de Guasave",
-  "player": "Alberto Barriga",
-  "category": "Activated",
-  "description": "Algodoneros de Guasave activated C Alberto Barriga."
- },
- {
-  "date": "2026-10-14",
-  "team": "Algodoneros de Guasave",
   "player": "Yael Romero",
   "category": "Activated",
   "description": "Algodoneros de Guasave activated 1B Yael Romero."
@@ -527,9 +499,16 @@
  {
   "date": "2026-10-14",
   "team": "Tomateros de Culiacan",
-  "player": "Kevin Robledo",
+  "player": "Jon Singleton",
   "category": "Activated",
-  "description": "Tomateros de Culiacan activated C Kevin Robledo."
+  "description": "Tomateros de Culiacan activated 1B Jon Singleton."
+ },
+ {
+  "date": "2026-10-14",
+  "team": "Aguilas de Mexicali",
+  "player": "Angel Lopez",
+  "category": "Activated",
+  "description": "Aguilas de Mexicali activated LHP Angel Lopez."
  },
  {
   "date": "2026-10-14",
@@ -554,6 +533,34 @@
  },
  {
   "date": "2026-10-14",
+  "team": "Tomateros de Culiacan",
+  "player": "Baltazar Arredondo",
+  "category": "Activated",
+  "description": "Tomateros de Culiacan activated LHP Baltazar Arredondo from the reserve list."
+ },
+ {
+  "date": "2026-10-14",
+  "team": "Tomateros de Culiacan",
+  "player": "Kevin Robledo",
+  "category": "Activated",
+  "description": "Tomateros de Culiacan activated C Kevin Robledo."
+ },
+ {
+  "date": "2026-10-14",
+  "team": "Caneros de los Mochis",
+  "player": "Asael Sanchez",
+  "category": "Activated",
+  "description": "Caneros de los Mochis activated OF Asael Sanchez from the reserve list."
+ },
+ {
+  "date": "2026-10-14",
+  "team": "Algodoneros de Guasave",
+  "player": "Alberto Barriga",
+  "category": "Activated",
+  "description": "Algodoneros de Guasave activated C Alberto Barriga."
+ },
+ {
+  "date": "2026-10-14",
   "team": "Algodoneros de Guasave",
   "player": "Jorge Monroy",
   "category": "Activated",
@@ -568,10 +575,10 @@
  },
  {
   "date": "2026-10-14",
-  "team": "Tomateros de Culiacan",
-  "player": "Jon Singleton",
+  "team": "Algodoneros de Guasave",
+  "player": "Kristian Delgado",
   "category": "Activated",
-  "description": "Tomateros de Culiacan activated 1B Jon Singleton."
+  "description": "Algodoneros de Guasave activated 3B Kristian Delgado."
  },
  {
   "date": "2026-10-13",
