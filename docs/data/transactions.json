@@ -1,20 +1,6 @@
 [
  {
   "date": "2026-10-27",
-  "team": "Tiburones de La Guaira",
-  "player": "Jorgan Cavanerio",
-  "category": "Trade",
-  "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
- },
- {
-  "date": "2026-10-27",
-  "team": "Tiburones de La Guaira",
-  "player": "Pedro Rodriguez",
-  "category": "Trade",
-  "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
- },
- {
-  "date": "2026-10-27",
   "team": "Aguilas del Zulia",
   "player": "Nelvis Ochoa",
   "category": "Trade",
@@ -31,6 +17,20 @@
   "date": "2026-10-27",
   "team": "Aguilas del Zulia",
   "player": "Anthony Escobar",
+  "category": "Trade",
+  "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
+ },
+ {
+  "date": "2026-10-27",
+  "team": "Tiburones de La Guaira",
+  "player": "Jorgan Cavanerio",
+  "category": "Trade",
+  "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
+ },
+ {
+  "date": "2026-10-27",
+  "team": "Tiburones de La Guaira",
+  "player": "Pedro Rodriguez",
   "category": "Trade",
   "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
  },
@@ -274,10 +274,10 @@
  },
  {
   "date": "2026-10-23",
-  "team": "Naranjeros de Hermosillo",
-  "player": "Cristhofer Lozoya",
+  "team": "Tomateros de Culiacan",
+  "player": "Kevin Robledo",
   "category": "Activated",
-  "description": "Naranjeros de Hermosillo activated RHP Cristhofer Lozoya from the reserve list."
+  "description": "Tomateros de Culiacan activated C Kevin Robledo from the reserve list."
  },
  {
   "date": "2026-10-23",
@@ -288,66 +288,10 @@
  },
  {
   "date": "2026-10-23",
-  "team": "Charros de Jalisco",
-  "player": "Gerardo Reyes",
-  "category": "Activated",
-  "description": "Charros de Jalisco activated RHP Gerardo Reyes from the reserve list."
- },
- {
-  "date": "2026-10-23",
-  "team": "Charros de Jalisco",
-  "player": "Axel Munoz",
-  "category": "Activated",
-  "description": "Charros de Jalisco activated RHP Axel Munoz from the reserve list."
- },
- {
-  "date": "2026-10-23",
-  "team": "Tampa Bay Rays",
-  "player": "Garrett Cleavinger",
-  "category": "Activated",
-  "description": "Tampa Bay Rays activated LHP Garrett Cleavinger."
- },
- {
-  "date": "2026-10-23",
-  "team": "Tomateros de Culiacan",
-  "player": "Kevin Robledo",
-  "category": "Activated",
-  "description": "Tomateros de Culiacan activated C Kevin Robledo from the reserve list."
- },
- {
-  "date": "2026-10-23",
-  "team": "Milwaukee Brewers",
-  "player": "Brandon Woodruff",
-  "category": "IL (injury)",
-  "description": "Milwaukee Brewers activated RHP Brandon Woodruff from the 60-day injured list."
- },
- {
-  "date": "2026-10-23",
-  "team": "Yaquis de Obregon",
-  "player": "Jesus Luna",
-  "category": "Activated",
-  "description": "Yaquis de Obregon activated RHP Jesus Luna from the reserve list."
- },
- {
-  "date": "2026-10-23",
   "team": "Naranjeros de Hermosillo",
   "player": "Angel Camacho",
   "category": "Activated",
   "description": "Naranjeros de Hermosillo activated LHP Angel Camacho from the reserve list."
- },
- {
-  "date": "2026-10-23",
-  "team": "Naranjeros de Hermosillo",
-  "player": "Joel Ibarra",
-  "category": "Activated",
-  "description": "Naranjeros de Hermosillo activated RHP Joel Ibarra from the reserve list."
- },
- {
-  "date": "2026-10-23",
-  "team": "Charros de Jalisco",
-  "player": "Irving Vazquez",
-  "category": "Activated",
-  "description": "Charros de Jalisco activated RHP Irving Vazquez from the reserve list."
  },
  {
   "date": "2026-10-23",
@@ -379,10 +323,66 @@
  },
  {
   "date": "2026-10-23",
+  "team": "Charros de Jalisco",
+  "player": "Irving Vazquez",
+  "category": "Activated",
+  "description": "Charros de Jalisco activated RHP Irving Vazquez from the reserve list."
+ },
+ {
+  "date": "2026-10-23",
+  "team": "Yaquis de Obregon",
+  "player": "Jesus Luna",
+  "category": "Activated",
+  "description": "Yaquis de Obregon activated RHP Jesus Luna from the reserve list."
+ },
+ {
+  "date": "2026-10-23",
+  "team": "Charros de Jalisco",
+  "player": "Gerardo Reyes",
+  "category": "Activated",
+  "description": "Charros de Jalisco activated RHP Gerardo Reyes from the reserve list."
+ },
+ {
+  "date": "2026-10-23",
+  "team": "Milwaukee Brewers",
+  "player": "Brandon Woodruff",
+  "category": "IL (injury)",
+  "description": "Milwaukee Brewers activated RHP Brandon Woodruff from the 60-day injured list."
+ },
+ {
+  "date": "2026-10-23",
+  "team": "Naranjeros de Hermosillo",
+  "player": "Cristhofer Lozoya",
+  "category": "Activated",
+  "description": "Naranjeros de Hermosillo activated RHP Cristhofer Lozoya from the reserve list."
+ },
+ {
+  "date": "2026-10-23",
+  "team": "Charros de Jalisco",
+  "player": "Axel Munoz",
+  "category": "Activated",
+  "description": "Charros de Jalisco activated RHP Axel Munoz from the reserve list."
+ },
+ {
+  "date": "2026-10-23",
+  "team": "Naranjeros de Hermosillo",
+  "player": "Joel Ibarra",
+  "category": "Activated",
+  "description": "Naranjeros de Hermosillo activated RHP Joel Ibarra from the reserve list."
+ },
+ {
+  "date": "2026-10-23",
   "team": "Algodoneros de Guasave",
   "player": "Christian Lopez",
   "category": "Activated",
   "description": "Algodoneros de Guasave activated LHP Christian Lopez from the reserve list."
+ },
+ {
+  "date": "2026-10-23",
+  "team": "Tampa Bay Rays",
+  "player": "Garrett Cleavinger",
+  "category": "Activated",
+  "description": "Tampa Bay Rays activated LHP Garrett Cleavinger."
  },
  {
   "date": "2026-10-22",
