@@ -1,24 +1,38 @@
 [
  {
   "date": "2026-10-27",
-  "team": "Tiburones de La Guaira",
-  "player": "Jorgan Cavanerio",
+  "team": "Aguilas del Zulia",
+  "player": "Nelvis Ochoa",
   "category": "Trade",
   "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
  },
  {
   "date": "2026-10-27",
-  "team": "Aguilas del Zulia",
-  "player": "Pedro Garcia",
+  "team": "Jaguares de Nayarit",
+  "player": "Marco Fregozo",
   "category": "Activated",
-  "description": "Aguilas del Zulia activated RHP Pedro Garcia."
+  "description": "Jaguares de Nayarit activated RHP Marco Fregozo from the reserve list."
  },
  {
   "date": "2026-10-27",
-  "team": "Caneros de los Mochis",
-  "player": "Francisco Pazos",
+  "team": "Navegantes del Magallanes",
+  "player": "Francisco Alvarez",
   "category": "Activated",
-  "description": "Caneros de los Mochis activated RHP Francisco Pazos from the reserve list."
+  "description": "Navegantes del Magallanes activated C Francisco Alvarez."
+ },
+ {
+  "date": "2026-10-27",
+  "team": "Aguilas del Zulia",
+  "player": "Andry Lara",
+  "category": "Activated",
+  "description": "Aguilas del Zulia activated RHP Andry Lara."
+ },
+ {
+  "date": "2026-10-27",
+  "team": "Mayos de Navojoa",
+  "player": "Mario Mendoza",
+  "category": "Activated",
+  "description": "Mayos de Navojoa activated RHP Mario Mendoza from the reserve list."
  },
  {
   "date": "2026-10-27",
@@ -36,10 +50,10 @@
  },
  {
   "date": "2026-10-27",
-  "team": "Aguilas del Zulia",
-  "player": "Andry Lara",
+  "team": "Algodoneros de Guasave",
+  "player": "Heber Villalobos",
   "category": "Activated",
-  "description": "Aguilas del Zulia activated RHP Andry Lara."
+  "description": "Algodoneros de Guasave activated C Heber Villalobos from the reserve list."
  },
  {
   "date": "2026-10-27",
@@ -51,23 +65,9 @@
  {
   "date": "2026-10-27",
   "team": "Algodoneros de Guasave",
-  "player": "Heber Villalobos",
-  "category": "Activated",
-  "description": "Algodoneros de Guasave activated C Heber Villalobos from the reserve list."
- },
- {
-  "date": "2026-10-27",
-  "team": "Algodoneros de Guasave",
   "player": "Victor Rodriguez",
   "category": "Activated",
   "description": "Algodoneros de Guasave activated 2B Victor Rodriguez from the reserve list."
- },
- {
-  "date": "2026-10-27",
-  "team": "Jaguares de Nayarit",
-  "player": "Marco Fregozo",
-  "category": "Activated",
-  "description": "Jaguares de Nayarit activated RHP Marco Fregozo from the reserve list."
  },
  {
   "date": "2026-10-27",
@@ -78,17 +78,10 @@
  },
  {
   "date": "2026-10-27",
-  "team": "Jaguares de Nayarit",
-  "player": "Omar Sainz",
+  "team": "Caneros de los Mochis",
+  "player": "Francisco Pazos",
   "category": "Activated",
-  "description": "Jaguares de Nayarit activated LHP Omar Sainz from the reserve list."
- },
- {
-  "date": "2026-10-27",
-  "team": "Aguilas del Zulia",
-  "player": "Anthony Escobar",
-  "category": "Trade",
-  "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
+  "description": "Caneros de los Mochis activated RHP Francisco Pazos from the reserve list."
  },
  {
   "date": "2026-10-27",
@@ -96,13 +89,6 @@
   "player": "Pedro Rodriguez",
   "category": "Trade",
   "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
- },
- {
-  "date": "2026-10-27",
-  "team": "Yaquis de Obregon",
-  "player": "Cristian Alvarado",
-  "category": "Activated",
-  "description": "Yaquis de Obregon activated RHP Cristian Alvarado from the reserve list."
  },
  {
   "date": "2026-10-27",
@@ -114,7 +100,21 @@
  {
   "date": "2026-10-27",
   "team": "Aguilas del Zulia",
-  "player": "Nelvis Ochoa",
+  "player": "Pedro Garcia",
+  "category": "Activated",
+  "description": "Aguilas del Zulia activated RHP Pedro Garcia."
+ },
+ {
+  "date": "2026-10-27",
+  "team": "Tiburones de La Guaira",
+  "player": "Jorgan Cavanerio",
+  "category": "Trade",
+  "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
+ },
+ {
+  "date": "2026-10-27",
+  "team": "Aguilas del Zulia",
+  "player": "Anthony Escobar",
   "category": "Trade",
   "description": "Aguilas del Zulia traded RHP Jorgan Cavanerio and RHP Pedro Rodriguez to Tiburones de La Guaira for RHP Anthony Escobar, RHP Pedro Garcia and RHP Nelvis Ochoa."
  },
@@ -127,17 +127,17 @@
  },
  {
   "date": "2026-10-27",
-  "team": "Mayos de Navojoa",
-  "player": "Mario Mendoza",
+  "team": "Yaquis de Obregon",
+  "player": "Cristian Alvarado",
   "category": "Activated",
-  "description": "Mayos de Navojoa activated RHP Mario Mendoza from the reserve list."
+  "description": "Yaquis de Obregon activated RHP Cristian Alvarado from the reserve list."
  },
  {
   "date": "2026-10-27",
-  "team": "Navegantes del Magallanes",
-  "player": "Francisco Alvarez",
+  "team": "Jaguares de Nayarit",
+  "player": "Omar Sainz",
   "category": "Activated",
-  "description": "Navegantes del Magallanes activated C Francisco Alvarez."
+  "description": "Jaguares de Nayarit activated LHP Omar Sainz from the reserve list."
  },
  {
   "date": "2026-10-25",
