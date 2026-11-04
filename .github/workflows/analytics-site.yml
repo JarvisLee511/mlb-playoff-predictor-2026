@@ -27,34 +27,45 @@ concurrency:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
 
+      # Once the season is complete there is nothing to predict (see src/season.py).
+      - name: Season gate
+        id: season
+        run: python3 .github/season_gate.py >> "$GITHUB_OUTPUT"
+
       - uses: actions/setup-python@v6
+        if: steps.season.outputs.done != 'true'
         with:
           python-version: "3.12"
           cache: pip
 
       - uses: actions/setup-node@v4
+        if: steps.season.outputs.done != 'true'
         with:
           node-version: "20"
 
       - name: Install Python deps
+        if: steps.season.outputs.done != 'true'
         run: |
           pip install -r requirements-ci.txt
           pip install -r requirements-analytics.txt
 
       - name: Refresh pipeline data
+        if: steps.season.outputs.done != 'true'
         run: python daily_update.py
 
       - name: Build warehouse (dbt)
+        if: steps.season.outputs.done != 'true'
         working-directory: analytics/dbt
         run: |
           mkdir -p ../warehouse
           dbt build --profiles-dir .
 
       - name: Build Evidence site
+        if: steps.season.outputs.done != 'true'
         working-directory: analytics/evidence
         run: |
           npm ci
@@ -62,6 +73,7 @@ jobs:
           npm run build
 
       - name: Publish to docs/analytics
+        if: steps.season.outputs.done != 'true'
         run: |
           rm -rf docs/analytics
           mkdir -p docs/analytics

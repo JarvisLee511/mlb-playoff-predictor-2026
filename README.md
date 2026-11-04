@@ -4,12 +4,22 @@
 
 Machine learning pipeline that predicts individual MLB game outcomes and propagates
 those predictions into **2026 postseason odds** via Monte Carlo simulation —
-FiveThirtyEight-style, built from scratch in Python. A GitHub Actions job retrains
-the models and refreshes the site **automatically every morning**.
+FiveThirtyEight-style, built from scratch in Python. A GitHub Actions job retrained
+the models and refreshed the site **automatically every morning** of the season.
+
+> **The 2026 season is complete.** All 1,427 scored predictions are final, the site's
+> playoff odds are frozen as the pre-playoff forecast, and the postseason results sit next
+> to them: the model's favourite, the Milwaukee Brewers (25.8%), won the World Series.
+> See [2026 postseason](#2026-postseason).
 
 ## Daily automation
 
-Every day at 7:30 AM ET, `.github/workflows/daily.yml` runs `daily_update.py`:
+Every morning (3:30 AM ET, with a 7:30 AM backup), `.github/workflows/daily.yml` runs
+`daily_update.py`. Step 0 is a season gate (`src/season.py`): once every regular-season
+game is played and every prediction is scored, the pipeline stops, the site freezes, and
+only `docs/data/season.json` (the postseason results) is updated until the World Series
+ends. After that the workflow exits in seconds and commits nothing. Setting
+`CURRENT_SEASON` in `src/config.py` to the next year re-opens the gate. In season:
 
 1. **Fetch** the latest results from the MLB Stats API.
 2. **Score yesterday's predictions** against actual results and append them to
@@ -61,31 +71,32 @@ the Elo baseline by more than noise.** That is the result, not a bug — and the
 [says so on its own Model Tracker tab](https://jarvislee511.github.io/mlb-playoff-predictor-2026/)
 rather than presenting a leaderboard that implies otherwise.
 
-**Backtest** — 4,097 held-out games (2025 + played 2026, never seen in training;
+**Backtest** — 4,859 held-out games (2025 + played 2026, never seen in training;
 `outputs/metrics.json`):
 
 | Model | Log loss | Brier | AUC | Accuracy |
 |---|---|---|---|---|
-| Elo baseline | 0.6827 | 0.2449 | 0.567 | 55.9% |
-| Logistic regression | 0.6818 | 0.2444 | 0.571 | 55.3% |
-| XGBoost | 0.6838 | 0.2454 | 0.566 | 55.4% |
-| Elo+LR stack | **0.6818** | 0.2444 | 0.572 | 55.7% |
-| Poisson–Skellam | 0.6874 | 0.2471 | 0.570 | 55.0% |
+| Elo baseline | 0.6814 | 0.2442 | 0.571 | 56.2% |
+| Logistic regression | **0.6797** | 0.2434 | 0.578 | 55.8% |
+| XGBoost | 0.6818 | 0.2444 | 0.573 | 56.2% |
+| Elo+LR stack | 0.6800 | 0.2435 | 0.578 | 56.2% |
+| Poisson–Skellam | 0.6849 | 0.2459 | 0.576 | 55.6% |
 
-**Live tracker** — 650 games predicted *before first pitch* and scored the next morning,
-restricted to the games every model called, with a paired bootstrap (5,000 resamples) on
-each model's log-loss gap to Elo:
+**Live tracker, final** — the whole 2026 regular season: every game predicted *before
+first pitch* and scored the next morning, restricted to the 1,412 games every model
+called, with a paired bootstrap (5,000 resamples) on each model's log-loss gap to Elo:
 
 | Model | Log loss | Accuracy | Δ vs Elo | 95% CI |
 |---|---|---|---|---|
-| Elo baseline | 0.6868 | 54.9% | — | — |
-| Elo+LR stack | **0.6863** | 54.2% | −0.0005 | [−0.0051, +0.0041] |
-| XGBoost | 0.6872 | 54.2% | +0.0004 | [−0.0058, +0.0068] |
-| Logistic regression | 0.6876 | 53.7% | +0.0008 | [−0.0053, +0.0071] |
-| Poisson–Skellam | 0.6928 | 54.9% | +0.0060 | [−0.0046, +0.0166] |
+| Elo baseline | 0.6800 | 56.4% | — | — |
+| Logistic regression | **0.6772** | 56.5% | −0.0028 | [−0.0070, +0.0013] |
+| Elo+LR stack | 0.6774 | 57.0% | −0.0026 | [−0.0056, +0.0003] |
+| XGBoost | 0.6797 | 56.8% | −0.0003 | [−0.0043, +0.0039] |
+| Poisson–Skellam | 0.6806 | 56.9% | +0.0007 | [−0.0062, +0.0075] |
 
-Every interval spans zero. The best variant is 0.0005 log loss ahead of a rating system
-with no fitted features at all — a gap ten times smaller than the sampling noise.
+Every interval still spans zero, the stack's only just. The best model is 0.0028 log loss
+ahead of a rating system with no fitted features at all, and a full season of games is not
+enough to call that gap real.
 
 **Why that is the expected answer.** Elo already integrates team strength from every game
 ever played, and the features layered on top (season-to-date rate stats, 30-game form,
@@ -94,15 +105,24 @@ history*. Public pre-game information is close to exhausted; what remains is in-
 pitch-level detail, and day-of bullpen availability. Reporting a 0.001 improvement as a win
 would be the mistake.
 
-**Read log loss, not accuracy.** Always picking the home team scores 51.2% on that live
-sample. The models' own probabilities imply ~56% expected accuracy and they realize ~54%
-with a ±4-point 95% margin — i.e. they are well calibrated, and accuracy at this sample
-size cannot separate them. Calibration curves are on the site.
+**Read log loss, not accuracy.** Home teams won 52.9% of those games. The models' own
+probabilities implied 56–57% expected accuracy and they realized 56–57%, with a ±2.6-point
+95% margin: well calibrated, and still not separable from each other on accuracy.
+Calibration curves are on the site.
 
-> The live-sample figures above are rescored by the daily CI run, so they drift by a
-> few tenths of a point. `outputs/metrics.json` and the site always carry the current
-> numbers; the conclusion — that the gap between the models is smaller than the
-> sampling noise — has held every run.
+> These are the final figures for the 2026 regular season. The conclusion, that the gap
+> between the models is smaller than the sampling noise, did not change as the sample grew
+> from the 650 games this README first reported to the full season.
+
+## 2026 postseason
+
+The model does not predict postseason games; its last regular-season simulation (after the
+final game on 2026-09-27) is the pre-playoff forecast, frozen on the site's Odds tab with
+each team's actual result beside it. The model's favourite, the **Milwaukee Brewers**
+(25.8% to win the World Series, #1 of 12), beat the Tampa Bay Rays 4–1 in the World
+Series; both pennant winners were its favourites in their leagues. Picking at random from
+the 12-team field would give 8.3%. One postseason is a single draw, so this is a record,
+not a grade: the tracker above is where the model is graded.
 
 ### Ablations, kept in the record
 
@@ -131,7 +151,7 @@ streamlit run app/streamlit_app.py
 
 ```bash
 pip install -r requirements-dev.txt
-pytest -q          # 77 tests, ~2 s, no network and no data files
+pytest -q          # 96 tests, ~3 s, no network and no data files
 ```
 
 They guard the claims the rest of this README makes: the Elo scale and its

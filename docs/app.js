@@ -82,11 +82,27 @@ document.addEventListener("keydown", (e) => {
 const readout = (label, value, tone) =>
   `<div class="readout"><dt>${label}</dt><dd${tone ? ` class="is-${tone}"` : ""}>${value}</dd></div>`;
 
-Promise.all([json("meta.json"), json("accuracy.json"), json("odds.json")])
-  .then(([meta, acc, odds]) => {
+/* season.json is written by src/season.py: status "regular" while there are games to
+   predict, then "postseason"/"complete" with what the postseason did to the forecast. */
+const seasonP = json("season.json").catch(() => null);
+const isOver = (s) => !!s && s.status !== "regular";
+
+Promise.all([json("meta.json"), json("accuracy.json"), json("odds.json"), seasonP])
+  .then(([meta, acc, odds, season]) => {
     const parts = [];
-    const fav = [...odds].sort((a, b) => b.win_world_series - a.win_world_series)[0];
-    if (fav) parts.push(readout("WS favourite", `${fav.abbrev || fav.team_name} ${pct(fav.win_world_series)}`, "accent"));
+    const over = isOver(season);
+    if (over && season.champion) {
+      const c = season.champion;
+      parts.push(readout("Champion", c.abbrev, "accent"));
+      if (c.p_world_series != null) {
+        parts.push(readout("Model gave them",
+          `${pct(c.p_world_series)} · #${c.rank_world_series} of ${season.n_playoff_teams}`));
+      }
+    } else {
+      const fav = [...odds].sort((a, b) => b.win_world_series - a.win_world_series)[0];
+      if (fav) parts.push(readout(over ? "Pre-playoff favourite" : "WS favourite",
+        `${fav.abbrev || fav.team_name} ${pct(fav.win_world_series)}`, "accent"));
+    }
 
     const h2h = acc.head_to_head;
     if (h2h && h2h.models) {
@@ -99,7 +115,9 @@ Promise.all([json("meta.json"), json("accuracy.json"), json("odds.json")])
     } else {
       parts.push(readout("Scored", `${acc.n_scored} games`));
     }
-    parts.push(readout("Updated", meta.generated_at_utc));
+    parts.push(over
+      ? readout("Season", season.status === "complete" ? "Final" : "Postseason")
+      : readout("Updated", meta.generated_at_utc));
     document.getElementById("status-readout").innerHTML = parts.join("");
   })
   .catch(() => {
@@ -125,7 +143,17 @@ const gameCell = (g) => {
   </article>`;
 };
 
-json("today.json").then((d) => {
+Promise.all([json("today.json"), seasonP]).then(([d, season]) => {
+  if (isOver(season)) {
+    document.getElementById("today-title").textContent =
+      `The ${season.season} regular season is over`;
+    document.getElementById("today-games").innerHTML = `<div class="cell cell--w4"><p class="empty">
+      The last regular-season game was played on ${season.regular_season_ended}, and every
+      prediction on the record has been scored — see the Tracker. The model predicts
+      regular-season games only, so the postseason is recorded on the Odds tab against the
+      forecast, not predicted.</p></div>`;
+    return;
+  }
   document.getElementById("today-title").textContent = `Predictions for ${d.date}`;
   document.getElementById("today-games").innerHTML = d.games.length
     ? d.games.map(gameCell).join("")
@@ -139,17 +167,75 @@ json("today.json").then((d) => {
 });
 
 /* ---- odds ---- */
-json("odds.json").then((rows) => {
-  const sorted = [...rows].sort((a, b) => a.make_playoffs - b.make_playoffs);
+const shortLeague = (l) => (l === "American League" ? "AL" : l === "National League" ? "NL" : l);
+
+/* After the season the last odds are the pre-playoff forecast, frozen; say so, and set
+   what actually happened next to it. One postseason is one draw, so the notice reports
+   the outcome without grading the model on it. */
+function oddsNotice(season) {
+  const c = season.champion, f = season.favourite;
+  let lead;
+  if (c && f && c.abbrev === f.abbrev) {
+    lead = `The model's pre-playoff favourite, <strong>${c.team}</strong>
+      (${pct(c.p_world_series)} to win it all), won the World Series.`;
+  } else if (c) {
+    lead = `<strong>${c.team}</strong> won the World Series; the model had given them
+      ${pct(c.p_world_series)}, #${c.rank_world_series} of ${season.n_playoff_teams}. Its
+      favourite was ${f.team} at ${pct(f.p_world_series)}.`;
+  } else {
+    lead = "The postseason is under way; results are added as each series finishes.";
+  }
+  const pw = season.pennant_winners || [];
+  const pennants = !pw.length ? ""
+    : pw.every((p) => p.rank_pennant_in_league === 1)
+      ? ` Both pennant winners, ${pw.map((p) => p.team).join(" and ")}, were its favourites in
+         their leagues.`
+      : ` Pennants: ${pw.map((p) => `${p.team} (#${p.rank_pennant_in_league} in the
+         ${shortLeague(p.league)} at ${pct(p.p_pennant)})`).join(", ")}.`;
+  return `<p class="notice notice--context"><span class="notice__tag">How it went</span>
+    ${lead}${pennants} Picking a champion at random from the ${season.n_playoff_teams}-team
+    field gives ${pct(1 / season.n_playoff_teams)}. One postseason is a single draw, so this
+    is a record, not a grade: the model is graded on the Tracker, game by game.</p>`;
+}
+
+Promise.all([json("odds.json"), seasonP]).then(([rows, season]) => {
+  const over = isOver(season);
+  const results = (over && season.results) || {};
+  if (over) {
+    document.getElementById("odds-label").textContent = "Monte Carlo · 10,000 postseasons";
+    document.getElementById("odds-title").textContent = "Pre-playoff forecast";
+    document.getElementById("odds-hint").textContent =
+      `Simulated after the last regular-season game (${season.regular_season_ended}) and frozen
+       there; the postseason began on ${season.postseason_began}. Amber = American League,
+       chrome = National League. The Result column is what actually happened.`;
+    const notice = document.getElementById("odds-notice");
+    notice.hidden = false;
+    notice.innerHTML = oddsNotice(season);
+  }
+
+  // In season the chart answers "who gets in"; once the field is set that is 0 or 1
+  // for every team, so it answers "who wins it" for the teams that made it instead.
+  const field = over ? rows.filter((r) => r.make_playoffs >= 0.5) : rows;
+  const metric = over ? "win_world_series" : "make_playoffs";
+  // Result labels beside the bars need ~150px; on a phone the table's Result column
+  // carries them instead. (The chart sits in a hidden tab at load, so measure the window.)
+  const labelled = over && window.innerWidth >= 700;
+  const sorted = [...field].sort((a, b) => a[metric] - b[metric]);
   Plotly.newPlot("odds-chart", [{
     type: "bar", orientation: "h",
-    x: sorted.map((r) => r.make_playoffs),
+    x: sorted.map((r) => r[metric]),
     y: sorted.map((r) => r.team_name),
     marker: { color: sorted.map((r) => (r.league === "American League" ? AL : NL)) },
+    text: labelled ? sorted.map((r) => results[r.abbrev] || "") : undefined,
+    textposition: "outside",
+    cliponaxis: false,
     hovertemplate: "%{y}: %{x:.1%}<extra></extra>",
   }], layout({
-    height: 720,
-    xaxis: { tickformat: ".0%", title: axisTitle("P(make playoffs)") },
+    height: over ? 460 : 720,
+    ...(labelled ? { margin: { l: 170, r: 150, t: 8, b: 40 } } : {}),
+    xaxis: { tickformat: ".0%",
+             title: axisTitle(!over ? "P(make playoffs)"
+               : labelled ? "P(win World Series), before the postseason" : "P(win World Series)") },
   }), PLOT_CONFIG);
 
   const cols = [
@@ -157,6 +243,10 @@ json("odds.json").then((rows) => {
     ["proj_wins", "Proj W"], ["make_playoffs", "Playoffs"], ["win_division", "Div"],
     ["first_round_bye", "Bye"], ["win_pennant", "Pennant"], ["win_world_series", "World Series"],
   ];
+  if (over) {
+    cols.splice(4, 0, ["result", "Result"]);
+    rows = rows.map((r) => ({ ...r, result: results[r.abbrev] || "Missed playoffs" }));
+  }
   const pctCols = new Set(["make_playoffs", "win_division", "first_round_bye", "win_pennant", "win_world_series"]);
   const body = [...rows]
     .sort((a, b) => b.win_world_series - a.win_world_series)
@@ -328,7 +418,13 @@ json("accuracy.json").then((d) => {
 });
 
 /* ---- roster moves ---- */
-json("transactions.json").then((rows) => {
+Promise.all([json("transactions.json"), seasonP, json("meta.json")]).then(([rows, season, meta]) => {
+  if (isOver(season)) {
+    document.getElementById("moves-label").textContent = "Final fetch";
+    document.getElementById("moves-hint").textContent =
+      `The ten days before the season's last daily run (${meta.generated_at_utc}). Context
+       only — these were never used as model features.`;
+  }
   const table = document.getElementById("moves-table");
   const filters = document.getElementById("moves-filters");
   const categories = ["All", ...new Set(rows.map((r) => r.category))];

@@ -56,11 +56,12 @@
   <section id="odds" class="panel" role="tabpanel" aria-label="Playoff odds">
     <div class="bento">
       <div class="cell cell--w4 cell--head">
-        <span class="cell__label">Monte Carlo · 10,000 seasons</span>
-        <h2 class="cell__title">2026 playoff odds</h2>
-        <p class="hint">The remaining schedule and the full 12-team bracket, resimulated after every
+        <span class="cell__label" id="odds-label">Monte Carlo · 10,000 seasons</span>
+        <h2 class="cell__title" id="odds-title">2026 playoff odds</h2>
+        <p class="hint" id="odds-hint">The remaining schedule and the full 12-team bracket, resimulated after every
            daily retrain. Amber = American League, chrome = National League.</p>
       </div>
+      <div class="cell cell--w4" id="odds-notice" hidden></div>
       <div class="cell cell--w4 cell--flush"><div id="odds-chart" class="chart chart--tall"></div></div>
       <div class="cell cell--w4 cell--flush"><div class="table-wrap"><table id="odds-table"></table></div></div>
     </div>
@@ -115,9 +116,9 @@
   <section id="moves" class="panel" role="tabpanel" aria-label="Roster moves">
     <div class="bento">
       <div class="cell cell--w4 cell--head">
-        <span class="cell__label">Last 10 days</span>
+        <span class="cell__label" id="moves-label">Last 10 days</span>
         <h2 class="cell__title">Injuries &amp; roster moves</h2>
-        <p class="hint">Context only — these are fetched and shown, not used as model features.</p>
+        <p class="hint" id="moves-hint">Context only — these are fetched and shown, not used as model features.</p>
         <div class="filters" id="moves-filters" role="group" aria-label="Filter by category"></div>
       </div>
       <div class="cell cell--w4 cell--flush"><div class="table-wrap"><table id="moves-table"></table></div></div>

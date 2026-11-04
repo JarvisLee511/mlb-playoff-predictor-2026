@@ -1,0 +1,138 @@
+{
+ "season": 2026,
+ "status": "complete",
+ "regular_season_ended": "2026-09-27",
+ "postseason_began": "2026-09-29",
+ "n_playoff_teams": 12,
+ "favourite": {
+  "team": "Milwaukee Brewers",
+  "abbrev": "MIL",
+  "league": "National League",
+  "p_world_series": 0.2576,
+  "p_pennant": 0.3815,
+  "rank_world_series": 1,
+  "rank_pennant_in_league": 1
+ },
+ "champion": {
+  "team": "Milwaukee Brewers",
+  "abbrev": "MIL",
+  "league": "National League",
+  "p_world_series": 0.2576,
+  "p_pennant": 0.3815,
+  "rank_world_series": 1,
+  "rank_pennant_in_league": 1
+ },
+ "pennant_winners": [
+  {
+   "team": "Milwaukee Brewers",
+   "abbrev": "MIL",
+   "league": "National League",
+   "p_world_series": 0.2576,
+   "p_pennant": 0.3815,
+   "rank_world_series": 1,
+   "rank_pennant_in_league": 1
+  },
+  {
+   "team": "Tampa Bay Rays",
+   "abbrev": "TB",
+   "league": "American League",
+   "p_world_series": 0.1329,
+   "p_pennant": 0.3094,
+   "rank_world_series": 3,
+   "rank_pennant_in_league": 1
+  }
+ ],
+ "results": {
+  "ATL": "Lost Division Series",
+  "BOS": "Lost Wild Card Series",
+  "CHC": "Lost Wild Card Series",
+  "CWS": "Lost Division Series",
+  "CLE": "Lost LCS",
+  "HOU": "Lost Wild Card Series",
+  "LAD": "Lost LCS",
+  "MIL": "Won World Series",
+  "NYY": "Lost Division Series",
+  "PHI": "Lost Wild Card Series",
+  "SD": "Lost Division Series",
+  "TB": "Lost World Series"
+ },
+ "series": [
+  {
+   "round": "Wild Card Series",
+   "winner": "Chicago White Sox",
+   "loser": "Houston Astros",
+   "result": "CWS wins 2-0",
+   "ended": "2026-09-30"
+  },
+  {
+   "round": "Wild Card Series",
+   "winner": "New York Yankees",
+   "loser": "Boston Red Sox",
+   "result": "NYY wins 2-0",
+   "ended": "2026-09-30"
+  },
+  {
+   "round": "Wild Card Series",
+   "winner": "San Diego Padres",
+   "loser": "Chicago Cubs",
+   "result": "SD wins 2-0",
+   "ended": "2026-09-30"
+  },
+  {
+   "round": "Wild Card Series",
+   "winner": "Atlanta Braves",
+   "loser": "Philadelphia Phillies",
+   "result": "ATL wins 2-1",
+   "ended": "2026-10-01"
+  },
+  {
+   "round": "Division Series",
+   "winner": "Los Angeles Dodgers",
+   "loser": "Atlanta Braves",
+   "result": "LAD wins 3-1",
+   "ended": "2026-10-07"
+  },
+  {
+   "round": "Division Series",
+   "winner": "Milwaukee Brewers",
+   "loser": "San Diego Padres",
+   "result": "MIL wins 3-1",
+   "ended": "2026-10-07"
+  },
+  {
+   "round": "Division Series",
+   "winner": "Tampa Bay Rays",
+   "loser": "New York Yankees",
+   "result": "TB wins 3-0",
+   "ended": "2026-10-07"
+  },
+  {
+   "round": "Division Series",
+   "winner": "Cleveland Guardians",
+   "loser": "Chicago White Sox",
+   "result": "CLE wins 3-2",
+   "ended": "2026-10-10"
+  },
+  {
+   "round": "League Championship Series",
+   "winner": "Milwaukee Brewers",
+   "loser": "Los Angeles Dodgers",
+   "result": "MIL wins 4-0",
+   "ended": "2026-10-15"
+  },
+  {
+   "round": "League Championship Series",
+   "winner": "Tampa Bay Rays",
+   "loser": "Cleveland Guardians",
+   "result": "TB wins 4-2",
+   "ended": "2026-10-19"
+  },
+  {
+   "round": "World Series",
+   "winner": "Milwaukee Brewers",
+   "loser": "Tampa Bay Rays",
+   "result": "MIL wins 4-1",
+   "ended": "2026-10-28"
+  }
+ ]
+}
