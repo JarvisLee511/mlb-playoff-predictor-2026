@@ -286,9 +286,16 @@ json("accuracy.json").then((d) => {
     // sport being close to a coin flip. Every number here comes from the export,
     // so the sentence stays true as the sample grows.
     const b = d.baselines;
-    const [bk, bs] = Object.entries(d.summary).sort((x, y) => x[1].log_loss - y[1].log_loss)[0];
-    const span = b.market_ceiling_accuracy - b.always_home_accuracy;
-    const closed = span > 0 ? Math.round(((bs.accuracy - b.always_home_accuracy) / span) * 100) : null;
+    // Rank on the games every model called, as the header and the head-to-head table
+    // do. Each pane below covers a slightly different set of games, so ranking on those
+    // can name a different "best" model than the header (it did: stack vs LR).
+    const h2h = d.head_to_head && d.head_to_head.models ? d.head_to_head : null;
+    const pool = h2h ? h2h.models : d.summary;
+    const [bk, bs] = Object.entries(pool).sort((x, y) => x[1].log_loss - y[1].log_loss)[0];
+    const floor = h2h && h2h.home_win_rate != null ? h2h.home_win_rate : b.always_home_accuracy;
+    const nGames = h2h ? h2h.n : d.n_scored;
+    const span = b.market_ceiling_accuracy - floor;
+    const closed = span > 0 ? Math.round(((bs.accuracy - floor) / span) * 100) : null;
     const place = closed == null ? ""
       : closed >= 0 ? ` — about <strong>${closed}%</strong> of the way from that floor to the market`
       : " — <strong>below</strong> that floor on this sample";
@@ -305,9 +312,9 @@ json("accuracy.json").then((d) => {
     notice.innerHTML = `<p class="notice notice--context"><span class="notice__tag">Reading the numbers</span>
       One MLB game is nearly a coin flip, so the ceiling for any public-data model is the closing
       line (~<strong>${pct(b.market_ceiling_accuracy)}</strong>) and the floor is "always pick the
-      home team" (<strong>${pct(b.always_home_accuracy)}</strong> across these ${d.n_scored}
-      games). ${MODEL_LABELS[bk]} (best of the ${Object.keys(d.summary).length} on log loss, the
-      metric that actually separates them) sits at <strong>${pct(bs.accuracy)}</strong>${place}. ${ll}</p>`;
+      home team" (<strong>${pct(floor)}</strong> across these ${nGames}
+      games). ${MODEL_LABELS[bk]} (best of the ${Object.keys(pool).length} on log loss over those
+      same games, the metric that actually separates them) sits at <strong>${pct(bs.accuracy)}</strong>${place}. ${ll}</p>`;
   }
 
   cards.innerHTML = Object.entries(MODEL_LABELS)
